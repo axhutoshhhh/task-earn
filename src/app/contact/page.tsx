@@ -32,7 +32,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto space-y-10">
         {/* Navigation & Breadcrumbs */}
         <div className="flex items-center justify-between">

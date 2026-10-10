@@ -93,14 +93,14 @@ export default function ResetPasswordPage() {
 
   if (isCheckingSession) {
     return (
-      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd]">
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent">
         <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent"></div>
       </div>
     );
   }
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4 sm:p-8">
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4 sm:p-8">
       <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
         <div className="text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">

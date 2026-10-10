@@ -54,7 +54,7 @@ export default function LoginPage() {
 
   if (checkingAuth) {
     return (
-      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4">
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4">
         <div className="flex flex-col items-center gap-3">
           <div className="h-10 w-10 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent" />
           <p className="text-xs font-bold text-slate-500">Checking authentication...</p>
@@ -64,7 +64,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4 sm:p-8">
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4 sm:p-8">
       <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
         {/* Brand Header */}
         <div className="text-center">

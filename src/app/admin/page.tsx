@@ -35,7 +35,7 @@ export default async function AdminPage() {
 
   if (!isAdmin) {
     return (
-      <div className="min-h-screen bg-[#f7f4fd] py-16 px-4 sm:px-6 lg:px-8">
+      <div className="min-h-screen bg-transparent py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-md rounded-2xl border border-rose-200 bg-white p-8 text-center shadow-sm">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose-100 text-rose-600">
             <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
@@ -81,7 +81,7 @@ export default async function AdminPage() {
     .select('*', { count: 'exact', head: true });
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd] py-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent py-10 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-5xl space-y-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">

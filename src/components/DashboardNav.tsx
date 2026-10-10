@@ -86,7 +86,7 @@ export default function DashboardNav() {
   ];
 
   return (
-    <div className="sticky top-20 z-40 bg-[#f7f4fd]/80 backdrop-blur-md py-3 px-4 sm:px-6 lg:px-8 border-b border-[#793FFF]/10 transition-colors">
+    <div className="sticky top-20 z-40 bg-white/60 backdrop-blur-md py-3 px-4 sm:px-6 lg:px-8 border-b border-slate-200/60 transition-colors">
       <div className="mx-auto max-w-7xl">
         {/* Aesthetic Frosted Glass Pill Capsule */}
         <div className="w-fit mx-auto rounded-full bg-white/75 backdrop-blur-xl border border-white/90 p-1.5 shadow-lg shadow-[#793FFF]/5 overflow-x-auto no-scrollbar flex items-center gap-1">
