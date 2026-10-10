@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import DashboardNav from '@/components/DashboardNav';
 
 interface AIBatch {
   id: string;
@@ -76,8 +77,10 @@ export default function TrainAIPage() {
   const isAllDone = completedTasks.length === AI_TASKS.length;
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd] py-10 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-5xl space-y-8">
+    <div className="min-h-screen bg-[#f7f4fd]">
+      <DashboardNav />
+      <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl space-y-8">
         {/* Navigation & Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <Link
@@ -293,6 +296,7 @@ export default function TrainAIPage() {
             )}
           </div>
         )}
+        </div>
       </div>
     </div>
   );

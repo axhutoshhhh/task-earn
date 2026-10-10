@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import DashboardNav from '@/components/DashboardNav';
 
 interface Question {
   id: string;
@@ -149,8 +150,10 @@ export default function QuizPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-2xl">
+    <div className="min-h-screen bg-[#f7f4fd]">
+      <DashboardNav />
+      <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl">
         {/* Navigation Header */}
         <div className="mb-6 flex items-center justify-between">
           <Link
@@ -390,6 +393,7 @@ export default function QuizPage() {
             </div>
           </div>
         )}
+        </div>
       </div>
     </div>
   );

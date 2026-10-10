@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import DashboardNav from '@/components/DashboardNav';
 
 interface GameQuest {
   id: string;
@@ -133,8 +134,10 @@ export default function GamesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd] py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-6xl space-y-8">
+    <div className="min-h-screen bg-[#f7f4fd]">
+      <DashboardNav />
+      <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl space-y-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <Link
@@ -335,5 +338,6 @@ export default function GamesPage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
