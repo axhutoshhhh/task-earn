@@ -53,9 +53,30 @@ interface RewardCatalogItem {
 
 function OfficialAppleLogo({ className = 'h-7 w-7' }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 170 170" fill="currentColor">
-      <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.04-7.69-7.85-11.97-14.43-6.19-9.57-11.08-20.91-14.67-34.02-3.59-13.11-5.38-25.17-5.38-36.19 0-14.57 3.73-26.78 11.19-36.63 7.46-9.85 16.92-14.9 28.38-15.15 4.9 0 10.37 1.34 16.42 4.02 6.05 2.68 10.27 4.08 12.66 4.2 2.17-.25 6.42-1.7 12.74-4.35 6.32-2.65 11.51-3.9 15.58-3.75 14.13.62 25.32 6.07 33.56 16.34-12.74 7.74-18.99 18.39-18.75 31.95.24 10.49 4.16 19.34 11.76 26.56 7.6 7.22 16.8 11.43 27.61 12.64-2.17 6.43-4.8 12.79-7.89 19.08zM119.22 31.84c0-7.74 2.76-14.88 8.28-21.42 5.53-6.54 12.18-10.42 19.96-11.64.24 1.13.36 2.14.36 3.03 0 7.74-2.82 15.01-8.46 21.81-5.64 6.8-12.39 10.74-20.25 11.82-.12-1.25-.19-2.26-.19-3.6z" />
+    <svg className={className} viewBox="0 0 814 1000" fill="currentColor">
+      <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z" />
     </svg>
+  );
+}
+
+function OfficialGooglePlayLogo({ className = 'h-7 w-7' }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 28.99 31.99" fill="none">
+      <path d="M13.54 15.28.12 29.34a3.66 3.66 0 0 0 5.33 2.16l15.1-8.6Z" fill="#ea4335" />
+      <path d="m27.11 12.89-6.53-3.74-7.35 6.45 7.38 7.28 6.48-3.7a3.54 3.54 0 0 0 1.5-4.79 3.62 3.62 0 0 0-1.5-1.5z" fill="#fbbc04" />
+      <path d="M.12 2.66a3.57 3.57 0 0 0-.12.92v24.84a3.57 3.57 0 0 0 .12.92L14 15.64Z" fill="#4285f4" />
+      <path d="m13.64 16 6.94-6.85L5.5.51A3.73 3.73 0 0 0 3.63 0 3.64 3.64 0 0 0 .12 2.65Z" fill="#34a853" />
+    </svg>
+  );
+}
+
+function OfficialStarbucksLogo({ className = 'h-8 w-8' }: { className?: string }) {
+  return (
+    <img
+      src="/images/brands/starbucks.svg"
+      alt="Starbucks"
+      className={`${className || 'h-8 w-8'} object-contain`}
+    />
   );
 }
 
@@ -88,81 +109,6 @@ function OfficialGooglePayLogo({ className = 'h-6 w-auto' }: { className?: strin
         <path d="M14 5.8c2 0 3.8.7 5.2 2l3.9-3.9C20.7 1.8 17.7.8 14 .8 8.8.8 4.1 3.7 1.8 8.3l4.6 3.6c1.1-3.2 4.1-6.1 7.6-6.1z" fill="#EA4335" />
       </g>
       <text x="35" y="22" fontFamily="sans-serif" fontWeight="800" fontSize="18" fill="currentColor">Pay</text>
-    </svg>
-  );
-}
-
-function OfficialPaypalLogo({ className = 'h-7 w-auto' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 100 32" fill="none">
-      <path d="M12.5 4H6.2c-.6 0-1.1.4-1.2 1L2 24.8c-.1.5.3 1 .9 1h4.2l1.1-6.8h2.3c4.8 0 8.3-2.6 9-7.4.4-2.4-.2-4.4-1.6-5.7C16.6 4.7 14.7 4 12.5 4z" fill="#003087" />
-      <path d="M15.8 10.8c-.4 2.4-2.2 4.2-4.6 4.2h-2.1l-1.4 8.8h3.3c.5 0 1-.4 1.1-.9l.9-5.7h1.4c3.8 0 6.6-2 7.1-5.8.3-1.9-.1-3.5-1.2-4.5-.4 1.8-1.9 3.4-4.5 3.9z" fill="#0079C1" />
-      <text x="32" y="21" fontFamily="sans-serif" fontWeight="900" fontSize="16" fill="#003087">Pay</text>
-      <text x="61" y="21" fontFamily="sans-serif" fontWeight="900" fontSize="16" fill="#0079C1">Pal</text>
-    </svg>
-  );
-}
-
-function OfficialFlipkartLogo({ className = 'h-6 w-auto' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 130 32" fill="none">
-      <rect x="0" y="2" width="28" height="28" rx="6" fill="#FFE11B" />
-      <path d="M16 8h-4.5c-2.5 0-3.5 1.5-3.5 3.5V23h4v-7h3.5v-3H12v-1.5c0-.8.4-1.2 1.2-1.2H16V8z" fill="#2874F0" />
-      <text x="34" y="22" fontFamily="sans-serif" fontStyle="italic" fontWeight="900" fontSize="18" fill="#2874F0">Flipkart</text>
-    </svg>
-  );
-}
-
-function OfficialGooglePlayLogo({ className = 'h-7 w-7' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 512 512">
-      <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z" fill="#00E676" />
-      <path d="M47 36.1C41.4 46.4 38 59.4 38 74.4v363.2c0 15 3.4 28 9 38.3L275.6 256 47 36.1z" fill="#00B0FF" />
-      <path d="M325.3 277.7l60.1 60.1L104.6 499l220.7-221.3z" fill="#FF3D00" />
-      <path d="M466 237.2l-80.6-46.3-60.1 65.1 60.1 65.1 80.6-46.3c23-13.2 23-34.4 0-47.6z" fill="#FFD600" />
-    </svg>
-  );
-}
-
-function OfficialZomatoLogo({ className = 'h-6 w-auto' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 110 32" fill="none">
-      <rect width="110" height="32" rx="7" fill="#E23744" />
-      <text x="12" y="22" fontFamily="sans-serif" fontStyle="italic" fontWeight="900" fontSize="19" fill="#FFFFFF">zomato</text>
-    </svg>
-  );
-}
-
-function OfficialSwiggyLogo({ className = 'h-6 w-auto' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 120 32" fill="none">
-      <circle cx="16" cy="16" r="14" fill="#FC8019" />
-      <path d="M19 11c0-1.7-1.3-3-3-3-2 0-3.5 1.5-3.5 3.5 0 3 4.5 3 4.5 6 0 1.5-1.2 2.5-2.7 2.5-1.5 0-2.8-.8-3.3-2.2l-1.5.8c.8 2 2.7 3.2 4.8 3.2 2.6 0 4.5-1.8 4.5-4.2 0-3.3-4.5-3.3-4.5-6.2 0-.8.7-1.5 1.7-1.5 1 0 1.7.5 2 1.3l1.5-.7z" fill="#FFFFFF" />
-      <text x="36" y="22" fontFamily="sans-serif" fontWeight="900" fontSize="17" fill="#FC8019" letterSpacing="0.5">SWIGGY</text>
-    </svg>
-  );
-}
-
-function OfficialSteamLogo({ className = 'h-7 w-7' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-      <path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.005.105.005.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 12-5.373 12-12s-5.373-12-12-12z" />
-    </svg>
-  );
-}
-
-function OfficialStarbucksLogo({ className = 'h-9 w-9' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 100 100" fill="none">
-      <circle cx="50" cy="50" r="48" fill="#006241" />
-      <circle cx="50" cy="50" r="45" stroke="white" strokeWidth="1.5" />
-      <path d="M50 18l3 6.5 7.2 1-5.2 5.1 1.2 7.1L50 34.2l-6.2 3.5 1.2-7.1-5.2-5.1 7.2-1L50 18z" fill="white" />
-      <circle cx="34" cy="46" r="2.5" fill="white" />
-      <circle cx="66" cy="46" r="2.5" fill="white" />
-      <path d="M44 40h12v6c0 3.3-2.7 6-6 6s-6-2.7-6-6v-6z" fill="white" />
-      <path d="M32 58c4-3 10-4 18-4s14 1 18 4c0 0-4 11-18 11s-18-11-18-11z" fill="white" />
-      <path d="M26 42c0 8 4 16 10 20-3 3-8 5-14 3 0 0 1-13 4-23z" fill="white" />
-      <path d="M74 42c0 8-4 16-10 20 3 3 8 5 14 3 0 0-1-13-4-23z" fill="white" />
     </svg>
   );
 }
@@ -452,30 +398,75 @@ export default function RewardsPage() {
     setTimeout(() => setCopiedCodeId(null), 2500);
   };
 
+  const getBrandFromRewardType = (rewardType: string): BrandName => {
+    if (rewardType.includes('Swiggy')) return 'Swiggy';
+    if (rewardType.includes('Zomato')) return 'Zomato';
+    if (rewardType.includes('Steam')) return 'Steam';
+    if (rewardType.includes('Flipkart')) return 'Flipkart';
+    if (rewardType.includes('PayPal')) return 'PayPal';
+    if (rewardType.includes('Apple')) return 'Apple';
+    if (rewardType.includes('Starbucks')) return 'Starbucks';
+    if (rewardType.includes('Google Play')) return 'Google Play';
+    if (rewardType.includes('Paytm')) return 'Paytm';
+    if (rewardType.includes('Google Pay') || rewardType.includes('G Pay')) return 'Google Pay';
+    if (rewardType.includes('Amazon')) return 'Amazon';
+    return 'Google Play';
+  };
+
   const renderBrandLogo = (brand: BrandName, className?: string) => {
     switch (brand) {
+      case 'Swiggy':
+        return (
+          <img
+            src="/images/brands/swiggy.png"
+            alt="Swiggy"
+            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+          />
+        );
+      case 'Zomato':
+        return (
+          <img
+            src="/images/brands/zomato.png"
+            alt="Zomato"
+            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+          />
+        );
+      case 'Steam':
+        return (
+          <img
+            src="/images/brands/steam.png"
+            alt="Steam"
+            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+          />
+        );
+      case 'Flipkart':
+        return (
+          <img
+            src="/images/brands/flipkart.png"
+            alt="Flipkart"
+            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+          />
+        );
+      case 'PayPal':
+        return (
+          <img
+            src="/images/brands/paypal.png"
+            alt="PayPal"
+            className={className || 'h-7 w-auto object-contain'}
+          />
+        );
       case 'Apple':
         return <OfficialAppleLogo className={className || 'h-7 w-7 text-white'} />;
+      case 'Starbucks':
+        return <OfficialStarbucksLogo className={className || 'h-8 w-8'} />;
+      case 'Google Play':
+        return <OfficialGooglePlayLogo className={className || 'h-7 w-7'} />;
       case 'Amazon':
         return <OfficialAmazonLogo className={className || 'h-6 w-auto text-white'} />;
       case 'Paytm':
         return <OfficialPaytmLogo className={className || 'h-6 w-auto'} />;
       case 'Google Pay':
         return <OfficialGooglePayLogo className={className || 'h-6 w-auto text-white'} />;
-      case 'PayPal':
-        return <OfficialPaypalLogo className={className || 'h-6 w-auto'} />;
-      case 'Flipkart':
-        return <OfficialFlipkartLogo className={className || 'h-6 w-auto'} />;
-      case 'Google Play':
-        return <OfficialGooglePlayLogo className={className || 'h-7 w-7'} />;
-      case 'Zomato':
-        return <OfficialZomatoLogo className={className || 'h-6 w-auto'} />;
-      case 'Swiggy':
-        return <OfficialSwiggyLogo className={className || 'h-6 w-auto'} />;
-      case 'Steam':
-        return <OfficialSteamLogo className={className || 'h-7 w-7 text-white'} />;
-      case 'Starbucks':
-        return <OfficialStarbucksLogo className={className || 'h-8 w-8'} />;
     }
   };
 
@@ -900,14 +891,14 @@ export default function RewardsPage() {
                         const voucherCode = codeMatch ? codeMatch[1] : `TE-${red.id.substring(0, 8).toUpperCase()}`;
                         const isCopied = copiedCodeId === red.id;
 
+                        const brand = getBrandFromRewardType(red.reward_type);
+
                         return (
                           <tr key={red.id} className="hover:bg-slate-50/60 transition">
                             <td className="py-4 px-6">
                               <div className="flex items-center gap-3">
-                                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-950 text-white p-1 shrink-0">
-                                  <svg className="h-4 w-4 text-[#B5FF24]" viewBox="0 0 24 24" fill="currentColor">
-                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
-                                  </svg>
+                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white p-1.5 shrink-0 overflow-hidden shadow-xs">
+                                  {renderBrandLogo(brand, 'h-7 w-7 object-contain')}
                                 </div>
                                 <div>
                                   <span className="font-bold text-slate-950 block">
