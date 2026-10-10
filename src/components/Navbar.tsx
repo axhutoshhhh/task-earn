@@ -19,7 +19,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-slate-100 bg-white/85 backdrop-blur-md transition-all">
+    <header className="sticky top-0 z-50 w-full border-b border-[#793FFF]/10 bg-[#f7f4fd]/85 backdrop-blur-md transition-all">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo - NO flash emoji */}
         <div className="flex items-center">
@@ -116,7 +116,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Panel */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 shadow-xl" id="mobile-menu">
+        <div className="md:hidden border-b border-[#793FFF]/15 bg-[#f7f4fd] px-4 pt-3 pb-6 shadow-xl" id="mobile-menu">
           <nav aria-label="Mobile Navigation" className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <Link

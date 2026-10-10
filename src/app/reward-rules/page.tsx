@@ -1,12 +1,13 @@
 export default function RewardRulesPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8 text-gray-900">Reward Rules</h1>
-      
-      <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8 rounded-r-lg">
-        <h3 className="text-lg font-bold text-yellow-800 mb-2">Important Notice</h3>
-        <p className="text-yellow-700">All points and rewards on Task Earn are completely simulated. They have absolutely no real-world monetary value and cannot be exchanged for cash, cryptocurrency, or gift cards.</p>
-      </div>
+    <div className="min-h-screen bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto rounded-3xl bg-white p-8 sm:p-12 border border-[#793FFF]/15 shadow-xl">
+        <h1 className="text-3xl font-extrabold mb-8 text-slate-900">Reward Rules</h1>
+        
+        <div className="bg-amber-50 border-l-4 border-amber-400 p-6 mb-8 rounded-r-2xl">
+          <h3 className="text-lg font-bold text-amber-900 mb-2">Important Notice</h3>
+          <p className="text-amber-800 text-sm leading-relaxed">All points and rewards on Task Earn are completely simulated. They have absolutely no real-world monetary value and cannot be exchanged for cash, cryptocurrency, or gift cards.</p>
+        </div>
 
       <div className="space-y-8 text-gray-700">
         <section>
@@ -35,5 +36,6 @@ export default function RewardRulesPage() {
         </section>
       </div>
     </div>
+  </div>
   );
 }

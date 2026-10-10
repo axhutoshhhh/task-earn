@@ -1,8 +1,9 @@
 export default function PrivacyPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12 prose prose-gray">
-      <h1 className="text-3xl font-bold mb-2 text-gray-900">Privacy Policy</h1>
-      <p className="text-sm text-gray-500 mb-8">Last updated: October 2024</p>
+    <div className="min-h-screen bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto rounded-3xl bg-white p-8 sm:p-12 border border-[#793FFF]/15 shadow-xl prose prose-slate">
+        <h1 className="text-3xl font-extrabold mb-2 text-slate-900">Privacy Policy</h1>
+        <p className="text-sm text-slate-500 mb-8">Last updated: October 2024</p>
       
       <div className="space-y-8 text-gray-700">
         <section>
@@ -57,5 +58,6 @@ export default function PrivacyPage() {
         </section>
       </div>
     </div>
+  </div>
   );
 }

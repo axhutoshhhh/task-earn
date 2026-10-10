@@ -3,7 +3,7 @@ import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Home() {
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-[#f7f4fd]">
       {/* Background Decorative Glow Elements */}
       <div
         className="pointer-events-none absolute -top-40 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:-top-80"
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* 2. STATS & TRANSPARENCY BAR */}
-      <section className="border-y border-slate-200/80 bg-slate-50/70 py-12">
+      <section className="border-y border-[#793FFF]/10 bg-white/60 backdrop-blur-xs py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4 text-center">
             <ScrollReveal delay={0.05}>
@@ -279,7 +279,7 @@ export default function Home() {
       </section>
 
       {/* 4. HOW IT WORKS (STEPPED CARDS WITH SCROLL ANIMATION) */}
-      <section id="how-it-works" className="py-24 bg-slate-50/70 border-t border-slate-200/80 px-4 sm:px-6 lg:px-8">
+      <section id="how-it-works" className="py-24 bg-[#f2ecfc]/50 border-t border-[#793FFF]/10 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <ScrollReveal direction="up" delay={0.1}>
             <div className="text-center max-w-3xl mx-auto">

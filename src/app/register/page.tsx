@@ -57,7 +57,7 @@ export default function RegisterPage() {
 
   if (success) {
     return (
-      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50/70 p-4">
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4">
         <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl text-center">
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-3xl text-emerald-600">
             ✉️
@@ -80,7 +80,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50/70 p-4 sm:p-8">
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4 sm:p-8">
       <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
         <div className="text-center">
           <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">

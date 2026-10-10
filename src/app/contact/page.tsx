@@ -12,14 +12,15 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-4 text-gray-900">Contact Us</h1>
-      
-      <p className="text-gray-600 mb-8">
-        This form is not yet connected. For now, please reach out via email at <a href="mailto:support@taskearn.com" className="text-blue-600 hover:underline">support@taskearn.com</a>.
-      </p>
+    <div className="min-h-[calc(100vh-80px)] bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-2xl mx-auto">
+        <h1 className="text-3xl font-extrabold mb-4 text-slate-900">Contact Us</h1>
+        
+        <p className="text-slate-600 mb-8">
+          This form is not yet connected. For now, please reach out via email at <a href="mailto:support@taskearn.com" className="text-[#793FFF] font-semibold hover:underline">support@taskearn.com</a>.
+        </p>
 
-      <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 max-w-2xl">
+        <div className="bg-white p-8 rounded-3xl shadow-xl border border-[#793FFF]/15">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
@@ -69,5 +70,6 @@ export default function ContactPage() {
         </form>
       </div>
     </div>
+  </div>
   );
 }

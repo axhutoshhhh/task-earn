@@ -27,15 +27,17 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-8 text-gray-900">Frequently Asked Questions</h1>
-      <div className="space-y-6">
-        {faqs.map((faq, idx) => (
-          <div key={idx} className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">{faq.q}</h3>
-            <p className="text-gray-600 leading-relaxed">{faq.a}</p>
-          </div>
-        ))}
+    <div className="min-h-screen bg-[#f7f4fd] py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-3xl font-extrabold mb-8 text-slate-900">Frequently Asked Questions</h1>
+        <div className="space-y-6">
+          {faqs.map((faq, idx) => (
+            <div key={idx} className="bg-white p-6 rounded-2xl shadow-sm border border-[#793FFF]/10">
+              <h3 className="text-xl font-bold mb-2 text-slate-900">{faq.q}</h3>
+              <p className="text-slate-600 leading-relaxed">{faq.a}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
