@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 
@@ -13,8 +13,25 @@ export default function RegisterPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [checkingAuth, setCheckingAuth] = useState(true);
 
   const supabase = createClient();
+
+  useEffect(() => {
+    let isMounted = true;
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (isMounted) {
+        if (user) {
+          window.location.replace('/dashboard');
+        } else {
+          setCheckingAuth(false);
+        }
+      }
+    });
+    return () => {
+      isMounted = false;
+    };
+  }, [supabase]);
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,7 +52,7 @@ export default function RegisterPage() {
 
     setLoading(true);
 
-    const { error: signUpError } = await supabase.auth.signUp({
+    const { data, error: signUpError } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -51,9 +68,26 @@ export default function RegisterPage() {
       return;
     }
 
+    // If session is already created (e.g. email confirmation disabled), go directly to dashboard!
+    if (data.session) {
+      window.location.replace('/dashboard');
+      return;
+    }
+
     setSuccess(true);
     setLoading(false);
   };
+
+  if (checkingAuth) {
+    return (
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4">
+        <div className="flex flex-col items-center gap-3">
+          <div className="h-10 w-10 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent" />
+          <p className="text-xs font-bold text-slate-500">Checking authentication...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (success) {
     return (
@@ -69,7 +103,7 @@ export default function RegisterPage() {
           <div className="mt-8">
             <Link
               href="/login"
-              className="inline-flex w-full items-center justify-center rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition"
+              className="inline-flex w-full items-center justify-center rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition cursor-pointer"
             >
               Proceed to Sign In →
             </Link>
@@ -94,7 +128,7 @@ export default function RegisterPage() {
             Create Free Account
           </h1>
           <p className="mt-1 text-xs text-slate-600">
-            Join TaskEarn to test speed quizzes & rewards
+            Join TaskEarn to test speed quizzes & earn rewards
           </p>
         </div>
 
@@ -177,7 +211,7 @@ export default function RegisterPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
+            className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50 cursor-pointer"
           >
             {loading ? 'Creating Account...' : 'Create Account →'}
           </button>

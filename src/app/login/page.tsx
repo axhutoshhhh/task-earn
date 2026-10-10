@@ -1,18 +1,36 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 
 export default function LoginPage() {
-  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [checkingAuth, setCheckingAuth] = useState(true);
 
   const supabase = createClient();
+
+  useEffect(() => {
+    let isMounted = true;
+
+    // Immediately redirect if already authenticated
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (isMounted) {
+        if (user) {
+          window.location.replace('/dashboard');
+        } else {
+          setCheckingAuth(false);
+        }
+      }
+    });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [supabase]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -30,9 +48,20 @@ export default function LoginPage() {
       return;
     }
 
-    router.push('/dashboard');
-    router.refresh();
+    // Replace login in history so pressing 'Back' never returns to login screen!
+    window.location.replace('/dashboard');
   };
+
+  if (checkingAuth) {
+    return (
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4">
+        <div className="flex flex-col items-center gap-3">
+          <div className="h-10 w-10 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent" />
+          <p className="text-xs font-bold text-slate-500">Checking authentication...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-[#f7f4fd] p-4 sm:p-8">
@@ -50,7 +79,7 @@ export default function LoginPage() {
             Welcome back
           </h1>
           <p className="mt-2 text-xs sm:text-sm text-slate-600">
-            Sign in to access your TaskEarn dashboard
+            Sign in to access your TaskEarn dashboard & reward wallet
           </p>
         </div>
 
@@ -100,9 +129,9 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full mt-2 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
+            className="w-full mt-2 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50 cursor-pointer"
           >
-            {loading ? 'Signing in...' : 'Sign In →'}
+            {loading ? 'Signing in...' : 'Sign In to Dashboard →'}
           </button>
         </form>
 
