@@ -73,7 +73,7 @@ function OfficialGooglePlayLogo({ className = 'h-7 w-7' }: { className?: string 
 function OfficialStarbucksLogo({ className = 'h-8 w-8' }: { className?: string }) {
   return (
     <img
-      src="/images/brands/starbucks.svg"
+      src="/images/brands/starbucks.png"
       alt="Starbucks"
       className={`${className || 'h-8 w-8'} object-contain`}
     />
@@ -90,12 +90,13 @@ function OfficialAmazonLogo({ className = 'h-6 w-auto' }: { className?: string }
   );
 }
 
-function OfficialPaytmLogo({ className = 'h-6 w-auto' }: { className?: string }) {
+function OfficialPaytmLogo({ className = 'h-8 w-8' }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 100 28" fill="none">
-      <text x="0" y="22" fontFamily="sans-serif" fontWeight="900" fontSize="22" fill="#002970">Pay</text>
-      <text x="44" y="22" fontFamily="sans-serif" fontWeight="900" fontSize="22" fill="#00BAF2">tm</text>
-    </svg>
+    <img
+      src="/images/brands/paytm.png"
+      alt="Paytm"
+      className={`${className || 'h-8 w-8'} object-contain`}
+    />
   );
 }
 
@@ -129,7 +130,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'wallet',
     inputLabel: 'Enter 10-Digit Paytm Mobile Number',
     inputPlaceholder: 'e.g. 8302072636',
-    cardBg: 'from-[#002970] via-[#003893] to-[#001D52]',
+    cardBg: 'from-[#0A1224] via-[#101D38] to-[#070D1A]',
     accentColor: '#00BAF2',
     badge: 'Direct Wallet',
   },
@@ -144,7 +145,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'upi',
     inputLabel: 'Enter your Google Pay UPI ID / VPA',
     inputPlaceholder: 'e.g. username@okhdfcbank or 8302072636@paytm',
-    cardBg: 'from-[#1A237E] via-[#283593] to-[#0D1240]',
+    cardBg: 'from-[#0C1427] via-[#142340] to-[#080D1A]',
     accentColor: '#4285F4',
     badge: 'Instant UPI',
   },
@@ -159,7 +160,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'paypal',
     inputLabel: 'Enter your PayPal Account Email ID',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#003087] via-[#004EA8] to-[#001F5B]',
+    cardBg: 'from-[#0A1121] via-[#111F3A] to-[#060B15]',
     accentColor: '#0079C1',
     badge: 'Global Payout',
   },
@@ -174,7 +175,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#0D1B2A] via-[#1B263B] to-[#060D17]',
+    cardBg: 'from-[#0B1716] via-[#122624] to-[#070F0F]',
     accentColor: '#00E676',
     badge: 'Play Store Official',
   },
@@ -189,7 +190,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#1C3FAA] via-[#2874F0] to-[#122A72]',
+    cardBg: 'from-[#0C1527] via-[#142340] to-[#080D1A]',
     accentColor: '#FFE11B',
     badge: 'E-Commerce',
   },
@@ -204,7 +205,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#19222D] via-[#232F3E] to-[#131A22]',
+    cardBg: 'from-[#17171A] via-[#262629] to-[#0F0F12]',
     accentColor: '#FF9900',
     badge: 'Amazon Pay',
   },
@@ -219,7 +220,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#2A2B32] via-[#1E1F24] to-[#121316]',
+    cardBg: 'from-[#141416] via-[#222226] to-[#0D0D0E]',
     accentColor: '#FFFFFF',
     badge: 'Apple Official',
   },
@@ -234,8 +235,8 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#B71C1C] via-[#E23744] to-[#7F0000]',
-    accentColor: '#FFFFFF',
+    cardBg: 'from-[#1D0A0E] via-[#2E1117] to-[#120507]',
+    accentColor: '#E23744',
     badge: 'Food Delivery',
   },
   {
@@ -249,8 +250,8 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#D95300] via-[#FC8019] to-[#993A00]',
-    accentColor: '#FFFFFF',
+    cardBg: 'from-[#1D0E08] via-[#2E180E] to-[#120904]',
+    accentColor: '#FC8019',
     badge: 'Instamart & Food',
   },
   {
@@ -264,7 +265,7 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#171A21] via-[#1B2838] to-[#101217]',
+    cardBg: 'from-[#0E131C] via-[#17202D] to-[#090D13]',
     accentColor: '#66C0F4',
     badge: 'PC Gaming',
   },
@@ -279,8 +280,8 @@ const CATALOG: RewardCatalogItem[] = [
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
-    cardBg: 'from-[#00462A] via-[#006241] to-[#01351E]',
-    accentColor: '#006241',
+    cardBg: 'from-[#071610] via-[#0E261B] to-[#040E0A]',
+    accentColor: '#00704A',
     badge: 'Cafe & Beverage',
   },
 ];
@@ -420,7 +421,7 @@ export default function RewardsPage() {
           <img
             src="/images/brands/swiggy.png"
             alt="Swiggy"
-            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+            className={className || 'h-8 w-8 object-contain'}
           />
         );
       case 'Zomato':
@@ -428,7 +429,7 @@ export default function RewardsPage() {
           <img
             src="/images/brands/zomato.png"
             alt="Zomato"
-            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+            className={className || 'h-8 w-8 object-contain'}
           />
         );
       case 'Steam':
@@ -436,7 +437,7 @@ export default function RewardsPage() {
           <img
             src="/images/brands/steam.png"
             alt="Steam"
-            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+            className={className || 'h-8 w-8 object-contain'}
           />
         );
       case 'Flipkart':
@@ -444,7 +445,7 @@ export default function RewardsPage() {
           <img
             src="/images/brands/flipkart.png"
             alt="Flipkart"
-            className={className || 'h-8 w-8 object-contain rounded-full shadow-xs'}
+            className={className || 'h-8 w-8 object-contain'}
           />
         );
       case 'PayPal':
@@ -456,17 +457,17 @@ export default function RewardsPage() {
           />
         );
       case 'Apple':
-        return <OfficialAppleLogo className={className || 'h-7 w-7 text-white'} />;
+        return <OfficialAppleLogo className={className || 'h-7 w-7 text-slate-950'} />;
       case 'Starbucks':
-        return <OfficialStarbucksLogo className={className || 'h-8 w-8'} />;
+        return <OfficialStarbucksLogo className={className || 'h-8 w-8 object-contain'} />;
       case 'Google Play':
         return <OfficialGooglePlayLogo className={className || 'h-7 w-7'} />;
       case 'Amazon':
-        return <OfficialAmazonLogo className={className || 'h-6 w-auto text-white'} />;
+        return <OfficialAmazonLogo className={className || 'h-5 w-auto text-slate-950'} />;
       case 'Paytm':
-        return <OfficialPaytmLogo className={className || 'h-6 w-auto'} />;
+        return <OfficialPaytmLogo className={className || 'h-8 w-8 object-contain'} />;
       case 'Google Pay':
-        return <OfficialGooglePayLogo className={className || 'h-6 w-auto text-white'} />;
+        return <OfficialGooglePayLogo className={className || 'h-6 w-auto text-slate-900'} />;
     }
   };
 
@@ -726,29 +727,55 @@ export default function RewardsPage() {
                     <div>
                       {/* Realistic Digital Voucher Card Graphic */}
                       <div
-                        className={`relative aspect-[1.65/1] w-full overflow-hidden rounded-2xl bg-gradient-to-tr ${item.cardBg} p-5 text-white shadow-md flex flex-col justify-between`}
+                        className={`relative aspect-[1.65/1] w-full overflow-hidden rounded-2xl bg-gradient-to-br ${item.cardBg} p-5 text-white shadow-lg border flex flex-col justify-between`}
+                        style={{ borderColor: `${item.accentColor}33` }}
                       >
-                        {/* Metallic microchip & Official Brand Logo */}
-                        <div className="flex items-start justify-between">
+                        {/* Ambient brand glow */}
+                        <div
+                          className="pointer-events-none absolute -right-10 -top-10 h-36 w-36 rounded-full blur-2xl opacity-20"
+                          style={{ backgroundColor: item.accentColor }}
+                        />
+                        <div
+                          className="pointer-events-none absolute -left-10 -bottom-10 h-28 w-28 rounded-full blur-2xl opacity-15"
+                          style={{ backgroundColor: item.accentColor }}
+                        />
+
+                        {/* Metallic microchip & Official Brand Logo inside high-contrast badge */}
+                        <div className="relative z-10 flex items-start justify-between">
                           <div className="flex items-center gap-3">
-                            {renderBrandLogo(item.brand)}
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-white/70">
-                              {item.badge}
-                            </span>
+                            {/* High-contrast crisp white badge ensures 100% logo visibility and pop */}
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white p-2 shadow-md shadow-black/20 ring-1 ring-white/90">
+                              {renderBrandLogo(item.brand, 'h-full w-full object-contain')}
+                            </div>
+                            <div className="flex flex-col">
+                              <span className="text-xs font-black tracking-wide text-white drop-shadow-xs">
+                                {item.brand}
+                              </span>
+                              <span className="text-[10px] font-semibold uppercase tracking-wider text-slate-300">
+                                {item.badge}
+                              </span>
+                            </div>
                           </div>
 
-                          {/* EMV Gold Microchip Vector */}
-                          <div className="h-6 w-8 rounded-sm bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 border border-amber-200/50 p-0.5 shadow-xs">
-                            <div className="h-full w-full border border-amber-700/30 rounded-xs flex flex-col justify-between py-0.5 px-1">
-                              <div className="h-[1px] bg-amber-800/40" />
-                              <div className="h-[1px] bg-amber-800/40" />
+                          {/* Contactless waves & EMV Gold Microchip */}
+                          <div className="flex items-center gap-2">
+                            <svg className="h-4 w-4 text-white/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <path d="M8.5 16.5a5 5 0 0 1 0-7" />
+                              <path d="M12 19a8.5 8.5 0 0 0 0-14" />
+                              <path d="M15.5 21.5a12 12 0 0 0 0-19" />
+                            </svg>
+                            <div className="h-6 w-8 rounded-sm bg-gradient-to-br from-amber-300 via-amber-400 to-amber-600 border border-amber-200/50 p-0.5 shadow-xs">
+                              <div className="h-full w-full border border-amber-700/30 rounded-xs flex flex-col justify-between py-0.5 px-1">
+                                <div className="h-[1px] bg-amber-800/40" />
+                                <div className="h-[1px] bg-amber-800/40" />
+                              </div>
                             </div>
                           </div>
                         </div>
 
                         {/* Card Center: Denomination */}
-                        <div>
-                          <span className="text-[10px] uppercase tracking-widest text-white/60">
+                        <div className="relative z-10">
+                          <span className="text-[10px] font-semibold uppercase tracking-widest text-slate-300">
                             Guaranteed Value
                           </span>
                           <p className="text-2xl sm:text-3xl font-black text-white tracking-tight">
@@ -757,13 +784,16 @@ export default function RewardsPage() {
                         </div>
 
                         {/* Card Footer: Brand watermark & points badge */}
-                        <div className="flex items-center justify-between text-xs text-white/80 pt-1 border-t border-white/10">
-                          <span className="font-mono text-[10px] tracking-wider uppercase">
+                        <div className="relative z-10 flex items-center justify-between text-xs text-white/90 pt-2 border-t border-white/10">
+                          <span className="font-mono text-[10px] tracking-wider uppercase text-slate-300">
                             Official Voucher
                           </span>
-                          <span className="font-bold text-[#B5FF24]">
-                            {item.points.toLocaleString()} PTS
-                          </span>
+                          <div className="flex items-center gap-1.5 rounded-full bg-black/40 px-2.5 py-0.5 backdrop-blur-md border border-white/10">
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#B5FF24]" />
+                            <span className="font-bold text-[11px] text-[#B5FF24]">
+                              {item.points.toLocaleString()} PTS
+                            </span>
+                          </div>
                         </div>
                       </div>
 
@@ -897,7 +927,7 @@ export default function RewardsPage() {
                           <tr key={red.id} className="hover:bg-slate-50/60 transition">
                             <td className="py-4 px-6">
                               <div className="flex items-center gap-3">
-                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white p-1.5 shrink-0 overflow-hidden shadow-xs">
+                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-slate-200 p-1.5 shrink-0 overflow-hidden shadow-xs">
                                   {renderBrandLogo(brand, 'h-7 w-7 object-contain')}
                                 </div>
                                 <div>
@@ -1024,8 +1054,8 @@ export default function RewardsPage() {
             {/* Modal Header */}
             <div className="flex items-center justify-between border-b border-slate-100 pb-4">
               <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-950 text-white p-1">
-                  {renderBrandLogo(redeemingItem.brand, 'h-6 w-auto')}
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 p-2 shadow-xs shrink-0">
+                  {renderBrandLogo(redeemingItem.brand, 'h-full w-full object-contain')}
                 </div>
                 <div>
                   <h3 className="text-base font-black text-slate-950">
