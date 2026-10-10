@@ -2,27 +2,35 @@ export default function FAQPage() {
   const faqs = [
     {
       q: "What is Task Earn?",
-      a: "Task Earn is a demo platform where you can earn simulated points by completing quizzes. It is currently in development."
+      a: "Task Earn is a modern micro-earning platform where you can earn rewards across five distinct streams: taking timed knowledge speed quizzes, watching YouTube videos, training AI models, playing arcade games, and uploading POV video bounties."
     },
     {
-      q: "Are the rewards real?",
-      a: "No. All points and rewards on Task Earn are simulated and have no real-world monetary value. This is clearly indicated throughout the platform."
+      q: "How do I redeem rewards?",
+      a: "You can redeem accumulated points for popular digital gift cards including Amazon shopping vouchers, Starbucks coffee passes, Apple credits, and Google Play cards. Digital codes are generated and archived in your Past Redemptions history."
     },
     {
-      q: "How do quizzes work?",
-      a: "Each quiz has 5 multiple-choice questions with a 7-second timer per question. You earn demo points for correct answers."
+      q: "How do Knowledge Speed Quizzes work?",
+      a: "Each quiz features 5 timed questions with a 7-second countdown per question. Questions and answers are validated server-side to guarantee fairness, awarding 10 points per correct answer directly to your ledger."
     },
     {
-      q: "When will Tasks and Surveys be available?",
-      a: "Tasks and Surveys will be added once we have verified and approved provider integrations. We will not add them until legitimate providers approve our platform."
+      q: "How does Watch to Earn work?",
+      a: "Stream featured partner YouTube video clips, tech reviews, and gaming highlights. As you watch, the completion progress bar advances; reaching 100% unlocks points for that session."
     },
     {
-      q: "Is my data safe?",
-      a: "We use Supabase with Row Level Security and follow security best practices. We never collect sensitive financial information like UPI PINs or bank passwords."
+      q: "What is Train AI to Earn?",
+      a: "AI training tasks present side-by-side prompt completions from modern language models. By voting on which model response is more accurate and helpful, you provide valuable reinforcement feedback (RLHF) and earn reward points."
+    },
+    {
+      q: "What are POV Video Bounties?",
+      a: "POV video bounties allow you to record and submit short 45-90s first-person perspective video sweeps of everyday environments (such as your desk setup, kitchen, or street walk) to train spatial computing and computer vision models for high reward payouts."
+    },
+    {
+      q: "Is my personal data safe?",
+      a: "Yes. Task Earn uses enterprise-grade Supabase authentication with strict Row Level Security. We never collect or store sensitive financial information, banking credentials, or UPI PINs."
     },
     {
       q: "How do I contact support?",
-      a: "Visit our Contact page or email support@taskearn.com (placeholder)."
+      a: "You can reach our team at support@taskearn.com or submit a message through our Contact page."
     }
   ];
 

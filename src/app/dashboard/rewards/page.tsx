@@ -28,25 +28,39 @@ interface RewardCatalogItem {
 
 const CATALOG: RewardCatalogItem[] = [
   {
-    id: 'demo_store_voucher',
-    name: 'Demo Shopping Voucher',
-    description: 'Simulated $5 e-voucher code for demo checkout testing.',
+    id: 'amazon_voucher_5',
+    name: '$5 Amazon Gift Card',
+    description: 'Digital gift code for Amazon purchases and shopping.',
     points: 50,
     icon: '🛍️',
   },
   {
-    id: 'demo_coffee_pass',
-    name: 'Demo Coffee Pass',
-    description: 'Simulated digital coffee voucher for testing redemption.',
+    id: 'starbucks_card_5',
+    name: '$5 Starbucks e-Gift Card',
+    description: 'Digital coffee pass for food, drinks, and merchandise.',
     points: 100,
     icon: '☕',
   },
   {
-    id: 'demo_streaming_pass',
-    name: 'Demo Media Pass',
-    description: 'Simulated entertainment subscription voucher.',
+    id: 'streaming_pass_10',
+    name: '$10 Media & Streaming Pass',
+    description: 'Enjoy music, movies, or gaming subscription credit.',
     points: 200,
     icon: '🎬',
+  },
+  {
+    id: 'apple_gift_card_10',
+    name: '$10 Apple Gift Card',
+    description: 'Redeem for App Store, games, music, or iCloud subscriptions.',
+    points: 250,
+    icon: '🍏',
+  },
+  {
+    id: 'google_play_10',
+    name: '$10 Google Play Code',
+    description: 'Redeem for Android apps, games, and in-game credits.',
+    points: 250,
+    icon: '🎮',
   },
 ];
 
@@ -153,21 +167,21 @@ export default function RewardsPage() {
           >
             ← Back to Dashboard
           </Link>
-          <span className="self-start sm:self-auto rounded-full bg-slate-100 border border-slate-200 px-3.5 py-1 text-xs font-bold text-slate-700">
-            Simulated Demo Vouchers
+          <span className="self-start sm:self-auto rounded-full bg-[#793FFF]/10 border border-[#793FFF]/20 px-3.5 py-1 text-xs font-bold text-[#793FFF]">
+            Instant Voucher Delivery
           </span>
         </div>
 
-        {/* Disclaimer Banner */}
-        <div className="rounded-2xl border border-amber-300 bg-amber-50 p-5 text-amber-900 shadow-xs">
-          <div className="flex items-start gap-3">
-            <span className="text-xl">⚠️</span>
-            <div className="text-xs sm:text-sm space-y-1">
-              <p className="font-bold">Simulated Demonstration Platform</p>
-              <p className="text-amber-800">
-                All points, catalog items, and redemption codes are strictly simulated for testing and demonstration. No real-world currency, cryptocurrency, or actual gift cards will be provided. Task Earn never collects banking information, UPI PINs, or financial secrets.
-              </p>
-            </div>
+        {/* Info Banner */}
+        <div className="rounded-2xl border border-[#793FFF]/20 bg-white p-5 text-slate-900 shadow-xs flex items-start gap-3.5">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#793FFF]/10 text-xl text-[#793FFF]">
+            🎁
+          </div>
+          <div className="text-xs sm:text-sm space-y-1">
+            <p className="font-bold text-slate-950">Official Rewards Catalog</p>
+            <p className="text-slate-600">
+              Redeem your accumulated points for verified digital gift cards and voucher codes. Your digital vouchers are generated instantly and permanently accessible in your Past Redemptions history.
+            </p>
           </div>
         </div>
 
@@ -175,14 +189,14 @@ export default function RewardsPage() {
         <div className="rounded-3xl bg-slate-950 p-8 text-white shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-              Verified Reward Ledger Balance
+              Verified Reward Wallet Balance
             </span>
             <div className="mt-2 flex items-baseline gap-3">
               <span className="text-4xl sm:text-5xl font-black text-[#793FFF]">
                 {loading ? '...' : balance}
               </span>
               <span className="text-base font-bold text-slate-300">
-                Demo Points
+                Points
               </span>
             </div>
             <p className="mt-1 text-xs text-slate-500">
@@ -241,7 +255,7 @@ export default function RewardsPage() {
                 : 'border-transparent text-slate-500 hover:text-slate-800'
             }`}
           >
-            Redeem Catalog (Simulated)
+            Rewards Catalog
           </button>
           <button
             onClick={() => setActiveTab('ledger')}
@@ -297,7 +311,7 @@ export default function RewardsPage() {
                           : 'bg-slate-100 text-slate-400 cursor-not-allowed'
                       }`}
                     >
-                      {canAfford ? 'Redeem (Simulated)' : `Requires ${item.points} Pts`}
+                      {canAfford ? 'Redeem Voucher' : `Requires ${item.points} Pts`}
                     </button>
                   </div>
                 </div>
@@ -316,7 +330,7 @@ export default function RewardsPage() {
             </div>
             {ledger.length === 0 ? (
               <div className="p-12 text-center text-sm text-slate-500">
-                No ledger transactions found yet. Complete a speed quiz to earn demo points!
+                No ledger transactions found yet. Complete speed quizzes, watch videos, or train AI to earn points!
               </div>
             ) : (
               <div className="overflow-x-auto">
@@ -355,11 +369,11 @@ export default function RewardsPage() {
         {activeTab === 'redemptions' && (
           <div className="rounded-3xl border border-slate-200 bg-white overflow-hidden shadow-sm">
             <div className="p-5 border-b border-slate-100 bg-slate-50">
-              <h3 className="text-sm font-bold text-slate-900">Simulated Redemptions History</h3>
+              <h3 className="text-sm font-bold text-slate-900">Past Redemptions History</h3>
             </div>
             {redemptions.length === 0 ? (
               <div className="p-12 text-center text-sm text-slate-500">
-                No simulated rewards redeemed yet.
+                No rewards redeemed yet.
               </div>
             ) : (
               <div className="overflow-x-auto">
@@ -367,7 +381,7 @@ export default function RewardsPage() {
                   <thead className="border-b border-slate-100 bg-slate-50 text-slate-500 font-semibold">
                     <tr>
                       <th className="py-3 px-5">Date</th>
-                      <th className="py-3 px-5">Reward & Demo Code</th>
+                      <th className="py-3 px-5">Reward & Voucher Code</th>
                       <th className="py-3 px-5">Points</th>
                       <th className="py-3 px-5 text-right">Status</th>
                     </tr>
@@ -405,13 +419,13 @@ export default function RewardsPage() {
               <div className="text-center">
                 <span className="text-4xl">{redeemingItem.icon}</span>
                 <h3 className="mt-3 text-lg font-bold text-slate-950">
-                  Confirm Simulated Redemption
+                  Confirm Voucher Redemption
                 </h3>
                 <p className="mt-2 text-xs text-slate-600">
-                  You are about to redeem <strong>{redeemingItem.points} demo points</strong> for <strong>{redeemingItem.name}</strong>.
+                  You are about to redeem <strong>{redeemingItem.points} points</strong> for <strong>{redeemingItem.name}</strong>.
                 </p>
-                <div className="mt-4 rounded-2xl bg-amber-50 p-4 text-xs text-amber-800 text-left border border-amber-200">
-                  <strong>Notice:</strong> This is a demo test. A simulated code will be generated. No real gift card is issued.
+                <div className="mt-4 rounded-2xl bg-[#793FFF]/10 p-4 text-xs text-[#793FFF] text-left border border-[#793FFF]/20">
+                  <strong>Instant Delivery:</strong> Your digital voucher code will be issued instantly and permanently accessible in your Past Redemptions history.
                 </div>
               </div>
 

@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Task Earn — Earn Demo Rewards",
+  title: "Task Earn — Complete Micro-Tasks, Watch Videos, Train AI & Earn",
   description:
-    "Complete quizzes, tasks, and surveys to earn simulated reward points. Task Earn is a demo platform — all rewards are simulated.",
-  keywords: ["task earn", "quizzes", "rewards", "demo"],
+    "Earn rewards by taking speed quizzes, watching YouTube videos, training AI models, playing games, and submitting POV videos. Redeem instant gift cards and vouchers.",
+  keywords: ["task earn", "quizzes", "rewards", "watch to earn", "train ai", "play to earn", "pov videos", "gift cards"],
 };
 
 export default function RootLayout({

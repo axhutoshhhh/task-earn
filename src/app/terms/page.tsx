@@ -13,7 +13,7 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">2. Description of Service</h2>
-          <p>Task Earn is a demo platform. All points and rewards are completely simulated. They have NO real-world monetary value and cannot be exchanged for cash, gift cards, or any other tangible reward.</p>
+          <p>Task Earn provides an online micro-rewards platform where registered members can participate in knowledge speed quizzes, watch YouTube partner videos, train AI models, play arcade games, and upload POV video bounties to accumulate points and redeem digital gift card vouchers.</p>
         </section>
 
         <section>
@@ -23,12 +23,12 @@ export default function TermsPage() {
 
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">4. Prohibited Conduct</h2>
-          <p>Users agree not to engage in cheating, botting, automated script usage, platform manipulation, or the creation of multiple accounts to unfairly accumulate simulated points.</p>
+          <p>Users agree not to engage in cheating, botting, automated script usage, platform manipulation, or the creation of multiple accounts to unfairly accumulate points.</p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">5. Disclaimer</h2>
-          <p>The platform is currently in a demo/beta phase. There are no guaranteed earnings. All rewards are simulated for demonstration purposes only. The platform is provided &quot;as is&quot; without warranties of any kind.</p>
+          <p>Reward catalog availability and point thresholds are subject to platform terms and partner merchant terms. The platform is provided &quot;as is&quot; without warranties of uninterrupted service.</p>
         </section>
 
         <section>

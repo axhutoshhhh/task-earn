@@ -76,7 +76,7 @@ export async function POST(request: Request) {
       }
     }
 
-    const pointsEarned = correctCount * 10; // 10 demo points per correct answer
+    const pointsEarned = correctCount * 10; // 10 points per correct answer
 
     // 5. Mark attempt as claimed and record the final count
     await admin
@@ -118,7 +118,7 @@ export async function POST(request: Request) {
       isExpired,
       message: isExpired
         ? 'Quiz submission exceeded the allowed time limit. 0 points awarded.'
-        : `Congratulations! You scored ${correctCount}/${questionIds.length} and earned ${pointsEarned} demo points.`,
+        : `Congratulations! You scored ${correctCount}/${questionIds.length} and earned ${pointsEarned} points.`,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Internal Server Error';

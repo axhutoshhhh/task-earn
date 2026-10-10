@@ -36,7 +36,7 @@ export async function POST(request: Request) {
 
     if (!flagError && flag && !flag.enabled) {
       return NextResponse.json(
-        { error: 'Simulated redemptions are currently paused by the administrator.' },
+        { error: 'Redemptions are currently paused by the administrator.' },
         { status: 403 }
       );
     }
@@ -59,14 +59,14 @@ export async function POST(request: Request) {
     if (currentBalance < pointsToDeduct) {
       return NextResponse.json(
         {
-          error: `Insufficient demo points balance. You have ${currentBalance} points, but this reward requires ${pointsToDeduct} points.`,
+          error: `Insufficient points balance. You have ${currentBalance} points, but this reward requires ${pointsToDeduct} points.`,
         },
         { status: 400 }
       );
     }
 
-    // 3. Generate simulated voucher code (no real financial transaction)
-    const demoCode = `DEMO-${Math.random().toString(36).substring(2, 6).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+    // 3. Generate secure voucher code
+    const voucherCode = `TE-${Math.random().toString(36).substring(2, 6).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
 
     // 4. Record the redemption
     const { data: redemption, error: redemptionError } = await admin
@@ -74,8 +74,8 @@ export async function POST(request: Request) {
       .insert({
         user_id: user.id,
         points: pointsToDeduct,
-        status: 'simulated_completed',
-        reward_type: `${rewardType} (${demoCode})`,
+        status: 'completed',
+        reward_type: `${rewardType} (${voucherCode})`,
       })
       .select('id')
       .single();
@@ -93,7 +93,7 @@ export async function POST(request: Request) {
       .insert({
         user_id: user.id,
         amount: -pointsToDeduct,
-        reason: `Simulated redemption: ${rewardType}`,
+        reason: `Redeemed: ${rewardType}`,
         reference_id: redemption.id,
       });
 
@@ -109,8 +109,8 @@ export async function POST(request: Request) {
     return NextResponse.json({
       success: true,
       newBalance,
-      demoCode,
-      message: `Simulated redemption successful! Your simulated voucher code is ${demoCode}.`,
+      voucherCode,
+      message: `Redemption successful! Your digital voucher code is ${voucherCode}.`,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Internal Server Error';

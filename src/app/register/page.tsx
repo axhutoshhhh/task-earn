@@ -162,9 +162,9 @@ export default function RegisterPage() {
               className="mt-0.5 h-4 w-4 rounded-sm border-slate-300 text-[#793FFF] focus:ring-[#793FFF]"
             />
             <label htmlFor="terms" className="text-xs text-slate-600 leading-snug">
-              I understand Task Earn is in demo mode with simulated rewards, and I agree to the{' '}
+              I agree to the{' '}
               <Link href="/terms" className="text-[#793FFF] hover:underline font-semibold">
-                Terms
+                Terms of Service
               </Link>{' '}
               and{' '}
               <Link href="/privacy" className="text-[#793FFF] hover:underline font-semibold">

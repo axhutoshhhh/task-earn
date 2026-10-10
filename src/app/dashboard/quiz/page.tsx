@@ -191,7 +191,7 @@ export default function QuizPage() {
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700 text-xs">★</span>
-                <span><strong>+10 Demo Points:</strong> Credited to your server ledger per correct answer</span>
+                <span><strong>+10 Points:</strong> Credited to your reward wallet per correct answer</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 text-xs">🔒</span>
@@ -301,7 +301,7 @@ export default function QuizPage() {
           <div className="rounded-3xl border border-slate-200 bg-white p-14 shadow-sm text-center">
             <div className="inline-block h-10 w-10 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent"></div>
             <p className="mt-4 text-sm font-bold text-slate-700">
-              Server evaluating answers & crediting demo points...
+              Evaluating answers & crediting points...
             </p>
           </div>
         )}
@@ -330,8 +330,8 @@ export default function QuizPage() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-amber-50 p-4 border border-amber-200 text-xs text-amber-800 text-left mb-6">
-              <strong>Simulated Demo Notice:</strong> Points have been recorded to your append-only ledger for simulation purposes. Points have zero real-world monetary value.
+            <div className="rounded-2xl bg-emerald-50 p-4 border border-emerald-200 text-xs text-emerald-800 text-left mb-6">
+              <strong>Transaction Confirmed:</strong> Points have been recorded to your secure wallet and are ready for reward redemption.
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3">

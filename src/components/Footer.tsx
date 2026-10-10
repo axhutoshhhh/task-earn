@@ -6,9 +6,11 @@ export default function Footer() {
     platform: [
       { name: 'Dashboard', href: '/dashboard' },
       { name: 'Speed Quizzes', href: '/dashboard/quiz' },
-      { name: 'Reward Ledger', href: '/dashboard/rewards' },
-      { name: 'Tasks (Coming Soon)', href: '/dashboard/tasks' },
-      { name: 'Surveys (Coming Soon)', href: '/dashboard/surveys' },
+      { name: 'Watch YouTube Videos', href: '/dashboard/watch' },
+      { name: 'Train AI to Earn', href: '/dashboard/train-ai' },
+      { name: 'Play Games to Earn', href: '/dashboard/games' },
+      { name: 'POV Video Bounties', href: '/dashboard/pov-videos' },
+      { name: 'Rewards Catalog', href: '/dashboard/rewards' },
     ],
     legal: [
       { name: 'Terms of Service', href: '/terms' },
@@ -53,13 +55,13 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm leading-relaxed text-slate-400">
-              The modern micro-reward demonstration platform. Complete speed quizzes and track verified demo point transactions in an auditable ledger.
+              The modern reward platform. Complete speed quizzes, watch YouTube videos, train AI models, play arcade games, and upload POV videos to earn instant digital gift cards.
             </p>
 
             <div className="rounded-xl bg-slate-900/90 p-4 border border-slate-800 text-xs text-slate-400 space-y-1">
-              <span className="font-bold text-slate-200 block">Demonstration Status</span>
+              <span className="font-bold text-slate-200 block">Security & Integrity</span>
               <p>
-                All points and redemptions are strictly simulated for testing. No real currency or monetary payouts are issued.
+                All reward transactions are authenticated server-side and recorded in an auditable transaction ledger.
               </p>
             </div>
           </div>
