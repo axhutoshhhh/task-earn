@@ -184,8 +184,8 @@ export default function FAQPage() {
                 placeholder="Search questions (e.g. Amazon, POV videos, Quizzes)..."
                 className="w-full rounded-2xl border border-[#793FFF]/20 bg-white py-3.5 pl-11 pr-4 text-sm shadow-sm focus:border-[#793FFF] focus:outline-none focus:ring-2 focus:ring-[#793FFF]/20 text-slate-900 placeholder:text-slate-400"
               />
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-base">
-                🔍
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400">
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
               </span>
               {searchQuery && (
                 <button
@@ -276,8 +276,8 @@ export default function FAQPage() {
 
         {/* Still Have Questions Box */}
         <div className="rounded-3xl border border-[#793FFF]/20 bg-gradient-to-br from-white to-[#793FFF]/5 p-8 sm:p-10 shadow-lg text-center space-y-4">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-2xl">
-            💬
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF]">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
           </div>
           <div>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
@@ -293,13 +293,15 @@ export default function FAQPage() {
               href="mailto:axhutoshhhh@gmail.com"
               className="inline-flex items-center gap-2 rounded-full bg-[#793FFF] px-6 py-3 text-xs font-bold text-white shadow-md shadow-[#793FFF]/25 hover:bg-[#682FF8] transition"
             >
-              ✉️ Email axhutoshhhh@gmail.com
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
+              Email axhutoshhhh@gmail.com
             </a>
             <a
               href="tel:8302072636"
               className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 text-xs font-bold text-slate-800 hover:bg-slate-50 transition"
             >
-              📞 Call +91 8302072636
+              <svg className="w-4 h-4 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+              Call +91 8302072636
             </a>
             <Link
               href="/contact"

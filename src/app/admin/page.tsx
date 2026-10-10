@@ -37,8 +37,8 @@ export default async function AdminPage() {
     return (
       <div className="min-h-screen bg-[#f7f4fd] py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-md rounded-2xl border border-rose-200 bg-white p-8 text-center shadow-sm">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose-100 text-3xl">
-            🔒
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-rose-100 text-rose-600">
+            <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
           </div>
           <h1 className="mt-4 text-xl font-bold text-slate-900">Admin Access Restricted</h1>
           <p className="mt-2 text-xs sm:text-sm text-slate-600">

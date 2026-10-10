@@ -182,19 +182,27 @@ export default function QuizPage() {
 
             <div className="mt-8 rounded-2xl bg-slate-50 p-6 text-left text-xs sm:text-sm text-slate-700 space-y-3.5 border border-slate-200">
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#793FFF]/15 font-bold text-[#793FFF] text-xs">✓</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#793FFF]/15 font-bold text-[#793FFF] text-xs">
+                  <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                </span>
                 <span className="font-semibold text-slate-900">5 Multiple-Choice Questions</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-700 text-xs">⏱</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-100 font-bold text-amber-700 text-xs">
+                  <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+                </span>
                 <span><strong>7 Seconds per Question:</strong> Auto-advances when time expires</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700 text-xs">★</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700 text-xs">
+                  <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
+                </span>
                 <span><strong>+10 Points:</strong> Credited to your reward wallet per correct answer</span>
               </div>
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 text-xs">🔒</span>
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 text-xs">
+                  <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" /></svg>
+                </span>
                 <span><strong>Server Verified:</strong> Answers evaluated securely with anti-replay protection</span>
               </div>
             </div>
@@ -243,7 +251,7 @@ export default function QuizPage() {
                     : 'bg-[#793FFF]/10 text-[#793FFF]'
                 }`}
               >
-                <span>⏱</span>
+                <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
                 <span>{timeLeft}s</span>
               </div>
             </div>
@@ -276,7 +284,11 @@ export default function QuizPage() {
                       </span>
                       <span>{option}</span>
                     </div>
-                    {isSelected && <span className="text-[#793FFF] font-bold">✓</span>}
+                    {isSelected && (
+                      <svg className="h-4 w-4 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    )}
                   </button>
                 );
               })}
@@ -309,8 +321,14 @@ export default function QuizPage() {
         {/* 5. RESULT STATE */}
         {gameState === 'result' && result && (
           <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm text-center">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100 text-3xl text-emerald-600">
-              🏆
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+              <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                <path d="M4 22h16" />
+                <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1h10v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34" />
+                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+              </svg>
             </div>
             <h2 className="mt-4 text-2xl font-black text-slate-950">Quiz Finished!</h2>
             <p className="mt-2 text-sm text-slate-600">{result.message}</p>

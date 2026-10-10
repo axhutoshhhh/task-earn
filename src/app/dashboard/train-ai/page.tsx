@@ -111,8 +111,19 @@ export default function TrainAIPage() {
 
         {isAllDone ? (
           <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center shadow-sm space-y-5">
-            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl bg-emerald-100 text-4xl text-emerald-600">
-              🤖
+            <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-3xl bg-emerald-100 text-emerald-600">
+              <svg className="h-10 w-10 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <rect x="9" y="9" width="6" height="6" />
+                <line x1="9" y1="1" x2="9" y2="4" />
+                <line x1="15" y1="1" x2="15" y2="4" />
+                <line x1="9" y1="20" x2="9" y2="23" />
+                <line x1="15" y1="20" x2="15" y2="23" />
+                <line x1="20" y1="9" x2="23" y2="9" />
+                <line x1="20" y1="14" x2="23" y2="14" />
+                <line x1="1" y1="9" x2="4" y2="9" />
+                <line x1="1" y1="14" x2="4" y2="14" />
+              </svg>
             </div>
             <h2 className="text-2xl font-black text-slate-950">AI Training Batch Completed!</h2>
             <p className="text-sm text-slate-600 max-w-md mx-auto">
@@ -180,7 +191,10 @@ export default function TrainAIPage() {
                       Model A
                     </span>
                     {selectedWinner === 'A' && (
-                      <span className="text-xs font-bold text-[#793FFF]">✓ Selected Better</span>
+                      <span className="text-xs font-bold text-[#793FFF] inline-flex items-center gap-1">
+                        <svg className="h-3.5 w-3.5 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                        Selected Better
+                      </span>
                     )}
                   </div>
                   <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-mono whitespace-pre-wrap">
@@ -214,7 +228,10 @@ export default function TrainAIPage() {
                       Model B
                     </span>
                     {selectedWinner === 'B' && (
-                      <span className="text-xs font-bold text-[#793FFF]">✓ Selected Better</span>
+                      <span className="text-xs font-bold text-[#793FFF] inline-flex items-center gap-1">
+                        <svg className="h-3.5 w-3.5 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                        Selected Better
+                      </span>
                     )}
                   </div>
                   <div className="text-xs sm:text-sm text-slate-700 leading-relaxed font-mono whitespace-pre-wrap">
@@ -269,8 +286,9 @@ export default function TrainAIPage() {
             </div>
 
             {toastMessage && (
-              <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-center text-xs font-bold text-emerald-800 animate-bounce">
-                🎉 {toastMessage}
+              <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-center text-xs font-bold text-emerald-800 flex items-center justify-center gap-2">
+                <svg className="h-4 w-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                <span>{toastMessage}</span>
               </div>
             )}
           </div>

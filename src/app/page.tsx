@@ -83,8 +83,9 @@ export default function Home() {
                   </h3>
                   <div className="mt-3 flex flex-wrap gap-2 text-xs">
                     <span className="rounded-lg bg-slate-100 px-3 py-1.5 font-medium text-slate-600">A. Python</span>
-                    <span className="rounded-lg bg-[#793FFF]/10 border border-[#793FFF]/30 px-3 py-1.5 font-bold text-[#793FFF]">
-                      B. JavaScript ✓
+                    <span className="inline-flex items-center gap-1 rounded-lg bg-[#793FFF]/10 border border-[#793FFF]/30 px-3 py-1.5 font-bold text-[#793FFF]">
+                      B. JavaScript
+                      <svg className="w-3.5 h-3.5 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
                     </span>
                     <span className="rounded-lg bg-slate-100 px-3 py-1.5 font-medium text-slate-600">C. C++</span>
                     <span className="rounded-lg bg-slate-100 px-3 py-1.5 font-medium text-slate-600">D. Java</span>
@@ -455,19 +456,27 @@ export default function Home() {
 
               <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-300">
                 <div className="flex items-start gap-3">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">✓</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12" /></svg>
+                  </span>
                   <span>Instant digital gift card and voucher delivery directly upon redemption</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">✓</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12" /></svg>
+                  </span>
                   <span>No banking information, UPI PINs, or sensitive financial passwords ever requested</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">✓</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12" /></svg>
+                  </span>
                   <span>Server-enforced timing and answer verification protects honest users</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">✓</span>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400 font-bold text-xs">
+                    <svg className="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><polyline points="20 6 9 17 4 12" /></svg>
+                  </span>
                   <span>Transparent append-only ledger permanently archives all credit and debit records</span>
                 </div>
               </div>

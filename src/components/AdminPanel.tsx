@@ -159,14 +159,24 @@ export default function AdminPanel({
       {/* Notifications */}
       {message && (
         <div className="rounded-xl border border-emerald-300 bg-emerald-50 p-4 text-emerald-900 flex items-center justify-between">
-          <span className="text-sm font-medium">✓ {message}</span>
-          <button onClick={() => setMessage(null)} className="font-bold text-sm">✕</button>
+          <div className="flex items-center gap-2">
+            <svg className="w-4 h-4 shrink-0 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+            <span className="text-sm font-medium">{message}</span>
+          </div>
+          <button onClick={() => setMessage(null)} className="font-bold text-slate-500 hover:text-slate-800 p-1">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
         </div>
       )}
       {error && (
         <div className="rounded-xl border border-rose-300 bg-rose-50 p-4 text-rose-900 flex items-center justify-between">
-          <span className="text-sm font-medium">⚠️ {error}</span>
-          <button onClick={() => setError(null)} className="font-bold text-sm">✕</button>
+          <div className="flex items-center gap-2">
+            <svg className="w-4 h-4 shrink-0 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
+            <span className="text-sm font-medium">{error}</span>
+          </div>
+          <button onClick={() => setError(null)} className="font-bold text-slate-500 hover:text-slate-800 p-1">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
+          </button>
         </div>
       )}
 
@@ -290,7 +300,10 @@ export default function AdminPanel({
                         <span className="mr-1.5">{String.fromCharCode(65 + oIdx)}.</span>
                         <span>{opt}</span>
                         {oIdx === q.correct_index && (
-                          <span className="ml-1 text-emerald-600 font-bold">✓ (Correct)</span>
+                          <span className="ml-1 inline-flex items-center gap-0.5 text-emerald-600 font-bold">
+                            <svg className="w-3.5 h-3.5 inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                            (Correct)
+                          </span>
                         )}
                       </div>
                     ))}

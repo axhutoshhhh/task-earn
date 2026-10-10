@@ -63,8 +63,11 @@ export default function ContactPage() {
           {/* Email Card */}
           <div className="rounded-3xl border border-[#793FFF]/15 bg-white p-7 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-2xl text-[#793FFF]">
-                ✉️
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF]">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900">Direct Email</h3>
               <p className="mt-1 text-xs text-slate-500">Official support and business desk</p>
@@ -80,9 +83,9 @@ export default function ContactPage() {
               <button
                 type="button"
                 onClick={() => copyToClipboard('axhutoshhhh@gmail.com', 'email')}
-                className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition"
+                className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition cursor-pointer"
               >
-                {copiedType === 'email' ? '✓ Copied!' : 'Copy Email'}
+                {copiedType === 'email' ? 'Copied' : 'Copy Email'}
               </button>
             </div>
           </div>
@@ -90,8 +93,10 @@ export default function ContactPage() {
           {/* Phone Card */}
           <div className="rounded-3xl border border-[#793FFF]/15 bg-white p-7 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-2xl text-emerald-600">
-                📞
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900">Direct Phone Support</h3>
               <p className="mt-1 text-xs text-slate-500">Call or message for urgent queries</p>
@@ -108,9 +113,9 @@ export default function ContactPage() {
                 <button
                   type="button"
                   onClick={() => copyToClipboard('8302072636', 'phone')}
-                  className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition"
+                  className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-200 transition cursor-pointer"
                 >
-                  {copiedType === 'phone' ? '✓ Copied!' : 'Copy'}
+                  {copiedType === 'phone' ? 'Copied' : 'Copy'}
                 </button>
                 <a
                   href="tel:8302072636"
@@ -125,8 +130,10 @@ export default function ContactPage() {
           {/* Operations & Turnaround */}
           <div className="rounded-3xl border border-[#793FFF]/15 bg-white p-7 shadow-sm hover:shadow-md transition flex flex-col justify-between sm:col-span-2 lg:col-span-1">
             <div>
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-2xl text-cyan-700">
-                ⚡
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-100 text-cyan-700">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900">Fast Resolution</h3>
               <p className="mt-1 text-xs text-slate-500">Dedicated assistance for users</p>
@@ -137,7 +144,10 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-100">
-              <span className="text-[11px] font-semibold text-emerald-600">✓ Dedicated Lead Representative</span>
+              <span className="text-[11px] font-semibold text-emerald-600 flex items-center gap-1">
+                <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                Dedicated Lead Representative
+              </span>
             </div>
           </div>
         </div>
@@ -154,8 +164,8 @@ export default function ContactPage() {
 
             {submitted ? (
               <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-8 text-center space-y-3">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-2xl text-emerald-700">
-                  ✓
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                  <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
                 </div>
                 <h3 className="text-xl font-bold text-emerald-900">Message Delivered Successfully!</h3>
                 <p className="text-xs sm:text-sm text-emerald-800 max-w-md mx-auto">

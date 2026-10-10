@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import type { User } from '@supabase/supabase-js';
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
@@ -16,7 +18,6 @@ export default function Navbar() {
   const supabase = createClient();
 
   useEffect(() => {
-    // 1. Check active user session
     async function checkUser() {
       const {
         data: { user: currentUser },
@@ -47,7 +48,6 @@ export default function Navbar() {
 
     checkUser();
 
-    // 2. Listen to real-time auth changes
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_event, session) => {
@@ -99,19 +99,16 @@ export default function Navbar() {
 
   const loggedInNavLinks = [
     { name: 'Dashboard', href: '/dashboard' },
-    { name: 'Speed Quizzes', href: '/dashboard/quiz' },
-    { name: 'Watch Videos', href: '/dashboard/watch' },
-    { name: 'Train AI', href: '/dashboard/train-ai' },
-    { name: 'Play Games', href: '/dashboard/games' },
-    { name: 'POV Bounties', href: '/dashboard/pov-videos' },
     { name: 'Rewards', href: '/dashboard/rewards' },
+    { name: 'FAQ', href: '/faq' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#793FFF]/15 bg-[#f7f4fd]/90 backdrop-blur-md transition-all">
+    <header className="sticky top-0 z-50 w-full border-b border-[#793FFF]/15 bg-[#f7f4fd]/95 backdrop-blur-md transition-all">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center shrink-0">
           <Link
             href={user ? '/dashboard' : '/'}
             className="group flex items-center gap-3 text-xl font-extrabold tracking-tight text-slate-900"
@@ -138,33 +135,55 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - Spacious & Clean */}
         <nav
-          className="hidden lg:flex items-center gap-1 bg-white/80 px-4 py-1.5 rounded-full border border-slate-200/80 shadow-xs"
+          className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600"
           aria-label="Main Navigation"
         >
-          {(user ? loggedInNavLinks : publicNavLinks).map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="rounded-full px-3.5 py-1.5 text-xs sm:text-sm font-semibold text-slate-600 transition-colors hover:text-slate-900 hover:bg-slate-100/70"
-            >
-              {link.name}
-            </Link>
-          ))}
+          {(user ? loggedInNavLinks : publicNavLinks).map((link) => {
+            const isActive =
+              link.href === '/dashboard'
+                ? pathname.startsWith('/dashboard') && !pathname.includes('/rewards')
+                : pathname === link.href;
+
+            return (
+              <Link
+                key={link.name}
+                href={link.href}
+                className={`transition-colors hover:text-[#793FFF] ${
+                  isActive ? 'font-bold text-[#793FFF]' : 'text-slate-600'
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
         </nav>
 
-        {/* Right CTA / User Area */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* Right CTA / User Area - Spacious with proper gaps */}
+        <div className="hidden md:flex items-center gap-5 shrink-0">
           {user ? (
-            <div className="flex items-center gap-3">
-              {/* Wallet Pill */}
+            <div className="flex items-center gap-4">
+              {/* Wallet Pill - Sleek Vector Icon, NO emoji */}
               <Link
                 href="/dashboard/rewards"
-                className="inline-flex items-center gap-2 rounded-full border border-[#793FFF]/30 bg-[#793FFF]/10 px-4 py-2 text-xs font-black text-[#793FFF] transition hover:bg-[#793FFF]/20 shadow-xs"
+                className="inline-flex items-center gap-2 rounded-full border border-[#793FFF]/25 bg-[#793FFF]/8 px-4 py-2 text-xs font-black text-[#793FFF] transition hover:bg-[#793FFF]/15 hover:border-[#793FFF]/40 shadow-xs"
+                title="Reward Wallet Balance"
               >
-                <span>🪙</span>
-                <span>{balance !== null ? `${balance} Pts` : 'Loading...'}</span>
+                <svg
+                  className="h-3.5 w-3.5 text-[#793FFF]"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M14.5 9h-4a1.5 1.5 0 0 0 0 3h3a1.5 1.5 0 0 1 0 3h-4" />
+                  <path d="M12 7v10" />
+                </svg>
+                <span>{balance !== null ? `${balance} PTS` : '0 PTS'}</span>
               </Link>
 
               {/* User Dropdown */}
@@ -172,27 +191,43 @@ export default function Navbar() {
                 <button
                   type="button"
                   onClick={() => setIsUserMenuOpen(!isUserMenuOpen)}
-                  className="flex items-center gap-2.5 rounded-full border border-slate-200 bg-white p-1.5 pr-3 text-xs font-bold text-slate-800 shadow-xs hover:border-[#793FFF]/40 transition"
+                  className="flex items-center gap-2.5 rounded-full border border-slate-200/90 bg-white p-1.5 pr-3 text-xs font-bold text-slate-800 shadow-xs hover:border-[#793FFF]/40 hover:shadow-sm transition cursor-pointer"
                   aria-expanded={isUserMenuOpen}
                 >
-                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white font-black text-xs">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white font-black text-xs shadow-xs">
                     {displayName.charAt(0).toUpperCase()}
                   </div>
-                  <span className="max-w-[100px] truncate">{displayName}</span>
-                  <span className="text-[10px] text-slate-400">▼</span>
+                  <span className="max-w-[120px] truncate">{displayName}</span>
+                  <svg
+                    className={`h-3 w-3 text-slate-400 transition-transform duration-200 ${
+                      isUserMenuOpen ? 'rotate-180' : ''
+                    }`}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
                 </button>
 
-                {/* Dropdown Menu */}
+                {/* Dropdown Menu - Sleek SVGs, NO emojis */}
                 {isUserMenuOpen && (
-                  <div className="absolute right-0 mt-2 w-64 rounded-3xl border border-[#793FFF]/20 bg-white p-3 shadow-2xl z-50">
+                  <div className="absolute right-0 mt-2.5 w-64 rounded-3xl border border-[#793FFF]/20 bg-white p-3 shadow-2xl z-50">
                     <div className="border-b border-slate-100 p-3">
                       <p className="text-xs font-extrabold text-slate-900 truncate">
                         {displayName}
                       </p>
                       <p className="text-[11px] text-slate-500 truncate">{user.email}</p>
-                      <div className="mt-2.5 flex items-center justify-between rounded-xl bg-[#793FFF]/10 p-2 text-xs font-bold text-[#793FFF]">
-                        <span>Reward Wallet</span>
-                        <span>{balance !== null ? `${balance} Pts` : '0 Pts'}</span>
+                      <div className="mt-2.5 flex items-center justify-between rounded-xl bg-[#793FFF]/10 p-2.5 text-xs font-bold text-[#793FFF]">
+                        <span className="flex items-center gap-1.5">
+                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <line x1="2" y1="10" x2="22" y2="10" />
+                          </svg>
+                          Reward Wallet
+                        </span>
+                        <span>{balance !== null ? `${balance} PTS` : '0 PTS'}</span>
                       </div>
                     </div>
 
@@ -202,7 +237,12 @@ export default function Navbar() {
                         onClick={() => setIsUserMenuOpen(false)}
                         className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-[#793FFF]/10 hover:text-[#793FFF] transition"
                       >
-                        <span>📊</span>
+                        <svg className="h-4 w-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <rect x="3" y="3" width="7" height="7" />
+                          <rect x="14" y="3" width="7" height="7" />
+                          <rect x="14" y="14" width="7" height="7" />
+                          <rect x="3" y="14" width="7" height="7" />
+                        </svg>
                         <span>Dashboard Overview</span>
                       </Link>
                       <Link
@@ -210,7 +250,11 @@ export default function Navbar() {
                         onClick={() => setIsUserMenuOpen(false)}
                         className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-[#793FFF]/10 hover:text-[#793FFF] transition"
                       >
-                        <span>🎁</span>
+                        <svg className="h-4 w-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <polyline points="20 12 20 22 4 22 4 12" />
+                          <rect x="2" y="7" width="20" height="5" />
+                          <line x1="12" y1="22" x2="12" y2="7" />
+                        </svg>
                         <span>Rewards Catalog</span>
                       </Link>
                       <Link
@@ -218,7 +262,11 @@ export default function Navbar() {
                         onClick={() => setIsUserMenuOpen(false)}
                         className="flex items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition"
                       >
-                        <span>❓</span>
+                        <svg className="h-4 w-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <circle cx="12" cy="12" r="10" />
+                          <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                          <line x1="12" y1="17" x2="12.01" y2="17" />
+                        </svg>
                         <span>FAQ & Help Desk</span>
                       </Link>
                     </div>
@@ -227,9 +275,13 @@ export default function Navbar() {
                       <button
                         type="button"
                         onClick={handleSignOut}
-                        className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-bold text-rose-600 hover:bg-rose-50 transition"
+                        className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2 text-xs font-bold text-rose-600 hover:bg-rose-50 transition cursor-pointer"
                       >
-                        <span>🚪</span>
+                        <svg className="h-4 w-4 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                          <polyline points="16 17 21 12 16 7" />
+                          <line x1="21" y1="12" x2="9" y2="12" />
+                        </svg>
                         <span>Sign Out</span>
                       </button>
                     </div>
@@ -295,7 +347,6 @@ export default function Navbar() {
         <div className="md:hidden border-b border-[#793FFF]/15 bg-[#f7f4fd] px-4 pt-3 pb-6 shadow-xl" id="mobile-menu">
           {user ? (
             <div className="space-y-4">
-              {/* User Card */}
               <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-xs">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
@@ -310,14 +361,17 @@ export default function Navbar() {
                   <Link
                     href="/dashboard/rewards"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="rounded-full bg-[#793FFF]/10 border border-[#793FFF]/20 px-3 py-1 text-xs font-bold text-[#793FFF]"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-[#793FFF]/10 border border-[#793FFF]/20 px-3 py-1 text-xs font-bold text-[#793FFF]"
                   >
-                    🪙 {balance !== null ? `${balance} Pts` : '0 Pts'}
+                    <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <circle cx="12" cy="12" r="9" />
+                      <path d="M12 7v10" />
+                    </svg>
+                    <span>{balance !== null ? `${balance} PTS` : '0 PTS'}</span>
                   </Link>
                 </div>
               </div>
 
-              {/* Navigation Links */}
               <nav aria-label="Mobile Navigation" className="flex flex-col gap-1.5">
                 {loggedInNavLinks.map((link) => (
                   <Link
@@ -329,13 +383,6 @@ export default function Navbar() {
                     {link.name}
                   </Link>
                 ))}
-                <Link
-                  href="/faq"
-                  className="rounded-xl px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-white hover:text-slate-900"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  FAQ & Support
-                </Link>
               </nav>
 
               <div className="pt-2 border-t border-slate-200">
@@ -344,7 +391,7 @@ export default function Navbar() {
                   onClick={handleSignOut}
                   className="w-full rounded-xl bg-rose-50 border border-rose-200 py-3 text-center text-xs font-bold text-rose-700 hover:bg-rose-100 transition"
                 >
-                  Sign Out of TaskEarn
+                  Sign Out
                 </button>
               </div>
             </div>

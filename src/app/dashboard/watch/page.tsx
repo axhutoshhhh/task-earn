@@ -199,9 +199,10 @@ export default function WatchPage() {
                 {claimedVideos.includes(selectedVideo.id) ? (
                   <button
                     disabled
-                    className="rounded-full bg-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 cursor-default"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-6 py-2.5 text-xs font-bold text-emerald-800 cursor-default"
                   >
-                    ✓ Reward Claimed (+{selectedVideo.points} Pts)
+                    <svg className="h-3.5 w-3.5 text-emerald-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                    <span>Reward Claimed (+{selectedVideo.points} Pts)</span>
                   </button>
                 ) : (
                   <button
@@ -219,8 +220,9 @@ export default function WatchPage() {
               </div>
 
               {claimMessage && (
-                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-center text-xs font-bold text-emerald-800 animate-bounce">
-                  🎉 {claimMessage}
+                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-3.5 text-center text-xs font-bold text-emerald-800 flex items-center justify-center gap-2">
+                  <svg className="h-4 w-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>{claimMessage}</span>
                 </div>
               )}
             </div>
@@ -282,7 +284,10 @@ export default function WatchPage() {
                     <div className="mt-3 flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
                       <span className="font-bold text-emerald-600">+{video.points} Pts</span>
                       {isClaimed ? (
-                        <span className="text-emerald-700 font-semibold text-[11px]">✓ Claimed</span>
+                        <span className="text-emerald-700 font-semibold text-[11px] inline-flex items-center gap-1">
+                          <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                          Claimed
+                        </span>
                       ) : (
                         <span className="text-slate-400 text-[11px]">Ready to Watch</span>
                       )}

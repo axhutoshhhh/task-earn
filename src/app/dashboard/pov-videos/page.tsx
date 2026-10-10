@@ -68,7 +68,7 @@ export default function POVVideosPage() {
       setIsSubmitting(false);
       setSubmittedBounties((prev) => [...prev, selectedBounty.id]);
       setToastMessage(
-        `✓ Video submitted successfully! +${selectedBounty.rewardPoints} Points credited upon spatial AI verification.`
+        `Video submitted successfully! +${selectedBounty.rewardPoints} Points credited upon spatial AI verification.`
       );
       setUploadedFile(null);
     }, 1500);
@@ -121,8 +121,11 @@ export default function POVVideosPage() {
 
               {/* Upload Dropzone */}
               <div className="rounded-2xl border-2 border-dashed border-[#793FFF]/30 bg-[#793FFF]/5 p-8 text-center transition hover:border-[#793FFF]">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-2xl text-[#793FFF]">
-                  📹
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF]">
+                  <svg className="h-7 w-7 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M23 7l-7 5 7 5V7z" />
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                  </svg>
                 </div>
                 <h3 className="mt-3 text-sm font-bold text-slate-900">
                   {uploadedFile ? uploadedFile.name : 'Upload Your POV Video File'}
@@ -174,8 +177,9 @@ export default function POVVideosPage() {
               </div>
 
               {toastMessage && (
-                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-center text-xs font-bold text-emerald-800">
-                  🎉 {toastMessage}
+                <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-center text-xs font-bold text-emerald-800 flex items-center justify-center gap-2">
+                  <svg className="h-4 w-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                  <span>{toastMessage}</span>
                 </div>
               )}
             </div>
@@ -218,7 +222,10 @@ export default function POVVideosPage() {
                     <div className="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                       <span className="text-slate-500">Duration: {bounty.duration}</span>
                       {isSubmitted ? (
-                        <span className="text-emerald-600 font-bold">✓ Submitted</span>
+                        <span className="text-emerald-600 font-bold inline-flex items-center gap-1">
+                          <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
+                          Submitted
+                        </span>
                       ) : (
                         <span className="text-[#793FFF] font-semibold">Select Bounty →</span>
                       )}
