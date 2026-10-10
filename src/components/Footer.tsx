@@ -5,8 +5,8 @@ export default function Footer() {
   const links = {
     platform: [
       { name: 'Dashboard', href: '/dashboard' },
-      { name: 'Quizzes', href: '/quizzes' },
-      { name: 'Rewards', href: '/rewards' },
+      { name: 'Quizzes', href: '/dashboard/quiz' },
+      { name: 'Rewards', href: '/dashboard/rewards' },
     ],
     legal: [
       { name: 'Terms of Service', href: '/terms' },
