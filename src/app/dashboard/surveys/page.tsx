@@ -60,13 +60,13 @@ export default function SurveysPage() {
           <div className="mt-10 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/dashboard/quiz"
-              className="w-full sm:w-auto rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 transition text-center"
+              className="w-full sm:w-auto rounded-full bg-[#793FFF] px-7 py-3.5 text-sm font-bold text-white shadow-md shadow-[#793FFF]/25 hover:bg-[#682FF8] transition text-center"
             >
               Test Speed Quizzes Instead →
             </Link>
             <Link
               href="/dashboard"
-              className="w-full sm:w-auto rounded-xl bg-slate-100 px-6 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-200 transition text-center"
+              className="w-full sm:w-auto rounded-full border border-slate-200 bg-white px-7 py-3.5 text-sm font-bold text-slate-700 hover:bg-slate-50 transition text-center shadow-xs"
             >
               Return to Dashboard
             </Link>

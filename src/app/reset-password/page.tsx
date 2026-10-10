@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -21,18 +21,20 @@ export default function ResetPasswordPage() {
 
   useEffect(() => {
     const checkSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
       setUser(session?.user ?? null);
       setIsCheckingSession(false);
     };
 
     checkSession();
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_event, session) => {
-        setUser(session?.user ?? null);
-      }
-    );
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
 
     return () => {
       subscription.unsubscribe();
@@ -81,110 +83,119 @@ export default function ResetPasswordPage() {
     if (updateError) {
       setError(updateError.message);
     } else {
-      setMessage('Password updated successfully. Redirecting...');
+      setMessage('Password updated successfully. Redirecting to dashboard...');
       setTimeout(() => {
         router.push('/dashboard');
-      }, 2000);
+      }, 1500);
     }
     setLoading(false);
   };
 
   if (isCheckingSession) {
-    return <div className="flex min-h-screen items-center justify-center">Loading...</div>;
+    return (
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50">
+        <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent"></div>
+      </div>
+    );
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
-      <div className="w-full max-w-md space-y-8 rounded-xl bg-white p-8 shadow-lg">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50/70 p-4 sm:p-8">
+      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
+        <div className="text-center">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h1 className="mt-4 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
             {user ? 'Set New Password' : 'Reset Password'}
-          </h2>
+          </h1>
+          <p className="mt-1 text-xs text-slate-600">
+            {user
+              ? 'Enter your new account password below'
+              : 'Enter your email to receive recovery instructions'}
+          </p>
         </div>
 
-        {user ? (
-          <form className="mt-8 space-y-6" onSubmit={handleUpdatePassword}>
-            <div className="space-y-4 rounded-md shadow-sm">
-              <div>
-                <label htmlFor="new-password" className="sr-only">New Password</label>
-                <input
-                  id="new-password"
-                  name="new-password"
-                  type="password"
-                  required
-                  className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                  placeholder="New Password"
-                  value={newPassword}
-                  onChange={(e) => setNewPassword(e.target.value)}
-                />
-              </div>
-              <div>
-                <label htmlFor="confirm-password" className="sr-only">Confirm Password</label>
-                <input
-                  id="confirm-password"
-                  name="confirm-password"
-                  type="password"
-                  required
-                  className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                  placeholder="Confirm New Password"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                />
-              </div>
-            </div>
+        {error && (
+          <div className="mt-6 rounded-2xl border border-rose-300 bg-rose-50 p-3.5 text-xs sm:text-sm font-medium text-rose-700">
+            ⚠️ {error}
+          </div>
+        )}
 
-            {error && <div className="text-red-500 text-sm mt-2">{error}</div>}
-            {message && <div className="text-green-500 text-sm mt-2">{message}</div>}
+        {message && (
+          <div className="mt-6 rounded-2xl border border-emerald-300 bg-emerald-50 p-3.5 text-xs sm:text-sm font-medium text-emerald-700">
+            ✓ {message}
+          </div>
+        )}
+
+        {user ? (
+          <form className="mt-6 space-y-4" onSubmit={handleUpdatePassword}>
+            <div>
+              <label className="block text-xs font-bold text-slate-700 mb-1">New Password</label>
+              <input
+                type="password"
+                required
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="At least 6 characters"
+                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+              />
+            </div>
 
             <div>
-              <button
-                type="submit"
-                disabled={loading}
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
-              >
-                {loading ? 'Updating...' : 'Update Password'}
-              </button>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Confirm Password</label>
+              <input
+                type="password"
+                required
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Repeat new password"
+                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+              />
             </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
+            >
+              {loading ? 'Updating Password...' : 'Update Password →'}
+            </button>
           </form>
         ) : (
-          <form className="mt-8 space-y-6" onSubmit={handleRequestReset}>
-            <div className="space-y-4 rounded-md shadow-sm">
-              <div>
-                <label htmlFor="email-address" className="sr-only">Email address</label>
-                <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                  placeholder="Email address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-            </div>
-
-            {error && <div className="text-red-500 text-sm mt-2">{error}</div>}
-            {message && <div className="text-green-500 text-sm mt-2">{message}</div>}
-
+          <form className="mt-6 space-y-4" onSubmit={handleRequestReset}>
             <div>
-              <button
-                type="submit"
-                disabled={loading}
-                className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
-              >
-                {loading ? 'Sending...' : 'Send Reset Link'}
-              </button>
+              <label className="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="name@example.com"
+                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+              />
             </div>
-            
-            <div className="text-center mt-4">
-              <Link href="/login" className="text-sm font-medium text-blue-600 hover:text-blue-500">
-                Back to login
-              </Link>
-            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
+            >
+              {loading ? 'Sending Link...' : 'Send Reset Link →'}
+            </button>
           </form>
         )}
+
+        <div className="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-600">
+          Remembered your password?{' '}
+          <Link href="/login" className="font-bold text-[#793FFF] hover:underline">
+            Back to sign in
+          </Link>
+        </div>
       </div>
     </div>
   );

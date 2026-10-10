@@ -5,8 +5,10 @@ export default function Footer() {
   const links = {
     platform: [
       { name: 'Dashboard', href: '/dashboard' },
-      { name: 'Quizzes', href: '/dashboard/quiz' },
-      { name: 'Rewards', href: '/dashboard/rewards' },
+      { name: 'Speed Quizzes', href: '/dashboard/quiz' },
+      { name: 'Reward Ledger', href: '/dashboard/rewards' },
+      { name: 'Tasks (Coming Soon)', href: '/dashboard/tasks' },
+      { name: 'Surveys (Coming Soon)', href: '/dashboard/surveys' },
     ],
     legal: [
       { name: 'Terms of Service', href: '/terms' },
@@ -14,79 +16,116 @@ export default function Footer() {
       { name: 'Reward Rules', href: '/reward-rules' },
     ],
     support: [
-      { name: 'FAQ', href: '/faq' },
-      { name: 'Contact', href: '/contact' },
+      { name: 'Frequently Asked Questions', href: '/faq' },
+      { name: 'Contact Us', href: '/contact' },
     ],
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          {/* Branding & Tagline */}
-          <div className="space-y-8 xl:col-span-1">
-            <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-white" aria-label="Task Earn Home">
-              <span aria-hidden="true">⚡</span> Task Earn
+    <footer className="bg-slate-950 text-slate-400 border-t border-slate-900">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="xl:grid xl:grid-cols-4 xl:gap-12">
+          {/* Brand & Mission Column */}
+          <div className="space-y-6 xl:col-span-1">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-3 text-xl font-black tracking-tight text-white"
+              aria-label="Task Earn Home"
+            >
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4]">
+                <svg
+                  className="h-4 w-4 text-white"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <span className="text-xl font-black text-white">
+                Task<span className="text-[#793FFF]">Earn</span>
+              </span>
             </Link>
-            <p className="text-sm leading-6 text-gray-400">
-              Earn demo rewards by completing quizzes.
+
+            <p className="text-sm leading-relaxed text-slate-400">
+              The modern micro-reward demonstration platform. Complete speed quizzes and track verified demo point transactions in an auditable ledger.
             </p>
-            <div className="rounded-md bg-gray-800 p-4 border border-gray-700">
-              <p className="text-xs font-medium text-gray-400">
-                <strong className="text-white">Disclaimer:</strong> Task Earn is currently in demo mode. All points and rewards are simulated and have no real-world value.
+
+            <div className="rounded-xl bg-slate-900/90 p-4 border border-slate-800 text-xs text-slate-400 space-y-1">
+              <span className="font-bold text-slate-200 block">Demonstration Status</span>
+              <p>
+                All points and redemptions are strictly simulated for testing. No real currency or monetary payouts are issued.
               </p>
             </div>
           </div>
 
-          {/* Links */}
-          <nav className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0" aria-label="Footer Navigation">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Platform</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {links.platform.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-white">Legal</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {links.legal.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          {/* Links Columns */}
+          <nav className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-3 xl:col-span-3 xl:mt-0" aria-label="Footer Navigation">
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-200">
+                Ecosystem
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {links.platform.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-slate-400 hover:text-white transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm font-semibold leading-6 text-white">Support</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {links.support.map((item) => (
-                    <li key={item.name}>
-                      <Link href={item.href} className="text-sm leading-6 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+
+            <div>
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-200">
+                Compliance & Legal
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {links.legal.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-slate-400 hover:text-white transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="col-span-2 sm:col-span-1">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-200">
+                Support
+              </h3>
+              <ul className="mt-4 space-y-3">
+                {links.support.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm text-slate-400 hover:text-white transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </nav>
         </div>
-        
-        <div className="mt-16 border-t border-gray-800 pt-8 sm:mt-20 lg:mt-24">
-          <p className="text-xs leading-5 text-gray-400">
-            &copy; 2024 Task Earn. All rights reserved.
-          </p>
+
+        {/* Bottom copyright line */}
+        <div className="mt-16 border-t border-slate-900 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} Task Earn. All rights reserved.</p>
+          <p>Built with Next.js, TypeScript, Tailwind CSS & Supabase.</p>
         </div>
       </div>
     </footer>

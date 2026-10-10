@@ -179,7 +179,7 @@ export default function AdminPanel({
         </div>
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
           <span className="text-xs font-semibold uppercase text-slate-500">Total Quiz Questions</span>
-          <p className="mt-2 text-3xl font-extrabold text-indigo-600">{questions.length}</p>
+          <p className="mt-2 text-3xl font-extrabold text-[#793FFF]">{questions.length}</p>
           <p className="mt-1 text-xs text-slate-500">
             {questions.filter((q) => q.is_active).length} active questions in pool
           </p>
@@ -247,7 +247,7 @@ export default function AdminPanel({
           <button
             type="button"
             onClick={() => setShowAddModal(true)}
-            className="rounded-xl bg-indigo-600 px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-500 transition shadow-xs"
+            className="rounded-xl bg-[#793FFF] px-4 py-2 text-xs font-semibold text-white hover:bg-indigo-500 transition shadow-xs"
           >
             + Add New Question
           </button>
@@ -339,7 +339,7 @@ export default function AdminPanel({
                   value={newQuestionText}
                   onChange={(e) => setNewQuestionText(e.target.value)}
                   placeholder="e.g. What is the capital of France?"
-                  className="w-full rounded-xl border border-slate-300 p-2.5 text-sm focus:border-indigo-600 focus:outline-none"
+                  className="w-full rounded-xl border border-slate-300 p-2.5 text-sm focus:border-[#793FFF] focus:outline-none"
                 />
               </div>
 
@@ -355,7 +355,7 @@ export default function AdminPanel({
                       checked={newCorrectIndex === idx}
                       onChange={() => setNewCorrectIndex(idx)}
                       title="Select as correct answer"
-                      className="h-4 w-4 text-indigo-600 focus:ring-indigo-500"
+                      className="h-4 w-4 text-[#793FFF] focus:ring-indigo-500"
                     />
                     <span className="text-xs font-bold text-slate-500 w-4">
                       {String.fromCharCode(65 + idx)}
@@ -370,7 +370,7 @@ export default function AdminPanel({
                         setNewOptions(updated);
                       }}
                       placeholder={`Option ${String.fromCharCode(65 + idx)}`}
-                      className="flex-1 rounded-xl border border-slate-300 p-2 text-xs focus:border-indigo-600 focus:outline-none"
+                      className="flex-1 rounded-xl border border-slate-300 p-2 text-xs focus:border-[#793FFF] focus:outline-none"
                     />
                   </div>
                 ))}
@@ -388,7 +388,7 @@ export default function AdminPanel({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex-1 rounded-xl bg-indigo-600 py-2.5 text-xs font-semibold text-white hover:bg-indigo-500 transition shadow-xs"
+                  className="flex-1 rounded-xl bg-[#793FFF] py-2.5 text-xs font-semibold text-white hover:bg-indigo-500 transition shadow-xs"
                 >
                   {isSubmitting ? 'Saving...' : 'Add Question'}
                 </button>

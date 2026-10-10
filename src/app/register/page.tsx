@@ -1,11 +1,10 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 
 export default function RegisterPage() {
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -22,15 +21,15 @@ export default function RegisterPage() {
     setError(null);
 
     if (password !== confirmPassword) {
-      setError("Passwords do not match.");
+      setError('Passwords do not match.');
       return;
     }
     if (password.length < 6) {
-      setError("Password must be at least 6 characters.");
+      setError('Password must be at least 6 characters.');
       return;
     }
     if (!agreeToTerms) {
-      setError("You must agree to the Terms of Service and Privacy Policy.");
+      setError('You must agree to the Terms of Service and Privacy Policy.');
       return;
     }
 
@@ -58,18 +57,22 @@ export default function RegisterPage() {
 
   if (success) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
-        <div className="w-full max-w-md space-y-8 rounded-xl bg-white p-8 shadow-lg">
-          <div className="text-center">
-            <h2 className="text-3xl font-extrabold text-gray-900">Registration Successful</h2>
-            <p className="mt-2 text-sm text-gray-600">
-              Please check your email to verify your account before logging in.
-            </p>
-            <div className="mt-6">
-              <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
-                Go to login
-              </Link>
-            </div>
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50/70 p-4">
+        <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl text-center">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-3xl text-emerald-600">
+            ✉️
+          </div>
+          <h2 className="mt-4 text-2xl font-black text-slate-950">Registration Successful</h2>
+          <p className="mt-2 text-xs sm:text-sm text-slate-600">
+            Please check your email inbox to verify your account, or sign in directly to your dashboard.
+          </p>
+          <div className="mt-8">
+            <Link
+              href="/login"
+              className="inline-flex w-full items-center justify-center rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition"
+            >
+              Proceed to Sign In →
+            </Link>
           </div>
         </div>
       </div>
@@ -77,116 +80,115 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
-      <div className="w-full max-w-md space-y-8 rounded-xl bg-white p-8 shadow-lg">
-        <div>
-          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Create an account
-          </h2>
-          <p className="mt-2 text-center text-sm text-gray-600">
-            Or{' '}
-            <Link href="/login" className="font-medium text-blue-600 hover:text-blue-500">
-              sign in to your existing account
-            </Link>
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-slate-50/70 p-4 sm:p-8">
+      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
+        <div className="text-center">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
+            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h1 className="mt-4 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
+            Create Free Account
+          </h1>
+          <p className="mt-1 text-xs text-slate-600">
+            Join TaskEarn to test speed quizzes & rewards
           </p>
         </div>
-        
-        <div className="rounded-md bg-blue-50 p-4 mb-4">
-          <div className="flex">
-            <div className="ml-3">
-              <h3 className="text-sm font-medium text-blue-800">Demo Platform Notice</h3>
-              <div className="mt-2 text-sm text-blue-700">
-                <p>Task Earn is currently a demonstration platform. All rewards are simulated.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <form className="mt-8 space-y-6" onSubmit={handleRegister}>
-          <div className="space-y-4 rounded-md shadow-sm">
-            <div>
-              <label htmlFor="name" className="sr-only">Display Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                placeholder="Display Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="email-address" className="sr-only">Email address</label>
-              <input
-                id="email-address"
-                name="email"
-                type="email"
-                autoComplete="email"
-                required
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                placeholder="Email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="password" className="sr-only">Password</label>
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="confirm-password" className="sr-only">Confirm Password</label>
-              <input
-                id="confirm-password"
-                name="confirm-password"
-                type="password"
-                required
-                className="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-blue-500 focus:outline-none focus:ring-blue-500 sm:text-sm"
-                placeholder="Confirm Password"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-              />
-            </div>
+        {error && (
+          <div className="mt-6 rounded-2xl border border-rose-300 bg-rose-50 p-3.5 text-xs sm:text-sm font-medium text-rose-700">
+            ⚠️ {error}
+          </div>
+        )}
+
+        <form className="mt-6 space-y-4" onSubmit={handleRegister}>
+          <div>
+            <label className="block text-xs font-bold text-slate-700 mb-1">Display Name</label>
+            <input
+              type="text"
+              required
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="e.g. Alex"
+              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+            />
           </div>
 
-          <div className="flex items-center">
+          <div>
+            <label className="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="name@example.com"
+              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-bold text-slate-700 mb-1">Password</label>
+            <input
+              type="password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="At least 6 characters"
+              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-bold text-slate-700 mb-1">Confirm Password</label>
+            <input
+              type="password"
+              required
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              placeholder="Repeat your password"
+              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
+            />
+          </div>
+
+          <div className="flex items-start gap-2.5 pt-1">
             <input
               id="terms"
-              name="terms"
               type="checkbox"
-              className="h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
               checked={agreeToTerms}
               onChange={(e) => setAgreeToTerms(e.target.checked)}
+              className="mt-0.5 h-4 w-4 rounded-sm border-slate-300 text-[#793FFF] focus:ring-[#793FFF]"
             />
-            <label htmlFor="terms" className="ml-2 block text-sm text-gray-900">
-              I agree to the Terms of Service and Privacy Policy
+            <label htmlFor="terms" className="text-xs text-slate-600 leading-snug">
+              I understand Task Earn is in demo mode with simulated rewards, and I agree to the{' '}
+              <Link href="/terms" className="text-[#793FFF] hover:underline font-semibold">
+                Terms
+              </Link>{' '}
+              and{' '}
+              <Link href="/privacy" className="text-[#793FFF] hover:underline font-semibold">
+                Privacy Policy
+              </Link>
+              .
             </label>
           </div>
 
-          {error && (
-            <div className="text-red-500 text-sm mt-2">{error}</div>
-          )}
-
-          <div>
-            <button
-              type="submit"
-              disabled={loading}
-              className="group relative flex w-full justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50"
-            >
-              {loading ? 'Registering...' : 'Register'}
-            </button>
-          </div>
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
+          >
+            {loading ? 'Creating Account...' : 'Create Account →'}
+          </button>
         </form>
+
+        <div className="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-600">
+          Already have an account?{' '}
+          <Link href="/login" className="font-bold text-[#793FFF] hover:underline">
+            Sign in
+          </Link>
+        </div>
       </div>
     </div>
   );

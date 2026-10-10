@@ -55,7 +55,7 @@ export default async function AdminPage() {
           <div className="mt-6">
             <Link
               href="/dashboard"
-              className="inline-flex w-full justify-center rounded-xl bg-indigo-600 py-2.5 px-4 text-sm font-semibold text-white hover:bg-indigo-500 transition shadow-xs"
+              className="inline-flex w-full justify-center rounded-full bg-[#793FFF] py-3 px-6 text-sm font-bold text-white hover:bg-[#682FF8] transition shadow-md shadow-[#793FFF]/25"
             >
               Return to User Dashboard
             </Link>
