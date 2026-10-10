@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     const body = await request.json();
-    const { rewardType, points } = body;
+    const { rewardType, points, accountDetails } = body;
 
     const pointsToDeduct = Number(points);
     if (!rewardType || isNaN(pointsToDeduct) || pointsToDeduct <= 0) {
@@ -65,24 +65,26 @@ export async function POST(request: Request) {
       );
     }
 
-    // 3. Generate secure voucher code
+    // 3. Generate secure voucher / tracking reference code
     const voucherCode = `TE-${Math.random().toString(36).substring(2, 6).toUpperCase()}-${Math.random().toString(36).substring(2, 6).toUpperCase()}`;
+    const destinationNote = accountDetails ? ` [To: ${accountDetails}]` : '';
+    const formattedRewardType = `${rewardType}${destinationNote} (${voucherCode})`;
 
-    // 4. Record the redemption
+    // 4. Record the redemption with allowable status 'simulated_completed'
     const { data: redemption, error: redemptionError } = await admin
       .from('redemptions')
       .insert({
         user_id: user.id,
         points: pointsToDeduct,
-        status: 'completed',
-        reward_type: `${rewardType} (${voucherCode})`,
+        status: 'simulated_completed',
+        reward_type: formattedRewardType,
       })
-      .select('id')
+      .select('id, points, status, reward_type, created_at')
       .single();
 
     if (redemptionError || !redemption) {
       return NextResponse.json(
-        { error: 'Failed to process redemption record.' },
+        { error: 'Failed to process redemption record: ' + (redemptionError?.message || '') },
         { status: 500 }
       );
     }
@@ -110,6 +112,7 @@ export async function POST(request: Request) {
       success: true,
       newBalance,
       voucherCode,
+      redemption,
       message: `Redemption successful! Your digital voucher code is ${voucherCode}.`,
     });
   } catch (err: unknown) {

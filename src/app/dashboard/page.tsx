@@ -1,7 +1,6 @@
 import { createClient } from '@/lib/supabase/server';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
-import DashboardNav from '@/components/DashboardNav';
 
 export const dynamic = 'force-dynamic';
 
@@ -46,11 +45,7 @@ export default async function DashboardPage() {
   const displayName = profile?.display_name || user.email?.split('@')[0] || 'User';
 
   return (
-    <div className="min-h-screen bg-[#f7f4fd]">
-      {/* Floating Aesthetic Frosted Glass Nav */}
-      <DashboardNav />
-
-      <main className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
+    <main className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl space-y-8">
           {/* Welcome Earning Console Card */}
           <div className="relative overflow-hidden rounded-[32px] bg-slate-950 p-8 sm:p-12 text-white shadow-2xl border border-slate-900">
@@ -458,6 +453,5 @@ export default async function DashboardPage() {
           </div>
         </div>
       </main>
-    </div>
   );
 }
