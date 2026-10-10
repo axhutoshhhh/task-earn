@@ -298,7 +298,6 @@ export default function JumpTaskHowItWorks() {
                             </div>
                             <div className="relative z-10">
                               <p className="text-xs font-black tracking-tight leading-snug">Quizzes</p>
-                              <p className="text-[10px] font-medium text-violet-100 mt-0.5">+10 pts</p>
                             </div>
                           </div>
 
@@ -320,7 +319,6 @@ export default function JumpTaskHowItWorks() {
                             </div>
                             <div className="relative z-10">
                               <p className="text-xs font-black tracking-tight leading-snug">Watch &amp; earn</p>
-                              <p className="text-[10px] font-medium text-rose-100 mt-0.5">+35 pts</p>
                             </div>
                           </div>
 
@@ -343,7 +341,6 @@ export default function JumpTaskHowItWorks() {
                             </div>
                             <div className="relative z-10">
                               <p className="text-xs font-black tracking-tight leading-snug">Train AI</p>
-                              <p className="text-[10px] font-medium text-cyan-100 mt-0.5">+30 pts</p>
                             </div>
                           </div>
 
@@ -369,14 +366,13 @@ export default function JumpTaskHowItWorks() {
                             </div>
                             <div className="relative z-10">
                               <p className="text-xs font-black tracking-tight leading-snug">Play &amp; earn</p>
-                              <p className="text-[10px] font-bold text-slate-800 mt-0.5">+50 pts</p>
                             </div>
                           </div>
                         </div>
                       </div>
 
-                      <div className="text-center text-[10px] text-slate-400 pb-2">
-                        Liquid aesthetic task engine
+                      <div className="text-center text-[11px] font-medium text-slate-400 pb-2">
+                        lots of work to choose from.
                       </div>
                     </div>
                   )}
@@ -453,11 +449,11 @@ export default function JumpTaskHowItWorks() {
                               </div>
                             </div>
 
-                            {/* Little thin margin separator with "142 rupee earned" */}
+                            {/* Little thin margin separator with "₹142 earned" */}
                             <div className="pt-2.5 mt-1 border-t border-slate-100 flex items-center justify-between">
                               <span className="text-[11px] font-bold text-slate-500">Total Accrued</span>
                               <span className="text-xs font-black text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-full font-mono">
-                                142 rupee earned
+                                ₹142 earned
                               </span>
                             </div>
                           </div>
