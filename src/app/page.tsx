@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ScrollReveal from '@/components/ScrollReveal';
 import HeroCTA from '@/components/HeroCTA';
 import JumpTaskHeroCards from '@/components/JumpTaskHeroCards';
+import JumpTaskHowItWorks from '@/components/JumpTaskHowItWorks';
 
 export default function Home() {
   return (
@@ -51,162 +52,9 @@ export default function Home() {
       </section>
 
       {/* =========================================================================
-          2. YOU CAN EARN MONEY IN MINUTES. HERE'S HOW: (Seamless Unified Background)
+          2. YOU CAN EARN MONEY IN MINUTES. HERE'S HOW: (JumpTask Interactive Showcase)
           ========================================================================= */}
-      <section
-        id="how-it-works"
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-transparent"
-      >
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/90 backdrop-blur-md px-4 py-1.5 text-xs font-black tracking-wide text-[#793FFF] shadow-xs border border-purple-200/80">
-              <span className="flex h-2 w-2 rounded-full bg-[#793FFF] animate-ping" />
-              <span className="uppercase text-[11px] tracking-wider">How It Works</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950 leading-[1.1]">
-              You can earn money online in minutes.{' '}
-              <span className="bg-gradient-to-r from-[#793FFF] via-indigo-600 to-sky-600 bg-clip-text text-transparent">
-                Here’s how:
-              </span>
-            </h2>
-
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-normal">
-              Get started and begin accumulating verified reward points in four straightforward steps.
-            </p>
-          </div>
-
-          {/* 4 Frosted Joyful Aesthetic Tabs */}
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Step 1: Create Free Account */}
-            <div className="group relative flex flex-col justify-between rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_10px_30px_rgba(121,63,255,0.06)] hover:shadow-[0_20px_45px_rgba(121,63,255,0.16)] hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-              <div className="pointer-events-none absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-violet-500 to-indigo-500 opacity-80" />
-
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-md shadow-violet-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                      <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                      <circle cx="8.5" cy="7" r="4" />
-                      <line x1="20" y1="8" x2="20" y2="14" />
-                      <line x1="23" y1="11" x2="17" y2="11" />
-                    </svg>
-                  </div>
-                  <span className="rounded-full bg-violet-100/90 border border-violet-200/80 px-3 py-1 font-mono text-[11px] font-black tracking-wider text-violet-800">
-                    STEP 01
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-black text-slate-950 group-hover:text-[#793FFF] transition-colors">
-                  Create free account
-                </h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
-                  Sign up in under 60 seconds with your email. Zero credit cards, zero deposits, and no banking info required.
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-violet-700">
-                <span>Instant Setup</span>
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </div>
-            </div>
-
-            {/* Step 2: Complete Tasks */}
-            <div className="group relative flex flex-col justify-between rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_10px_30px_rgba(59,130,246,0.06)] hover:shadow-[0_20px_45px_rgba(59,130,246,0.16)] hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-              <div className="pointer-events-none absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-80" />
-
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-600 text-white shadow-md shadow-blue-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                      <polyline points="9 11 12 14 22 4" />
-                      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-                    </svg>
-                  </div>
-                  <span className="rounded-full bg-blue-100/90 border border-blue-200/80 px-3 py-1 font-mono text-[11px] font-black tracking-wider text-blue-800">
-                    STEP 02
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-black text-slate-950 group-hover:text-blue-600 transition-colors">
-                  Complete tasks
-                </h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
-                  Pick from rapid speed quizzes, video streams, AI model evaluation, or browser arcade quest challenges.
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-blue-700">
-                <span>Play &amp; Answer</span>
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </div>
-            </div>
-
-            {/* Step 3: Collect Credits */}
-            <div className="group relative flex flex-col justify-between rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_10px_30px_rgba(245,158,11,0.06)] hover:shadow-[0_20px_45px_rgba(245,158,11,0.16)] hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-              <div className="pointer-events-none absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-amber-500 to-orange-500 opacity-80" />
-
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-white shadow-md shadow-amber-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                      <circle cx="12" cy="12" r="9" />
-                      <path d="M12 7v10" />
-                      <path d="M15 9.5a3 3 0 0 0-3-2.5h-1a2.5 2.5 0 0 0 0 5h2a2.5 2.5 0 0 1 0 5H12a3 3 0 0 1-3-2.5" />
-                    </svg>
-                  </div>
-                  <span className="rounded-full bg-amber-100/90 border border-amber-200/80 px-3 py-1 font-mono text-[11px] font-black tracking-wider text-amber-800">
-                    STEP 03
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-black text-slate-950 group-hover:text-amber-600 transition-colors">
-                  Collect credits
-                </h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
-                  Finished tasks automatically verify and instantly credit reward points directly to your personal ledger.
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-amber-800">
-                <span>Instant Accrual</span>
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </div>
-            </div>
-
-            {/* Step 4: Cash Out */}
-            <div className="group relative flex flex-col justify-between rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_10px_30px_rgba(16,185,129,0.06)] hover:shadow-[0_20px_45px_rgba(16,185,129,0.16)] hover:-translate-y-2 transition-all duration-300 overflow-hidden">
-              <div className="pointer-events-none absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-emerald-500 to-teal-500 opacity-80" />
-
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-md shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
-                    <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                      <rect x="2" y="5" width="20" height="14" rx="2" />
-                      <line x1="2" y1="10" x2="22" y2="10" />
-                    </svg>
-                  </div>
-                  <span className="rounded-full bg-emerald-100/90 border border-emerald-200/80 px-3 py-1 font-mono text-[11px] font-black tracking-wider text-emerald-800">
-                    STEP 04
-                  </span>
-                </div>
-
-                <h3 className="text-xl font-black text-slate-950 group-hover:text-emerald-600 transition-colors">
-                  Cash out
-                </h3>
-                <p className="mt-3 text-sm text-slate-600 leading-relaxed font-normal">
-                  Redeem balance for direct Paytm transfers, Google Pay UPI, PayPal cash, or official digital gift cards.
-                </p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-emerald-800">
-                <span>Fast Payout SLA</span>
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <JumpTaskHowItWorks />
 
       {/* =========================================================================
           3. PICK A TASK. COMPLETE IT. GET PAID. (Seamless Unified Background)
