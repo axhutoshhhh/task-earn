@@ -31,27 +31,11 @@ export default function Footer() {
           <div className="space-y-6 xl:col-span-1">
             <Link
               href="/"
-              className="inline-flex items-center gap-3 text-xl font-black tracking-tight text-white"
+              className="inline-flex items-center gap-1.5 text-2xl font-black tracking-tight text-white transition hover:opacity-90"
               aria-label="Task Earn Home"
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4]">
-                <svg
-                  className="h-4 w-4 text-white"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-              </div>
-              <span className="text-xl font-black text-white">
-                Task<span className="text-[#793FFF]">Earn</span>
-              </span>
+              <span>taskearn</span>
+              <span className="inline-block h-2 w-2 rounded-full bg-[#793FFF]" />
             </Link>
 
             <p className="text-sm leading-relaxed text-slate-400">
