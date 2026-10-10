@@ -120,17 +120,17 @@ export default async function DashboardPage() {
               </p>
             </div>
             <div className="bg-gray-50 px-6 py-4">
-              <button
-                disabled
-                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-gray-400 bg-gray-200 cursor-not-allowed w-full"
+              <Link
+                href="/dashboard/tasks"
+                className="inline-flex items-center justify-center px-4 py-2 border border-slate-300 text-sm font-medium rounded-md shadow-xs text-slate-700 bg-white hover:bg-slate-50 transition w-full"
               >
-                Coming Soon
-              </button>
+                View Status (Coming Soon)
+              </Link>
             </div>
           </div>
 
           {/* Surveys Card */}
-          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col opacity-75">
+          <div className="bg-white rounded-lg shadow overflow-hidden flex flex-col opacity-90">
             <div className="p-6 flex-grow">
               <h3 className="text-lg font-medium text-gray-900">Surveys</h3>
               <p className="mt-2 text-sm text-gray-500">
@@ -138,12 +138,12 @@ export default async function DashboardPage() {
               </p>
             </div>
             <div className="bg-gray-50 px-6 py-4">
-              <button
-                disabled
-                className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-gray-400 bg-gray-200 cursor-not-allowed w-full"
+              <Link
+                href="/dashboard/surveys"
+                className="inline-flex items-center justify-center px-4 py-2 border border-slate-300 text-sm font-medium rounded-md shadow-xs text-slate-700 bg-white hover:bg-slate-50 transition w-full"
               >
-                Coming Soon
-              </button>
+                View Status (Coming Soon)
+              </Link>
             </div>
           </div>
 
