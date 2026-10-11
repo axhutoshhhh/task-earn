@@ -450,16 +450,16 @@ export default function AuthLayoutWrapper({
                 <path d="M308,260 Q308,275 293,275 Q308,275 308,290 Q308,275 323,275 Q308,275 308,260 Z" fill="url(#starNeonLimeRight)" />
               </g>
 
-              {/* Live Task Earning Card 1: Welcome Bonus */}
+              {/* Live Task Earning Card 1: Many Earning Opportunities */}
               <g transform="translate(172, 302)">
                 <rect x="0" y="0" width="200" height="42" rx="14" fill="#131722" stroke="#252D3F" strokeWidth="1" />
                 <circle cx="20" cy="21" r="9" fill="#10B981" />
                 <path d="M16 21 L19 24 L25 18" stroke="#FFFFFF" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                <text x="36" y="18" fill="#FFFFFF" fontSize="10.5" fontWeight="900" fontFamily="sans-serif">
-                  + ₹150 WELCOME BONUS
+                <text x="36" y="18" fill="#FFFFFF" fontSize="9.5" fontWeight="900" fontFamily="sans-serif">
+                  MANY EARNING OPPORTUNITIES
                 </text>
                 <text x="36" y="32" fill="#10B981" fontSize="8.5" fontWeight="700" fontFamily="sans-serif">
-                  Instant UPI Payout Ready
+                  Lots of work to choose from
                 </text>
               </g>
 
