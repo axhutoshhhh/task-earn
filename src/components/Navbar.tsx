@@ -186,78 +186,96 @@ export default function Navbar() {
               </svg>
             </button>
 
-            {/* Earn Dropdown Panel (2 Columns) */}
+            {/* Earn Dropdown Panel (Textured Mega-Menu with Gradient Badges & Ambient Highlights) */}
             {activeDropdown === 'earn' && (
               <div
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[540px] rounded-3xl border border-slate-100 bg-white p-6 shadow-2xl shadow-slate-900/10 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[590px] rounded-[30px] border border-white/80 bg-white/95 backdrop-blur-2xl p-6 shadow-[0_25px_70px_-15px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,0,0,0.03)] z-50 animate-in fade-in slide-in-from-top-2 duration-150 overflow-hidden select-none"
                 onMouseEnter={() => handleMouseEnter('earn')}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-4">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    Choose a Task Type
-                  </span>
+                {/* Organic Ambient Corner Glows */}
+                <div className="pointer-events-none absolute -top-14 -right-14 h-36 w-36 rounded-full bg-gradient-to-br from-violet-400/20 via-purple-300/15 to-transparent blur-2xl" />
+                <div className="pointer-events-none absolute -bottom-14 -left-14 h-36 w-36 rounded-full bg-gradient-to-tr from-rose-400/20 via-amber-300/15 to-transparent blur-2xl" />
+
+                {/* Header Strip */}
+                <div className="relative flex items-center justify-between border-b border-slate-100/80 pb-3.5 mb-4">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-[#793FFF] animate-pulse" />
+                    <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+                      Active Earning Categories
+                    </span>
+                  </div>
                   <Link
                     href={user ? '/dashboard' : '/login'}
-                    className="inline-flex items-center gap-1 text-xs font-bold text-slate-900 hover:text-[#793FFF] transition"
+                    className="group/all inline-flex items-center gap-1.5 text-xs font-bold text-slate-900 hover:text-[#793FFF] transition"
                   >
                     <span>View all tasks</span>
-                    <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <svg className="h-3.5 w-3.5 transition-transform group-hover/all:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path d="M9 18l6-6-6-6" />
                     </svg>
                   </Link>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3">
-                  {/* Watch & Earn */}
+                <div className="relative grid grid-cols-2 gap-3">
+                  {/* 1. Watch & Earn */}
                   <Link
                     href={user ? '/dashboard/watch' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 transition-colors group-hover:bg-[#793FFF] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-500 via-pink-500 to-orange-500 text-white shadow-md shadow-rose-500/25 transition-transform duration-200 group-hover:scale-105">
                       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                         <polygon points="5 3 19 12 5 21 5 3" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Watch &amp; earn
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Get paid to watch videos, clips, and other content
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-rose-600 transition-colors">
+                          Watch &amp; earn
+                        </h4>
+                        <span className="rounded-full bg-rose-50 border border-rose-200/60 px-1.5 py-0.2 text-[9px] font-bold text-rose-600">
+                          Popular
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
+                        Get paid for video views, trailers &amp; stream clips
                       </p>
                     </div>
                   </Link>
 
-                  {/* POV Video Bounties */}
+                  {/* 2. POV Video Bounties */}
                   <Link
                     href={user ? '/dashboard/pov-videos' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 transition-colors group-hover:bg-[#793FFF] group-hover:text-white">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-sky-500 text-white shadow-md shadow-indigo-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <path d="M23 7l-7 5 7 5V7z" />
-                        <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                        <rect x="1" y="5" width="15" height="14" rx="3" ry="3" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        POV Video Bounties
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Upload real-world first-person video clips
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-indigo-600 transition-colors">
+                          POV Bounties
+                        </h4>
+                        <span className="rounded-full bg-indigo-50 border border-indigo-200/60 px-1.5 py-0.2 text-[9px] font-bold text-indigo-600">
+                          High Reward
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
+                        Upload real-world first-person camera captures
                       </p>
                     </div>
                   </Link>
 
-                  {/* Train AI */}
+                  {/* 3. Train AI */}
                   <Link
                     href={user ? '/dashboard/train-ai' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 transition-colors group-hover:bg-[#793FFF] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 via-fuchsia-600 to-indigo-600 text-white shadow-md shadow-violet-500/25 transition-transform duration-200 group-hover:scale-105">
                       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="4" y="4" width="16" height="16" rx="2" />
+                        <rect x="4" y="4" width="16" height="16" rx="3" />
                         <rect x="9" y="9" width="6" height="6" />
                         <line x1="9" y1="1" x2="9" y2="4" />
                         <line x1="15" y1="1" x2="15" y2="4" />
@@ -269,59 +287,91 @@ export default function Navbar() {
                         <line x1="1" y1="15" x2="4" y2="15" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Train AI
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Data labeling, annotation, prompt rating &amp; RLHF
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-violet-600 transition-colors">
+                          Train AI
+                        </h4>
+                        <span className="rounded-full bg-violet-50 border border-violet-200/60 px-1.5 py-0.2 text-[9px] font-bold text-violet-600">
+                          RLHF
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
+                        Data labeling, prompt ranking &amp; safety feedback
                       </p>
                     </div>
                   </Link>
 
-                  {/* Play & earn */}
+                  {/* 4. Play & Earn */}
                   <Link
                     href={user ? '/dashboard/games' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 transition-colors group-hover:bg-[#793FFF] group-hover:text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 text-white shadow-md shadow-emerald-500/25 transition-transform duration-200 group-hover:scale-105">
                       <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                         <line x1="6" y1="12" x2="10" y2="12" />
                         <line x1="8" y1="10" x2="8" y2="14" />
-                        <line x1="15" y1="13" x2="15.01" y2="13" />
-                        <line x1="18" y1="11" x2="18.01" y2="11" />
-                        <rect x="2" y="6" width="20" height="12" rx="2" />
+                        <circle cx="15" cy="13" r="1" fill="currentColor" />
+                        <circle cx="18" cy="11" r="1" fill="currentColor" />
+                        <rect x="2" y="6" width="20" height="12" rx="3" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Play &amp; earn
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                          Play &amp; earn
+                        </h4>
+                        <span className="rounded-full bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.2 text-[9px] font-bold text-emerald-600">
+                          Instant
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
                         Earn credits while playing arcade challenges
                       </p>
                     </div>
                   </Link>
 
-                  {/* Speed Quizzes */}
+                  {/* 5. Speed Quizzes — Full Width Highlight Card */}
                   <Link
                     href={user ? '/dashboard/quiz' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50 col-span-2"
+                    className="col-span-2 group relative flex items-center justify-between rounded-2xl p-3.5 bg-gradient-to-r from-amber-500/[0.08] via-orange-500/[0.05] to-transparent border border-amber-200/70 transition-all duration-200 hover:border-amber-400 hover:shadow-xs"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-800 transition-colors group-hover:bg-[#793FFF] group-hover:text-white">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                    <div className="flex items-center gap-3.5">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 via-orange-500 to-rose-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                        </svg>
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
+                            Speed Quizzes
+                          </h4>
+                          <span className="rounded-full bg-amber-500 px-2 py-0.5 text-[9px] font-black text-white uppercase tracking-wider">
+                            7s Live
+                          </span>
+                        </div>
+                        <p className="mt-0.5 text-xs text-slate-600 font-normal">
+                          Timed rapid knowledge rounds &amp; instant point multiplier streaks
+                        </p>
+                      </div>
+                    </div>
+                    <span className="hidden sm:inline-flex items-center gap-1 text-xs font-bold text-amber-700 group-hover:translate-x-0.5 transition-transform">
+                      <span>Play</span>
+                      <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Speed Quizzes
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Timed 7-second knowledge questions &amp; instant point spikes
-                      </p>
-                    </div>
+                    </span>
                   </Link>
+                </div>
+
+                {/* Bottom Trust Strip */}
+                <div className="relative mt-3.5 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+                  <span className="flex items-center gap-1.5">
+                    <span className="inline-block h-2 w-2 rounded-full bg-emerald-500" />
+                    <span>Real-time ledger credit upon every task completion</span>
+                  </span>
+                  <span className="font-bold text-slate-800">Zero fees forever</span>
                 </div>
               </div>
             )}
@@ -357,84 +407,145 @@ export default function Navbar() {
               </svg>
             </button>
 
-            {/* Payouts Dropdown Panel */}
+            {/* Payouts Dropdown Panel (Textured Menu with Gradient Badges & Ambient Highlights) */}
             {activeDropdown === 'payouts' && (
               <div
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 rounded-3xl border border-slate-100 bg-white p-5 shadow-2xl shadow-slate-900/10 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[410px] rounded-[30px] border border-white/80 bg-white/95 backdrop-blur-2xl p-5 shadow-[0_25px_70px_-15px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,0,0,0.03)] z-50 animate-in fade-in slide-in-from-top-2 duration-150 overflow-hidden select-none"
                 onMouseEnter={() => handleMouseEnter('payouts')}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="border-b border-slate-100 pb-3 mb-3">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    How You Get Paid
+                {/* Organic Ambient Corner Glows */}
+                <div className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br from-emerald-400/20 to-teal-300/10 blur-2xl" />
+                <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-gradient-to-tr from-purple-400/20 to-indigo-300/10 blur-2xl" />
+
+                {/* Header Strip */}
+                <div className="relative flex items-center justify-between border-b border-slate-100/80 pb-3 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+                      Verified Payout Rails
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-2 py-0.5 rounded-full">
+                    24h Dispatch
                   </span>
                 </div>
 
-                <div className="space-y-1">
+                <div className="relative space-y-1.5">
+                  {/* Instant UPI & Bank Cash */}
                   <Link
                     href={user ? '/dashboard/rewards' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <circle cx="12" cy="12" r="10" />
-                        <line x1="2" y1="12" x2="22" y2="12" />
-                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        All methods
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Discover all ways you can redeem on Task Earn
-                      </p>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href={user ? '/dashboard/rewards' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
-                  >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="2" y="5" width="20" height="14" rx="2" />
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-green-600 text-white shadow-md shadow-emerald-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <rect x="2" y="5" width="20" height="14" rx="3" />
                         <line x1="2" y1="10" x2="22" y2="10" />
                       </svg>
                     </div>
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                          Gift cards
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                          Instant UPI &amp; Bank
                         </h4>
-                        <span className="rounded-full bg-[#161616] px-2 py-0.5 text-[10px] font-bold text-white">
-                          New
+                        <span className="rounded-full bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.2 text-[9px] font-bold text-emerald-700">
+                          Instant UPI
                         </span>
                       </div>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Amazon, Starbucks, Apple, and Google Play
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Direct transfer to Indian UPI handle or bank account
                       </p>
                     </div>
                   </Link>
 
+                  {/* Brand Gift Cards */}
                   <Link
                     href={user ? '/dashboard/rewards' : '/login'}
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-600 via-fuchsia-600 to-pink-500 text-white shadow-md shadow-purple-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <polyline points="20 12 20 22 4 22 4 12" />
+                        <rect x="2" y="7" width="20" height="5" rx="1" />
+                        <line x1="12" y1="22" x2="12" y2="7" />
+                        <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                        <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Instant delivery
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Immediate voucher code generation to your ledger
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-purple-600 transition-colors">
+                          Brand Gift Cards
+                        </h4>
+                        <span className="rounded-full bg-purple-50 border border-purple-200/60 px-1.5 py-0.2 text-[9px] font-bold text-purple-700">
+                          Top Brands
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Amazon, Flipkart, Google Play &amp; Starbucks vouchers
                       </p>
                     </div>
                   </Link>
+
+                  {/* All Methods */}
+                  <Link
+                    href={user ? '/dashboard/rewards' : '/login'}
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-cyan-500 text-white shadow-md shadow-blue-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <circle cx="12" cy="12" r="10" />
+                        <line x1="2" y1="12" x2="22" y2="12" />
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-blue-600 transition-colors">
+                        All Payout Methods
+                      </h4>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Discover all redemption rails &amp; minimum balances
+                      </p>
+                    </div>
+                  </Link>
+
+                  {/* Cryptographic Ledger */}
+                  <Link
+                    href={user ? '/dashboard' : '/login'}
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <polyline points="9 12 11 14 15 10" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
+                          Live Ledger Audit
+                        </h4>
+                        <span className="rounded-full bg-amber-50 border border-amber-200/60 px-1.5 py-0.2 text-[9px] font-bold text-amber-700">
+                          Audited
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Cryptographically validated double-entry proof
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+
+                {/* Bottom Callout */}
+                <div className="relative mt-3.5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-teal-500/5 to-transparent p-3 border border-emerald-500/20 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <svg className="h-4 w-4 text-emerald-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span className="font-extrabold text-emerald-950 text-[11px]">
+                      Zero deduction fee on all payout methods
+                    </span>
+                  </div>
                 </div>
               </div>
             )}
@@ -470,78 +581,118 @@ export default function Navbar() {
               </svg>
             </button>
 
-            {/* Explore Dropdown Panel */}
+            {/* Explore Dropdown Panel (Textured Menu with Gradient Badges & Ambient Highlights) */}
             {activeDropdown === 'explore' && (
               <div
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 rounded-3xl border border-slate-100 bg-white p-5 shadow-2xl shadow-slate-900/10 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[400px] rounded-[30px] border border-white/80 bg-white/95 backdrop-blur-2xl p-5 shadow-[0_25px_70px_-15px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,0,0,0.03)] z-50 animate-in fade-in slide-in-from-top-2 duration-150 overflow-hidden select-none"
                 onMouseEnter={() => handleMouseEnter('explore')}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="border-b border-slate-100 pb-3 mb-3">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    Explore Platform
+                {/* Organic Ambient Corner Glows */}
+                <div className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br from-sky-400/20 to-blue-300/10 blur-2xl" />
+                <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-gradient-to-tr from-violet-400/20 to-indigo-300/10 blur-2xl" />
+
+                {/* Header Strip */}
+                <div className="relative flex items-center justify-between border-b border-slate-100/80 pb-3 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-sky-500 animate-pulse" />
+                    <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+                      Platform Directory &amp; Legal
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full">
+                    Official
                   </span>
                 </div>
 
-                <div className="space-y-1">
+                <div className="relative space-y-1.5">
                   <Link
                     href="/faq"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-500 via-blue-500 to-indigo-600 text-white shadow-md shadow-sky-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <circle cx="11" cy="11" r="8" />
                         <line x1="21" y1="21" x2="16.65" y2="16.65" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Frequently asked questions
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Browse answers to common questions
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-sky-600 transition-colors">
+                          Frequently Asked Questions
+                        </h4>
+                        <span className="rounded-full bg-sky-50 border border-sky-200/60 px-1.5 py-0.2 text-[9px] font-bold text-sky-700">
+                          Help
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Answers for withdrawals, verification &amp; tokens
                       </p>
                     </div>
                   </Link>
 
                   <Link
                     href="/terms"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-violet-600 text-white shadow-md shadow-indigo-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                         <polyline points="14 2 14 8 20 8" />
                         <line x1="16" y1="13" x2="8" y2="13" />
                         <line x1="16" y1="17" x2="8" y2="17" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-indigo-600 transition-colors">
                         Terms of Service
                       </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Review platform terms and user guidelines
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        User agreement, fair conduct &amp; compliance rules
                       </p>
                     </div>
                   </Link>
 
                   <Link
                     href="/privacy"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 text-white shadow-md shadow-slate-900/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <rect x="3" y="11" width="18" height="11" rx="3" />
                         <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Privacy Policy
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-slate-700 transition-colors">
+                          Privacy Policy
+                        </h4>
+                        <span className="rounded-full bg-slate-100 border border-slate-200 px-1.5 py-0.2 text-[9px] font-bold text-slate-700">
+                          Encrypted
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Row-level security, zero tracking &amp; data safety
+                      </p>
+                    </div>
+                  </Link>
+
+                  <Link
+                    href="/reward-rules"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
+                        Reward Rules
                       </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Learn how your data is protected and secured
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Transparent point formulas &amp; payout guidelines
                       </p>
                     </div>
                   </Link>
@@ -580,96 +731,118 @@ export default function Navbar() {
               </svg>
             </button>
 
-            {/* About Dropdown Panel */}
+            {/* About Dropdown Panel (Textured Menu with Gradient Badges & Ambient Highlights) */}
             {activeDropdown === 'about' && (
               <div
-                className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-80 rounded-3xl border border-slate-100 bg-white p-5 shadow-2xl shadow-slate-900/10 z-50 animate-in fade-in slide-in-from-top-2 duration-150"
+                className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[410px] rounded-[30px] border border-white/80 bg-white/95 backdrop-blur-2xl p-5 shadow-[0_25px_70px_-15px_rgba(15,23,42,0.18),0_0_0_1px_rgba(0,0,0,0.03)] z-50 animate-in fade-in slide-in-from-top-2 duration-150 overflow-hidden select-none"
                 onMouseEnter={() => handleMouseEnter('about')}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="border-b border-slate-100 pb-3 mb-3">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                    Company
+                {/* Organic Ambient Corner Glows */}
+                <div className="pointer-events-none absolute -top-12 -right-12 h-32 w-32 rounded-full bg-gradient-to-br from-purple-400/20 to-indigo-300/10 blur-2xl" />
+                <div className="pointer-events-none absolute -bottom-12 -left-12 h-32 w-32 rounded-full bg-gradient-to-tr from-emerald-400/20 to-teal-300/10 blur-2xl" />
+
+                {/* Header Strip */}
+                <div className="relative flex items-center justify-between border-b border-slate-100/80 pb-3 mb-3">
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-violet-600 animate-pulse" />
+                    <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+                      Company &amp; Governance
+                    </span>
+                  </div>
+                  <span className="text-[10px] font-bold text-violet-700 bg-violet-50 border border-violet-200/80 px-2 py-0.5 rounded-full">
+                    Task Earn HQ
                   </span>
                 </div>
 
-                <div className="space-y-1">
+                <div className="relative space-y-1.5">
                   <Link
                     href="/#how-it-works"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-600 text-white shadow-md shadow-violet-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <circle cx="12" cy="12" r="10" />
                         <line x1="12" y1="16" x2="12" y2="12" />
                         <line x1="12" y1="8" x2="12.01" y2="8" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        About us
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-violet-600 transition-colors">
+                        About Task Earn
                       </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        How the platform works and our mission
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        How our micro-earnings engine empowers individuals
                       </p>
                     </div>
                   </Link>
 
                   <Link
                     href="/#trust"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-600 text-white shadow-md shadow-emerald-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                         <polyline points="9 12 11 14 15 10" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Is Task Earn legit?
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Transparency, trust and how we operate
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
+                          Is Task Earn Legit?
+                        </h4>
+                        <span className="rounded-full bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.2 text-[9px] font-bold text-emerald-700">
+                          100% Legit
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Full transparency, audited payouts &amp; safety record
                       </p>
                     </div>
                   </Link>
 
                   <Link
                     href="/reward-rules"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 via-orange-500 to-yellow-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Reward rules
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
+                        Reward Ledger Rules
                       </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Verified reward ledger rules and policies
+                      <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
+                        Anti-fraud parameters &amp; withdrawal eligibility
                       </p>
                     </div>
                   </Link>
 
+                  {/* For Business & Partners — Prominent Enterprise Card */}
                   <Link
-                    href="/contact"
-                    className="group flex items-start gap-3 rounded-2xl p-3 transition hover:bg-slate-50"
+                    href="/for-business"
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 bg-gradient-to-r from-blue-500/[0.08] via-indigo-500/[0.05] to-transparent border border-blue-200/70 hover:border-blue-400 hover:shadow-xs"
                   >
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-slate-100 text-slate-700 group-hover:bg-[#793FFF] group-hover:text-white transition-colors">
-                      <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                        <polyline points="22,6 12,13 2,6" />
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-500 text-white shadow-md shadow-blue-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
                       </svg>
                     </div>
-                    <div>
-                      <h4 className="text-sm font-bold text-slate-900 group-hover:text-[#793FFF] transition-colors">
-                        Contact &amp; support
-                      </h4>
-                      <p className="mt-0.5 text-xs text-slate-500 leading-snug">
-                        Get the contacts to reach our team
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-blue-900 group-hover:text-blue-700 transition-colors">
+                          For Business &amp; AI
+                        </h4>
+                        <span className="rounded-full bg-blue-600 px-1.5 py-0.2 text-[9px] font-black text-white uppercase tracking-wider">
+                          Enterprise
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-xs text-slate-600 leading-snug font-normal">
+                        Deploy RLHF annotation, videos &amp; brand tasks
                       </p>
                     </div>
                   </Link>
@@ -791,7 +964,7 @@ export default function Navbar() {
             <>
               {/* Outlined pill button: 'For business' */}
               <Link
-                href="/contact"
+                href="/for-business"
                 className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 transition"
               >
                 For business
@@ -1133,7 +1306,7 @@ export default function Navbar() {
               {/* Bottom Buttons */}
               <div className="pt-4 flex flex-col gap-3">
                 <Link
-                  href="/contact"
+                  href="/for-business"
                   className="rounded-full border border-slate-300 py-3 text-center text-sm font-bold text-slate-800 hover:bg-slate-50 transition"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

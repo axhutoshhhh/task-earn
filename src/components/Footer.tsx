@@ -34,6 +34,7 @@ export default function Footer() {
       { name: 'What is Task Earn', href: '/faq' },
       { name: 'How does it work', href: '/#features' },
       { name: 'Is Task Earn legit', href: '/terms' },
+      { name: 'For business & AI', href: '/for-business' },
       { name: 'Reward rules', href: '/reward-rules' },
       { name: 'Security & ledger', href: '/privacy' },
     ],
