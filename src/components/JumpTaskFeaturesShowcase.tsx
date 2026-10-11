@@ -99,7 +99,7 @@ export default function JumpTaskFeaturesShowcase() {
                   </defs>
 
                   {/* Ambient Base Shadow */}
-                  <ellipse cx="260" cy="330" rx="190" ry="40" fill="#9F1239" opacity="0.15" filter="blur(16px)" />
+                  <ellipse cx="260" cy="330" rx="190" ry="40" fill="#9F1239" opacity="0.15" style={{ filter: 'blur(16px)' }} />
 
                   {/* ================= LAYER 1: BOTTOM SLAB ================= */}
                   <g transform="translate(0, 56)">
@@ -154,7 +154,7 @@ export default function JumpTaskFeaturesShowcase() {
                       points="250,115 295,138 250,160"
                       fill="white"
                       opacity="0.95"
-                      filter="drop-shadow(0 4px 10px rgba(0,0,0,0.25))"
+                      style={{ filter: 'drop-shadow(0 4px 10px rgba(0,0,0,0.25))' }}
                     />
 
                     {/* Timeline progress line */}
@@ -169,13 +169,13 @@ export default function JumpTaskFeaturesShowcase() {
                       opacity="0.65"
                     />
                     {/* Scrubber Knob on Timeline */}
-                    <circle cx="235" cy="180" r="5" fill="white" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.3))" />
+                    <circle cx="235" cy="180" r="5" fill="white" style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
                   </g>
 
                   {/* ================= 3D FLOATING GLOWING COIN ================= */}
                   <g transform="translate(360, 65)">
                     {/* Coin Reflection / Ambient Glow */}
-                    <ellipse cx="25" cy="95" rx="35" ry="12" fill="#F43F5E" opacity="0.35" filter="blur(10px)" />
+                    <ellipse cx="25" cy="95" rx="35" ry="12" fill="#F43F5E" opacity="0.35" style={{ filter: 'blur(10px)' }} />
                     {/* 3D Coin Rim */}
                     <path
                       d="M 5 25 C 5 0, 48 0, 48 25 L 48 40 C 48 65, 5 65, 5 40 Z"
@@ -243,7 +243,7 @@ export default function JumpTaskFeaturesShowcase() {
                   </defs>
 
                   {/* Base Platform Shadow */}
-                  <ellipse cx="230" cy="340" rx="140" ry="30" fill="#4C1D95" opacity="0.2" filter="blur(14px)" />
+                  <ellipse cx="230" cy="340" rx="140" ry="30" fill="#4C1D95" opacity="0.2" style={{ filter: 'blur(14px)' }} />
 
                   {/* ================= BASE PLATFORM (Tilted Violet Star Slab) ================= */}
                   <g transform="translate(150, 245)">
@@ -262,7 +262,7 @@ export default function JumpTaskFeaturesShowcase() {
                       d="M 75 42 Q 75 60 93 60 Q 75 60 75 78 Q 75 60 57 60 Q 75 60 75 42 Z"
                       fill="white"
                       opacity="0.95"
-                      filter="drop-shadow(0 2px 6px rgba(0,0,0,0.3))"
+                      style={{ filter: 'drop-shadow(0 2px 6px rgba(0,0,0,0.3))' }}
                     />
                   </g>
 
@@ -307,7 +307,7 @@ export default function JumpTaskFeaturesShowcase() {
                       fontWeight="900"
                       fontFamily="system-ui, -apple-system, sans-serif"
                       letterSpacing="-0.03em"
-                      filter="drop-shadow(0 6px 14px rgba(0,0,0,0.2))"
+                      style={{ filter: 'drop-shadow(0 6px 14px rgba(0,0,0,0.2))' }}
                     >
                       AI
                     </text>
@@ -426,7 +426,7 @@ export default function JumpTaskFeaturesShowcase() {
                   </defs>
 
                   {/* Base Ambient Shadows */}
-                  <ellipse cx="280" cy="330" rx="160" ry="35" fill="#9F1239" opacity="0.15" filter="blur(16px)" />
+                  <ellipse cx="280" cy="330" rx="160" ry="35" fill="#9F1239" opacity="0.15" style={{ filter: 'blur(16px)' }} />
 
                   {/* Card 3: Back Solid Magenta Card (Tilted) */}
                   <g transform="translate(250, 80)">
@@ -473,7 +473,7 @@ export default function JumpTaskFeaturesShowcase() {
                     <polygon
                       points="105,170 130,185 105,200"
                       fill="white"
-                      filter="drop-shadow(0 2px 4px rgba(0,0,0,0.2))"
+                      style={{ filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))' }}
                     />
                   </g>
 
@@ -488,7 +488,7 @@ export default function JumpTaskFeaturesShowcase() {
                       rx="34"
                       fill="white"
                       opacity="0.82"
-                      filter="drop-shadow(0 25px 35px rgba(0,0,0,0.14))"
+                      style={{ filter: 'drop-shadow(0 25px 35px rgba(0,0,0,0.14))' }}
                     />
                     {/* Glass White Border */}
                     <rect
@@ -512,7 +512,7 @@ export default function JumpTaskFeaturesShowcase() {
                         height="92"
                         rx="13"
                         fill="url(#microPencilGrad)"
-                        filter="drop-shadow(0 10px 14px rgba(255,42,133,0.4))"
+                        style={{ filter: 'drop-shadow(0 10px 14px rgba(255,42,133,0.4))' }}
                       />
                       {/* Glossy Sheen line */}
                       <rect
@@ -565,7 +565,7 @@ export default function JumpTaskFeaturesShowcase() {
                     <path
                       d="M 60 270 C 40 230, 40 185, 50 145 C 60 105, 80 85, 95 95 C 110 105, 100 135, 95 165 L 110 270 Z"
                       fill="url(#handGrad)"
-                      filter="drop-shadow(0 16px 28px rgba(79,70,229,0.35))"
+                      style={{ filter: 'drop-shadow(0 16px 28px rgba(79,70,229,0.35))' }}
                     />
 
                     {/* Smartphone Held in Hand */}
@@ -592,7 +592,7 @@ export default function JumpTaskFeaturesShowcase() {
                       <path
                         d="M 70 88 C 70 72, 47 72, 47 93 C 47 114, 70 130, 70 138 C 70 130, 93 114, 93 93 C 93 72, 70 72, 70 88 Z"
                         fill="white"
-                        filter="drop-shadow(0 8px 18px rgba(0,0,0,0.25))"
+                        style={{ filter: 'drop-shadow(0 8px 18px rgba(0,0,0,0.25))' }}
                       />
                     </g>
 

@@ -30,8 +30,8 @@ export default function ScrollReveal({
         }
       },
       {
-        threshold: 0.12,
-        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.01,
+        rootMargin: '250px 0px 250px 0px',
       }
     );
 
@@ -63,7 +63,7 @@ export default function ScrollReveal({
       style={{
         transitionDelay: `${delay}s`,
       }}
-      className={`transition-all duration-700 ease-out will-change-transform transform ${getInitialClass()} ${className}`}
+      className={`transition-all duration-500 ease-out will-change-transform transform ${getInitialClass()} ${className}`}
     >
       {children}
     </div>

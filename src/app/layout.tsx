@@ -38,31 +38,27 @@ export default function RootLayout({
             Clear-whitish canvas with softly blended, colorful organic aurora patches
             applied everywhere across the entire application.
             ========================================================================= */}
-        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-          {/* Base clear-whitish canvas */}
-          <div className="absolute inset-0 bg-[#FAF9FD]" />
-
-          {/* Radiant Violet / Purple Patch (Top center / left) */}
-          <div className="absolute -top-32 left-1/4 w-[650px] h-[550px] rounded-full bg-gradient-to-tr from-violet-400/25 via-purple-300/20 to-indigo-400/20 blur-[140px]" />
-
-          {/* Sunrise Peach / Warm Amber Patch (Top right) */}
-          <div className="absolute top-10 right-0 w-[550px] h-[550px] rounded-full bg-gradient-to-br from-amber-300/25 via-orange-300/20 to-rose-300/20 blur-[140px]" />
-
-          {/* Electric Sky Cyan / Turquoise Patch (Mid left) */}
-          <div className="absolute top-[35%] -left-20 w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-cyan-400/20 via-sky-300/20 to-blue-400/20 blur-[150px]" />
-
-          {/* Neon Mint / Emerald Patch (Mid right) */}
-          <div className="absolute top-[50%] -right-20 w-[600px] h-[600px] rounded-full bg-gradient-to-bl from-emerald-300/20 via-teal-300/20 to-lime-200/20 blur-[150px]" />
-
-          {/* Radiant Lavender / Fuchsia Bloom (Lower mid) */}
-          <div className="absolute top-[70%] left-1/3 w-[650px] h-[550px] rounded-full bg-gradient-to-tr from-fuchsia-400/20 via-purple-300/20 to-pink-300/20 blur-[160px]" />
-
-          {/* Sunset Coral & Gold (Bottom) */}
-          <div className="absolute -bottom-20 right-1/4 w-[700px] h-[500px] rounded-full bg-gradient-to-br from-rose-400/20 via-amber-300/20 to-violet-300/20 blur-[150px]" />
-
-          {/* Frosted Translucent Veil: soft milky-white diffusion */}
-          <div className="absolute inset-0 bg-white/40 backdrop-blur-[40px]" />
-        </div>
+        {/* =========================================================================
+            TASK EARN GLOBAL UNIFIED AMBIENT BACKGROUND
+            Ultra-fast, GPU-rasterized organic aurora mesh.
+            Replaces heavy DOM blur-[160px] layers & full-viewport backdrop-blur
+            for instant 60/120fps scrolling and zero paint latency.
+            ========================================================================= */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-0 -z-10"
+          style={{
+            backgroundColor: '#FAF9FD',
+            backgroundImage: `
+              radial-gradient(ellipse 700px 550px at 28% -5%, rgba(139, 92, 246, 0.14) 0%, transparent 70%),
+              radial-gradient(ellipse 550px 500px at 92% 5%, rgba(251, 146, 60, 0.13) 0%, transparent 70%),
+              radial-gradient(ellipse 600px 600px at -5% 35%, rgba(56, 189, 248, 0.11) 0%, transparent 70%),
+              radial-gradient(ellipse 600px 600px at 105% 50%, rgba(52, 211, 153, 0.11) 0%, transparent 70%),
+              radial-gradient(ellipse 650px 550px at 35% 72%, rgba(232, 121, 249, 0.12) 0%, transparent 70%),
+              radial-gradient(ellipse 700px 500px at 80% 95%, rgba(244, 63, 94, 0.11) 0%, transparent 70%)
+            `,
+          }}
+        />
 
         <Navbar />
         <main className="flex-1 bg-transparent">{children}</main>

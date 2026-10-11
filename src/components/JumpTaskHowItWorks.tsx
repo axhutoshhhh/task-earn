@@ -1,18 +1,35 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function JumpTaskHowItWorks() {
   const [activeStep, setActiveStep] = useState<number>(1);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [isInView, setIsInView] = useState(true);
 
-  // Auto-cycle through steps 1 -> 2 -> 3 -> 4 every 3 seconds even without touching.
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.05 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  // Auto-cycle through steps 1 -> 2 -> 3 -> 4 every 3 seconds only when in viewport.
   // Touching / clicking any step instantly takes the user to that screen and resets the 3-second cycle.
   useEffect(() => {
+    if (!isInView) return;
     const timer = setInterval(() => {
       setActiveStep((prev) => (prev % 4) + 1);
     }, 3000);
     return () => clearInterval(timer);
-  }, [activeStep]);
+  }, [isInView, activeStep]);
 
   const handleStepSelect = (step: number) => {
     setActiveStep(step);
@@ -20,6 +37,7 @@ export default function JumpTaskHowItWorks() {
 
   return (
     <section
+      ref={sectionRef}
       id="how-it-works"
       className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-transparent"
     >
