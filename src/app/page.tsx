@@ -7,6 +7,7 @@ import HeroCTA from '@/components/HeroCTA';
 import JumpTaskHeroCards from '@/components/JumpTaskHeroCards';
 import JumpTaskHowItWorks from '@/components/JumpTaskHowItWorks';
 import JumpTaskFeaturesShowcase from '@/components/JumpTaskFeaturesShowcase';
+import JumpTaskTrustShowcase from '@/components/JumpTaskTrustShowcase';
 
 export default function Home() {
   return (
@@ -63,109 +64,9 @@ export default function Home() {
       <JumpTaskFeaturesShowcase />
 
       {/* =========================================================================
-          4. 100% SAFE AND TRUSTED (Seamless Unified Background)
+          4. 100% SAFE AND TRUSTED (JumpTask 3D Alternating Trust Showcase)
           ========================================================================= */}
-      <section
-        id="trust"
-        className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-transparent"
-      >
-        <div className="mx-auto max-w-7xl">
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-100/90 px-4 py-1.5 text-xs font-black text-emerald-800 border border-emerald-200 shadow-xs">
-              <svg className="h-3.5 w-3.5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              <span className="uppercase text-[11px] tracking-wider">Total Transparency</span>
-            </div>
-
-            <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-slate-950">
-              100% safe and trusted earning app
-            </h2>
-
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto font-normal">
-              Your security and privacy are our top priorities. Here is how we guarantee your safety:
-            </p>
-          </div>
-
-          <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
-            {/* Trust Card 1 */}
-            <div className="group rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(16,185,129,0.12)] hover:border-emerald-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 border border-emerald-100 group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300 shadow-xs">
-                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-xl font-bold text-slate-950">Zero Financial Data</h3>
-                <p className="mt-2.5 text-sm text-slate-600 leading-relaxed font-normal">
-                  We never request bank details, credit cards, or UPI PINs. Completely risk-free with zero exposure.
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-emerald-700">
-                Bank-Free Security
-              </div>
-            </div>
-
-            {/* Trust Card 2 */}
-            <div className="group rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(121,63,255,0.12)] hover:border-purple-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF] border border-[#793FFF]/20 group-hover:bg-[#793FFF] group-hover:text-white transition-colors duration-300 shadow-xs">
-                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                    <polyline points="14 2 14 8 20 8" />
-                    <line x1="16" y1="13" x2="8" y2="13" />
-                    <line x1="16" y1="17" x2="8" y2="17" />
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-xl font-bold text-slate-950">Immutable Ledger</h3>
-                <p className="mt-2.5 text-sm text-slate-600 leading-relaxed font-normal">
-                  Every point earned and payout redeemed is permanently recorded in a tamper-proof database transaction ledger.
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-[#793FFF]">
-                100% Verifiable
-              </div>
-            </div>
-
-            {/* Trust Card 3 */}
-            <div className="group rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(6,182,212,0.12)] hover:border-cyan-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-600 border border-cyan-100 group-hover:bg-cyan-600 group-hover:text-white transition-colors duration-300 shadow-xs">
-                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-xl font-bold text-slate-950">Instant Code Issuance</h3>
-                <p className="mt-2.5 text-sm text-slate-600 leading-relaxed font-normal">
-                  Direct wallet transfers and authorized digital voucher codes generated reliably within 24 hours.
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-cyan-700">
-                24-Hour SLA Guarantee
-              </div>
-            </div>
-
-            {/* Trust Card 4 */}
-            <div className="group rounded-3xl bg-white/85 backdrop-blur-xl p-8 border border-white/95 shadow-[0_8px_25px_rgba(0,0,0,0.03)] hover:shadow-[0_16px_36px_rgba(245,158,11,0.12)] hover:border-amber-300 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between">
-              <div>
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50 text-amber-600 border border-amber-100 group-hover:bg-amber-600 group-hover:text-white transition-colors duration-300 shadow-xs">
-                  <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                </div>
-                <h3 className="mt-6 text-xl font-bold text-slate-950">Anti-Bot Fair Play</h3>
-                <p className="mt-2.5 text-sm text-slate-600 leading-relaxed font-normal">
-                  Server-side timing and verification ensures rewards go strictly to real, authentic human users.
-                </p>
-              </div>
-              <div className="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-amber-800">
-                Real Humans Only
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <JumpTaskTrustShowcase />
 
       {/* =========================================================================
           5. START EARNING IN THE NEXT 5 MINUTES (High-Aesthetic CTA Banner)
