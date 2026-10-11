@@ -821,9 +821,9 @@ export default function Navbar() {
                     </div>
                   </Link>
 
-                  {/* For Business & Partners — Prominent Enterprise Card */}
+                  {/* Contact & Business Desk */}
                   <Link
-                    href="/for-business"
+                    href="/contact"
                     className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 bg-gradient-to-r from-blue-500/[0.08] via-indigo-500/[0.05] to-transparent border border-blue-200/70 hover:border-blue-400 hover:shadow-xs"
                   >
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-sky-500 text-white shadow-md shadow-blue-500/25 transition-transform duration-200 group-hover:scale-105">
@@ -835,14 +835,14 @@ export default function Navbar() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h4 className="text-sm font-extrabold text-blue-900 group-hover:text-blue-700 transition-colors">
-                          For Business &amp; AI
+                          Contact &amp; Business Desk
                         </h4>
                         <span className="rounded-full bg-blue-600 px-1.5 py-0.2 text-[9px] font-black text-white uppercase tracking-wider">
-                          Enterprise
+                          Support
                         </span>
                       </div>
                       <p className="mt-0.5 text-xs text-slate-600 leading-snug font-normal">
-                        Deploy RLHF annotation, videos &amp; brand tasks
+                        Reach our team for support &amp; partnerships
                       </p>
                     </div>
                   </Link>
@@ -964,7 +964,7 @@ export default function Navbar() {
             <>
               {/* Outlined pill button: 'For business' */}
               <Link
-                href="/for-business"
+                href="/contact"
                 className="rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-800 hover:bg-slate-50 hover:border-slate-400 transition"
               >
                 For business
@@ -1306,7 +1306,7 @@ export default function Navbar() {
               {/* Bottom Buttons */}
               <div className="pt-4 flex flex-col gap-3">
                 <Link
-                  href="/for-business"
+                  href="/contact"
                   className="rounded-full border border-slate-300 py-3 text-center text-sm font-bold text-slate-800 hover:bg-slate-50 transition"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
