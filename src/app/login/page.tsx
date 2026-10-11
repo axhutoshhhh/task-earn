@@ -3,6 +3,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
+import AuthLayoutWrapper from '@/components/AuthLayoutWrapper';
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
@@ -48,7 +49,7 @@ export default function LoginPage() {
       return;
     }
 
-    // Replace login in history so pressing 'Back' never returns to login screen!
+    // Replace login in history so pressing 'Back' never returns to login screen
     window.location.replace('/dashboard');
   };
 
@@ -64,85 +65,76 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4 sm:p-8">
-      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
-        {/* Brand Header */}
-        <div className="text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
-          </div>
-          <h1 className="mt-4 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
-            Welcome back
-          </h1>
-          <p className="mt-2 text-xs sm:text-sm text-slate-600">
-            Sign in to access your TaskEarn dashboard & reward wallet
-          </p>
+    <AuthLayoutWrapper
+      title="Welcome back"
+      subtitle="Sign in to access your TaskEarn dashboard & reward wallet"
+      error={error}
+      footerText="Don't have an account?"
+      footerLinkText="Register now"
+      footerLinkHref="/register"
+    >
+      <form className="space-y-4" onSubmit={handleLogin}>
+        <div>
+          <label htmlFor="login-email" className="block text-xs font-bold text-slate-700 mb-1.5">
+            Email Address
+          </label>
+          <input
+            id="login-email"
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="name@example.com"
+            className="w-full px-4 py-3 bg-white/70 backdrop-blur-md border border-slate-200/90 rounded-2xl focus:bg-white focus:ring-4 focus:ring-[#793FFF]/15 focus:border-[#793FFF] outline-none transition text-sm text-slate-900 placeholder:text-slate-400"
+          />
         </div>
 
-        {error && (
-          <div className="mt-6 rounded-2xl border border-rose-300 bg-rose-50 p-3.5 text-xs sm:text-sm font-medium text-rose-700 flex items-center gap-2">
-            <svg className="w-4 h-4 shrink-0 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
-            <span>{error}</span>
-          </div>
-        )}
-
-        <form className="mt-6 space-y-4" onSubmit={handleLogin}>
-          <div>
-            <label className="block text-xs font-bold text-slate-700 mb-1">
-              Email Address
+        <div>
+          <div className="flex items-center justify-between mb-1.5">
+            <label htmlFor="login-password" className="block text-xs font-bold text-slate-700">
+              Password
             </label>
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="name@example.com"
-              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
-            />
+            <Link
+              href="/reset-password"
+              className="text-xs font-bold text-[#793FFF] hover:text-[#682FF8] hover:underline transition"
+            >
+              Forgot password?
+            </Link>
           </div>
-
-          <div>
-            <div className="flex items-center justify-between mb-1">
-              <label className="block text-xs font-bold text-slate-700">
-                Password
-              </label>
-              <Link
-                href="/reset-password"
-                className="text-xs font-semibold text-[#793FFF] hover:underline"
-              >
-                Forgot password?
-              </Link>
-            </div>
-            <input
-              type="password"
-              required
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="••••••••"
-              className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
-            />
-          </div>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full mt-2 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50 cursor-pointer"
-          >
-            {loading ? 'Signing in...' : 'Sign In to Dashboard →'}
-          </button>
-        </form>
-
-        <div className="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-600">
-          Don&apos;t have an account?{' '}
-          <Link href="/register" className="font-bold text-[#793FFF] hover:underline">
-            Register now
-          </Link>
+          <input
+            id="login-password"
+            type="password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="••••••••"
+            className="w-full px-4 py-3 bg-white/70 backdrop-blur-md border border-slate-200/90 rounded-2xl focus:bg-white focus:ring-4 focus:ring-[#793FFF]/15 focus:border-[#793FFF] outline-none transition text-sm text-slate-900 placeholder:text-slate-400"
+          />
         </div>
-      </div>
-    </div>
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full mt-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-4 px-6 text-sm font-bold text-white shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer"
+        >
+          {loading ? (
+            <>
+              <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24" fill="none">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+              </svg>
+              <span>Signing in...</span>
+            </>
+          ) : (
+            <>
+              <span>Sign In to Dashboard</span>
+              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </>
+          )}
+        </button>
+      </form>
+    </AuthLayoutWrapper>
   );
 }

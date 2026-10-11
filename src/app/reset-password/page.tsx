@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/client';
 import { User } from '@supabase/supabase-js';
+import AuthLayoutWrapper from '@/components/AuthLayoutWrapper';
 
 export default function ResetPasswordPage() {
   const router = useRouter();
@@ -93,112 +94,121 @@ export default function ResetPasswordPage() {
 
   if (isCheckingSession) {
     return (
-      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent">
-        <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent"></div>
+      <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4">
+        <div className="flex flex-col items-center gap-3">
+          <div className="h-10 w-10 animate-spin rounded-full border-4 border-solid border-[#793FFF] border-r-transparent" />
+          <p className="text-xs font-bold text-slate-500">Loading session...</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center bg-transparent p-4 sm:p-8">
-      <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xl">
-        <div className="text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
-            <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M12 2L2 7l10 5 10-5-10-5z" />
-              <path d="M2 17l10 5 10-5" />
-              <path d="M2 12l10 5 10-5" />
-            </svg>
+    <AuthLayoutWrapper
+      title={user ? 'Set New Password' : 'Reset Password'}
+      subtitle={user ? 'Enter your new account password below' : 'Enter your email to receive recovery instructions'}
+      error={error}
+      successMessage={message}
+      footerText="Remembered your password?"
+      footerLinkText="Back to sign in"
+      footerLinkHref="/login"
+    >
+      {user ? (
+        <form className="space-y-4" onSubmit={handleUpdatePassword}>
+          <div>
+            <label htmlFor="reset-new-password" className="block text-xs font-bold text-slate-700 mb-1.5">
+              New Password
+            </label>
+            <input
+              id="reset-new-password"
+              type="password"
+              required
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              placeholder="At least 6 characters"
+              className="w-full px-4 py-3 bg-white/70 backdrop-blur-md border border-slate-200/90 rounded-2xl focus:bg-white focus:ring-4 focus:ring-[#793FFF]/15 focus:border-[#793FFF] outline-none transition text-sm text-slate-900 placeholder:text-slate-400"
+            />
           </div>
-          <h1 className="mt-4 text-2xl font-black tracking-tight text-slate-950 sm:text-3xl">
-            {user ? 'Set New Password' : 'Reset Password'}
-          </h1>
-          <p className="mt-1 text-xs text-slate-600">
-            {user
-              ? 'Enter your new account password below'
-              : 'Enter your email to receive recovery instructions'}
-          </p>
-        </div>
 
-        {error && (
-          <div className="mt-6 rounded-2xl border border-rose-300 bg-rose-50 p-3.5 text-xs sm:text-sm font-medium text-rose-700 flex items-center gap-2">
-            <svg className="w-4 h-4 shrink-0 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
-            <span>{error}</span>
+          <div>
+            <label htmlFor="reset-confirm-password" className="block text-xs font-bold text-slate-700 mb-1.5">
+              Confirm Password
+            </label>
+            <input
+              id="reset-confirm-password"
+              type="password"
+              required
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              placeholder="Repeat new password"
+              className="w-full px-4 py-3 bg-white/70 backdrop-blur-md border border-slate-200/90 rounded-2xl focus:bg-white focus:ring-4 focus:ring-[#793FFF]/15 focus:border-[#793FFF] outline-none transition text-sm text-slate-900 placeholder:text-slate-400"
+            />
           </div>
-        )}
 
-        {message && (
-          <div className="mt-6 rounded-2xl border border-emerald-300 bg-emerald-50 p-3.5 text-xs sm:text-sm font-medium text-emerald-700 flex items-center gap-2">
-            <svg className="w-4 h-4 shrink-0 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12" /></svg>
-            <span>{message}</span>
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full mt-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-4 px-6 text-sm font-bold text-white shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer"
+          >
+            {loading ? (
+              <>
+                <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                </svg>
+                <span>Updating Password...</span>
+              </>
+            ) : (
+              <>
+                <span>Update Password</span>
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </>
+            )}
+          </button>
+        </form>
+      ) : (
+        <form className="space-y-4" onSubmit={handleRequestReset}>
+          <div>
+            <label htmlFor="reset-email" className="block text-xs font-bold text-slate-700 mb-1.5">
+              Email Address
+            </label>
+            <input
+              id="reset-email"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="name@example.com"
+              className="w-full px-4 py-3 bg-white/70 backdrop-blur-md border border-slate-200/90 rounded-2xl focus:bg-white focus:ring-4 focus:ring-[#793FFF]/15 focus:border-[#793FFF] outline-none transition text-sm text-slate-900 placeholder:text-slate-400"
+            />
           </div>
-        )}
 
-        {user ? (
-          <form className="mt-6 space-y-4" onSubmit={handleUpdatePassword}>
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">New Password</label>
-              <input
-                type="password"
-                required
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-                placeholder="At least 6 characters"
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Confirm Password</label>
-              <input
-                type="password"
-                required
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-                placeholder="Repeat new password"
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
-            >
-              {loading ? 'Updating Password...' : 'Update Password →'}
-            </button>
-          </form>
-        ) : (
-          <form className="mt-6 space-y-4" onSubmit={handleRequestReset}>
-            <div>
-              <label className="block text-xs font-bold text-slate-700 mb-1">Email Address</label>
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="name@example.com"
-                className="w-full rounded-xl border border-slate-300 p-3 text-sm focus:border-[#793FFF] focus:outline-none focus:ring-1 focus:ring-[#793FFF]"
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={loading}
-              className="w-full mt-3 rounded-full bg-[#793FFF] py-3.5 px-6 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/25 hover:bg-[#682FF8] transition active:scale-95 disabled:opacity-50"
-            >
-              {loading ? 'Sending Link...' : 'Send Reset Link →'}
-            </button>
-          </form>
-        )}
-
-        <div className="mt-8 pt-6 border-t border-slate-100 text-center text-xs text-slate-600">
-          Remembered your password?{' '}
-          <Link href="/login" className="font-bold text-[#793FFF] hover:underline">
-            Back to sign in
-          </Link>
-        </div>
-      </div>
-    </div>
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full mt-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-4 px-6 text-sm font-bold text-white shadow-xl hover:shadow-2xl transition-all duration-200 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-50 flex items-center justify-center gap-2 cursor-pointer"
+          >
+            {loading ? (
+              <>
+                <svg className="animate-spin h-4 w-4 text-white" viewBox="0 0 24 24" fill="none">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                </svg>
+                <span>Sending Reset Link...</span>
+              </>
+            ) : (
+              <>
+                <span>Send Reset Link</span>
+                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </>
+            )}
+          </button>
+        </form>
+      )}
+    </AuthLayoutWrapper>
   );
 }
