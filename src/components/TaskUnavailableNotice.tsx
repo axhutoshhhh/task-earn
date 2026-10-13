@@ -147,17 +147,34 @@ export default function TaskUnavailableNotice({
       <div className="flex flex-col sm:flex-row items-center gap-3 pt-4 border-t border-slate-100">
         <Link
           href="/dashboard/quiz"
-          className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-3.5 px-6 text-xs font-bold text-white transition shadow-sm"
+          className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-3.5 px-5 text-xs font-bold text-white transition shadow-sm"
         >
-          <span>Play Speed Quizzes (Available Now)</span>
+          <span>Play Speed Quizzes</span>
           <span>→</span>
         </Link>
         <Link
-          href="/dashboard"
-          className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 py-3.5 px-6 text-xs font-bold text-slate-700 transition"
+          href="/dashboard/games"
+          className="w-full sm:flex-1 inline-flex items-center justify-center gap-2 rounded-full bg-emerald-600 hover:bg-emerald-700 py-3.5 px-5 text-xs font-bold text-white transition shadow-sm"
         >
-          Back to Dashboard
+          <span>Play Games</span>
+          <span>→</span>
         </Link>
+        {isModal && onClose ? (
+          <button
+            type="button"
+            onClick={onClose}
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 py-3.5 px-5 text-xs font-bold text-slate-700 transition"
+          >
+            Close
+          </button>
+        ) : (
+          <Link
+            href="/dashboard"
+            className="w-full sm:w-auto inline-flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 py-3.5 px-5 text-xs font-bold text-slate-700 transition"
+          >
+            Back
+          </Link>
+        )}
       </div>
     </div>
   );

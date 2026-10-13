@@ -11,7 +11,7 @@ export default function DashboardActivities() {
   } | null>(null);
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-12">
       {/* Interactive Modal if user clicks on unavailable provider task */}
       {modalNotice && (
         <TaskUnavailableNotice
@@ -22,228 +22,216 @@ export default function DashboardActivities() {
         />
       )}
 
-      {/* Section Header */}
-      <div>
-        <div className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-[#793FFF]" />
-          <h2 className="text-xl font-black text-slate-950 tracking-tight">
-            Earning Activities
+      {/* =========================================================================
+          1. AVAILABLE TASKS (Speed Quizzes & Games)
+          ========================================================================= */}
+      <div className="space-y-5">
+        <div>
+          <h2 className="text-2xl font-black text-slate-950 tracking-tight">
+            Available Tasks
           </h2>
-        </div>
-        <p className="text-xs text-slate-500 mt-1">
-          Complete authentic quizzes and verified client tasks to deposit reward points directly into your wallet.
-        </p>
-      </div>
-
-      {/* Earning Cards Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Card 1: Knowledge Speed Quizzes (ACTIVE NOW) */}
-        <div className="rounded-[28px] border-2 border-[#793FFF]/30 bg-gradient-to-b from-white to-purple-50/20 p-7 shadow-[0_10px_30px_rgba(121,63,255,0.06)] hover:border-[#793FFF] hover:shadow-xl transition flex flex-col justify-between relative overflow-hidden group">
-          {/* Subtle Ambient Glow */}
-          <div className="absolute -top-12 -right-12 h-32 w-32 rounded-full bg-[#793FFF]/10 blur-2xl pointer-events-none" />
-
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                </svg>
-              </div>
-              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs font-bold text-emerald-700">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                Available Now
-              </span>
-            </div>
-
-            <h3 className="text-xl font-black text-slate-950">
-              Knowledge Speed Quizzes
-            </h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600 font-medium">
-              5 multiple-choice questions with a strict 7-second countdown per question. Fast, instant reward points deposited directly into your balance.
-            </p>
-
-            <div className="mt-4 flex items-center gap-3 text-xs font-semibold text-slate-500">
-              <span className="rounded-md bg-slate-100 px-2 py-0.5 text-slate-700">7s Timer</span>
-              <span className="rounded-md bg-purple-50 text-[#793FFF] px-2 py-0.5">Rapid Payout</span>
-              <span className="rounded-md bg-slate-100 px-2 py-0.5 text-slate-700">Daily Access</span>
-            </div>
-          </div>
-
-          <div className="mt-8 pt-4 border-t border-slate-100">
-            <Link
-              href="/dashboard/quiz"
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-[#161616] hover:bg-[#793FFF] py-3.5 px-6 text-xs font-bold text-white transition shadow-sm group-hover:shadow-md"
-            >
-              <span>Launch Quiz Engine</span>
-              <span>→</span>
-            </Link>
-          </div>
+          <p className="text-xs text-slate-500 mt-1">
+            Active verified earning channels ready to credit reward points to your balance immediately.
+          </p>
         </div>
 
-        {/* Card 2: Client Microtasks (ONBOARDING PROVIDER) */}
-        <div className="rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:border-amber-300 hover:shadow-md transition flex flex-col justify-between">
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-amber-50 text-amber-700 border border-amber-200/60">
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                </svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* 1. Speed Quizzes */}
+          <div className="rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl hover:border-[#793FFF]/40 transition flex flex-col justify-between">
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF]">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                  </svg>
+                </div>
+                <span className="rounded-full bg-purple-100 px-3 py-1 text-xs font-bold text-[#793FFF]">
+                  Instant 7s
+                </span>
               </div>
-              <span className="rounded-full bg-amber-50 border border-amber-200/80 px-3 py-1 text-xs font-bold text-amber-800">
-                Onboarding Provider
-              </span>
+              <h3 className="text-lg font-black text-slate-950">Speed Quizzes</h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                5 multiple-choice questions with a strict 7-second countdown per question. Rapid point payouts.
+              </p>
             </div>
-
-            <h3 className="text-xl font-black text-slate-950">
-              Client Microtasks
-            </h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600 font-medium">
-              Direct tasks from verified commercial clients and advertising partners. We strictly refuse to show fake dummy tasks.
-            </p>
-
-            <div className="mt-4 flex items-center gap-3 text-xs font-semibold text-slate-500">
-              <span className="rounded-md bg-amber-50 text-amber-800 px-2 py-0.5">Real Clients Only</span>
-              <span className="rounded-md bg-slate-100 px-2 py-0.5 text-slate-700">Contract Vetted</span>
+            <div className="mt-6 pt-4 border-t border-slate-100">
+              <Link
+                href="/dashboard/quiz"
+                className="w-full inline-flex items-center justify-center gap-1.5 rounded-full bg-[#161616] hover:bg-[#793FFF] py-3.5 px-6 text-xs font-bold text-white transition shadow-sm"
+              >
+                <span>Launch Quiz Engine</span>
+                <span>→</span>
+              </Link>
             </div>
           </div>
 
-          <div className="mt-8 pt-4 border-t border-slate-100 flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() =>
-                setModalNotice({
-                  title: 'Client Microtasks',
-                  category: 'Direct Business Clients',
-                })
-              }
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-slate-100 hover:bg-slate-200 py-3.5 px-6 text-xs font-bold text-slate-700 transition"
-            >
-              <span>Check Task Status</span>
-              <span>ℹ</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Card 3: Market Research Surveys (ONBOARDING PROVIDER) */}
-        <div className="rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:border-amber-300 hover:shadow-md transition flex flex-col justify-between">
-          <div>
-            <div className="flex items-center justify-between mb-5">
-              <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-700 border border-cyan-200/60">
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="16" y1="13" x2="8" y2="13" />
-                  <line x1="16" y1="17" x2="8" y2="17" />
-                  <polyline points="10 9 9 9 8 9" />
-                </svg>
+          {/* 2. Play Games */}
+          <div className="rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl hover:border-emerald-300 transition flex flex-col justify-between">
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <rect x="2" y="6" width="20" height="12" rx="2" />
+                    <path d="M6 12h4m-2-2v4" />
+                    <line x1="15" y1="11" x2="15.01" y2="11" />
+                    <line x1="18" y1="13" x2="18.01" y2="13" />
+                  </svg>
+                </div>
+                <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-800">
+                  Quests
+                </span>
               </div>
-              <span className="rounded-full bg-amber-50 border border-amber-200/80 px-3 py-1 text-xs font-bold text-amber-800">
-                Onboarding Provider
-              </span>
+              <h3 className="text-lg font-black text-slate-950">Play Games to Earn</h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                Launch arcade challenges directly in your browser. Reach score milestones to unlock bonus points.
+              </p>
             </div>
-
-            <h3 className="text-xl font-black text-slate-950">
-              Partner Surveys
-            </h3>
-            <p className="mt-2 text-xs leading-relaxed text-slate-600 font-medium">
-              High-yield surveys from authenticated enterprise research firms. Guaranteed points upon verified completion.
-            </p>
-
-            <div className="mt-4 flex items-center gap-3 text-xs font-semibold text-slate-500">
-              <span className="rounded-md bg-amber-50 text-amber-800 px-2 py-0.5">Enterprise Partners</span>
-              <span className="rounded-md bg-slate-100 px-2 py-0.5 text-slate-700">No Dummy Surveys</span>
+            <div className="mt-6 pt-4 border-t border-slate-100">
+              <Link
+                href="/dashboard/games"
+                className="w-full inline-flex items-center justify-center gap-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 py-3.5 px-6 text-xs font-bold text-white transition shadow-sm"
+              >
+                <span>Play Arcade Games</span>
+                <span>→</span>
+              </Link>
             </div>
-          </div>
-
-          <div className="mt-8 pt-4 border-t border-slate-100 flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() =>
-                setModalNotice({
-                  title: 'Partner Market Surveys',
-                  category: 'Certified Research Firms',
-                })
-              }
-              className="w-full inline-flex items-center justify-center gap-2 rounded-full bg-slate-100 hover:bg-slate-200 py-3.5 px-6 text-xs font-bold text-slate-700 transition"
-            >
-              <span>Check Survey Status</span>
-              <span>ℹ</span>
-            </button>
           </div>
         </div>
       </div>
 
-      {/* Genuine Platform Transparency Banner */}
-      <div className="rounded-[28px] border border-slate-200/90 bg-white/95 backdrop-blur-xl p-6 sm:p-8 shadow-[0_10px_30px_rgba(15,23,42,0.03)]">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="rounded-full bg-emerald-100 text-emerald-800 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider">
-                100% Genuine Commitment
-              </span>
-              <span className="text-xs font-bold text-slate-400">Zero Fake Tasks</span>
-            </div>
-            <h3 className="text-lg sm:text-xl font-black text-slate-950 mt-1 tracking-tight">
-              Why You Can Trust Task Earn
-            </h3>
-          </div>
-          <Link
-            href="/dashboard/quiz"
-            className="inline-flex items-center gap-1.5 rounded-full bg-[#161616] hover:bg-[#793FFF] px-5 py-2.5 text-xs font-bold text-white transition shrink-0"
+      {/* =========================================================================
+          2. CURRENTLY UNAVAILABLE (Tasks tabs as before)
+          ========================================================================= */}
+      <div className="space-y-5 pt-4">
+        <div>
+          <h2 className="text-2xl font-black text-slate-950 tracking-tight">
+            Currently Unavailable
+          </h2>
+          <p className="text-xs text-slate-500 mt-1">
+            Don&apos;t worry, we are working on bringing them back soon.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Card 1: Watch YouTube Videos */}
+          <div
+            onClick={() =>
+              setModalNotice({
+                title: 'Watch YouTube Videos',
+                category: 'Media & Video Provider',
+              })
+            }
+            className="group rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl hover:border-rose-300 transition flex flex-col justify-between cursor-pointer"
           >
-            <span>Play Active Quizzes Now</span>
-            <span>→</span>
-          </Link>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
-          <div className="rounded-2xl bg-slate-50/80 border border-slate-200/60 p-4">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 mb-2.5">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-rose-50 text-rose-600">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                  </svg>
+                </div>
+                <span className="rounded-full bg-rose-100 px-3 py-1 text-xs font-bold text-rose-800">
+                  Watch &amp; Earn
+                </span>
+              </div>
+              <h3 className="text-lg font-black text-slate-950 group-hover:text-rose-600 transition-colors">
+                Watch YouTube Videos
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                Stream curated partner content, tech reviews, and gaming insights. Fill the active progress bar to earn.
+              </p>
             </div>
-            <h4 className="text-xs font-black text-slate-950">Real Clients Only</h4>
-            <p className="text-[11px] text-slate-500 mt-1 leading-snug">
-              We exclusively publish real tasks contracted and paid for by verified commercial clients.
-            </p>
+            <div className="mt-6 pt-4 border-t border-slate-100">
+              <button
+                type="button"
+                className="w-full inline-flex items-center justify-center gap-1.5 rounded-full bg-rose-50 text-rose-700 hover:bg-rose-600 hover:text-white py-3.5 px-6 text-xs font-bold transition shadow-2xs"
+              >
+                <span>Check Task Status</span>
+                <span>→</span>
+              </button>
+            </div>
           </div>
 
-          <div className="rounded-2xl bg-slate-50/80 border border-slate-200/60 p-4">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 mb-2.5">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
+          {/* Card 2: Train AI */}
+          <div
+            onClick={() =>
+              setModalNotice({
+                title: 'Train AI & Annotate',
+                category: 'AI Alignment & Data Annotation',
+              })
+            }
+            className="group rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl hover:border-cyan-300 transition flex flex-col justify-between cursor-pointer"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-50 text-cyan-600">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <rect x="9" y="9" width="6" height="6" />
+                    <line x1="9" y1="1" x2="9" y2="4" />
+                    <line x1="15" y1="1" x2="15" y2="4" />
+                  </svg>
+                </div>
+                <span className="rounded-full bg-cyan-100 px-3 py-1 text-xs font-bold text-cyan-800">
+                  AI Alignment
+                </span>
+              </div>
+              <h3 className="text-lg font-black text-slate-950 group-hover:text-cyan-700 transition-colors">
+                Train AI &amp; Annotate
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                Compare side-by-side prompt responses from modern LLMs. Provide human feedback (RLHF) for high yields.
+              </p>
             </div>
-            <h4 className="text-xs font-black text-slate-950">Zero Fake Activities</h4>
-            <p className="text-[11px] text-slate-500 mt-1 leading-snug">
-              We never fabricate dummy video views, synthetic AI prompts, or artificial simulations.
-            </p>
+            <div className="mt-6 pt-4 border-t border-slate-100">
+              <button
+                type="button"
+                className="w-full inline-flex items-center justify-center gap-1.5 rounded-full bg-cyan-50 text-cyan-700 hover:bg-cyan-600 hover:text-white py-3.5 px-6 text-xs font-bold transition shadow-2xs"
+              >
+                <span>Check Task Status</span>
+                <span>→</span>
+              </button>
+            </div>
           </div>
 
-          <div className="rounded-2xl bg-slate-50/80 border border-slate-200/60 p-4">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 mb-2.5">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
+          {/* Card 3: POV Video Bounties */}
+          <div
+            onClick={() =>
+              setModalNotice({
+                title: 'POV Video Bounties',
+                category: 'Spatial AI & Media Datasets',
+              })
+            }
+            className="group rounded-[28px] border border-slate-200/90 bg-white p-7 shadow-xs hover:shadow-xl hover:border-indigo-300 transition flex flex-col justify-between cursor-pointer"
+          >
+            <div>
+              <div className="flex items-center justify-between mb-5">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+                  <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M23 7l-7 5 7 5V7z" />
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+                  </svg>
+                </div>
+                <span className="rounded-full bg-indigo-100 px-3 py-1 text-xs font-bold text-indigo-800">
+                  Spatial AI
+                </span>
+              </div>
+              <h3 className="text-lg font-black text-slate-950 group-hover:text-indigo-600 transition-colors">
+                POV Video Bounties
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                Record short 45-90s sweeps of ordinary spaces (workspace, kitchen, streets) for spatial computing datasets.
+              </p>
             </div>
-            <h4 className="text-xs font-black text-slate-950">Guaranteed Points</h4>
-            <p className="text-[11px] text-slate-500 mt-1 leading-snug">
-              Every completed quiz and verified task is credited straight to your balance with clear redemption options.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-50/80 border border-slate-200/60 p-4">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 mb-2.5">
-              <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
+            <div className="mt-6 pt-4 border-t border-slate-100">
+              <button
+                type="button"
+                className="w-full inline-flex items-center justify-center gap-1.5 rounded-full bg-indigo-50 text-indigo-700 hover:bg-indigo-600 hover:text-white py-3.5 px-6 text-xs font-bold transition shadow-2xs"
+              >
+                <span>Check Task Status</span>
+                <span>→</span>
+              </button>
             </div>
-            <h4 className="text-xs font-black text-slate-950">Active Onboarding</h4>
-            <p className="text-[11px] text-slate-500 mt-1 leading-snug">
-              Provider integrations are currently underway. New client campaigns launch as soon as approved.
-            </p>
           </div>
         </div>
       </div>
