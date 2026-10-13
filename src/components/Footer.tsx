@@ -36,7 +36,7 @@ export default function Footer() {
       { name: 'Is Task Earn legit', href: '/terms' },
       { name: 'For business', href: '/contact' },
       { name: 'Reward rules', href: '/reward-rules' },
-      { name: 'Security & ledger', href: '/privacy' },
+      { name: 'Security & privacy', href: '/privacy' },
     ],
     explore: [
       { name: 'Help centre', href: '/faq' },

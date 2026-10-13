@@ -16,12 +16,11 @@ export async function GET() {
 
     const admin = createAdminClient();
 
-    // 1. Fetch all ledger rows for this user to calculate real balance
+    // 1. Fetch ledger amounts for this user to calculate real balance
     const { data: ledger, error: ledgerError } = await admin
       .from('reward_ledger')
-      .select('id, amount, reason, created_at')
-      .eq('user_id', user.id)
-      .order('created_at', { ascending: false });
+      .select('amount')
+      .eq('user_id', user.id);
 
     if (ledgerError) {
       return NextResponse.json(
@@ -49,7 +48,6 @@ export async function GET() {
 
     return NextResponse.json({
       balance,
-      ledger: ledger || [],
       redemptions: redemptions || [],
     });
   } catch (err: unknown) {

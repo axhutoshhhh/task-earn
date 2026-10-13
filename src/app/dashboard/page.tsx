@@ -28,19 +28,16 @@ export default async function DashboardPage() {
     .eq('id', user.id)
     .single();
 
-  // Fetch rewards ledger total balance and recent transactions
+  // Fetch rewards ledger total balance
   const { data: ledgerEntries } = await supabase
     .from('reward_ledger')
-    .select('*')
-    .eq('user_id', user.id)
-    .order('created_at', { ascending: false });
+    .select('amount')
+    .eq('user_id', user.id);
 
   const pointsBalance = (ledgerEntries || []).reduce(
     (total, entry) => total + (entry.amount || 0),
     0
   );
-
-  const recentTransactions = (ledgerEntries || []).slice(0, 5);
 
   const displayName =
     user.user_metadata?.display_name ||
@@ -387,75 +384,6 @@ export default async function DashboardPage() {
             </div>
           </div>
 
-          {/* Recent Activity / Ledger Stream */}
-          <div className="rounded-[28px] border border-slate-200/90 bg-white overflow-hidden shadow-xs">
-            <div className="p-6 border-b border-slate-100 flex items-center justify-between">
-              <div>
-                <h3 className="text-base font-bold text-slate-950">Recent Ledger Activity</h3>
-                <p className="text-xs text-slate-500 mt-0.5">
-                  Verified server-side credit and debit events on your account.
-                </p>
-              </div>
-              <Link
-                href="/dashboard/rewards"
-                className="text-xs font-bold text-[#793FFF] hover:underline"
-              >
-                View Full Ledger →
-              </Link>
-            </div>
-
-            {recentTransactions.length === 0 ? (
-              <div className="p-12 text-center text-xs sm:text-sm text-slate-500">
-                No recent activity recorded. Take a quiz or watch a video to see your points ledger update!
-              </div>
-            ) : (
-              <div className="divide-y divide-slate-100">
-                {recentTransactions.map((tx) => (
-                  <div
-                    key={tx.id}
-                    className="p-5 flex items-center justify-between gap-4 hover:bg-slate-50/60 transition"
-                  >
-                    <div className="flex items-center gap-3.5">
-                      <div
-                        className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl ${
-                          tx.amount > 0 ? 'bg-emerald-50 text-emerald-600' : 'text-rose-600 bg-rose-50'
-                        }`}
-                      >
-                        {tx.amount > 0 ? (
-                          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                            <polyline points="20 6 9 17 4 12" />
-                          </svg>
-                        ) : (
-                          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                          </svg>
-                        )}
-                      </div>
-                      <div>
-                        <p className="text-xs sm:text-sm font-bold text-slate-900">{tx.reason}</p>
-                        <p className="text-[11px] text-slate-400">
-                          {new Date(tx.created_at).toLocaleString()}
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="text-right">
-                      <span
-                        className={`text-sm font-black ${
-                          tx.amount > 0 ? 'text-emerald-600' : 'text-rose-600'
-                        }`}
-                      >
-                        {tx.amount > 0 ? `+${tx.amount}` : tx.amount} PTS
-                      </span>
-                      <span className="block text-[10px] uppercase font-bold text-slate-400">
-                        Verified
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
         </div>
       </main>
   );

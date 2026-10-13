@@ -523,14 +523,14 @@ export default function Navbar() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
-                          Live Ledger Audit
+                          Balance &amp; Security Audit
                         </h4>
                         <span className="rounded-full bg-amber-50 border border-amber-200/60 px-1.5 py-0.2 text-[9px] font-bold text-amber-700">
                           Audited
                         </span>
                       </div>
                       <p className="mt-0.5 text-xs text-slate-500 leading-snug font-normal">
-                        Cryptographically validated double-entry proof
+                        Server-verified balance &amp; payout integrity
                       </p>
                     </div>
                   </Link>
