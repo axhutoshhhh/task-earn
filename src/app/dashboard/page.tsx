@@ -49,22 +49,23 @@ export default async function DashboardPage() {
   return (
     <main className="py-8 sm:py-12 px-4 sm:px-8 lg:px-12 w-full">
       <div className="mx-auto max-w-7xl xl:max-w-[1440px] space-y-10">
-        {/* Page Header: Clean Typography & Repositioned Wallet Balance */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-slate-100/80">
-          <div className="space-y-3">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950">
-              Welcome Back, {displayName}!
-            </h1>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#793FFF] tracking-tight">
-              Let&apos;s Make Some Money For You
-            </p>
-          </div>
+        {/* Top Center Large Welcome Heading */}
+        <div className="text-center max-w-4xl mx-auto space-y-3 pt-2 pb-2">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-950">
+            Welcome Back, {displayName}!
+          </h1>
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#793FFF] tracking-tight">
+            Let&apos;s Make Some Money For You
+          </p>
+        </div>
 
-          {/* Repositioned Wallet Balance Card (Points Only, No Approx Money) */}
-          <div className="shrink-0">
-            <div className="rounded-[28px] border border-slate-200/90 bg-white/95 backdrop-blur-xl p-5 sm:p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:border-[#793FFF]/40 hover:shadow-md transition flex items-center gap-5 min-w-[240px] sm:min-w-[270px]">
-              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
-                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3">
+        {/* 2 Equal-Sized Tabs: Wallet Balance & Redeem */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto w-full">
+          {/* Tab 1: Wallet Balance */}
+          <div className="rounded-[28px] border border-slate-200/90 bg-white/95 backdrop-blur-xl p-6 sm:p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:border-[#793FFF]/40 hover:shadow-md transition flex items-center justify-between gap-5">
+            <div className="flex items-center gap-5">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
+                <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3">
                   <circle cx="12" cy="12" r="9" />
                   <path d="M12 7v10" />
                 </svg>
@@ -83,7 +84,44 @@ export default async function DashboardPage() {
                 </div>
               </div>
             </div>
+            <span className="rounded-full bg-purple-50 border border-purple-100 px-3 py-1 text-xs font-bold text-[#793FFF] shrink-0">
+              Active
+            </span>
           </div>
+
+          {/* Tab 2: Redeem */}
+          <Link
+            href="/dashboard/rewards"
+            className="group rounded-[28px] border border-slate-200/90 bg-white/95 backdrop-blur-xl p-6 sm:p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:border-[#793FFF] hover:shadow-lg transition flex items-center justify-between gap-5 cursor-pointer"
+          >
+            <div className="flex items-center gap-5">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-amber-500 via-orange-500 to-rose-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3">
+                  <rect x="2" y="5" width="20" height="14" rx="2" />
+                  <line x1="2" y1="10" x2="22" y2="10" />
+                </svg>
+              </div>
+              <div>
+                <span className="block text-xs font-black uppercase tracking-wider text-slate-400">
+                  Redeem Rewards
+                </span>
+                <div className="mt-1 flex items-baseline gap-2">
+                  <span className="text-2xl sm:text-3xl font-black text-slate-950 group-hover:text-[#793FFF] transition-colors tracking-tight">
+                    Redeem
+                  </span>
+                  <span className="text-xs font-bold text-slate-500">
+                    UPI &amp; Vouchers
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition group-hover:bg-[#793FFF] group-hover:text-white">
+              <svg className="h-5 w-5 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </div>
+          </Link>
         </div>
 
           {/* Earning Channels (Organized 6-Card Grid) */}
