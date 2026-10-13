@@ -47,144 +47,44 @@ export default async function DashboardPage() {
     'Member';
 
   return (
-    <main className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-6xl space-y-8">
-          {/* Welcome Earning Console Card */}
-          <div className="relative overflow-hidden rounded-[32px] bg-slate-950 p-8 sm:p-12 text-white shadow-2xl border border-slate-900">
-            {/* Ambient Background Lighting */}
-            <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#793FFF]/25 blur-3xl" />
-            <div className="pointer-events-none absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-[#B5FF24]/10 blur-3xl" />
-
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="space-y-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-[#B5FF24] backdrop-blur-md border border-white/10">
-                  <span className="h-2 w-2 rounded-full bg-[#B5FF24] animate-pulse" />
-                  <span>Verified Member • Active Earnings Engine</span>
-                </div>
-                <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
-                  Welcome back, {displayName}!
-                </h1>
-                <p className="text-sm text-slate-400 max-w-xl leading-relaxed">
-                  Earn points across 5 active channels. Speed quizzes, YouTube video watch sessions, AI model training, arcade games, and POV bounties.
-                </p>
-              </div>
-
-              {/* Quick Actions in Hero */}
-              <div className="shrink-0 flex flex-col sm:flex-row gap-3">
-                <Link
-                  href="/dashboard/quiz"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#793FFF] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#793FFF]/30 hover:bg-[#682FF8] transition active:scale-95 text-center"
-                >
-                  <span>Launch Speed Quiz</span>
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </Link>
-                <Link
-                  href="/dashboard/rewards"
-                  className="inline-flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 border border-white/15 px-6 py-3.5 text-sm font-bold text-white transition text-center backdrop-blur-xs"
-                >
-                  Redeem Vouchers
-                </Link>
-              </div>
-            </div>
+    <main className="py-8 sm:py-12 px-4 sm:px-8 lg:px-12 w-full">
+      <div className="mx-auto max-w-7xl xl:max-w-[1440px] space-y-10">
+        {/* Page Header: Clean Typography & Repositioned Wallet Balance */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-slate-100/80">
+          <div className="space-y-3">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-950">
+              Welcome Back, {displayName}!
+            </h1>
+            <p className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-[#793FFF] tracking-tight">
+              Let&apos;s Make Some Money For You
+            </p>
           </div>
 
-          {/* Quick Metrics Bar (Fintech Glass Style) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {/* Stat 1: Wallet Balance */}
-            <div className="rounded-[24px] border border-slate-200/90 bg-white p-6 shadow-xs hover:border-[#793FFF]/40 hover:shadow-md transition">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+          {/* Repositioned Wallet Balance Card (Points Only, No Approx Money) */}
+          <div className="shrink-0">
+            <div className="rounded-[28px] border border-slate-200/90 bg-white/95 backdrop-blur-xl p-5 sm:p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] hover:border-[#793FFF]/40 hover:shadow-md transition flex items-center gap-5 min-w-[240px] sm:min-w-[270px]">
+              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-tr from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25">
+                <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v10" />
+                </svg>
+              </div>
+              <div>
+                <span className="block text-xs font-black uppercase tracking-wider text-slate-400">
                   Wallet Balance
                 </span>
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#793FFF]/10 text-[#793FFF]">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <circle cx="12" cy="12" r="9" />
-                    <path d="M12 7v10" />
-                  </svg>
+                <div className="mt-1 flex items-baseline gap-2">
+                  <span className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
+                    {pointsBalance}
+                  </span>
+                  <span className="text-sm font-black text-[#793FFF] uppercase tracking-wider">
+                    PTS
+                  </span>
                 </div>
               </div>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-4xl font-black text-slate-950">{pointsBalance}</span>
-                <span className="text-xs font-bold text-[#793FFF]">PTS</span>
-              </div>
-              <p className="mt-2 text-xs text-slate-500 font-medium">
-                Approx. ${(pointsBalance * 0.01).toFixed(2)} USD in vouchers
-              </p>
-            </div>
-
-            {/* Stat 2: Quizzes Active */}
-            <div className="rounded-[24px] border border-slate-200/90 bg-white p-6 shadow-xs hover:border-[#793FFF]/40 hover:shadow-md transition">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  Speed Quizzes
-                </span>
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-purple-50 text-[#793FFF]">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-                  </svg>
-                </div>
-              </div>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-4xl font-black text-slate-950">5 Qs</span>
-                <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-800">
-                  Ready
-                </span>
-              </div>
-              <p className="mt-2 text-xs text-slate-500 font-medium">
-                +10 PTS per 7s question
-              </p>
-            </div>
-
-            {/* Stat 3: Watch & Train AI */}
-            <div className="rounded-[24px] border border-slate-200/90 bg-white p-6 shadow-xs hover:border-[#793FFF]/40 hover:shadow-md transition">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  Watch &amp; Train AI
-                </span>
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-cyan-50 text-cyan-600">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <polygon points="5 3 19 12 5 21 5 3" />
-                  </svg>
-                </div>
-              </div>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-3xl font-black text-slate-950">Live</span>
-                <span className="rounded-full bg-cyan-100 px-2.5 py-0.5 text-xs font-bold text-cyan-800">
-                  Active Feed
-                </span>
-              </div>
-              <p className="mt-2 text-xs text-slate-500 font-medium">
-                25–35 PTS per session
-              </p>
-            </div>
-
-            {/* Stat 4: Games & POV */}
-            <div className="rounded-[24px] border border-slate-200/90 bg-white p-6 shadow-xs hover:border-[#793FFF]/40 hover:shadow-md transition">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                  Games &amp; Bounties
-                </span>
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M23 7l-7 5 7 5V7z" />
-                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
-                  </svg>
-                </div>
-              </div>
-              <div className="mt-4 flex items-baseline gap-2">
-                <span className="text-3xl font-black text-slate-950">Top Tier</span>
-                <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-bold text-emerald-800">
-                  High Yield
-                </span>
-              </div>
-              <p className="mt-2 text-xs text-slate-500 font-medium">
-                Up to 220 PTS per bounty
-              </p>
             </div>
           </div>
+        </div>
 
           {/* Earning Channels (Organized 6-Card Grid) */}
           <div>
