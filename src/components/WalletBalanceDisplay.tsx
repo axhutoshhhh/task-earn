@@ -50,11 +50,11 @@ export default function WalletBalanceDisplay({ initialBalance }: WalletBalanceDi
   }, []);
 
   return (
-    <div className="mt-1 flex items-baseline gap-2">
-      <span className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
+    <div className="mt-1.5 flex items-baseline gap-2.5">
+      <span className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-950 tracking-tight">
         {balance}
       </span>
-      <span className="text-sm font-black text-[#793FFF] uppercase tracking-wider">
+      <span className="rounded-lg bg-[#793FFF]/10 border border-[#793FFF]/20 px-2.5 py-0.5 text-xs font-black text-[#793FFF] uppercase tracking-wider">
         PTS
       </span>
     </div>
