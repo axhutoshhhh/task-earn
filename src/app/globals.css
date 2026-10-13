@@ -49,3 +49,136 @@ body {
   outline-offset: 2px;
   border-radius: 8px;
 }
+
+/* =========================================================================
+   CLEAN AESTHETIC NEUMORPHISM (SOFT UI) UTILITIES
+   Sculpted dual-shadow lighting for tactile interactive surfaces
+   ========================================================================= */
+
+.neu-bg {
+  background-color: #EEF2F7;
+}
+
+/* Extruded Flat Surfaces */
+.neu-flat {
+  background: #EEF2F7;
+  box-shadow: 8px 8px 18px #C5D0DE, -8px -8px 18px #FFFFFF;
+}
+
+.neu-flat-sm {
+  background: #EEF2F7;
+  box-shadow: 4px 4px 10px #C5D0DE, -4px -4px 10px #FFFFFF;
+}
+
+.neu-flat-lg {
+  background: #EEF2F7;
+  box-shadow: 14px 14px 30px #C5D0DE, -14px -14px 30px #FFFFFF;
+}
+
+.neu-flat-xl {
+  background: #EEF2F7;
+  box-shadow: 20px 20px 45px #C5D0DE, -20px -20px 45px #FFFFFF;
+}
+
+/* Inset / Pressed Surfaces */
+.neu-inset {
+  background: #EEF2F7;
+  box-shadow: inset 4px 4px 9px #C5D0DE, inset -4px -4px 9px #FFFFFF;
+}
+
+.neu-inset-sm {
+  background: #EEF2F7;
+  box-shadow: inset 2.5px 2.5px 6px #C5D0DE, inset -2.5px -2.5px 6px #FFFFFF;
+}
+
+.neu-inset-lg {
+  background: #EEF2F7;
+  box-shadow: inset 7px 7px 16px #C5D0DE, inset -7px -7px 16px #FFFFFF;
+}
+
+/* Convex / Soft Elevated Curves */
+.neu-convex {
+  background: linear-gradient(145deg, #FBFDFF, #E4EBF3);
+  box-shadow: 8px 8px 18px #C5D0DE, -8px -8px 18px #FFFFFF;
+}
+
+.neu-convex-sm {
+  background: linear-gradient(145deg, #FBFDFF, #E4EBF3);
+  box-shadow: 4px 4px 10px #C5D0DE, -4px -4px 10px #FFFFFF;
+}
+
+/* Interactive Buttons */
+.neu-btn {
+  background: #EEF2F7;
+  box-shadow: 6px 6px 14px #C5D0DE, -6px -6px 14px #FFFFFF;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn:hover {
+  box-shadow: 8px 8px 18px #BFCBDC, -8px -8px 18px #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.neu-btn:active {
+  box-shadow: inset 4px 4px 8px #C5D0DE, inset -4px -4px 8px #FFFFFF;
+  transform: translateY(1px);
+}
+
+.neu-btn-primary {
+  background: linear-gradient(145deg, #854DFF, #692FF8);
+  box-shadow: 6px 6px 16px rgba(105, 47, 248, 0.35), -5px -5px 14px #FFFFFF;
+  color: #FFFFFF;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn-primary:hover {
+  box-shadow: 8px 8px 22px rgba(105, 47, 248, 0.45), -6px -6px 16px #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.neu-btn-primary:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3), inset -3px -3px 6px rgba(255, 255, 255, 0.2);
+  transform: translateY(1px);
+}
+
+.neu-btn-emerald {
+  background: linear-gradient(145deg, #10B981, #059669);
+  box-shadow: 6px 6px 16px rgba(5, 150, 105, 0.35), -5px -5px 14px #FFFFFF;
+  color: #FFFFFF;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.neu-btn-emerald:hover {
+  box-shadow: 8px 8px 22px rgba(5, 150, 105, 0.45), -6px -6px 16px #FFFFFF;
+  transform: translateY(-1px);
+}
+
+.neu-btn-emerald:active {
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.3), inset -3px -3px 6px rgba(255, 255, 255, 0.2);
+  transform: translateY(1px);
+}
+
+/* Inset Input Fields */
+.neu-input {
+  background: #EEF2F7;
+  box-shadow: inset 4px 4px 9px #C5D0DE, inset -4px -4px 9px #FFFFFF;
+  border: 1px solid rgba(197, 208, 222, 0.3);
+  transition: all 0.2s ease;
+}
+
+.neu-input:focus {
+  outline: none;
+  border-color: rgba(121, 63, 255, 0.5);
+  box-shadow: inset 4px 4px 9px #C5D0DE, inset -4px -4px 9px #FFFFFF, 0 0 0 2px rgba(121, 63, 255, 0.15);
+}
+
+/* Icon Pockets (Raised & Sunken) */
+.neu-icon-well {
+  background: linear-gradient(145deg, #FBFDFF, #E4EBF3);
+  box-shadow: 5px 5px 12px #C5D0DE, -5px -5px 12px #FFFFFF;
+}
+
+.neu-icon-sunken {
+  background: #EEF2F7;
+  box-shadow: inset 3px 3px 7px #C5D0DE, inset -3px -3px 7px #FFFFFF;
+}
