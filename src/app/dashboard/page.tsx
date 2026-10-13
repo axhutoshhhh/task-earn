@@ -42,7 +42,12 @@ export default async function DashboardPage() {
 
   const recentTransactions = (ledgerEntries || []).slice(0, 5);
 
-  const displayName = profile?.display_name || user.email?.split('@')[0] || 'User';
+  const displayName =
+    user.user_metadata?.display_name ||
+    profile?.display_name ||
+    user.user_metadata?.name ||
+    user.user_metadata?.full_name ||
+    'Member';
 
   return (
     <main className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">

@@ -1,8 +1,6 @@
 import React from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { redirect } from 'next/navigation';
-import DashboardNav from '@/components/DashboardNav';
-
 export default async function DashboardLayout({
   children,
 }: {
@@ -19,7 +17,6 @@ export default async function DashboardLayout({
 
   return (
     <div className="min-h-screen bg-transparent">
-      <DashboardNav />
       {children}
     </div>
   );
