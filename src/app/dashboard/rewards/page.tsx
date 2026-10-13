@@ -455,13 +455,13 @@ export default function RewardsPage() {
           />
         );
       case 'Apple':
-        return <OfficialAppleLogo className={className || 'h-7 w-7 text-slate-900'} />;
+        return <OfficialAppleLogo className={className || 'h-7 w-7 text-slate-950'} />;
       case 'Starbucks':
         return <OfficialStarbucksLogo className={className || 'h-8 w-8 object-contain'} />;
       case 'Google Play':
         return <OfficialGooglePlayLogo className={className || 'h-7 w-7'} />;
       case 'Amazon':
-        return <OfficialAmazonLogo className={className || 'h-5 w-auto text-slate-900'} />;
+        return <OfficialAmazonLogo className={className || 'h-5 w-auto text-slate-950'} />;
       case 'Paytm':
         return <OfficialPaytmLogo className={className || 'h-8 w-8 object-contain'} />;
       case 'Google Pay':
@@ -477,32 +477,24 @@ export default function RewardsPage() {
   return (
     <div className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl space-y-8">
-        {/* Top Neumorphic Wealth & Redemption Hero Banner */}
-        <div className="neu-flat-lg rounded-[36px] p-6 sm:p-10 border border-white/80">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
-            <div className="space-y-3.5">
-              <div className="flex flex-wrap items-center gap-3">
-                <Link
-                  href="/dashboard"
-                  className="neu-btn h-9 w-9 rounded-full flex items-center justify-center text-slate-700 transition"
-                  title="Back to Dashboard"
-                >
-                  <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M19 12H5M12 19l-7-7 7-7" />
-                  </svg>
-                </Link>
+        {/* Top Wealth & Redemption Banner */}
+        <div className="relative overflow-hidden rounded-[32px] bg-slate-950 p-8 sm:p-12 text-white shadow-2xl border border-slate-900">
+          <div className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-[#793FFF]/25 blur-3xl" />
+          <div className="pointer-events-none absolute -left-20 -bottom-20 h-64 w-64 rounded-full bg-[#B5FF24]/10 blur-3xl" />
 
-                <div className="neu-inset-sm inline-flex items-center gap-2 rounded-full px-3.5 py-1 text-xs font-bold text-[#793FFF]">
-                  <span className="h-2 w-2 rounded-full bg-[#793FFF] animate-pulse" />
+          <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="space-y-3">
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1 text-xs font-semibold text-[#B5FF24] backdrop-blur-md border border-white/10">
+                  <span className="h-2 w-2 rounded-full bg-[#B5FF24] animate-pulse" />
                   <span>Instant Gift Cards &bull; Direct Wallet Payouts</span>
                 </div>
-
                 <button
                   type="button"
                   onClick={() => setShowSupportModal(true)}
-                  className="neu-btn inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-bold text-slate-700 transition cursor-pointer"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-white/10 hover:bg-white/20 px-3 py-1 text-xs font-semibold text-slate-200 transition border border-white/10 cursor-pointer"
                 >
-                  <svg className="h-3.5 w-3.5 text-[#793FFF]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <svg className="h-3.5 w-3.5 text-[#B5FF24]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <circle cx="12" cy="12" r="10" />
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
                     <line x1="12" y1="17" x2="12.01" y2="17" />
@@ -511,30 +503,28 @@ export default function RewardsPage() {
                 </button>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-slate-900">
+              <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white">
                 Redeem Rewards &amp; Payouts
               </h1>
-              <p className="max-w-xl text-xs sm:text-sm text-slate-600 leading-relaxed font-medium">
+              <p className="max-w-xl text-xs sm:text-sm text-slate-400">
                 Convert your verified task points into direct Paytm wallet transfers, Google Pay UPI, PayPal cash, and official digital gift card vouchers.
               </p>
             </div>
 
-            {/* Tactile Inset Wallet Balance Well */}
-            <div className="neu-inset rounded-3xl p-6 border border-white/60 shrink-0 min-w-[250px] text-center md:text-left">
-              <span className="text-[11px] font-black uppercase tracking-wider text-slate-500">
+            {/* Live Wallet Balance Box */}
+            <div className="flex flex-col rounded-3xl bg-white/5 p-6 backdrop-blur-xl border border-white/10 shrink-0 min-w-[240px]">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
                 Available Wallet Balance
               </span>
-              <div className="mt-2 flex items-baseline justify-center md:justify-start gap-2.5">
-                <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
+              <div className="mt-2 flex items-baseline gap-2">
+                <span className="text-4xl sm:text-5xl font-black text-[#B5FF24]">
                   {loading ? '...' : balance}
                 </span>
-                <span className="neu-inset-sm px-2.5 py-0.5 text-xs font-black text-[#793FFF] rounded-lg">
-                  PTS
-                </span>
+                <span className="text-sm font-bold text-slate-400">PTS</span>
               </div>
-              <div className="mt-3 pt-3 border-t border-slate-300/40 flex items-center justify-between text-xs">
-                <span className="text-slate-500 font-semibold">Estimated Value:</span>
-                <span className="font-black text-slate-900">
+              <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-between text-xs">
+                <span className="text-slate-400">Estimated Value:</span>
+                <span className="font-bold text-white">
                   ₹{((balance || 0) / 10).toFixed(2)} INR
                 </span>
               </div>
@@ -543,12 +533,12 @@ export default function RewardsPage() {
         </div>
 
         {/* ========================================================= */}
-        {/* NEUMORPHIC TRUST & GUARANTEE STRIP */}
+        {/* TRUST, CONVERSION FACTOR & GUARANTEE STRIP */}
         {/* ========================================================= */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* 1. Transparent Conversion Factor (10 Points = 1 Rupee) */}
-          <div className="neu-flat rounded-3xl p-5 border border-white/70 flex items-center gap-4">
-            <div className="neu-icon-well flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-[#793FFF]">
+          <div className="rounded-2xl bg-white border border-slate-200/80 p-5 shadow-xs flex items-center gap-3.5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF] border border-[#793FFF]/20">
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <line x1="12" y1="1" x2="12" y2="23" />
                 <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
@@ -557,37 +547,37 @@ export default function RewardsPage() {
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-sm font-black text-slate-900">10 Points = ₹1.00 INR</span>
-                <span className="neu-inset-sm rounded-full px-2 py-0.5 text-[10px] font-bold text-[#793FFF]">
+                <span className="rounded-full bg-[#793FFF]/10 px-2 py-0.5 text-[10px] font-bold text-[#793FFF]">
                   Fixed Parity
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-1 font-medium leading-relaxed">
+              <p className="text-xs text-slate-500 mt-0.5">
                 Zero hidden fees. 1,000 Points = ₹100 direct payout.
               </p>
             </div>
           </div>
 
-          {/* 2. 100% Safe & Genuine Payout */}
-          <div className="neu-flat rounded-3xl p-5 border border-white/70 flex items-center gap-4">
-            <div className="neu-icon-well flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-emerald-600">
+          {/* 2. Beautiful Green Verified Tick (100% Safe & Genuine Payout) */}
+          <div className="rounded-2xl bg-gradient-to-br from-emerald-500/10 via-emerald-50/50 to-white border border-emerald-200 p-5 shadow-xs flex items-center gap-3.5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-emerald-500 text-white shadow-md shadow-emerald-500/25">
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm font-black text-slate-900">100% Genuine Payout</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm font-black text-emerald-950">100% Safe &amp; Genuine Payout</span>
                 <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
               </div>
-              <p className="text-xs text-slate-500 mt-1 font-medium leading-relaxed">
+              <p className="text-xs text-emerald-800 font-medium mt-0.5">
                 Direct UPI, Paytm Wallet &amp; Official Authorized Codes.
               </p>
             </div>
           </div>
 
           {/* 3. 24-Hour SLA Guarantee */}
-          <div className="neu-flat rounded-3xl p-5 border border-white/70 flex items-center gap-4">
-            <div className="neu-icon-well flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl text-blue-600">
+          <div className="rounded-2xl bg-white border border-slate-200/80 p-5 shadow-xs flex items-center gap-3.5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-500/10 text-blue-600 border border-blue-500/20">
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <circle cx="12" cy="12" r="10" />
                 <polyline points="12 6 12 12 16 14" />
@@ -595,21 +585,21 @@ export default function RewardsPage() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-black text-slate-900">Within 24 Hours</span>
-                <span className="neu-inset-sm rounded-full px-2 py-0.5 text-[10px] font-bold text-blue-600">
+                <span className="text-sm font-black text-slate-900">Withdrawals Within 24 Hours</span>
+                <span className="rounded-full bg-blue-50 px-2 py-0.5 text-[10px] font-bold text-blue-700">
                   Fast SLA
                 </span>
               </div>
-              <p className="text-xs text-slate-500 mt-1 font-medium leading-relaxed">
+              <p className="text-xs text-slate-500 mt-0.5">
                 Guaranteed payout disbursement within 24 hours.
               </p>
             </div>
           </div>
         </div>
 
-        {/* Global Error Notice */}
+        {/* Global Error Banner */}
         {error && (
-          <div className="neu-inset rounded-2xl p-4 text-xs font-bold text-rose-700 flex items-center justify-between border border-rose-200/40">
+          <div className="rounded-2xl border border-rose-200 bg-rose-50 p-4 text-xs font-semibold text-rose-800 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <svg className="h-4 w-4 text-rose-600 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                 <circle cx="12" cy="12" r="10" />
@@ -620,7 +610,7 @@ export default function RewardsPage() {
             </div>
             <button
               onClick={() => setError(null)}
-              className="neu-btn px-3 py-1 rounded-full text-rose-600 text-[11px] font-black cursor-pointer"
+              className="text-rose-600 hover:text-rose-950 font-bold ml-4 cursor-pointer"
             >
               Dismiss
             </button>
@@ -628,21 +618,19 @@ export default function RewardsPage() {
         )}
 
         {/* Navigation Tabs Bar */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="neu-inset rounded-full p-1.5 inline-flex items-center gap-2 self-start">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
             <button
               type="button"
               onClick={() => setActiveTab('catalog')}
-              className={`rounded-full px-5 py-2 text-xs font-black transition cursor-pointer flex items-center gap-2 ${
+              className={`rounded-full px-5 py-2 text-xs font-bold transition cursor-pointer flex items-center gap-2 ${
                 activeTab === 'catalog'
-                  ? 'neu-flat text-slate-900'
-                  : 'text-slate-500 hover:text-slate-900'
+                  ? 'bg-slate-950 text-white shadow-sm'
+                  : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
               }`}
             >
               <span>Vouchers &amp; Payouts Catalog</span>
-              <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
-                activeTab === 'catalog' ? 'bg-[#793FFF] text-white' : 'bg-slate-300/60 text-slate-700'
-              }`}>
+              <span className="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] text-white">
                 {CATALOG.length}
               </span>
             </button>
@@ -650,15 +638,15 @@ export default function RewardsPage() {
             <button
               type="button"
               onClick={() => setActiveTab('redemptions')}
-              className={`rounded-full px-5 py-2 text-xs font-black transition cursor-pointer flex items-center gap-2 ${
+              className={`rounded-full px-5 py-2 text-xs font-bold transition cursor-pointer flex items-center gap-2 ${
                 activeTab === 'redemptions'
-                  ? 'neu-flat text-slate-900'
-                  : 'text-slate-500 hover:text-slate-900'
+                  ? 'bg-slate-950 text-white shadow-sm'
+                  : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
               }`}
             >
               <span>Redemption History</span>
-              <span className={`rounded-full px-2 py-0.5 text-[10px] font-bold ${
-                activeTab === 'redemptions' ? 'bg-emerald-600 text-white' : 'bg-slate-300/60 text-slate-700'
+              <span className={`rounded-full px-2 py-0.5 text-[10px] ${
+                activeTab === 'redemptions' ? 'bg-[#B5FF24] text-slate-950' : 'bg-slate-100 text-slate-700'
               }`}>
                 {redemptions.length}
               </span>
@@ -668,7 +656,7 @@ export default function RewardsPage() {
           <button
             type="button"
             onClick={() => setShowSupportModal(true)}
-            className="neu-btn self-start sm:self-auto inline-flex items-center gap-2 text-xs font-black text-[#793FFF] px-4 py-2 rounded-full cursor-pointer"
+            className="self-start sm:self-auto inline-flex items-center gap-2 text-xs font-bold text-[#793FFF] hover:text-[#682FF8] bg-[#793FFF]/10 hover:bg-[#793FFF]/20 px-3.5 py-1.5 rounded-full transition cursor-pointer"
           >
             <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <circle cx="12" cy="12" r="10" />
@@ -685,30 +673,27 @@ export default function RewardsPage() {
         {activeTab === 'catalog' && (
           <div className="space-y-6">
             {/* Category Filter Pills */}
-            <div className="flex flex-wrap items-center gap-2.5">
+            <div className="flex flex-wrap items-center gap-2">
               {[
                 { label: 'All Rewards (11)', value: 'all' },
                 { label: 'Wallets & UPI (3)', value: 'wallets' },
                 { label: 'E-Commerce (2)', value: 'ecommerce' },
                 { label: 'Food & Dining (3)', value: 'food' },
                 { label: 'Tech & Gaming (3)', value: 'gaming' },
-              ].map((tab) => {
-                const isActive = categoryFilter === tab.value;
-                return (
-                  <button
-                    key={tab.value}
-                    type="button"
-                    onClick={() => setCategoryFilter(tab.value)}
-                    className={`rounded-full px-4 py-2 text-xs font-black transition cursor-pointer ${
-                      isActive
-                        ? 'neu-inset text-[#793FFF]'
-                        : 'neu-btn text-slate-600'
-                    }`}
-                  >
-                    {tab.label}
-                  </button>
-                );
-              })}
+              ].map((tab) => (
+                <button
+                  key={tab.value}
+                  type="button"
+                  onClick={() => setCategoryFilter(tab.value)}
+                  className={`rounded-full px-4 py-1.5 text-xs font-bold transition cursor-pointer ${
+                    categoryFilter === tab.value
+                      ? 'bg-[#793FFF] text-white shadow-xs'
+                      : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
             </div>
 
             {/* Cards Grid */}
@@ -720,12 +705,12 @@ export default function RewardsPage() {
                 return (
                   <div
                     key={item.id}
-                    className="neu-flat rounded-[32px] p-6 border border-white/70 flex flex-col justify-between transition-all duration-200 hover:-translate-y-1"
+                    className="group relative flex flex-col justify-between overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-xl hover:border-slate-300"
                   >
                     <div>
                       {/* Realistic Digital Voucher Card Graphic */}
                       <div
-                        className={`relative aspect-[1.65/1] w-full overflow-hidden rounded-2xl bg-gradient-to-br ${item.cardBg} p-5 text-white shadow-md border flex flex-col justify-between`}
+                        className={`relative aspect-[1.65/1] w-full overflow-hidden rounded-2xl bg-gradient-to-br ${item.cardBg} p-5 text-white shadow-lg border flex flex-col justify-between`}
                         style={{ borderColor: `${item.accentColor}33` }}
                       >
                         {/* Ambient brand glow */}
@@ -738,10 +723,10 @@ export default function RewardsPage() {
                           style={{ backgroundColor: item.accentColor }}
                         />
 
-                        {/* Metallic microchip & Official Brand Logo */}
+                        {/* Metallic microchip & Official Brand Logo inside high-contrast badge */}
                         <div className="relative z-10 flex items-start justify-between">
                           <div className="flex items-center gap-3">
-                            {/* Crisp white container ensures 100% logo visibility */}
+                            {/* High-contrast crisp white badge ensures 100% logo visibility and pop */}
                             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white p-2 shadow-md shadow-black/20 ring-1 ring-white/90">
                               {renderBrandLogo(item.brand, 'h-full w-full object-contain')}
                             </div>
@@ -798,30 +783,30 @@ export default function RewardsPage() {
                       {/* Item Details */}
                       <div className="mt-5 space-y-2">
                         <div className="flex items-start justify-between gap-2">
-                          <h3 className="text-base font-black text-slate-900">
+                          <h3 className="text-base font-black text-slate-950">
                             {item.name}
                           </h3>
-                          <span className="neu-inset-sm rounded-full px-2.5 py-0.5 text-[11px] font-bold text-slate-700 shrink-0">
+                          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-bold text-slate-700 shrink-0">
                             {item.points.toLocaleString()} Pts
                           </span>
                         </div>
-                        <p className="text-xs text-slate-600 leading-relaxed font-medium">
+                        <p className="text-xs text-slate-600 leading-relaxed">
                           {item.description}
                         </p>
                       </div>
                     </div>
 
                     {/* Action & Progress Bar */}
-                    <div className="mt-6 pt-4 border-t border-slate-300/40 space-y-3">
+                    <div className="mt-6 pt-4 border-t border-slate-100 space-y-3">
                       {!canAfford && (
                         <div className="space-y-1.5">
-                          <div className="flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                          <div className="flex items-center justify-between text-[11px] text-slate-500 font-semibold">
                             <span>Progress to Unlock</span>
                             <span>{progressPct}% ({balance} / {item.points} pts)</span>
                           </div>
-                          <div className="neu-inset rounded-full h-2.5 w-full overflow-hidden p-0.5">
+                          <div className="h-2 w-full overflow-hidden rounded-full bg-slate-100">
                             <div
-                              className="h-full rounded-full bg-gradient-to-r from-[#793FFF] to-[#5a1fe0] transition-all duration-500"
+                              className="h-full rounded-full bg-[#793FFF] transition-all duration-500"
                               style={{ width: `${progressPct}%` }}
                             />
                           </div>
@@ -831,10 +816,10 @@ export default function RewardsPage() {
                       <button
                         type="button"
                         onClick={() => handleOpenRedeemModal(item)}
-                        className={`w-full rounded-full py-3 px-4 text-xs font-black transition flex items-center justify-center gap-2 ${
+                        className={`w-full rounded-full py-3 px-4 text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer ${
                           canAfford
-                            ? 'neu-btn-emerald cursor-pointer'
-                            : 'neu-btn text-slate-400 cursor-not-allowed opacity-80'
+                            ? 'bg-[#161616] text-[#B5FF24] hover:bg-slate-900 shadow-md shadow-slate-900/10'
+                            : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200'
                         }`}
                       >
                         {canAfford ? (
@@ -857,54 +842,53 @@ export default function RewardsPage() {
         )}
 
         {/* ========================================================= */}
-        {/* TAB 2: REDEMPTION HISTORY */}
+        {/* TAB 2: REDEMPTION HISTORY (FULLY FUNCTIONAL) */}
         {/* ========================================================= */}
         {activeTab === 'redemptions' && (
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
-                <h2 className="text-xl font-black text-slate-900">
+                <h2 className="text-xl font-black text-slate-950">
                   Your Redemption History
                 </h2>
-                <p className="text-xs text-slate-500 mt-1 font-medium">
+                <p className="text-xs text-slate-500 mt-1">
                   Track your payout status, voucher codes, and direct wallet disbursements.
                 </p>
               </div>
 
-              <div className="neu-inset-sm rounded-full px-3.5 py-1.5 text-xs font-bold text-emerald-700 flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
+              <div className="rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-800 flex items-center gap-1.5">
+                <span className="h-2 w-2 rounded-full bg-emerald-500" />
                 <span>24-Hour Payout Guarantee SLA Active</span>
               </div>
             </div>
 
             {redemptions.length === 0 ? (
-              <div className="neu-flat rounded-[32px] p-12 text-center space-y-4 border border-white/70">
-                <div className="neu-icon-well mx-auto flex h-16 w-16 items-center justify-center rounded-2xl text-[#793FFF]">
+              <div className="rounded-3xl border border-slate-200 bg-white p-12 text-center space-y-4 shadow-xs">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF]">
                   <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="2" y="5" width="20" height="14" rx="2" />
                     <line x1="2" y1="10" x2="22" y2="10" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-black text-slate-900">
+                <h3 className="text-lg font-bold text-slate-900">
                   No Past Redemptions Yet
                 </h3>
-                <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed font-medium">
+                <p className="text-xs text-slate-500 max-w-md mx-auto">
                   You haven&apos;t redeemed any rewards yet. Accumulate 1,000 points to redeem ₹100 directly to Paytm, Google Pay UPI, or digital gift vouchers.
                 </p>
                 <button
                   type="button"
                   onClick={() => setActiveTab('catalog')}
-                  className="neu-btn-primary rounded-full px-6 py-2.5 text-xs font-black cursor-pointer inline-flex items-center gap-2"
+                  className="rounded-full bg-[#793FFF] px-6 py-2.5 text-xs font-bold text-white hover:bg-[#682FF8] transition cursor-pointer"
                 >
-                  <span>Browse Rewards Catalog</span>
-                  <span>&rarr;</span>
+                  Browse Rewards Catalog &rarr;
                 </button>
               </div>
             ) : (
-              <div className="neu-flat rounded-[32px] p-2 border border-white/70 overflow-hidden">
+              <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xs">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs">
-                    <thead className="border-b border-slate-300/40 text-[11px] font-black uppercase tracking-wider text-slate-500">
+                    <thead className="bg-slate-50/80 border-b border-slate-100 text-[11px] font-bold uppercase tracking-wider text-slate-500">
                       <tr>
                         <th className="py-4 px-6">Reward &amp; Brand</th>
                         <th className="py-4 px-6">Destination / Voucher Code</th>
@@ -913,26 +897,28 @@ export default function RewardsPage() {
                         <th className="py-4 px-6">Date Requested</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-slate-200/50 text-slate-700">
+                    <tbody className="divide-y divide-slate-100 text-slate-700">
                       {redemptions.map((red) => {
+                        // Extract voucher code inside parenthesis if present
                         const codeMatch = red.reward_type.match(/\(([^)]+)\)/);
                         const voucherCode = codeMatch ? codeMatch[1] : `TE-${red.id.substring(0, 8).toUpperCase()}`;
                         const isCopied = copiedCodeId === red.id;
+
                         const brand = getBrandFromRewardType(red.reward_type);
 
                         return (
-                          <tr key={red.id} className="hover:bg-white/40 transition">
+                          <tr key={red.id} className="hover:bg-slate-50/60 transition">
                             <td className="py-4 px-6">
                               <div className="flex items-center gap-3">
-                                <div className="neu-icon-well flex h-10 w-10 items-center justify-center rounded-xl p-1.5 shrink-0 overflow-hidden">
+                                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white border border-slate-200 p-1.5 shrink-0 overflow-hidden shadow-xs">
                                   {renderBrandLogo(brand, 'h-7 w-7 object-contain')}
                                 </div>
                                 <div>
-                                  <span className="font-black text-slate-900 block">
+                                  <span className="font-bold text-slate-950 block">
                                     {red.reward_type.split(' (')[0]}
                                   </span>
-                                  <span className="text-[11px] text-slate-400 font-mono">
-                                    Ref: #{red.id.substring(0, 8)}
+                                  <span className="text-[11px] text-slate-400">
+                                    Ref ID: #{red.id.substring(0, 8)}
                                   </span>
                                 </div>
                               </div>
@@ -940,13 +926,13 @@ export default function RewardsPage() {
 
                             <td className="py-4 px-6">
                               <div className="flex items-center gap-2">
-                                <code className="neu-inset-sm rounded-lg px-2.5 py-1 font-mono text-xs font-bold text-slate-900">
+                                <code className="rounded-lg bg-slate-100 px-2.5 py-1 font-mono text-xs font-bold text-slate-900 border border-slate-200">
                                   {voucherCode}
                                 </code>
                                 <button
                                   type="button"
                                   onClick={() => copyToClipboard(voucherCode, red.id)}
-                                  className="neu-btn rounded-lg p-1.5 text-slate-600 transition cursor-pointer"
+                                  className="rounded-lg bg-slate-100 hover:bg-slate-200 p-1.5 text-slate-600 transition cursor-pointer"
                                   title="Copy Code"
                                 >
                                   {isCopied ? (
@@ -963,12 +949,12 @@ export default function RewardsPage() {
                               </div>
                             </td>
 
-                            <td className="py-4 px-6 font-mono font-black text-slate-900">
+                            <td className="py-4 px-6 font-mono font-bold text-slate-950">
                               -{red.points.toLocaleString()} PTS
                             </td>
 
                             <td className="py-4 px-6">
-                              <span className="neu-inset-sm inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[11px] font-bold text-emerald-700">
+                              <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold text-emerald-800">
                                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-600" />
                                 <span>Completed &bull; 24h Verified</span>
                               </span>
@@ -991,25 +977,26 @@ export default function RewardsPage() {
             )}
           </div>
         )}
+
       </div>
 
       {/* ========================================================= */}
       {/* REDEMPTION MODAL */}
       {/* ========================================================= */}
       {redeemingItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4 backdrop-blur-md">
-          <div className="neu-flat-xl relative w-full max-w-lg rounded-[36px] bg-[#EEF2F7] p-6 sm:p-8 border border-white/80 space-y-6 animate-in fade-in zoom-in-95">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+          <div className="relative w-full max-w-lg rounded-3xl bg-white p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-6 animate-in fade-in zoom-in-95">
             {/* Modal Header */}
-            <div className="flex items-center justify-between border-b border-slate-300/40 pb-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-4">
               <div className="flex items-center gap-3">
-                <div className="neu-icon-well flex h-12 w-12 items-center justify-center rounded-2xl p-2 shrink-0">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white border border-slate-200 p-2 shadow-xs shrink-0">
                   {renderBrandLogo(redeemingItem.brand, 'h-full w-full object-contain')}
                 </div>
                 <div>
-                  <h3 className="text-base font-black text-slate-900">
+                  <h3 className="text-base font-black text-slate-950">
                     Redeem {redeemingItem.name}
                   </h3>
-                  <span className="text-xs text-slate-500 font-medium">
+                  <span className="text-xs text-slate-500">
                     Guaranteed Payout Value: {redeemingItem.value}
                   </span>
                 </div>
@@ -1018,7 +1005,7 @@ export default function RewardsPage() {
               <button
                 type="button"
                 onClick={() => setRedeemingItem(null)}
-                className="neu-btn h-8 w-8 rounded-full text-slate-500 hover:text-slate-900 flex items-center justify-center transition cursor-pointer"
+                className="h-8 w-8 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 flex items-center justify-center transition cursor-pointer"
               >
                 &times;
               </button>
@@ -1027,33 +1014,35 @@ export default function RewardsPage() {
             {/* Check Affordability */}
             {balance < redeemingItem.points ? (
               <div className="space-y-4">
-                <div className="neu-inset rounded-2xl p-4 text-xs text-amber-900 space-y-2 border border-amber-300/40">
-                  <span className="font-black block">Insufficient Balance</span>
+                <div className="rounded-2xl bg-amber-50 border border-amber-200 p-4 text-xs text-amber-900 space-y-2">
+                  <span className="font-bold block">Insufficient Balance</span>
                   <p>
                     You have <strong>{balance} Points</strong>, but this reward requires <strong>{redeemingItem.points} Points</strong> (₹100).
                   </p>
-                  <p className="text-amber-800 font-medium">
+                  <p className="text-amber-700">
                     You need <strong>{redeemingItem.points - balance} more points</strong> to complete this payout.
                   </p>
                 </div>
 
                 <div className="space-y-2">
-                  <span className="text-xs font-black text-slate-700 block">
+                  <span className="text-xs font-bold text-slate-700 block">
                     Fast ways to earn remaining points:
                   </span>
-                  <Link
-                    href="/dashboard/quiz"
-                    className="neu-flat rounded-2xl p-4 transition block text-center border border-white/70"
-                  >
-                    <span className="font-black text-slate-900 block">Speed Quizzes</span>
-                    <span className="text-[11px] text-[#793FFF] font-bold">Available now • Earn points per correct answer</span>
-                  </Link>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <Link
+                      href="/dashboard/quiz"
+                      className="col-span-2 rounded-xl border border-slate-200 p-3 hover:border-[#793FFF] transition block bg-slate-50 text-center"
+                    >
+                      <span className="font-bold text-slate-900 block">Knowledge Speed Quizzes</span>
+                      <span className="text-[11px] text-[#793FFF]">Available now • Earn points per correct answer</span>
+                    </Link>
+                  </div>
                 </div>
 
                 <button
                   type="button"
                   onClick={() => setRedeemingItem(null)}
-                  className="neu-btn w-full rounded-full py-3 text-xs font-black text-slate-700 cursor-pointer"
+                  className="w-full rounded-full bg-slate-950 py-3 text-xs font-bold text-white hover:bg-slate-800 transition cursor-pointer"
                 >
                   Close &amp; Keep Earning
                 </button>
@@ -1062,7 +1051,7 @@ export default function RewardsPage() {
               <div className="space-y-4">
                 {/* Payout Input Form */}
                 <div>
-                  <label className="block text-xs font-black text-slate-700 mb-1.5">
+                  <label className="block text-xs font-bold text-slate-700 mb-1.5">
                     {redeemingItem.inputLabel}
                   </label>
                   <input
@@ -1070,24 +1059,24 @@ export default function RewardsPage() {
                     value={payoutInput}
                     onChange={(e) => setPayoutInput(e.target.value)}
                     placeholder={redeemingItem.inputPlaceholder}
-                    className="neu-input w-full rounded-2xl px-4 py-3 text-xs text-slate-900 placeholder:text-slate-400 font-medium"
+                    className="w-full rounded-xl border border-slate-300 px-4 py-2.5 text-xs text-slate-900 focus:border-[#793FFF] focus:outline-none focus:ring-2 focus:ring-[#793FFF]/20"
                   />
-                  <p className="text-[11px] text-slate-500 mt-1 font-medium">
+                  <p className="text-[11px] text-slate-500 mt-1">
                     Your withdrawal request will be processed and disbursed within 24 hours.
                   </p>
                 </div>
 
                 {/* Summary Box */}
-                <div className="neu-inset rounded-2xl p-4 space-y-2 text-xs">
-                  <div className="flex justify-between text-slate-600 font-medium">
+                <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200 space-y-2 text-xs">
+                  <div className="flex justify-between text-slate-600">
                     <span>Reward Value:</span>
-                    <span className="font-black text-slate-900">{redeemingItem.value}</span>
+                    <span className="font-bold text-slate-900">{redeemingItem.value}</span>
                   </div>
-                  <div className="flex justify-between text-slate-600 font-medium">
+                  <div className="flex justify-between text-slate-600">
                     <span>Points to Deduct:</span>
-                    <span className="font-black text-rose-600">-{redeemingItem.points} PTS</span>
+                    <span className="font-bold text-rose-600">-{redeemingItem.points} PTS</span>
                   </div>
-                  <div className="flex justify-between border-t border-slate-300/40 pt-2 text-slate-900 font-black">
+                  <div className="flex justify-between border-t border-slate-200 pt-2 text-slate-900 font-bold">
                     <span>Remaining Balance:</span>
                     <span>{balance - redeemingItem.points} PTS</span>
                   </div>
@@ -1098,7 +1087,7 @@ export default function RewardsPage() {
                   <button
                     type="button"
                     onClick={() => setRedeemingItem(null)}
-                    className="neu-btn flex-1 rounded-full py-3 text-xs font-bold text-slate-700 cursor-pointer"
+                    className="flex-1 rounded-full border border-slate-200 py-2.5 text-xs font-bold text-slate-700 hover:bg-slate-100 transition cursor-pointer"
                   >
                     Cancel
                   </button>
@@ -1106,7 +1095,7 @@ export default function RewardsPage() {
                     type="button"
                     onClick={handleConfirmRedeem}
                     disabled={isSubmitting}
-                    className="neu-btn-emerald flex-1 rounded-full py-3 text-xs font-black disabled:opacity-50 cursor-pointer"
+                    className="flex-1 rounded-full bg-[#161616] py-2.5 text-xs font-bold text-[#B5FF24] hover:bg-slate-900 transition disabled:opacity-50 cursor-pointer shadow-md"
                   >
                     {isSubmitting ? 'Processing Payout...' : 'Confirm & Redeem ₹100'}
                   </button>
@@ -1121,38 +1110,38 @@ export default function RewardsPage() {
       {/* SUCCESS CONFIRMATION MODAL */}
       {/* ========================================================= */}
       {successRedemption && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4 backdrop-blur-md">
-          <div className="neu-flat-xl relative w-full max-w-md rounded-[36px] bg-[#EEF2F7] p-6 sm:p-8 border border-white/80 space-y-5 text-center animate-in fade-in zoom-in-95">
-            <div className="neu-icon-well mx-auto flex h-16 w-16 items-center justify-center rounded-2xl text-emerald-600">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+          <div className="relative w-full max-w-md rounded-3xl bg-white p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-5 text-center animate-in fade-in zoom-in-95">
+            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
               <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
 
             <div>
-              <span className="neu-inset-sm rounded-full px-3 py-1 text-[11px] font-black text-emerald-700">
+              <span className="rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-[11px] font-bold text-emerald-700">
                 100% Genuine Payout Confirmed
               </span>
-              <h3 className="mt-3 text-xl font-black text-slate-900">
+              <h3 className="mt-3 text-xl font-black text-slate-950">
                 Redemption Successful!
               </h3>
-              <p className="mt-1 text-xs text-slate-500 font-medium leading-relaxed">
+              <p className="mt-1 text-xs text-slate-500">
                 Your payout request for <strong>{successRedemption.itemName}</strong> has been logged and registered.
               </p>
             </div>
 
-            <div className="neu-inset rounded-2xl p-4 space-y-2">
-              <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
+            <div className="rounded-2xl bg-slate-50 p-4 border border-slate-200 space-y-2">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 block">
                 Tracking / Voucher Reference
               </span>
               <div className="flex items-center justify-center gap-2">
-                <code className="neu-flat-sm rounded-lg px-3 py-1.5 font-mono text-sm font-black text-slate-900">
+                <code className="rounded-lg bg-white px-3 py-1.5 font-mono text-sm font-bold text-slate-900 border border-slate-200 shadow-xs">
                   {successRedemption.code}
                 </code>
                 <button
                   type="button"
                   onClick={() => copyToClipboard(successRedemption.code, 'success-code')}
-                  className="neu-btn rounded-lg p-2 text-slate-600 transition cursor-pointer"
+                  className="rounded-lg bg-white hover:bg-slate-100 border border-slate-200 p-2 text-slate-600 transition cursor-pointer"
                   title="Copy Reference"
                 >
                   {copiedCodeId === 'success-code' ? (
@@ -1167,12 +1156,12 @@ export default function RewardsPage() {
                   )}
                 </button>
               </div>
-              <p className="text-[11px] text-slate-500 font-medium">
+              <p className="text-[11px] text-slate-500">
                 Destination: {successRedemption.account}
               </p>
             </div>
 
-            <div className="neu-inset-sm rounded-xl p-3 text-[11px] text-blue-800 font-bold">
+            <div className="rounded-xl bg-blue-50 p-3 text-[11px] text-blue-800 font-medium border border-blue-100">
               Withdrawal will be completed and credited within 24 hours.
             </div>
 
@@ -1182,7 +1171,7 @@ export default function RewardsPage() {
                 setSuccessRedemption(null);
                 setActiveTab('redemptions');
               }}
-              className="neu-btn-primary w-full rounded-full py-3.5 text-xs font-black cursor-pointer"
+              className="w-full rounded-full bg-slate-950 py-3 text-xs font-bold text-white hover:bg-slate-800 transition cursor-pointer"
             >
               View in Redemption History &rarr;
             </button>
@@ -1194,11 +1183,11 @@ export default function RewardsPage() {
       {/* HELP & SUPPORT MODAL */}
       {/* ========================================================= */}
       {showSupportModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 p-4 backdrop-blur-md">
-          <div className="neu-flat-xl relative w-full max-w-lg rounded-[36px] bg-[#EEF2F7] p-6 sm:p-8 border border-white/80 space-y-6 animate-in fade-in zoom-in-95">
-            <div className="flex items-center justify-between border-b border-slate-300/40 pb-4">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm">
+          <div className="relative w-full max-w-lg rounded-3xl bg-white p-6 sm:p-8 shadow-2xl border border-slate-200 space-y-6 animate-in fade-in zoom-in-95">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-4">
               <div className="flex items-center gap-3">
-                <div className="neu-icon-well flex h-10 w-10 items-center justify-center rounded-xl text-[#793FFF]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#793FFF]/10 text-[#793FFF]">
                   <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <circle cx="12" cy="12" r="10" />
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
@@ -1206,10 +1195,10 @@ export default function RewardsPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-base font-black text-slate-900">
+                  <h3 className="text-base font-black text-slate-950">
                     24/7 Rewards &amp; Payout Support
                   </h3>
-                  <span className="text-xs text-slate-500 font-medium">
+                  <span className="text-xs text-slate-500">
                     Direct assistance for your ₹100 withdrawals &amp; vouchers
                   </span>
                 </div>
@@ -1218,68 +1207,68 @@ export default function RewardsPage() {
               <button
                 type="button"
                 onClick={() => setShowSupportModal(false)}
-                className="neu-btn h-8 w-8 rounded-full text-slate-500 hover:text-slate-900 flex items-center justify-center transition cursor-pointer"
+                className="h-8 w-8 rounded-full bg-slate-100 text-slate-500 hover:text-slate-900 flex items-center justify-center transition cursor-pointer"
               >
                 &times;
               </button>
             </div>
 
             <div className="space-y-4 text-xs">
-              <p className="text-slate-600 leading-relaxed font-medium">
+              <p className="text-slate-600 leading-relaxed">
                 Have a question about your Paytm transfer, Google Pay UPI status, or gift voucher code? Reach out directly to our dedicated support team:
               </p>
 
               {/* Email Card */}
-              <div className="neu-flat rounded-2xl p-4 flex items-center justify-between gap-3 border border-white/70">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex items-center justify-between gap-3">
                 <div>
-                  <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
                     Official Support Email
                   </span>
-                  <span className="text-sm font-black text-slate-900">
+                  <span className="text-sm font-bold text-slate-950">
                     axhutoshhhh@gmail.com
                   </span>
-                  <span className="text-[11px] text-slate-500 block mt-0.5 font-medium">
+                  <span className="text-[11px] text-slate-500 block mt-0.5">
                     Average response time: &lt; 2 hours
                   </span>
                 </div>
                 <a
                   href="mailto:axhutoshhhh@gmail.com"
-                  className="neu-btn-primary rounded-full px-4 py-2 text-xs font-black shrink-0"
+                  className="rounded-full bg-[#793FFF] px-4 py-2 text-xs font-bold text-white hover:bg-[#682FF8] transition shrink-0"
                 >
                   Send Email
                 </a>
               </div>
 
               {/* Phone / WhatsApp Card */}
-              <div className="neu-flat rounded-2xl p-4 flex items-center justify-between gap-3 border border-white/70">
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 flex items-center justify-between gap-3">
                 <div>
-                  <span className="text-[11px] font-black uppercase tracking-wider text-slate-500 block">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 block">
                     Helpline &amp; WhatsApp
                   </span>
-                  <span className="text-sm font-black text-slate-900 font-mono">
+                  <span className="text-sm font-bold text-slate-950 font-mono">
                     +91 8302072636
                   </span>
-                  <span className="text-[11px] text-slate-500 block mt-0.5 font-medium">
+                  <span className="text-[11px] text-slate-500 block mt-0.5">
                     Direct assistance &amp; instant payout resolution
                   </span>
                 </div>
                 <a
                   href="tel:8302072636"
-                  className="neu-btn-emerald rounded-full px-4 py-2 text-xs font-black shrink-0"
+                  className="rounded-full bg-emerald-600 px-4 py-2 text-xs font-bold text-white hover:bg-emerald-700 transition shrink-0"
                 >
                   Call Now
                 </a>
               </div>
 
               {/* Payout SLA Guarantee Box */}
-              <div className="neu-inset rounded-2xl p-4 text-emerald-900 space-y-1 border border-emerald-300/40">
-                <span className="font-black flex items-center gap-1.5 text-emerald-800">
+              <div className="rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-emerald-900 space-y-1">
+                <span className="font-bold flex items-center gap-1.5">
                   <svg className="h-4 w-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
                   <span>100% Genuine &bull; 24-Hour Dispatch Guarantee</span>
                 </span>
-                <p className="text-[11px] text-emerald-800 font-medium">
+                <p className="text-[11px] text-emerald-800">
                   Every withdrawal is checked and dispatched within 24 hours. If any delay occurs, our support team immediately rectifies the disbursement.
                 </p>
               </div>
@@ -1288,7 +1277,7 @@ export default function RewardsPage() {
             <button
               type="button"
               onClick={() => setShowSupportModal(false)}
-              className="neu-btn w-full rounded-full py-3 text-xs font-black text-slate-700 cursor-pointer"
+              className="w-full rounded-full bg-slate-950 py-3 text-xs font-bold text-white hover:bg-slate-800 transition cursor-pointer"
             >
               Close Support
             </button>
