@@ -108,7 +108,7 @@ function OfficialGooglePayLogo({ className = 'h-6 w-auto' }: { className?: strin
 }
 
 // ==========================================
-// CATALOG (10 Points = 1 Rupee -> 1,000 Points = ₹100 INR)
+// CATALOG (100 Points = 1 Rupee -> 10,000 Points = ₹100 INR)
 // ==========================================
 
 const CATALOG: RewardCatalogItem[] = [
@@ -119,7 +119,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'wallets',
     value: '₹100.00 INR',
     description: 'Instant ₹100 direct transfer to your Paytm Wallet. Credited directly within 24 hours.',
-    points: 1000,
+    points: 10000,
     payoutType: 'wallet',
     inputLabel: 'Enter 10-Digit Paytm Mobile Number',
     inputPlaceholder: 'e.g. 8302072636',
@@ -134,7 +134,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'wallets',
     value: '₹100.00 INR',
     description: 'Direct UPI payment sent straight to your Google Pay linked bank account.',
-    points: 1000,
+    points: 10000,
     payoutType: 'upi',
     inputLabel: 'Enter your Google Pay UPI ID / VPA',
     inputPlaceholder: 'e.g. username@okhdfcbank or 8302072636@paytm',
@@ -149,7 +149,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'wallets',
     value: '$1.00 USD',
     description: 'Direct global payout of $1.00 USD sent straight to your verified PayPal account.',
-    points: 1000,
+    points: 10000,
     payoutType: 'paypal',
     inputLabel: 'Enter your PayPal Account Email ID',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -164,7 +164,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'gaming',
     value: '₹100.00 INR',
     description: 'Official 16-character Google Play Store redeem code for apps, books, and in-game diamonds.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -179,7 +179,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'ecommerce',
     value: '₹100.00 INR',
     description: 'Official Flipkart Gift Card voucher code with secure PIN. Valid across all Flipkart shopping.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -194,7 +194,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'ecommerce',
     value: '₹100.00 INR',
     description: 'Add ₹100 directly to your Amazon Pay wallet for mobile recharges, utility bills, and shopping.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -209,7 +209,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'gaming',
     value: '₹100.00 INR',
     description: 'Official Apple redeem code for App Store purchases, iCloud+ storage, Apple Music, and games.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -224,7 +224,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'food',
     value: '₹100.00 INR',
     description: 'Instant ₹100 digital voucher for your next delicious food delivery order across India.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -239,7 +239,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'food',
     value: '₹100.00 INR',
     description: 'Official Swiggy Money credit code for food orders, Instamart groceries, and Dineout.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -254,7 +254,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'gaming',
     value: '₹100.00 INR',
     description: 'Official Steam wallet Indian Rupee gift voucher to add funds directly to your PC gaming wallet.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -269,7 +269,7 @@ const CATALOG: RewardCatalogItem[] = [
     category: 'food',
     value: '₹100.00 INR',
     description: 'Official Starbucks India beverage digital voucher for any participating cafe across India.',
-    points: 1000,
+    points: 10000,
     payoutType: 'giftcard',
     inputLabel: 'Delivery Email Address',
     inputPlaceholder: 'e.g. axhutoshhhh@gmail.com',
@@ -525,7 +525,7 @@ export default function RewardsPage() {
               <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-between text-xs">
                 <span className="text-slate-400">Estimated Value:</span>
                 <span className="font-bold text-white">
-                  ₹{((balance || 0) / 10).toFixed(2)} INR
+                  ₹{((balance || 0) / 100).toFixed(2)} INR
                 </span>
               </div>
             </div>
@@ -536,7 +536,7 @@ export default function RewardsPage() {
         {/* TRUST, CONVERSION FACTOR & GUARANTEE STRIP */}
         {/* ========================================================= */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          {/* 1. Transparent Conversion Factor (10 Points = 1 Rupee) */}
+          {/* 1. Transparent Conversion Factor (100 Points = 1 Rupee) */}
           <div className="rounded-2xl bg-white border border-slate-200/80 p-5 shadow-xs flex items-center gap-3.5">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#793FFF]/10 text-[#793FFF] border border-[#793FFF]/20">
               <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
@@ -546,13 +546,13 @@ export default function RewardsPage() {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-sm font-black text-slate-900">10 Points = ₹1.00 INR</span>
+                <span className="text-sm font-black text-slate-900">100 Points = ₹1.00 INR</span>
                 <span className="rounded-full bg-[#793FFF]/10 px-2 py-0.5 text-[10px] font-bold text-[#793FFF]">
                   Fixed Parity
                 </span>
               </div>
               <p className="text-xs text-slate-500 mt-0.5">
-                Zero hidden fees. 1,000 Points = ₹100 direct payout.
+                Zero hidden fees. 10,000 Points = ₹100 direct payout.
               </p>
             </div>
           </div>
@@ -874,7 +874,7 @@ export default function RewardsPage() {
                   No Past Redemptions Yet
                 </h3>
                 <p className="text-xs text-slate-500 max-w-md mx-auto">
-                  You haven&apos;t redeemed any rewards yet. Accumulate 1,000 points to redeem ₹100 directly to Paytm, Google Pay UPI, or digital gift vouchers.
+                  You haven&apos;t redeemed any rewards yet. Accumulate 10,000 points to redeem ₹100 directly to Paytm, Google Pay UPI, or digital gift vouchers.
                 </p>
                 <button
                   type="button"

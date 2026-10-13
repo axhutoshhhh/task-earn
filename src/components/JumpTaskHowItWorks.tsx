@@ -504,7 +504,7 @@ export default function JumpTaskHowItWorks() {
                       </div>
 
                       <div className="text-center text-[10px] text-slate-500 pb-2">
-                        10 points = 1 rupee instant conversion
+                        100 points = 1 rupee instant conversion
                       </div>
                     </div>
                   )}
@@ -650,7 +650,7 @@ export default function JumpTaskHowItWorks() {
                   activeStep === 3 ? 'text-slate-300' : 'text-slate-600'
                 }`}
               >
-                Earn credits for every task you finish. 10 points = 1 rupee.
+                Earn credits for every task you finish. 100 points = 1 rupee.
               </p>
             </div>
 

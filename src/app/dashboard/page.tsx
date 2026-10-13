@@ -105,7 +105,7 @@ export default async function DashboardPage() {
                   <line x1="12" y1="16" x2="12" y2="12" />
                   <line x1="12" y1="8" x2="12.01" y2="8" />
                 </svg>
-                <span>10 Points = ₹1.00 INR Fixed Parity</span>
+                <span>100 Points = ₹1.00 INR Fixed Parity</span>
               </div>
             </div>
           </div>
@@ -147,8 +147,15 @@ export default async function DashboardPage() {
             </div>
 
             <div className="mt-5 pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-              <span className="text-slate-500 font-medium">Verified Ledger Credit</span>
-              <span className="font-bold text-violet-700">Zero Withdrawal Fees</span>
+              <span className="font-bold text-violet-700 flex items-center gap-1.5">
+                <svg className="h-4 w-4 text-emerald-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Zero Withdrawal Fees</span>
+              </span>
+              <span className="text-[11px] font-semibold text-slate-400">
+                Instant Payouts
+              </span>
             </div>
           </div>
 
@@ -174,7 +181,7 @@ export default async function DashboardPage() {
 
                 <div className="rounded-full bg-amber-50 border border-amber-100/80 px-3.5 py-1 text-[11px] font-black uppercase tracking-wider text-amber-800 flex items-center gap-1.5">
                   <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
-                  <span>24h Disbursements</span>
+                  <span>24 Hours Withdrawal</span>
                 </div>
               </div>
 
