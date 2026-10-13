@@ -8,9 +8,10 @@ export default function Footer() {
     earn: [
       { name: 'Speed quizzes', href: '/dashboard/quiz' },
       { name: 'Play games', href: '/dashboard/games' },
-      { name: 'Watch videos', href: '/dashboard/watch' },
-      { name: 'Train AI', href: '/dashboard/train-ai' },
-      { name: 'POV videos', href: '/dashboard/pov-videos' },
+      { name: 'Watch videos and earn', href: '/dashboard/watch' },
+      { name: 'Train AI and earn', href: '/dashboard/train-ai' },
+      { name: 'Upload POV videos and earn', href: '/dashboard/pov-videos' },
+      { name: 'Fill survey and earn', href: '/dashboard/surveys' },
       { name: 'Redeem rewards', href: '/dashboard/rewards' },
     ],
     makeMoney: [

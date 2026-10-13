@@ -282,7 +282,7 @@ export default function Navbar() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h4 className="text-xs font-extrabold text-slate-900 group-hover:text-rose-600 transition-colors">
-                          Watch Videos
+                          Watch videos and earn
                         </h4>
                         <span className="rounded-full bg-slate-100 text-slate-500 px-1.5 py-0.2 text-[8px] font-bold">
                           Soon
@@ -308,7 +308,7 @@ export default function Navbar() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h4 className="text-xs font-extrabold text-slate-900 group-hover:text-cyan-700 transition-colors">
-                          Train AI
+                          Train AI and earn
                         </h4>
                         <span className="rounded-full bg-slate-100 text-slate-500 px-1.5 py-0.2 text-[8px] font-bold">
                           Soon
@@ -335,7 +335,7 @@ export default function Navbar() {
                       <div>
                         <div className="flex items-center gap-1.5">
                           <h4 className="text-xs font-extrabold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                            POV Video Bounties
+                            Upload POV videos and earn
                           </h4>
                           <span className="rounded-full bg-slate-100 text-slate-500 px-1.5 py-0.2 text-[8px] font-bold">
                             Soon
