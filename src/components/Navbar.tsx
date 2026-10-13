@@ -43,7 +43,7 @@ export default function Navbar() {
 
     async function fetchBalance() {
       try {
-        const res = await fetch('/api/rewards/balance');
+        const res = await fetch('/api/rewards/balance', { cache: 'no-store' });
         if (res.ok) {
           const data = await res.json();
           setBalance(data.balance ?? 0);
@@ -54,6 +54,18 @@ export default function Navbar() {
     }
 
     checkUser();
+
+    const handleBalanceEvent = (e?: Event) => {
+      const customEvent = e as CustomEvent<{ newBalance?: number }>;
+      if (customEvent?.detail?.newBalance !== undefined) {
+        setBalance(customEvent.detail.newBalance);
+      } else {
+        fetchBalance();
+      }
+    };
+
+    window.addEventListener('taskearn:balance-updated', handleBalanceEvent);
+    window.addEventListener('focus', fetchBalance);
 
     const {
       data: { subscription },
@@ -74,6 +86,8 @@ export default function Navbar() {
     });
 
     return () => {
+      window.removeEventListener('taskearn:balance-updated', handleBalanceEvent);
+      window.removeEventListener('focus', fetchBalance);
       subscription.unsubscribe();
     };
   }, [supabase]);
@@ -105,11 +119,28 @@ export default function Navbar() {
     };
   }, []);
 
-  // Close dropdowns on route change
+  // Close dropdowns and refresh balance on route change
   useEffect(() => {
     setActiveDropdown(null);
     setIsMobileMenuOpen(false);
     setIsUserMenuOpen(false);
+
+    // Fetch fresh balance on route navigation
+    const refreshNavBalance = async () => {
+      try {
+        const res = await fetch('/api/rewards/balance', { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (typeof data.balance === 'number') {
+            setBalance(data.balance);
+          }
+        }
+      } catch {
+        // Ignore balance refresh failure
+      }
+    };
+
+    refreshNavBalance();
   }, [pathname]);
 
   const handleMouseEnter = (key: DropdownKey) => {

@@ -364,6 +364,13 @@ export default function RewardsPage() {
       }
 
       setBalance(data.newBalance);
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(
+          new CustomEvent('taskearn:balance-updated', {
+            detail: { newBalance: data.newBalance },
+          })
+        );
+      }
       if (data.redemption) {
         setRedemptions((prev) => [data.redemption, ...prev]);
       } else {

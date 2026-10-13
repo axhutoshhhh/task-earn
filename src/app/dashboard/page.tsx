@@ -1,7 +1,9 @@
 import { createClient } from '@/lib/supabase/server';
+import { createAdminClient } from '@/lib/supabase/admin';
 import { redirect } from 'next/navigation';
 import Link from 'next/link';
 import DashboardActivities from '@/components/DashboardActivities';
+import WalletBalanceDisplay from '@/components/WalletBalanceDisplay';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,8 +31,9 @@ export default async function DashboardPage() {
     .eq('id', user.id)
     .single();
 
-  // Fetch rewards ledger total balance
-  const { data: ledgerEntries } = await supabase
+  // Fetch rewards ledger total balance via admin client to ensure 100% reliable calculation
+  const admin = createAdminClient();
+  const { data: ledgerEntries } = await admin
     .from('reward_ledger')
     .select('amount')
     .eq('user_id', user.id);
@@ -75,14 +78,7 @@ export default async function DashboardPage() {
               <span className="block text-xs font-black uppercase tracking-wider text-slate-400">
                 Wallet Balance
               </span>
-              <div className="mt-1 flex items-baseline gap-2">
-                <span className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight">
-                  {pointsBalance}
-                </span>
-                <span className="text-sm font-black text-[#793FFF] uppercase tracking-wider">
-                  PTS
-                </span>
-              </div>
+              <WalletBalanceDisplay initialBalance={pointsBalance} />
             </div>
           </div>
 

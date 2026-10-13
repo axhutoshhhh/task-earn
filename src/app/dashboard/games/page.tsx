@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface GameQuest {
   id: string;
@@ -48,12 +49,14 @@ const FEATURED_GAMES: GameQuest[] = [
 ];
 
 export default function GamesPage() {
+  const router = useRouter();
   const [isPlayingMiniGame, setIsPlayingMiniGame] = useState(false);
   const [gameScore, setGameScore] = useState(0);
   const [timeLeft, setTimeLeft] = useState(15);
   const [targetPosition, setTargetPosition] = useState({ top: 40, left: 50 });
   const [gameOver, setGameOver] = useState(false);
   const [claimedReward, setClaimedReward] = useState(false);
+  const [isClaiming, setIsClaiming] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
 
   // Timer loop for reflex game
@@ -90,11 +93,43 @@ export default function GamesPage() {
     moveTarget();
   };
 
-  const claimMiniGamePoints = () => {
-    if (gameScore >= 5 && !claimedReward) {
-      setClaimedReward(true);
-      setToast(`+${gameScore * 5} Points credited to your reward wallet!`);
-      setTimeout(() => setToast(null), 4000);
+  const claimMiniGamePoints = async () => {
+    if (gameScore >= 5 && !claimedReward && !isClaiming) {
+      setIsClaiming(true);
+      try {
+        const res = await fetch('/api/games/claim', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            gameId: 'reaction-arena',
+            score: gameScore,
+          }),
+        });
+
+        const data = await res.json();
+        if (!res.ok) {
+          throw new Error(data.error || 'Failed to claim game reward.');
+        }
+
+        setClaimedReward(true);
+        setToast(`+${data.pointsEarned} Points credited to your reward wallet! Balance: ${data.newBalance} PTS`);
+
+        // Dispatch balance update event so Navbar & Dashboard update immediately
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(
+            new CustomEvent('taskearn:balance-updated', {
+              detail: { newBalance: data.newBalance },
+            })
+          );
+        }
+
+        setTimeout(() => setToast(null), 5000);
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'Error claiming points.';
+        setToast(msg);
+      } finally {
+        setIsClaiming(false);
+      }
     }
   };
 
@@ -137,12 +172,16 @@ export default function GamesPage() {
       <div className="mx-auto max-w-6xl space-y-8">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <Link
-            href="/dashboard"
-            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#793FFF] transition"
+          <button
+            type="button"
+            onClick={() => {
+              router.push('/dashboard');
+              router.refresh();
+            }}
+            className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 hover:text-[#793FFF] transition cursor-pointer"
           >
             ← Back to Dashboard Overview
-          </Link>
+          </button>
           <span className="self-start sm:self-auto rounded-full bg-emerald-50 border border-emerald-200 px-3.5 py-1 text-xs font-bold text-emerald-700 flex items-center gap-1.5">
             <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
             Arcade Game Engine Active
@@ -246,9 +285,10 @@ export default function GamesPage() {
                     ) : (
                       <button
                         onClick={claimMiniGamePoints}
-                        className="rounded-full bg-emerald-500 text-white px-6 py-2.5 text-xs font-bold hover:bg-emerald-600 transition shadow-md cursor-pointer"
+                        disabled={isClaiming}
+                        className="rounded-full bg-emerald-500 text-white px-6 py-2.5 text-xs font-bold hover:bg-emerald-600 transition shadow-md cursor-pointer disabled:opacity-50"
                       >
-                        Claim +{gameScore * 5} Points Now
+                        {isClaiming ? 'Claiming Points...' : `Claim +${Math.min(gameScore * 5, 100)} Points Now`}
                       </button>
                     )
                   ) : (

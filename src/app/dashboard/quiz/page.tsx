@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 interface Question {
   id: string;
@@ -20,6 +21,7 @@ interface QuizResult {
 const SECONDS_PER_QUESTION = 7;
 
 export default function QuizPage() {
+  const router = useRouter();
   const [gameState, setGameState] = useState<'intro' | 'loading' | 'active' | 'submitting' | 'result' | 'error'>('intro');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
@@ -64,6 +66,11 @@ export default function QuizPage() {
 
       setResult(data);
       setGameState('result');
+
+      // Dispatch balance update event so Navbar & Dashboard update immediately
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('taskearn:balance-updated'));
+      }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Failed to submit answers.';
       setErrorMessage(msg);
@@ -359,12 +366,16 @@ export default function QuizPage() {
               >
                 Play Another Quiz
               </button>
-              <Link
-                href="/dashboard"
-                className="flex-1 rounded-full border border-slate-200 bg-white py-3.5 px-6 text-sm font-bold text-slate-700 hover:bg-slate-50 transition text-center"
+              <button
+                type="button"
+                onClick={() => {
+                  router.push('/dashboard');
+                  router.refresh();
+                }}
+                className="flex-1 rounded-full border border-slate-200 bg-white py-3.5 px-6 text-sm font-bold text-slate-700 hover:bg-slate-50 transition text-center cursor-pointer"
               >
                 Return to Dashboard
-              </Link>
+              </button>
             </div>
           </div>
         )}
