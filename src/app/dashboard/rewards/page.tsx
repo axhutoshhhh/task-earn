@@ -1024,17 +1024,10 @@ export default function RewardsPage() {
                   <div className="grid grid-cols-2 gap-2 text-xs">
                     <Link
                       href="/dashboard/quiz"
-                      className="rounded-xl border border-slate-200 p-3 hover:border-[#793FFF] transition block bg-slate-50"
+                      className="col-span-2 rounded-xl border border-slate-200 p-3 hover:border-[#793FFF] transition block bg-slate-50 text-center"
                     >
-                      <span className="font-bold text-slate-900 block">Speed Quizzes</span>
-                      <span className="text-[11px] text-[#793FFF]">+10 Pts per answer</span>
-                    </Link>
-                    <Link
-                      href="/dashboard/watch"
-                      className="rounded-xl border border-slate-200 p-3 hover:border-[#793FFF] transition block bg-slate-50"
-                    >
-                      <span className="font-bold text-slate-900 block">Watch Videos</span>
-                      <span className="text-[11px] text-[#793FFF]">+30 Pts per session</span>
+                      <span className="font-bold text-slate-900 block">Knowledge Speed Quizzes</span>
+                      <span className="text-[11px] text-[#793FFF]">Available now • Earn points per correct answer</span>
                     </Link>
                   </div>
                 </div>

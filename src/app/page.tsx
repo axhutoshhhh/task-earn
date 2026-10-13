@@ -31,7 +31,7 @@ export default function Home() {
 
           {/* Subtitle */}
           <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg leading-relaxed text-slate-600 font-normal">
-            Task Earn is an online earning platform built for anyone. Watch videos, train AI, complete arcade games, or solve speed quizzes – and get rewarded for all of it.
+            Task Earn is a genuine online earning platform built for everyone. Solve speed quizzes, earn reward points, and redeem them for direct UPI cash and verified digital vouchers.
           </p>
 
           {/* CTA Button */}

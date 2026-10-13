@@ -15,42 +15,42 @@ export default function JumpTaskFeaturesShowcase() {
             Pick a task. Complete it. Get paid.
           </h2>
           <p className="mt-6 text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-            Task Earn is an online earning platform built for anyone who wants to earn with specific tasks. There are 5 main task types to choose from. Every task shows what you earn before you start. No guessing, no waiting.
+            Task Earn is a genuine online earning platform. Every task shows what you earn before you start. We source tasks directly from verified clients and never publish fake simulations.
           </p>
         </div>
 
         <div className="space-y-28 sm:space-y-40">
           {/* =========================================================================
-              FEATURE 1: WATCH & EARN (Text LEFT, 3D Art RIGHT)
+              FEATURE 1: KNOWLEDGE SPEED QUIZZES (Text LEFT, 3D Art RIGHT)
               ========================================================================= */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text Column */}
             <div className="order-2 lg:order-1">
               <h3 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-slate-950 leading-tight">
-                Watch &amp; earn
+                Speed quizzes
               </h3>
 
               {/* Grey Metric Pill Card */}
               <div className="my-6 rounded-2xl bg-[#E5E9EE]/90 p-5 max-w-sm border border-slate-200/60 shadow-xs">
-                <p className="text-xs font-semibold text-slate-500">Earn per video</p>
-                <p className="mt-1 text-2xl sm:text-3xl font-black text-slate-950">
-                  ₹5 – ₹50
+                <p className="text-xs font-semibold text-slate-500">Available Status</p>
+                <p className="mt-1 text-2xl sm:text-3xl font-black text-emerald-600">
+                  Live &amp; Active
                 </p>
               </div>
 
               <p className="font-bold text-slate-900 text-sm sm:text-base">
-                Best for: building extra cash with very low effort.
+                Best for: quick knowledge rounds with instant wallet payouts.
               </p>
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
-                Watch short videos and get paid once you finish. You see how much you&apos;ll earn before you start, so there are no surprises. Each task takes just a few minutes, making it an easy way to start earning right away.
+                Solve 5 timed multiple-choice questions with a strict 7-second countdown per question. Fast, instant reward points deposited directly into your verified balance.
               </p>
 
               <div className="mt-8">
                 <Link
-                  href="/dashboard/watch"
-                  className="inline-flex items-center justify-center rounded-full bg-[#161616] hover:bg-black px-8 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
+                  href="/dashboard/quiz"
+                  className="inline-flex items-center justify-center rounded-full bg-[#161616] hover:bg-[#793FFF] px-8 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
-                  Watch and earn
+                  Play speed quizzes
                 </Link>
               </div>
             </div>
@@ -337,30 +337,30 @@ export default function JumpTaskFeaturesShowcase() {
             {/* Text Column (Right) */}
             <div className="order-2">
               <h3 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-slate-950 leading-tight">
-                Train AI
+                Client microtasks
               </h3>
 
               {/* Grey Metric Pill Card */}
               <div className="my-6 rounded-2xl bg-[#E5E9EE]/90 p-5 max-w-sm border border-slate-200/60 shadow-xs">
-                <p className="text-xs font-semibold text-slate-500">Earn per task</p>
-                <p className="mt-1 text-2xl sm:text-3xl font-black text-slate-950">
-                  ₹50 – ₹200 per hour
+                <p className="text-xs font-semibold text-slate-500">Provider Status</p>
+                <p className="mt-1 text-2xl sm:text-3xl font-black text-amber-700">
+                  Onboarding
                 </p>
               </div>
 
               <p className="font-bold text-slate-900 text-sm sm:text-base">
-                Best for: higher-paying tasks that need more attention
+                Best for: verified tasks directly from business clients.
               </p>
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
-                Help improve AI by doing simple tasks like labeling images, evaluating model prompts side-by-side, or reviewing completions. Instructions are clear and easy to follow. These tasks take a bit more focus, but they usually pay more.
+                We source real tasks directly from legitimate business clients and advertising partners. We strictly refuse to post fake dummy tasks. Verified tasks will launch automatically as soon as integrations go live.
               </p>
 
               <div className="mt-8">
                 <Link
-                  href="/dashboard/train-ai"
+                  href="/dashboard/tasks"
                   className="inline-flex items-center justify-center rounded-full bg-[#161616] hover:bg-black px-8 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
-                  Train AI
+                  View task status
                 </Link>
               </div>
             </div>
@@ -373,30 +373,30 @@ export default function JumpTaskFeaturesShowcase() {
             {/* Text Column */}
             <div className="order-2 lg:order-1">
               <h3 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-slate-950 leading-tight">
-                Complete microtasks
+                Partner surveys
               </h3>
 
               {/* Grey Metric Pill Card */}
               <div className="my-6 rounded-2xl bg-[#E5E9EE]/90 p-5 max-w-sm border border-slate-200/60 shadow-xs">
-                <p className="text-xs font-semibold text-slate-500">Earn per task</p>
-                <p className="mt-1 text-2xl sm:text-3xl font-black text-slate-950">
-                  ₹10 – ₹100
+                <p className="text-xs font-semibold text-slate-500">Provider Status</p>
+                <p className="mt-1 text-2xl sm:text-3xl font-black text-cyan-700">
+                  Onboarding
                 </p>
               </div>
 
               <p className="font-bold text-slate-900 text-sm sm:text-base">
-                Best for: beginners who want easy, flexible tasks
+                Best for: sharing your opinion with certified enterprise research firms.
               </p>
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
-                Choose from quick and simple tasks you can finish in minutes. This can include speed quiz questions, fast review actions, or short surveys. No experience needed. Just pick a task and start earning step by step.
+                Complete authentic market research surveys from certified enterprise research partners. Real questions, verified payouts, and zero fake dummy surveys.
               </p>
 
               <div className="mt-8">
                 <Link
-                  href="/dashboard/quiz"
+                  href="/dashboard/surveys"
                   className="inline-flex items-center justify-center rounded-full bg-[#161616] hover:bg-black px-8 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
-                  Complete microtasks
+                  View survey status
                 </Link>
               </div>
             </div>
@@ -615,30 +615,30 @@ export default function JumpTaskFeaturesShowcase() {
             {/* Text Column (Right) */}
             <div className="order-2">
               <h3 className="text-4xl sm:text-5xl lg:text-[54px] font-black tracking-tight text-slate-950 leading-tight">
-                Play &amp; earn
+                Instant rewards
               </h3>
 
               {/* Grey Metric Pill Card */}
               <div className="my-6 rounded-2xl bg-[#E5E9EE]/90 p-5 max-w-sm border border-slate-200/60 shadow-xs">
-                <p className="text-xs font-semibold text-slate-500">Earn per quest</p>
-                <p className="mt-1 text-2xl sm:text-3xl font-black text-slate-950">
-                  ₹20 – ₹150
+                <p className="text-xs font-semibold text-slate-500">Payout Methods</p>
+                <p className="mt-1 text-2xl sm:text-3xl font-black text-[#793FFF]">
+                  UPI &amp; Vouchers
                 </p>
               </div>
 
               <p className="font-bold text-slate-900 text-sm sm:text-base">
-                Best for: turning gaming and arcade time into rewards
+                Best for: fast transfers directly to your bank, UPI, or gift card codes.
               </p>
               <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed max-w-lg">
-                Launch browser arcade quest challenges, dodge obstacles, hit designated score milestones, and unlock bonus earnings. No installations or downloads required.
+                Convert your verified task points into direct Google Pay and Paytm UPI transfers, Amazon, Flipkart, Starbucks, and Google Play digital vouchers with guaranteed code delivery.
               </p>
 
               <div className="mt-8">
                 <Link
-                  href="/dashboard/games"
+                  href="/dashboard/rewards"
                   className="inline-flex items-center justify-center rounded-full bg-[#161616] hover:bg-black px-8 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-200 hover:scale-105 active:scale-95 cursor-pointer"
                 >
-                  Play arcade
+                  Browse rewards
                 </Link>
               </div>
             </div>

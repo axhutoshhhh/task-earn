@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+import React from 'react';
+import TaskUnavailableNotice from '@/components/TaskUnavailableNotice';
 
 export default function SurveysPage() {
-  redirect('/dashboard/train-ai');
+  return (
+    <TaskUnavailableNotice
+      title="Market Research Surveys"
+      category="Enterprise Surveys"
+    />
+  );
 }

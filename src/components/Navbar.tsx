@@ -217,151 +217,91 @@ export default function Navbar() {
                 </div>
 
                 <div className="relative grid grid-cols-2 gap-3">
-                  {/* 1. Watch & Earn */}
-                  <Link
-                    href={user ? '/dashboard/watch' : '/login'}
-                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
-                  >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-rose-500 via-pink-500 to-orange-500 text-white shadow-md shadow-rose-500/25 transition-transform duration-200 group-hover:scale-105">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                        <polygon points="5 3 19 12 5 21 5 3" />
-                      </svg>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-rose-600 transition-colors">
-                          Watch &amp; earn
-                        </h4>
-                        <span className="rounded-full bg-rose-50 border border-rose-200/60 px-1.5 py-0.2 text-[9px] font-bold text-rose-600">
-                          Popular
-                        </span>
-                      </div>
-                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
-                        Get paid for video views, trailers &amp; stream clips
-                      </p>
-                    </div>
-                  </Link>
-
-                  {/* 2. POV Video Bounties */}
-                  <Link
-                    href={user ? '/dashboard/pov-videos' : '/login'}
-                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
-                  >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-600 via-purple-600 to-sky-500 text-white shadow-md shadow-indigo-500/25 transition-transform duration-200 group-hover:scale-105">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
-                        <path d="M23 7l-7 5 7 5V7z" />
-                        <rect x="1" y="5" width="15" height="14" rx="3" ry="3" />
-                      </svg>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-indigo-600 transition-colors">
-                          POV Bounties
-                        </h4>
-                        <span className="rounded-full bg-indigo-50 border border-indigo-200/60 px-1.5 py-0.2 text-[9px] font-bold text-indigo-600">
-                          High Reward
-                        </span>
-                      </div>
-                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
-                        Upload real-world first-person camera captures
-                      </p>
-                    </div>
-                  </Link>
-
-                  {/* 3. Train AI */}
-                  <Link
-                    href={user ? '/dashboard/train-ai' : '/login'}
-                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
-                  >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-600 via-fuchsia-600 to-indigo-600 text-white shadow-md shadow-violet-500/25 transition-transform duration-200 group-hover:scale-105">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <rect x="4" y="4" width="16" height="16" rx="3" />
-                        <rect x="9" y="9" width="6" height="6" />
-                        <line x1="9" y1="1" x2="9" y2="4" />
-                        <line x1="15" y1="1" x2="15" y2="4" />
-                        <line x1="9" y1="20" x2="9" y2="23" />
-                        <line x1="15" y1="20" x2="15" y2="23" />
-                        <line x1="20" y1="9" x2="23" y2="9" />
-                        <line x1="20" y1="15" x2="23" y2="15" />
-                        <line x1="1" y1="9" x2="4" y2="9" />
-                        <line x1="1" y1="15" x2="4" y2="15" />
-                      </svg>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-violet-600 transition-colors">
-                          Train AI
-                        </h4>
-                        <span className="rounded-full bg-violet-50 border border-violet-200/60 px-1.5 py-0.2 text-[9px] font-bold text-violet-600">
-                          RLHF
-                        </span>
-                      </div>
-                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
-                        Data labeling, prompt ranking &amp; safety feedback
-                      </p>
-                    </div>
-                  </Link>
-
-                  {/* 4. Play & Earn */}
-                  <Link
-                    href={user ? '/dashboard/games' : '/login'}
-                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
-                  >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-500 via-teal-500 to-cyan-500 text-white shadow-md shadow-emerald-500/25 transition-transform duration-200 group-hover:scale-105">
-                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                        <line x1="6" y1="12" x2="10" y2="12" />
-                        <line x1="8" y1="10" x2="8" y2="14" />
-                        <circle cx="15" cy="13" r="1" fill="currentColor" />
-                        <circle cx="18" cy="11" r="1" fill="currentColor" />
-                        <rect x="2" y="6" width="20" height="12" rx="3" />
-                      </svg>
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-1.5">
-                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-emerald-600 transition-colors">
-                          Play &amp; earn
-                        </h4>
-                        <span className="rounded-full bg-emerald-50 border border-emerald-200/60 px-1.5 py-0.2 text-[9px] font-bold text-emerald-600">
-                          Instant
-                        </span>
-                      </div>
-                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
-                        Earn credits while playing arcade challenges
-                      </p>
-                    </div>
-                  </Link>
-
-                  {/* 5. Speed Quizzes — Full Width Highlight Card */}
+                  {/* 1. Speed Quizzes — Highlight Active Card */}
                   <Link
                     href={user ? '/dashboard/quiz' : '/login'}
-                    className="col-span-2 group relative flex items-center justify-between rounded-2xl p-3.5 bg-gradient-to-r from-amber-500/[0.08] via-orange-500/[0.05] to-transparent border border-amber-200/70 transition-all duration-200 hover:border-amber-400 hover:shadow-xs"
+                    className="col-span-2 group relative flex items-center justify-between rounded-2xl p-3.5 bg-gradient-to-r from-purple-500/[0.08] via-indigo-500/[0.05] to-transparent border border-purple-200/80 transition-all duration-200 hover:border-[#793FFF] hover:shadow-xs"
                   >
                     <div className="flex items-center gap-3.5">
-                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-400 via-orange-500 to-rose-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#793FFF] to-[#06B6D4] text-white shadow-md shadow-[#793FFF]/25 transition-transform duration-200 group-hover:scale-105">
                         <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                           <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                         </svg>
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
-                          <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
-                            Speed Quizzes
+                          <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-[#793FFF] transition-colors">
+                            Knowledge Speed Quizzes
                           </h4>
-                          <span className="rounded-full bg-amber-500 px-2 py-0.5 text-[9px] font-black text-white uppercase tracking-wider">
-                            7s Live
+                          <span className="rounded-full bg-emerald-500 px-2 py-0.5 text-[9px] font-black text-white uppercase tracking-wider">
+                            Available Now
                           </span>
                         </div>
                         <p className="mt-0.5 text-xs text-slate-600 font-normal">
-                          Timed rapid knowledge rounds &amp; instant point multiplier streaks
+                          Timed rapid knowledge rounds &amp; instant point payouts to wallet
                         </p>
                       </div>
                     </div>
-                    <span className="hidden sm:inline-flex items-center gap-1 text-xs font-bold text-amber-700 group-hover:translate-x-0.5 transition-transform">
-                      <span>Play</span>
+                    <span className="hidden sm:inline-flex items-center gap-1 text-xs font-bold text-[#793FFF] group-hover:translate-x-0.5 transition-transform">
+                      <span>Play Now</span>
                       <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                         <path d="M5 12h14M12 5l7 7-7 7" />
                       </svg>
                     </span>
+                  </Link>
+
+                  {/* 2. Client Microtasks */}
+                  <Link
+                    href={user ? '/dashboard/tasks' : '/login'}
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
+                  >
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 text-white shadow-md shadow-amber-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-amber-700 transition-colors">
+                          Client Microtasks
+                        </h4>
+                        <span className="rounded-full bg-amber-50 border border-amber-200/60 px-1.5 py-0.2 text-[9px] font-bold text-amber-800">
+                          Onboarding
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
+                        Direct campaigns from verified commercial clients
+                      </p>
+                    </div>
+                  </Link>
+
+                  {/* 3. Partner Surveys */}
+                  <Link
+                    href={user ? '/dashboard/surveys' : '/login'}
+                    className="group relative flex items-start gap-3.5 rounded-2xl p-3 transition-all duration-200 hover:bg-slate-50/90 border border-transparent hover:border-slate-100 hover:shadow-xs"
+                  >
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-600 text-white shadow-md shadow-cyan-500/25 transition-transform duration-200 group-hover:scale-105">
+                      <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <h4 className="text-sm font-extrabold text-slate-900 group-hover:text-cyan-700 transition-colors">
+                          Partner Surveys
+                        </h4>
+                        <span className="rounded-full bg-amber-50 border border-amber-200/60 px-1.5 py-0.2 text-[9px] font-bold text-amber-800">
+                          Onboarding
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs text-slate-500 leading-snug font-normal">
+                        Authentic research from certified enterprise partners
+                      </p>
+                    </div>
                   </Link>
                 </div>
 

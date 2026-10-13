@@ -1,5 +1,11 @@
-import { redirect } from 'next/navigation';
+import React from 'react';
+import TaskUnavailableNotice from '@/components/TaskUnavailableNotice';
 
 export default function TasksPage() {
-  redirect('/dashboard/watch');
+  return (
+    <TaskUnavailableNotice
+      title="Client Tasks"
+      category="Microtasks & Partner Offers"
+    />
+  );
 }

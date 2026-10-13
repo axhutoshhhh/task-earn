@@ -6,13 +6,10 @@ import Link from 'next/link';
 export default function Footer() {
   const footerSections = {
     earn: [
-      { name: 'Get paid to train AI', href: '/dashboard/train-ai' },
-      { name: 'Get paid for POV videos', href: '/dashboard/pov-videos' },
-      { name: 'Get paid to watch ads', href: '/dashboard/watch' },
-      { name: 'Get paid to take surveys', href: '/dashboard/surveys' },
-      { name: 'Get paid to solve quizzes', href: '/dashboard/quiz' },
-      { name: 'Get paid to play games', href: '/dashboard/games' },
-      { name: 'Complete microtasks', href: '/dashboard/tasks' },
+      { name: 'Knowledge speed quizzes', href: '/dashboard/quiz' },
+      { name: 'Client microtasks', href: '/dashboard/tasks' },
+      { name: 'Partner market surveys', href: '/dashboard/surveys' },
+      { name: 'Redeem rewards', href: '/dashboard/rewards' },
     ],
     makeMoney: [
       { name: 'Earn money online', href: '/#features' },
