@@ -138,16 +138,21 @@ export default function ReferAndEarnModal({ onClose }: ReferAndEarnModalProps) {
         <hr className="my-6 border-slate-200/80" />
 
         {/* =====================================================================
-            METHOD 2: SOCIAL MEDIA COMMENTS (In Points)
+            METHOD 2: SOCIAL MEDIA COMMENTS (₹50 for 100 Likes)
             ===================================================================== */}
         <div className="space-y-3 mb-8">
-          <div className="flex items-center gap-2">
-            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-600 text-white text-[11px] font-black">
-              2
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="flex h-5 w-5 items-center justify-center rounded-full bg-rose-600 text-white text-[11px] font-black">
+                2
+              </span>
+              <h3 className="text-sm sm:text-base font-black text-slate-900 tracking-tight">
+                Method 2: Instagram Reels &amp; YouTube Shorts Promotion
+              </h3>
+            </div>
+            <span className="rounded-lg bg-rose-50 border border-rose-200 px-2.5 py-0.5 text-xs font-black text-rose-600">
+              ₹50 INR
             </span>
-            <h3 className="text-sm sm:text-base font-black text-slate-900 tracking-tight">
-              Method 2: Instagram Reels &amp; YouTube Shorts Promotion
-            </h3>
           </div>
 
           <div className="grid grid-cols-1 gap-2.5">
@@ -165,7 +170,7 @@ export default function ReferAndEarnModal({ onClose }: ReferAndEarnModalProps) {
                 B
               </div>
               <p className="text-xs text-slate-700 font-medium leading-relaxed">
-                <strong className="text-slate-900 font-bold">Minimum 100 likes:</strong> Your comment must achieve at least 100 likes from organic viewers.
+                <strong className="text-slate-900 font-bold">Minimum 100 likes:</strong> Your comment must achieve at least 100 likes from organic viewers. You will receive <strong className="text-rose-600 font-bold">₹50 INR</strong> direct reward per verified comment.
               </p>
             </div>
 

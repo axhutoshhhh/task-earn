@@ -68,15 +68,9 @@ export default function DashboardActivities() {
               <h3 className="text-2xl font-black text-slate-950 group-hover:text-[#793FFF] transition-colors">
                 Speed Quizzes
               </h3>
-              <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
-                5 multiple-choice questions with a strict 7-second countdown per question. Rapid point payouts credited automatically.
+              <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                5 multiple-choice questions with a strict 7-second countdown per question. Rapid point payouts credited automatically upon completion.
               </p>
-
-              {/* Metric Pill */}
-              <div className="mt-4 flex items-center gap-2 text-xs font-bold text-violet-700 bg-violet-50/80 rounded-xl px-3 py-2 border border-violet-100">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#793FFF]" />
-                <span>Earn 50 to 250 PTS per round</span>
-              </div>
             </div>
 
             <div className="mt-8 pt-5 border-t border-slate-100">
@@ -106,22 +100,16 @@ export default function DashboardActivities() {
                   </svg>
                 </div>
                 <span className="rounded-full bg-emerald-100/80 border border-emerald-200/60 px-3.5 py-1 text-xs font-black text-emerald-800">
-                  Arcade Quests
+                  Gameplay Tasks
                 </span>
               </div>
 
               <h3 className="text-2xl font-black text-slate-950 group-hover:text-emerald-700 transition-colors">
                 Play Games to Earn
               </h3>
-              <p className="mt-2.5 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
-                Launch reaction reflex arena and arcade challenges in your browser. Reach score milestones to unlock bonus points.
+              <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                Complete interactive gameplay tasks and hit milestone targets across our rotating partner games to receive verified reward points.
               </p>
-
-              {/* Metric Pill */}
-              <div className="mt-4 flex items-center gap-2 text-xs font-bold text-emerald-800 bg-emerald-50/80 rounded-xl px-3 py-2 border border-emerald-100">
-                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                <span>Earn 10 to 100 PTS per milestone</span>
-              </div>
             </div>
 
             <div className="mt-8 pt-5 border-t border-slate-100">
@@ -159,28 +147,24 @@ export default function DashboardActivities() {
               <h3 className="text-2xl font-black text-slate-950 group-hover:text-indigo-600 transition-colors">
                 Refer and Earn
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-slate-600 font-medium">
-                Invite active friends or create popular social comments to earn direct cash rewards from ₹20 up to ₹120.
+              <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
+                Invite active friends to earn ₹20, ₹50, or ₹120, or post a helpful social comment with 100+ likes on Instagram/YouTube to earn ₹50 cash.
               </p>
 
-              {/* Three Reward Tiers Preview */}
-              <div className="grid grid-cols-3 gap-2 mt-3.5">
-                <div className="rounded-xl bg-white border border-indigo-100 p-2 text-center shadow-2xs">
-                  <span className="block text-[10px] font-bold text-slate-500">2 Friends</span>
-                  <span className="text-xs font-black text-indigo-700">₹20</span>
+              {/* Reward breakdown chips */}
+              <div className="grid grid-cols-2 gap-2 mt-4">
+                <div className="rounded-xl bg-white border border-indigo-100 p-2.5 text-center shadow-2xs">
+                  <span className="block text-[10px] font-bold text-slate-500">Friend Referrals</span>
+                  <span className="text-xs font-black text-indigo-700">₹20 / ₹50 / ₹120</span>
                 </div>
-                <div className="rounded-xl bg-white border border-indigo-100 p-2 text-center shadow-2xs">
-                  <span className="block text-[10px] font-bold text-slate-500">5 Friends</span>
-                  <span className="text-xs font-black text-indigo-700">₹50</span>
-                </div>
-                <div className="rounded-xl bg-white border border-indigo-100 p-2 text-center shadow-2xs">
-                  <span className="block text-[10px] font-bold text-slate-500">10 Friends</span>
-                  <span className="text-xs font-black text-indigo-700">₹120</span>
+                <div className="rounded-xl bg-white border border-rose-100 p-2.5 text-center shadow-2xs">
+                  <span className="block text-[10px] font-bold text-slate-500">100 Likes Comment</span>
+                  <span className="text-xs font-black text-rose-600">₹50 Cash</span>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-slate-100">
+            <div className="mt-8 pt-5 border-t border-slate-100">
               <button
                 type="button"
                 onClick={() => setIsReferModalOpen(true)}
