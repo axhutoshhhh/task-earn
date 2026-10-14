@@ -30,24 +30,49 @@ export async function POST() {
       );
     }
 
-    // 2. Fetch exactly 5 active questions
-    const { data: questions, error: qError } = await admin
+    // 2. Fetch all active question IDs to randomly pick 5
+    const { data: allQuestions, error: qError } = await admin
       .from('quiz_questions')
-      .select('id, question, options')
-      .eq('is_active', true)
-      .limit(5);
+      .select('id')
+      .eq('is_active', true);
 
-    if (qError || !questions || questions.length < 5) {
+    if (qError || !allQuestions || allQuestions.length < 5) {
       return NextResponse.json(
         { error: 'Insufficient quiz questions available. Please check back later.' },
         { status: 500 }
       );
     }
 
+    // Shuffle and pick 5 random unique questions using Fisher-Yates algorithm
+    const shuffled = [...allQuestions];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    const selectedIds = shuffled.slice(0, 5).map((q) => q.id);
+
+    // Fetch the 5 selected questions from the database
+    const { data: questions, error: fetchError } = await admin
+      .from('quiz_questions')
+      .select('id, question, options')
+      .in('id', selectedIds);
+
+    if (fetchError || !questions || questions.length < 5) {
+      return NextResponse.json(
+        { error: 'Failed to retrieve quiz questions. Please try again.' },
+        { status: 500 }
+      );
+    }
+
+    // Preserve the randomized order
+    const orderedQuestions = selectedIds
+      .map((id) => questions.find((q) => q.id === id))
+      .filter((q): q is NonNullable<typeof q> => !!q);
+
     // 3. Timing calculation: 5 questions * 7s = 35s + 20s network grace period = 55s total
     const now = new Date();
     const expiresAt = new Date(now.getTime() + 55 * 1000);
-    const questionIds = questions.map((q) => q.id);
+    const questionIds = orderedQuestions.map((q) => q.id);
 
     // 4. Create temporary attempt record to validate timing and prevent duplicate claims
     const { data: attempt, error: attemptError } = await admin
@@ -73,7 +98,7 @@ export async function POST() {
     // 5. Return questions strictly WITHOUT correct_index (client security)
     return NextResponse.json({
       attemptId: attempt.id,
-      questions: questions.map((q) => ({
+      questions: orderedQuestions.map((q) => ({
         id: q.id,
         question: q.question,
         options: q.options,

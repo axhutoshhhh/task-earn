@@ -1,0 +1,7562 @@
+[
+  {
+    "num": 1,
+    "question": "Which country is known as “the Land of festivals”?",
+    "options": [
+      "Japan",
+      "India",
+      "Mexico",
+      "Nepal"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 2,
+    "question": "Where is Himalayan Mountaineering Institute located?",
+    "options": [
+      "Darjeeling, India",
+      "Pamir Plateau",
+      "London, England",
+      "Lake Superior"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 3,
+    "question": "For how many disciplines is Nobel Prize awarded?",
+    "options": [
+      "6 disciplines (Physics, Chemistry, Medicine, Literature, Economics, Peace)",
+      "3 hours",
+      "8848 meters",
+      "2 hours"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 4,
+    "question": "Name the tennis Player who is known as “The King of Clay”?",
+    "options": [
+      "Amartya Sen",
+      "Alfred Nobel",
+      "Annie Besant",
+      "Rafael Nadal"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 5,
+    "question": "Which Indian City has been declared as World Heritage City (WHC) by UNESCO recently?",
+    "options": [
+      "West Bengal",
+      "Darjeeling",
+      "Karnataka",
+      "Ahmadabad"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 6,
+    "question": "Who wrote the famous novel “James pond”?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Rabindranath Tagore",
+      "A. P. J. Abdul Kalam",
+      "Ian Lancaster Fleming"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 7,
+    "question": "Who won Oscar award for 36 times?",
+    "options": [
+      "Ian Fleming",
+      "Marie Curie",
+      "Leo Tolstoy",
+      "Walt Disney"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 8,
+    "question": "Who established the first Blood Bank?",
+    "options": [
+      "Rafael Nadal",
+      "James Chadwick",
+      "Dadabhai Naoroji",
+      "Bernard Fantus"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 9,
+    "question": "Who is the Indian to beat the computers in Mathematical Wizardry?",
+    "options": [
+      "Shakunthala Devi",
+      "Sachin Tendulkar",
+      "Margaret Thatcher",
+      "Dadabhai Naoroji"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 10,
+    "question": "Which Country Hosted 2017 World Petroleum Congress (WPC) International Conference?",
+    "options": [
+      "Norway",
+      "Egypt",
+      "Turkey",
+      "China"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 11,
+    "question": "Who wrote the book, “India at risk”?",
+    "options": [
+      "Nelson Mandela",
+      "Rafael Nadal",
+      "Jaswanth Singh",
+      "Satya Nadella"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 12,
+    "question": "Where is the International court of Justice located?",
+    "options": [
+      "Aizawl",
+      "Hague",
+      "Greece",
+      "Paris"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 13,
+    "question": "What is Limnology?",
+    "options": [
+      "Study of lakes",
+      "Study of joints",
+      "Study of clouds",
+      "Fear of birds"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 14,
+    "question": "Which City in India is known as the “City of Joy”?",
+    "options": [
+      "Kolkata",
+      "Jodhpur",
+      "Greece",
+      "Mysore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 15,
+    "question": "Who was the first Asian winner of the Nobel Prize?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Sachin Tendulkar",
+      "Dadabhai Naoroji",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 16,
+    "question": "When was Tooth brush invented?",
+    "options": [
+      "27th September",
+      "30th September",
+      "24th October",
+      "In the year 1770"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 17,
+    "question": "Which pair of Cities in India is known as the “Twin Cities“?",
+    "options": [
+      "Sundarbans Delta",
+      "Hyderabad – Secunderabad",
+      "Uttar Pradesh",
+      "Washington, DC"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 18,
+    "question": "Which City in India is known as the “City of Golden Gate”?",
+    "options": [
+      "Uttar Pradesh",
+      "San Francisco",
+      "Pamir Plateau",
+      "Washington, DC"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 19,
+    "question": "What is Palaeontology?",
+    "options": [
+      "Study of fossils",
+      "Fear of heights",
+      "Study of insects",
+      "Science of growth"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 20,
+    "question": "Who is known as “A Lady with the Lamp”?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Florence Nightingale",
+      "Shakunthala Devi",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 21,
+    "question": "Thomas cup is associated with which sport?",
+    "options": [
+      "Srinagar",
+      "The Hague",
+      "Ahmedabad",
+      "Badminton"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 22,
+    "question": "What is India’s rank in 2017 Global Cyber security Index?",
+    "options": [
+      "23rd Rank",
+      "4483 feet",
+      "8848 meters",
+      "1993"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 23,
+    "question": "Which is the Busiest Bridge in India?",
+    "options": [
+      "Sundarbans Delta",
+      "Lake Superior",
+      "Howrah Bridge in Kolkata",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 24,
+    "question": "Which City is known as the “City of Seven Hills”?",
+    "options": [
+      "Rome in Italy",
+      "New York, USA",
+      "San Francisco",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 25,
+    "question": "Who was the first woman chief minister of India?",
+    "options": [
+      "Alexander Fleming",
+      "Napoleon Bonaparte",
+      "Sucheta Kripalani",
+      "Dadabhai Naoroji"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 26,
+    "question": "Which Country is the leading producer of Diamond?",
+    "options": [
+      "Brazil",
+      "Canada",
+      "Norway",
+      "Russia"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 27,
+    "question": "Which Vitamin is responsible for the Clotting of Blood?",
+    "options": [
+      "Agartala",
+      "New Delhi",
+      "Vitamin K",
+      "Ahmedabad"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 28,
+    "question": "Who invented Dynamite?",
+    "options": [
+      "Alfred Nobel",
+      "C. V. Raman",
+      "Amartya Sen",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 29,
+    "question": "Where is the headquarters of United Nations Organisation (UNO) located?",
+    "options": [
+      "Uttar Pradesh",
+      "New York, USA",
+      "Madhya Pradesh",
+      "Lake Titicaca"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 30,
+    "question": "Who invented Richter scale?",
+    "options": [
+      "Charles Richter",
+      "Mahatma Gandhi",
+      "Benjamin Franklin",
+      "Charles Darwin"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 31,
+    "question": "Who is known as “Indian Bismarck”?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Chandrasekhar Kambar",
+      "A. P. J. Abdul Kalam",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 32,
+    "question": "What is the Expansion of DRDL?",
+    "options": [
+      "Defence Research and Development Laboratory",
+      "Indian Renewable Energy Development Agency",
+      "International Committee of the Red Cross",
+      "Council of Scientific and Industrial Research"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 33,
+    "question": "What is Eugenics?",
+    "options": [
+      "Study of ancient inscriptions",
+      "Study of plant nutrition and soil yield",
+      "Altering Human Beings by changing their Genetic Components",
+      "Study of agricultural soils"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 34,
+    "question": "Which Country gifted “the statue of Liberty” to The America?",
+    "options": [
+      "Pakistan",
+      "France",
+      "Mexico",
+      "Germany"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 35,
+    "question": "Which City is known as the “Queen of Arabian Sea”?",
+    "options": [
+      "Cochin",
+      "Bhopal",
+      "Mysore",
+      "Bihar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 36,
+    "question": "Which is the Biggest Library in the world?",
+    "options": [
+      "Library of congress in USA",
+      "Sundarbans Delta",
+      "London, England",
+      "Pamir Plateau"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 37,
+    "question": "Who was the first woman recipient of Magsaysay award?",
+    "options": [
+      "P. V. Sindhu",
+      "Bill Gates",
+      "Kiran Bedi",
+      "Usain Bolt"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 38,
+    "question": "Which country is known as “the Land of Thousand lakes”?",
+    "options": [
+      "Finland",
+      "Israel",
+      "Ireland",
+      "Pakistan"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 39,
+    "question": "Which Country is the leading producer of Tea?",
+    "options": [
+      "China",
+      "Russia",
+      "Egypt",
+      "Brazil"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 40,
+    "question": "Who was the first woman IAS Officer of India?",
+    "options": [
+      "Margaret Thatcher",
+      "Anna Rajam George",
+      "Sucheta Kripalani",
+      "Lala Lajpat Rai"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 41,
+    "question": "Who wrote the book, “The God of Small Things”?",
+    "options": [
+      "Nelson Mandela",
+      "Arundathi Roy",
+      "Satya Nadella",
+      "Annie Besant"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 42,
+    "question": "Expand IGNOU.",
+    "options": [
+      "Securities and Exchange Board of India",
+      "National Human Rights Commission",
+      "International Committee of the Red Cross",
+      "Indira Gandhi National Open University"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 43,
+    "question": "Who was the first Woman President of Un General Assembly?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Margaret Thatcher",
+      "Chandrasekhar Kambar",
+      "A. P. J. Abdul Kalam"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 44,
+    "question": "Which City in India is known as the “City of Dreams”?",
+    "options": [
+      "China",
+      "Mumbai",
+      "Kanpur",
+      "Patna"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 45,
+    "question": "Which is the Largest Temple in the world?",
+    "options": [
+      "New York, USA",
+      "Angkor Vat in Combodia",
+      "Ganges Delta",
+      "Andes Mountains"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 46,
+    "question": "Expand OMR.",
+    "options": [
+      "Optical Mark Reader",
+      "Chief Financial Officer",
+      "Chief Information Officer",
+      "Universal Serial Bus"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 47,
+    "question": "Which instrument is used to measure the Blood Pressure?",
+    "options": [
+      "Sphygmomanometer",
+      "Pamir Plateau",
+      "Sundarbans Delta",
+      "London, England"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 48,
+    "question": "Who wrote the book, “Paradise lost”?",
+    "options": [
+      "John Milton",
+      "Usain Bolt",
+      "Ian Fleming",
+      "C. V. Raman"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 49,
+    "question": "Which is the World’s Lightest Satellite launched by NASA recently?",
+    "options": [
+      "Karnataka",
+      "Kalam Sat",
+      "Australia",
+      "Jamshedpur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 50,
+    "question": "Which City is named by UNESCO as the World Book capital?",
+    "options": [
+      "Panipat",
+      "Sharjah",
+      "Belgium",
+      "Odisha"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 51,
+    "question": "What is the theme of 2017 National Youth’s day?",
+    "options": [
+      "Trans-Canada Highway",
+      "W K Roentgen, Germany",
+      "Uruguay (In the Year 1930)",
+      "Youth for Digital India"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 52,
+    "question": "Which City in India is known as the “White City”?",
+    "options": [
+      "Chennai",
+      "Udaipur",
+      "Kolkata",
+      "Panipat"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 53,
+    "question": "Who was the first Indian to win the Golden Globe Award?",
+    "options": [
+      "Anders Celsius",
+      "A. R. Rah man",
+      "Homi J. Bhabha",
+      "Satya Nadella"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 54,
+    "question": "Which is the Smallest Country in the world?",
+    "options": [
+      "Vatican City",
+      "Uttar Pradesh",
+      "Switzerland",
+      "New York, USA"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 55,
+    "question": "When is World environment Day Celebrated?",
+    "options": [
+      "23rd April",
+      "29th June",
+      "5th June",
+      "18th July"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 56,
+    "question": "Name the Indian Chief Minister who received the UN Public",
+    "options": [
+      "Andes Mountains",
+      "Service award recently. Mamata Banerjee",
+      "Lake Superior",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 57,
+    "question": "Which is the Largest Fresh water Lake in the world?",
+    "options": [
+      "Madhya Pradesh",
+      "Lake Superior, USA",
+      "Sundarbans Delta",
+      "New York, USA"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 58,
+    "question": "Which country is known as “the Play Ground of Europe”?",
+    "options": [
+      "Switzerland",
+      "Indonesia",
+      "Bangladesh",
+      "Philippines"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 59,
+    "question": "Who won the Men’s Singles title in 2017 Wimbledon Tennis championship?",
+    "options": [
+      "Roger Federer",
+      "Indira Gandhi",
+      "Charles Darwin",
+      "Amartya Sen"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 60,
+    "question": "Where is the “Lord’s Cricket Ground” located?",
+    "options": [
+      "Washington, DC",
+      "New York, USA",
+      "London, England",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 61,
+    "question": "Which planet has the maximum value of Escape Velocity?",
+    "options": [
+      "Panipat",
+      "Vadodara",
+      "Shimla",
+      "Jupiter"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 62,
+    "question": "Which Indian City is known as “the City of Pearls”?",
+    "options": [
+      "Agartala",
+      "Karnataka",
+      "Venezuela",
+      "Hyderabad"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 63,
+    "question": "Which City in India was renamed as Varanasi in 1956?",
+    "options": [
+      "Gujarat",
+      "Madurai",
+      "Assam",
+      "Banares"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 64,
+    "question": "Expand IBRD.",
+    "options": [
+      "National Aeronautics and Space Administration",
+      "Council of Scientific and Industrial Research",
+      "Indian Renewable Energy Development Agency",
+      "International Bank for Reconstruction and Development"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 65,
+    "question": "Which was the first Country to conduct Civil Services Competitions?",
+    "options": [
+      "Canada",
+      "China",
+      "Spain",
+      "Mexico"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 66,
+    "question": "Which is the Tallest Tower in the world?",
+    "options": [
+      "Small Industries Development Bank of India",
+      "Tokyo Sky Free, Japan ( Its Height is 625 m)",
+      "Indian Renewable energy Development Agency",
+      "National Solar Energy Federation of India"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 67,
+    "question": "What is the name of Japan Parliament?",
+    "options": [
+      "Assam",
+      "Punjab",
+      "Diet",
+      "Goa"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 68,
+    "question": "Which is the Highest Award given for Lifetime Achievement in Sports and games in India?",
+    "options": [
+      "Lake Titicaca",
+      "Nilgiri Hills",
+      "Dhyanchand Award",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 69,
+    "question": "Name the central minister who launched GST Rates Finder App.",
+    "options": [
+      "Florence Nightingale",
+      "Chandrasekhar Kambar",
+      "Finance Minister Arun Jaitley",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 70,
+    "question": "Name the Indian King Who was Known as “Napoleon of India”.",
+    "options": [
+      "Roger Federer",
+      "Mahatma Gandhi",
+      "James Chadwick",
+      "Samudra Gupta"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 71,
+    "question": "Which country is known as “the Land of Morning Calm”?",
+    "options": [
+      "Egypt",
+      "Korea",
+      "China",
+      "Germany"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 72,
+    "question": "Which is the National aquatic Animal of India?",
+    "options": [
+      "Pamir Plateau",
+      "Western Ghats",
+      "Gangetic Dolphin",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 73,
+    "question": "Which is the World’s Busiest Airport?",
+    "options": [
+      "Madhya Pradesh",
+      "Washington, DC",
+      "Hartsfield-Jackson Airport in Atlanta",
+      "Lake Superior"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 74,
+    "question": "Where is the Ghana Bird Sanctuary located?",
+    "options": [
+      "Abu Dhabi",
+      "Karnataka",
+      "Rajasthan",
+      "Finland"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 75,
+    "question": "Who coined the term “Green Revolution”?",
+    "options": [
+      "Dr. William Gaud",
+      "Shakunthala Devi",
+      "Galileo Galilei",
+      "Lala Lajpat Rai"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 76,
+    "question": "Which is the first Country to make a Constitution?",
+    "options": [
+      "connects. China & Pakistan",
+      "Johannesburg, South Africa",
+      "Bureau of Indian Standards",
+      "United States of America"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 77,
+    "question": "What is the ratio of width of our National flag to its Length?",
+    "options": [
+      "40",
+      "1952",
+      "120",
+      "2:3"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 78,
+    "question": "Where is the headquarters of Sahitya Academy Located?",
+    "options": [
+      "Rajasthan",
+      "Agartala",
+      "Australia",
+      "New Delhi"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 79,
+    "question": "Which is the Longest River in India?",
+    "options": [
+      "The Ganges",
+      "Maharashtra",
+      "Darjeeling",
+      "Trivandrum"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 80,
+    "question": "‘Madhubani’, a Style of folk Paintings, is popular in which state of India?",
+    "options": [
+      "Bihar",
+      "Punjab",
+      "Kochi",
+      "China"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 81,
+    "question": "How Many Countries share their Borderline with India?",
+    "options": [
+      "7 Countries (Bangladesh, Myanmar, Bhutan, China, Nepal, Afghanistan, Pakistan)",
+      "90 minutes",
+      "2 hours",
+      "8848 meters"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 82,
+    "question": "Rabindranath Tagore’s “Jana Gana Mana” was adopted as India’s National Anthem. How many stanzas of the song were adopted?",
+    "options": [
+      "90 minutes",
+      "8848 meters",
+      "Only the 1st stanza (Totally it has 5 Stanzas)",
+      "625 meters"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 83,
+    "question": "Who composed the National song of India “Vande Matram”?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Vijaya Lakshmi Pandit",
+      "Bankim Chandra Chatterji",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 84,
+    "question": "Who is the present Chief election Commissioner of India?",
+    "options": [
+      "Rabindranath Tagore",
+      "Lala Lajpat Rai",
+      "Shakunthala Devi",
+      "Achal Kumar Jyoti"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 85,
+    "question": "Who Founded Nalanda University?",
+    "options": [
+      "Rafael Nadal",
+      "Kumara Gupta",
+      "C. V. Raman",
+      "Alfred Nobel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 86,
+    "question": "What is Biogeography?",
+    "options": [
+      "Study of plant nutrition and soil yield",
+      "Study of ancient inscriptions",
+      "Study of life in outer space",
+      "Study of Relationship of Organisms with Environment"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 87,
+    "question": "Which is the Junction Point of Eastern and Western Ghats?",
+    "options": [
+      "Nilgiri Hills",
+      "Switzerland",
+      "Pamir Plateau",
+      "South Andaman"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 88,
+    "question": "Which City is known as the “Forbidden City”?",
+    "options": [
+      "London, England",
+      "Lhasa in Tibet",
+      "New York, USA",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 89,
+    "question": "Who was the first woman to receive Bharat Ratna?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Chandrasekhar Kambar",
+      "Sardar Vallabhbhai Patel",
+      "Former Prime Minister Mrs. Indira Gandhi"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 90,
+    "question": "Which is the Longest Dam in India?",
+    "options": [
+      "London, England",
+      "Madhya Pradesh",
+      "Hirakud Dam in Odisha",
+      "Washington, DC"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 91,
+    "question": "Who is known as “the Man of Destiny”?",
+    "options": [
+      "Benjamin Franklin",
+      "Subhas Chandra Bose",
+      "Napoleon Bonaparte",
+      "Winston Churchill"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 92,
+    "question": "When is the World Tourism Day Observed?",
+    "options": [
+      "27th September",
+      "11th November",
+      "5th December",
+      "12th January"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 93,
+    "question": "Which City is known as the “Chocolate City”?",
+    "options": [
+      "Washington",
+      "Rajasthan",
+      "Abu Dhabi",
+      "Darjeeling"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 94,
+    "question": "Who wrote the book, “The Road Ahead”?",
+    "options": [
+      "Bill Gates",
+      "John Milton",
+      "P. V. Sindhu",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 95,
+    "question": "Who is the present Central Minister of Women Welfare and Child Development?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Subhas Chandra Bose",
+      "Mrs. Menaka Sanjay Gandhi",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 96,
+    "question": "What is Exobiology?",
+    "options": [
+      "Study of musical acoustics",
+      "Study of agricultural soils",
+      "Study of Life in Outer Space",
+      "Study of ancient inscriptions"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 97,
+    "question": "Expand GPRS.",
+    "options": [
+      "Bhabha Atomic Research Centre",
+      "Chief Information Officer",
+      "Foreign Exchange Regulation Act",
+      "General Packet Radio System"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 98,
+    "question": "Who is the present Central Minister of Youth Affairs and Sports?",
+    "options": [
+      "Col. RajyaVardhan Singh Rathore",
+      "Vijaya Lakshmi Pandit",
+      "Sardar Vallabhbhai Patel",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 99,
+    "question": "Who wrote the Tamil Novel, “Sila Nerangalil Sila Manidhargal”?",
+    "options": [
+      "Jayakanthan",
+      "Amartya Sen",
+      "C. V. Raman",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 100,
+    "question": "What is the expansion of WMO?",
+    "options": [
+      "Polar Satellite Launch Vehicle",
+      "Bhabha Atomic Research Centre",
+      "Central Industrial Security Force",
+      "World Meteorological Organisation"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 101,
+    "question": "Which country is known as “the Land of Maple”?",
+    "options": [
+      "Canada",
+      "Turkey",
+      "India",
+      "China"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 102,
+    "question": "When is the International Youth’s Day Celebrated?",
+    "options": [
+      "9th October",
+      "7th December",
+      "14th October",
+      "12th August"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 103,
+    "question": "Which is the name of the Award given for Excellence in Space Research in India?",
+    "options": [
+      "Sundarbans Delta",
+      "London, England",
+      "Andes Mountains",
+      "Vikram Sarabhai Award"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 104,
+    "question": "Who was the first Indian to receive Nobel Prize in Economics?",
+    "options": [
+      "Amartya Sen",
+      "Annie Besant",
+      "Bill Gates",
+      "Ian Fleming"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 105,
+    "question": "Where is the Kaziranga Park Located?",
+    "options": [
+      "Assam",
+      "Kochi",
+      "China",
+      "Cochin"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 106,
+    "question": "Which is the Highest Gallantry Award in India?",
+    "options": [
+      "Lake Titicaca",
+      "Param Vir Chakra",
+      "Sundarbans Delta",
+      "South Andaman"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 107,
+    "question": "When is National Statistics Day Celebrated?",
+    "options": [
+      "9th October",
+      "29th June",
+      "23rd April",
+      "15th March"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 108,
+    "question": "What is the expansion of USB?",
+    "options": [
+      "Chief Financial Officer",
+      "Chief Information Officer",
+      "Universal Serial Bus",
+      "Optical Mark Reader"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 109,
+    "question": "Who was the first Indian to become the member of the British Parliament?",
+    "options": [
+      "Sachin Tendulkar",
+      "Dadabhai Naoroji",
+      "Margaret Thatcher",
+      "Alexander Fleming"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 110,
+    "question": "What is the Total Duration of Foot ball Match?",
+    "options": [
+      "2 Hours & 45 Minutes",
+      "4483 feet",
+      "90 minutes",
+      "8848 meters"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 111,
+    "question": "Who wrote the book, “Discovery of India”?",
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "Sardar Vallabhbhai Patel",
+      "Pandit Jawaharlal Nehru",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 112,
+    "question": "In Which Year, was the Pulitzer Prize Introduced?",
+    "options": [
+      "In the Year 1917",
+      "15th September",
+      "10th October",
+      "8th September"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 113,
+    "question": "Where is India’s first Floating Post Office Established?",
+    "options": [
+      "Dal Lake in Srinagar",
+      "San Francisco",
+      "Andes Mountains",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 114,
+    "question": "Who is the present Chief Minister of Telangana?",
+    "options": [
+      "Subhas Chandra Bose",
+      "A. P. J. Abdul Kalam",
+      "K. Chandrasekhar Rao",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 115,
+    "question": "Who was the first Indian woman to climb Mount Everest?",
+    "options": [
+      "Mark Zuckerberg",
+      "Charles Darwin",
+      "Dadabhai Naoroji",
+      "Bachchendri Pal"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 116,
+    "question": "Which is the Longest Railway Platform in the world?",
+    "options": [
+      "Washington, DC",
+      "Gorakhpur Railway Station, India (Its length is 4483 Feet)",
+      "Andes Mountains",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 117,
+    "question": "Which City is known as the “Windy City”?",
+    "options": [
+      "Chicago",
+      "Cochin",
+      "Chennai",
+      "Mumbai"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 118,
+    "question": "What is the expansion of ICRC?",
+    "options": [
+      "Indira Gandhi National Open University",
+      "Central Industrial Security Force",
+      "International Development Association",
+      "International Committee of Red Cross"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 119,
+    "question": "Who wrote the book, “Dreams from My Father: A Story of Race and Inheritance”?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "Subhas Chandra Bose",
+      "Former US President Barrack Obama",
+      "A. P. J. Abdul Kalam"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 120,
+    "question": "Who is the present Central Minister of External Affairs?",
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "Alexander Fleming",
+      "Smt. Sushma Swaraj",
+      "Winston Churchill"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 121,
+    "question": "When is the World Literacy Day Celebrated?",
+    "options": [
+      "8th September",
+      "24th October",
+      "12th January",
+      "7th December"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 122,
+    "question": "‘A Forgotten Empire’ written by the Historian Sewell refers to",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "William Shakespeare",
+      "Sardar Vallabhbhai Patel",
+      "Which Empire. Vijayanagara Empire"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 123,
+    "question": "Which is the Highest Peak in India?",
+    "options": [
+      "Uttar Pradesh",
+      "New York, USA",
+      "South Andaman",
+      "Godwin Austin"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 124,
+    "question": "What is the expansion of BARC?",
+    "options": [
+      "Bhabha Atomic Research Centre",
+      "Polar Satellite Launch Vehicle",
+      "World Meteorological Organisation",
+      "Central Board of Direct Taxes"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 125,
+    "question": "When is the National Sports Day Celebrated?",
+    "options": [
+      "7th December",
+      "4th March",
+      "29th August",
+      "10th October"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 126,
+    "question": "Which is the National Sport of China?",
+    "options": [
+      "Table Tennis",
+      "West Bengal",
+      "Lake Titicaca",
+      "Darjeeling"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 127,
+    "question": "What is the name of playing area of Baseball?",
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "Sardar Vallabhbhai Patel",
+      "Diamond (or Baseball Park)",
+      "Sucheta Kripalani"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 128,
+    "question": "Which City is known as the “Garden City”?",
+    "options": [
+      "Rajasthan",
+      "Argentina",
+      "Bangalore",
+      "Venezuela"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 129,
+    "question": "Where is the Vijaya Vittala Temple, Having its 56 carved pillars emitting Musical Notes Located?",
+    "options": [
+      "Madhya Pradesh",
+      "Western Ghats",
+      "Sundarbans Delta",
+      "Hampi, Karnataka"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 130,
+    "question": "Who wrote the book, “My Journey”?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "William Shakespeare",
+      "Vijaya Lakshmi Pandit",
+      "Dr.A.P.J. Abdul Kalam"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 131,
+    "question": "What is the expansion of IDA?",
+    "options": [
+      "International Development Association",
+      "Indian Council of Medical Research",
+      "International Committee of the Red Cross",
+      "Central Industrial Security Force"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 132,
+    "question": "Who is known as “the Lion of Punjab”?",
+    "options": [
+      "Lala Lajpat Rai",
+      "Anders Celsius",
+      "Galileo Galilei",
+      "Mark Zuckerberg"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 133,
+    "question": "Which was the first Country to host the Modern Olympic Games?",
+    "options": [
+      "Israel",
+      "Brazil",
+      "Greece",
+      "Canada"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 134,
+    "question": "Who was the first Mauryan Ruler to conquer Deccan?",
+    "options": [
+      "King Bindusara",
+      "Indira Gandhi",
+      "Mark Zuckerberg",
+      "Anders Celsius"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 135,
+    "question": "Which is the Capital of Mizoram?",
+    "options": [
+      "Gujarat",
+      "Shimla",
+      "Aizawl",
+      "Canada"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 136,
+    "question": "What is the Chemical name of Vitamin D?",
+    "options": [
+      "Calciferol",
+      "Karnataka",
+      "Trivandrum",
+      "Lake Baikal"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 137,
+    "question": "Where is the National Institute of Agricultural Marketing Located?",
+    "options": [
+      "Mysore",
+      "Punjab",
+      "Mumbai",
+      "Jaipur"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 138,
+    "question": "Who won the Women’s singles title in the World Badminton Championship 2017?",
+    "options": [
+      "Nelson Mandela",
+      "Nozomi Okuhara",
+      "Indira Gandhi",
+      "James Chadwick"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 139,
+    "question": "Which is the largest Delta in the world?",
+    "options": [
+      "San Francisco",
+      "Sundarbans Delta (The Ganges Delta)",
+      "Lake Titicaca",
+      "Ganges Delta"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 140,
+    "question": "Who was the founder of Gupta Dynasty?",
+    "options": [
+      "Kiran Bedi",
+      "Leo Tolstoy",
+      "John Milton",
+      "Sri Gupta"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 141,
+    "question": "Who is the only President of India elected as an Independent Candidate?",
+    "options": [
+      "Florence Nightingale",
+      "Subhas Chandra Bose",
+      "Neelam Sanjeeva Reddy",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 142,
+    "question": "Which City is known as the “Steel City of India”?",
+    "options": [
+      "Bengaluru",
+      "Maharashtra",
+      "Lake Baikal",
+      "Jamshedpur"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 143,
+    "question": "Which is the National Heritage Animal of India?",
+    "options": [
+      "Ahmedabad",
+      "Elephant",
+      "Amritsar",
+      "Abu Dhabi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 144,
+    "question": "What is the motto of Olympic Games?",
+    "options": [
+      "Sundarbans Delta",
+      "Uttar Pradesh",
+      "“Faster, Higher & Stronger”",
+      "Lake Titicaca"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 145,
+    "question": "Who wrote the Poem, “The Bird of Time”?",
+    "options": [
+      "Homi J. Bhabha",
+      "Sarojini Naidu",
+      "Charles Darwin",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 146,
+    "question": "When is the International Nelson Mandela Day Observed?",
+    "options": [
+      "18th July",
+      "21st June",
+      "8th October",
+      "23rd April"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 147,
+    "question": "Which country will host the 2018 International Theatre Olympics?",
+    "options": [
+      "Brazil",
+      "India",
+      "Egypt",
+      "Russia"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 148,
+    "question": "Which is the Highest Lake above the sea level in the world?",
+    "options": [
+      "Lake Titicaca",
+      "San Francisco",
+      "Uttar Pradesh",
+      "Pamir Plateau"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 149,
+    "question": "With Which Sport, is “Popping Crease” Associated?",
+    "options": [
+      "Vadodara",
+      "Belgium",
+      "Cricket",
+      "Bhopal"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 150,
+    "question": "Who wrote the book, “Man- the Maker of His own Destiny”?",
+    "options": [
+      "Margaret Thatcher",
+      "Swami Vivekananda",
+      "Mark Zuckerberg",
+      "Benjamin Franklin"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 151,
+    "question": "Which International Tennis Event is held on the Grass Court?",
+    "options": [
+      "Bengaluru",
+      "Wimbledon",
+      "New Delhi",
+      "Ahmedabad"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 152,
+    "question": "Which Company developed the India’s first Bio-Methane Bus?",
+    "options": [
+      "Ganges Delta",
+      "West Bengal",
+      "Tata Motors",
+      "Switzerland"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 153,
+    "question": "What is the name of Chennai to Vishakhapatnam National Highway?",
+    "options": [
+      "1982",
+      "1911",
+      "NH 5",
+      "1969"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 154,
+    "question": "Which Planet of the Solar System spins on its axis at the Fastest Rate?",
+    "options": [
+      "Jupiter",
+      "Belgium",
+      "Dehradun",
+      "Jodhpur"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 155,
+    "question": "Who is known as “the Grand Old man of India”?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Alexander Fleming",
+      "Winston Churchill",
+      "Nelson Mandela"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 156,
+    "question": "At Which temperature, Both the Fahrenheit and the Centigrade Scales have the same values?",
+    "options": [
+      "2018",
+      "1993",
+      "2010",
+      "-40°"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 157,
+    "question": "Which Union Territory of India attained Statehood in February 1987?",
+    "options": [
+      "Goa",
+      "USA",
+      "Bihar",
+      "Pune"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 158,
+    "question": "Name the Substance found in blood, which helps in Clotting.",
+    "options": [
+      "Ian Fleming",
+      "Bill Gates",
+      "Roger Federer",
+      "Fibrinogen"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 159,
+    "question": "Which is considered as a hot spot of Biodiversity in India?",
+    "options": [
+      "Atlanta, USA",
+      "Uttar Pradesh",
+      "Western Ghats",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 160,
+    "question": "Which country has the Briefest Constitution in the World?",
+    "options": [
+      "Johannesburg, South Africa",
+      "United States of America",
+      "Uruguay (In the Year 1930)",
+      "Youth for Digital India"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 161,
+    "question": "Name the pair of countries, which the Karakoram Highway",
+    "options": [
+      "Bureau of Indian Standards",
+      "Johannesburg, South Africa",
+      "connects. China & Pakistan",
+      "Three Gorges Dam, China"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 162,
+    "question": "Where is the headquarters of UNESCO located?",
+    "options": [
+      "Mumbai",
+      "Paris",
+      "Kochi",
+      "Greece"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 163,
+    "question": "Which is the Biggest Lake in India?",
+    "options": [
+      "Chilka Lake",
+      "Bhubaneswar",
+      "Abu Dhabi",
+      "San Francisco"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 164,
+    "question": "Which Vitamin plays a vital role in Coagulation Property of Blood?",
+    "options": [
+      "Srinagar",
+      "Coimbatore",
+      "Vitamin K",
+      "Ahmedabad"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 165,
+    "question": "Mahatma Gandhi gave the call ‘Do or Die’ During Which Movement?",
+    "options": [
+      "India. Uttar Pradesh",
+      "Quit India Movement",
+      "W K Roentgen, Germany",
+      "Trans-Canada Highway"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 166,
+    "question": "To Which Field is the Award Saraswathi Samman given annually for Outstanding Contribution?",
+    "options": [
+      "Gorakhpur",
+      "Jamshedpur",
+      "The Hague",
+      "Literature"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 167,
+    "question": "Which is the Largest Gulf in the world?",
+    "options": [
+      "The Gulf of Mexico",
+      "Nilgiri Hills",
+      "Madhya Pradesh",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 168,
+    "question": "What is the name of study of Growth and Development of Embryo?",
+    "options": [
+      "Bhubaneswar",
+      "Embryology",
+      "Rome, Italy",
+      "Venezuela"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 169,
+    "question": "Port Blair- the Capital of Andaman & Nicobar Islands, is located in which Island?",
+    "options": [
+      "South Andaman",
+      "Lake Superior",
+      "Pamir Plateau",
+      "Western Ghats"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 170,
+    "question": "How much Earth’s Surface is covered by the Forests?",
+    "options": [
+      "75",
+      "2017",
+      "1952",
+      "30%"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 171,
+    "question": "In Which Year, Delhi became the capital of India.",
+    "options": [
+      "15th September",
+      "30th September",
+      "In the Year 1911",
+      "16th September"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 172,
+    "question": "On planet Earth, Where is no Centripetal Force?",
+    "options": [
+      "New York, USA",
+      "Ganges Delta",
+      "Lake Superior",
+      "At the Poles"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 173,
+    "question": "Which state has the Largest Coastline in India?",
+    "options": [
+      "Gujarat",
+      "Mysore",
+      "Madurai",
+      "Jodhpur"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 174,
+    "question": "Which is the Deepest Landlocked Protected Port?",
+    "options": [
+      "Visakhapatnam Port",
+      "Andes Mountains",
+      "Sundarbans Delta",
+      "London, England"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 175,
+    "question": "Which is the first National Park established in India?",
+    "options": [
+      "Corbett National Park",
+      "Andes Mountains",
+      "Nilgiri Hills",
+      "Uttar Pradesh"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 176,
+    "question": "In which Indian State, The World famous “Khajuraho” Sculptures are found?",
+    "options": [
+      "Pamir Plateau",
+      "Lake Titicaca",
+      "Madhya Pradesh",
+      "South Andaman"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 177,
+    "question": "Who was the first Chairman of Indian Atomic Energy Commission?",
+    "options": [
+      "Dr. Homi J Bhabha",
+      "Alexander Fleming",
+      "Margaret Thatcher",
+      "Shakunthala Devi"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 178,
+    "question": "Who had the Policy of “One People, One State, and One Leader”?",
+    "options": [
+      "Adolf Hitler",
+      "Amartya Sen",
+      "Mithali Raj",
+      "Alfred Nobel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 179,
+    "question": "What is the Chemical name of Chloroform?",
+    "options": [
+      "Sundarbans Delta",
+      "Pamir Plateau",
+      "Andes Mountains",
+      "Trichloro Methane"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 180,
+    "question": "Where is the headquarters of Coffee Board of India Located?",
+    "options": [
+      "Karnataka",
+      "Bangalore",
+      "New Delhi",
+      "Hyderabad"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 181,
+    "question": "When is the International Day of Democracy Observed?",
+    "options": [
+      "11th November",
+      "21st February",
+      "16th September",
+      "15th September"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 182,
+    "question": "Which is the first Country to give Voting Right to Women?",
+    "options": [
+      "Pakistan",
+      "Bangladesh",
+      "New Zealand",
+      "Egyptian Pound"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 183,
+    "question": "What is the name of Currency of Belgium?",
+    "options": [
+      "Goa",
+      "China",
+      "Paris",
+      "Euro"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 184,
+    "question": "Who was the first Indian woman to receive Jnanapith Award?",
+    "options": [
+      "Ashapurna Devi",
+      "James Chadwick",
+      "Indira Gandhi",
+      "Homi J. Bhabha"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 185,
+    "question": "Which is the Longest River of Southern India?",
+    "options": [
+      "Karnataka",
+      "New Delhi",
+      "Jodhpur",
+      "Godavari"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 186,
+    "question": "Which is the Capital of Himachal Pradesh?",
+    "options": [
+      "Punjab",
+      "Greece",
+      "Shimla",
+      "Jaipur"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 187,
+    "question": "Where is the Integral Coach Factory in India Located?",
+    "options": [
+      "Washington, DC",
+      "London, England",
+      "Nilgiri Hills",
+      "Perumbur, Chennai"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 188,
+    "question": "When is the International Biodiversity Day Observed?",
+    "options": [
+      "19th August",
+      "29th December",
+      "27th September",
+      "17th October"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 189,
+    "question": "Which is the leading Bus Terminus in Asia?",
+    "options": [
+      "Small Industries Development Bank of India",
+      "Indian Renewable Energy Development Agency",
+      "Chennai Mofussil Bus Terminus at Koyambedu",
+      "National Aeronautics and Space Administration"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 190,
+    "question": "What is the expansion of BHEL?",
+    "options": [
+      "Foreign Exchange Regulation Act",
+      "Bharat Heavy Electricals Limited",
+      "World Meteorological Organisation",
+      "Indian Council of Medical Research"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 191,
+    "question": "Who wrote the book, “Glimpses of World History”?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Pandit Jawaharlal Nehru",
+      "A. P. J. Abdul Kalam",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 192,
+    "question": "Who won the Women’s singles title in 2017 American Open Tennis Championship?",
+    "options": [
+      "Vijaya Lakshmi Pandit",
+      "Sardar Vallabhbhai Patel",
+      "Slouen Stephens (America)",
+      "A. P. J. Abdul Kalam"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 193,
+    "question": "Which is the Largest Cave in India?",
+    "options": [
+      "Uttar Pradesh",
+      "Nilgiri Hills",
+      "Amarnath Cave",
+      "Pamir Plateau"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 194,
+    "question": "Where is the Central Marine Research Institute Located?",
+    "options": [
+      "Belgium",
+      "Amritsar",
+      "Madurai",
+      "Chennai"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 195,
+    "question": "What is the name of Currency of Zimbabwe?",
+    "options": [
+      "Bhopal",
+      "Kanpur",
+      "Dollar",
+      "Odisha"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 196,
+    "question": "Which is the Capital of USA?",
+    "options": [
+      "Western Ghats",
+      "Washington DC",
+      "Nilgiri Hills",
+      "Atlanta, USA"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 197,
+    "question": "What is the expansion of NASA?",
+    "options": [
+      "National Aeronautics and Space Administration",
+      "Indian Renewable Energy Development Agency",
+      "Defence Research and Development Laboratory",
+      "Small Industries Development Bank of India"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 198,
+    "question": "Where is the Army Cadet College in India Located?",
+    "options": [
+      "Karnataka",
+      "Dehra Dun",
+      "Srinagar",
+      "Abu Dhabi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 199,
+    "question": "When is the National Physics Day Celebrated?",
+    "options": [
+      "15th March",
+      "29th August",
+      "24th April",
+      "2nd February"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 200,
+    "question": "Which is the first Country to send Human to Moon?",
+    "options": [
+      "India",
+      "USA",
+      "Brazil",
+      "Canada"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 201,
+    "question": "Who wrote the book, “Man of Destiny”?",
+    "options": [
+      "William Shakespeare",
+      "George Bernard Shaw",
+      "Rabindranath Tagore",
+      "Sucheta Kripalani"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 202,
+    "question": "Who is the Brand Ambassador of Jharkhand tourism?",
+    "options": [
+      "William Shakespeare",
+      "Mahendra Singh Dhoni",
+      "A. P. J. Abdul Kalam",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 203,
+    "question": "Who is the present Central Defence Minister?",
+    "options": [
+      "Smt. Nirmala Seetharaman",
+      "Florence Nightingale",
+      "Chandrasekhar Kambar",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 204,
+    "question": "When is the World Maths Day Celebrated?",
+    "options": [
+      "7th December",
+      "1st January",
+      "14th October",
+      "17th October"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 205,
+    "question": "What is the expansion of IGCAR?",
+    "options": [
+      "International Committee of the Red Cross",
+      "Indira Gandhi Centre for Atomic Research",
+      "Small Industries Development Bank of India",
+      "Indian Renewable Energy Development Agency"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 206,
+    "question": "Who is the present Central Railway Minister?",
+    "options": [
+      "James Chadwick",
+      "Piyush Goyal",
+      "Marie Curie",
+      "Rafael Nadal"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 207,
+    "question": "Who won the women’s singles title in Korea Open Super Series Badminton Championship 2017?",
+    "options": [
+      "P. V. Sindhu",
+      "Ian Fleming",
+      "Amartya Sen",
+      "Mithali Raj"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 208,
+    "question": "Which is the Capital of Tripura?",
+    "options": [
+      "Guwahati",
+      "Varanasi",
+      "Agartala",
+      "Madurai"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 209,
+    "question": "Who wrote the book, “Origin of Species”?",
+    "options": [
+      "Charles Darwin",
+      "Lala Lajpat Rai",
+      "Mark Zuckerberg",
+      "Satya Nadella"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 210,
+    "question": "Which is the Highest Award given for Science in India?",
+    "options": [
+      "Sundarbans Delta",
+      "Shanti Swarup Bhatnagar Award",
+      "London, England",
+      "New York, USA"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 211,
+    "question": "Who started Public Works Department in India?",
+    "options": [
+      "Mahatma Gandhi",
+      "Charles Darwin",
+      "Lord Dalhousie",
+      "Nelson Mandela"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 212,
+    "question": "Which is the State Bird of Tamil Nadu?",
+    "options": [
+      "South Andaman",
+      "Emerald Dove",
+      "Western Ghats",
+      "Maharashtra"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 213,
+    "question": "Which is the Capital of the Union Territory Daman & Diu?",
+    "options": [
+      "Surat",
+      "Mumbai",
+      "Mysore",
+      "Daman"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 214,
+    "question": "Where is the Sundarban Tiger Reserve Situated?",
+    "options": [
+      "Nilgiri Hills",
+      "Lake Titicaca",
+      "Coimbatore",
+      "West Bengal"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 215,
+    "question": "Which is the Longest National Highway in India?",
+    "options": [
+      "London, England",
+      "Western Ghats",
+      "Lake Titicaca",
+      "NH 7 (Varanasi To Kanyakumari -2369 km)"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 216,
+    "question": "What is the expansion of ICMR?",
+    "options": [
+      "National Human Rights Commission",
+      "Indian Council of Medical Research",
+      "Indira Gandhi National Open University",
+      "Central Industrial Security Force"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 217,
+    "question": "Where is the Central Food Technology Research Institute Located?",
+    "options": [
+      "Mumbai",
+      "Punjab",
+      "Canada",
+      "Mysore"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 218,
+    "question": "Who completed the construction of Qutub Minar?",
+    "options": [
+      "Iltutmish",
+      "Usain Bolt",
+      "Bill Gates",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 219,
+    "question": "Which state Government of India institutes Mahatma Gandhi Award?",
+    "options": [
+      "Sundarbans Delta",
+      "Madhya Pradesh Government",
+      "Uttar Pradesh",
+      "London, England"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 220,
+    "question": "Where is the Green park Stadium Located?",
+    "options": [
+      "Kolkata",
+      "Kanpur",
+      "Punjab",
+      "Bhopal"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 221,
+    "question": "What is the name of playing area of Lawn Tennis?",
+    "options": [
+      "Court",
+      "Aizawl",
+      "Canada",
+      "Chennai"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 222,
+    "question": "When is the World Postal Day Observed?",
+    "options": [
+      "24th October",
+      "8th October",
+      "15th March",
+      "9th October"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 223,
+    "question": "Where is the National Institute of Ayurveda Located?",
+    "options": [
+      "Chennai",
+      "China",
+      "Jaipur",
+      "Cochin"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 224,
+    "question": "Which is the Highest Airport in India?",
+    "options": [
+      "Uttar Pradesh",
+      "South Andaman",
+      "Leh Airport (Ladakh)",
+      "San Francisco"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 225,
+    "question": "Which city is the Biggest Centre for Manufacture of Automobiles in the World?",
+    "options": [
+      "Lake Superior",
+      "Lake Baikal",
+      "Detroit, USA",
+      "Lake Titicaca"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 226,
+    "question": "Who wrote the book, “Business @ The Speed of Thoughts”?",
+    "options": [
+      "Bill Gates",
+      "C. V. Raman",
+      "Tim Cook",
+      "Marie Curie"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 227,
+    "question": "Who is known as “the Iron Lady”?",
+    "options": [
+      "Florence Nightingale",
+      "Mrs. Margaret Thatcher",
+      "Chandrasekhar Kambar",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 228,
+    "question": "Where is the Centre for Environmental Education Located?",
+    "options": [
+      "Ahmadabad",
+      "Ahmedabad",
+      "New Delhi",
+      "Hyderabad"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 229,
+    "question": "Where was the first Technology Park in India Established?",
+    "options": [
+      "Trivandrum",
+      "Hyderabad",
+      "Rome, Italy",
+      "Coimbatore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 230,
+    "question": "What is the name of the Parliament in USA?",
+    "options": [
+      "Optical Mark Reader",
+      "Universal Serial Bus",
+      "Congress",
+      "Chief Financial Officer"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 231,
+    "question": "Which City is known as the “City of Cycles”?",
+    "options": [
+      "Belgium",
+      "Beijing",
+      "Jodhpur",
+      "Srinagar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 232,
+    "question": "Which City is known as the “Empire City”?",
+    "options": [
+      "Madurai",
+      "New York",
+      "Dehradun",
+      "Jodhpur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 233,
+    "question": "Who is the Brand Ambassador of Incredible India?",
+    "options": [
+      "Prime Minister Narendra Modi",
+      "Chandrasekhar Kambar",
+      "Sardar Vallabhbhai Patel",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 234,
+    "question": "Who was the first Indian-Born recipient to receive the Nobel Prize for Peace?",
+    "options": [
+      "Friedrich Froebel",
+      "Sachin Tendulkar",
+      "Dadabhai Naoroji",
+      "Kailas Satyarthi"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 235,
+    "question": "Who is the present Central Minister of Drinking Water and Sanitation?",
+    "options": [
+      "Uma Bharathi",
+      "P. V. Sindhu",
+      "Annie Besant",
+      "C. V. Raman"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 236,
+    "question": "Where is the Himalayan Forest Research Institute Located?",
+    "options": [
+      "Canada",
+      "Assam",
+      "Jaipur",
+      "Shimla"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 237,
+    "question": "What is Entomology?",
+    "options": [
+      "Study of Insects",
+      "Study of embryos",
+      "Study of joints",
+      "Fear of darkness"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 238,
+    "question": "Who wrote the book, “As You like it”?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Benjamin Franklin",
+      "Subhas Chandra Bose",
+      "William Shakespeare"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 239,
+    "question": "Who wrote the book, “Gathering Storm”?",
+    "options": [
+      "Margaret Thatcher",
+      "Friedrich Froebel",
+      "Winston Churchill",
+      "Benjamin Franklin"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 240,
+    "question": "Which is the Longest Highway in the world?",
+    "options": [
+      "Sundarbans Delta",
+      "Trans-Canada Highway",
+      "South Andaman",
+      "Andes Mountains"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 241,
+    "question": "Who was the first governor General of Pakistan?",
+    "options": [
+      "Benjamin Franklin",
+      "Subhas Chandra Bose",
+      "William Shakespeare",
+      "Mohammed Ali Jinnah"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 242,
+    "question": "Where is the Centre for Liquid Crystal Research Located?",
+    "options": [
+      "Bangalore",
+      "Dead Sea",
+      "Varanasi",
+      "Venezuela"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 243,
+    "question": "Which country is known as “the Country of Copper”?",
+    "options": [
+      "France",
+      "Turkey",
+      "Zambia",
+      "Greece"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 244,
+    "question": "Who is the Brand Ambassador of Skill India Mission?",
+    "options": [
+      "Sucheta Kripalani",
+      "Sachin Tendulkar",
+      "Lala Lajpat Rai",
+      "Dadabhai Naoroji"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 245,
+    "question": "What is the name of the Parliament of Indonesia?",
+    "options": [
+      "Foreign Exchange Regulation Act",
+      "People’s Consultative Assembly",
+      "Polar Satellite Launch Vehicle",
+      "Central Board of Direct Taxes"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 246,
+    "question": "Which City is known as the “City of Gold”?",
+    "options": [
+      "Pamir Plateau",
+      "Johannesburg, South Africa",
+      "Madhya Pradesh",
+      "San Francisco"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 247,
+    "question": "Which is the Largest Producer of Rubber in the world?",
+    "options": [
+      "Malaysia",
+      "Guwahati",
+      "Varanasi",
+      "Srinagar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 248,
+    "question": "Where is the Institute of Forest Genetics & Tree Breeding Located?",
+    "options": [
+      "Lake Baikal",
+      "Coimbatore",
+      "Darjeeling",
+      "Bangalore"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 249,
+    "question": "Who is the first Viceroy of India?",
+    "options": [
+      "John Napier",
+      "John Milton",
+      "Rafael Nadal",
+      "Lord Canning"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 250,
+    "question": "What was the earlier name of New York City?",
+    "options": [
+      "South Andaman",
+      "New Amsterdam",
+      "San Francisco",
+      "New York, USA"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 251,
+    "question": "Who is the Brand Ambassador of central Reserve Police Force?",
+    "options": [
+      "Mithali Raj",
+      "Annie Besant",
+      "P. V. Sindhu",
+      "Homi J. Bhabha"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 252,
+    "question": "Who is the present Central Minister of Human Resource Development?",
+    "options": [
+      "Sucheta Kripalani",
+      "Alexander Fleming",
+      "Prakash Javadekar",
+      "Sachin Tendulkar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 253,
+    "question": "Who is the newly appointed Governor of Andaman & Nicobar Islands?",
+    "options": [
+      "Napoleon Bonaparte",
+      "Devendra Kumar Joshi",
+      "Alexander Fleming",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 254,
+    "question": "Which Indian City is known as “the Diamond City”?",
+    "options": [
+      "Paris",
+      "Patna",
+      "Surat",
+      "Assam"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 255,
+    "question": "Who is the Brand Ambassador of Kerala’s Ayurveda?",
+    "options": [
+      "Steffi Graf",
+      "Kiran Bedi",
+      "Alfred Nobel",
+      "John Napier"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 256,
+    "question": "Which Country is the Largest Producer of Manganese in the world?",
+    "options": [
+      "India",
+      "France",
+      "Mexico",
+      "USA"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 257,
+    "question": "Who is the first Governor General of India?",
+    "options": [
+      "Lala Lajpat Rai",
+      "Sachin Tendulkar",
+      "Benjamin Franklin",
+      "William Bentinck"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 258,
+    "question": "Where is Indian Institute of Foreign Trade Located?",
+    "options": [
+      "Dead Sea",
+      "New Delhi",
+      "Bengaluru",
+      "The Hague"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 259,
+    "question": "Who wrote the book, “War and Peace”?",
+    "options": [
+      "Ian Fleming",
+      "C. V. Raman",
+      "Leo Tolstoy",
+      "Marie Curie"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 260,
+    "question": "Where is S.N. Bose National Centre for Basic Science Located?",
+    "options": [
+      "Kolkata",
+      "Mumbai",
+      "Finland",
+      "Amritsar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 261,
+    "question": "Who wrote the book, “Oliver Twist”?",
+    "options": [
+      "Charles Dickens",
+      "Mark Zuckerberg",
+      "Sucheta Kripalani",
+      "Friedrich Froebel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 262,
+    "question": "What is the Lifespan of RBC?",
+    "options": [
+      "90 minutes",
+      "4483 feet",
+      "2 hours",
+      "120 Days"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 263,
+    "question": "What is the Old name of Taiwan?",
+    "options": [
+      "Panipat",
+      "Belgium",
+      "Jaipur",
+      "Formosa"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 264,
+    "question": "What is the expansion of UNIDO?",
+    "options": [
+      "Small Industries Development Bank of India",
+      "National Aeronautics and Space Administration",
+      "United Nations Industrial Development Organisation",
+      "Council of Scientific and Industrial Research"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 265,
+    "question": "Who was the first President of USA?",
+    "options": [
+      "Shakunthala Devi",
+      "George Washington",
+      "Sucheta Kripalani",
+      "Benjamin Franklin"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 266,
+    "question": "Who said, “Man is a Tool making Animal”?",
+    "options": [
+      "Lala Lajpat Rai",
+      "Sachin Tendulkar",
+      "Jawaharlal Nehru",
+      "Benjamin Franklin"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 267,
+    "question": "Who was the Last British Viceroy of India?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Jawaharlal Nehru",
+      "Winston Churchill",
+      "Lord Mountbatten"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 268,
+    "question": "What is the Chemical name of Ruby?",
+    "options": [
+      "Madhya Pradesh",
+      "Nilgiri Hills",
+      "Uttar Pradesh",
+      "Aluminium Oxide"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 269,
+    "question": "Where is the Central Institute of Indian Languages Located?",
+    "options": [
+      "Greece",
+      "Mysore",
+      "Shimla",
+      "Kochi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 270,
+    "question": "Who wrote the book, “Wake up India”?",
+    "options": [
+      "Indira Gandhi",
+      "Annie Besant",
+      "Mithali Raj",
+      "Alfred Nobel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 271,
+    "question": "What is the expansion of STARS?",
+    "options": [
+      "Securities and Exchange Board of India",
+      "Satellite Tracking And Ranging Station",
+      "International Committee of the Red Cross",
+      "Indira Gandhi National Open University"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 272,
+    "question": "Who is the World’s first Woman Cosmonaut?",
+    "options": [
+      "Valentina Tereshkova",
+      "A. P. J. Abdul Kalam",
+      "Chandrasekhar Kambar",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 273,
+    "question": "Which City is known as the “City of Cakes”?",
+    "options": [
+      "Bangalore",
+      "Scotland",
+      "Agartala",
+      "Bengaluru"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 274,
+    "question": "Which City is known as the “Motor City”?",
+    "options": [
+      "Jaipur",
+      "Detroit",
+      "Hampi",
+      "Canada"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 275,
+    "question": "Where is the Centre for Wind Energy Technology Located?",
+    "options": [
+      "Kolkata",
+      "Jodhpur",
+      "Kanpur",
+      "Chennai"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 276,
+    "question": "Who wrote the book, “The God Father”?",
+    "options": [
+      "Kiran Bedi",
+      "Amartya Sen",
+      "Mario Puzo",
+      "Usain Bolt"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 277,
+    "question": "Who is the Brand Ambassador of Yoga & Ayurveda in Haryana?",
+    "options": [
+      "P. V. Sindhu",
+      "Marie Curie",
+      "Baba Ramdev",
+      "Amartya Sen"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 278,
+    "question": "Who is the present Central Minister of Science & Technology?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "Friedrich Froebel",
+      "Florence Nightingale",
+      "Dr. Harsha Vardhan"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 279,
+    "question": "What is the Chemical name of Vitamin C?",
+    "options": [
+      "Ascorbic acid",
+      "Pamir Plateau",
+      "Lake Superior",
+      "Bhubaneswar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 280,
+    "question": "When was the First Cross word puzzle Published?",
+    "options": [
+      "8th September",
+      "30th September",
+      "In the Year 1924, (London Sunday Express)",
+      "27th September"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 281,
+    "question": "Name the Country whose National Anthem has only Music but no",
+    "options": [
+      "Women. Israel",
+      "United Kingdom",
+      "words. Bahrain",
+      "Egyptian Pound"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 282,
+    "question": "Who invented Cross word puzzle?",
+    "options": [
+      "Arthur Wynne",
+      "Alfred Nobel",
+      "Rafael Nadal",
+      "John Napier"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 283,
+    "question": "What is Alurophobia?",
+    "options": [
+      "Study of rocks",
+      "Fear of Cats",
+      "Study of joints",
+      "Fear of dogs"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 284,
+    "question": "Where is the Patagonian Desert Located?",
+    "options": [
+      "Jamshedpur",
+      "Coimbatore",
+      "Argentina",
+      "Bengaluru"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 285,
+    "question": "Which is the first animated colour cartoon of full feature length?",
+    "options": [
+      "8848 meters",
+      "Snow White & 7 Dwarfs",
+      "2 hours",
+      "90 minutes"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 286,
+    "question": "Which is the Oldest Residential University of Britain?",
+    "options": [
+      "Andes Mountains",
+      "Madhya Pradesh",
+      "San Francisco",
+      "Oxford University"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 287,
+    "question": "Which city is selected as UNESCO’s Creative city Network for Contribution in Music?",
+    "options": [
+      "Amritsar",
+      "Vadodara",
+      "Chennai",
+      "Kanpur"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 288,
+    "question": "What is the name of the Large Clock on the tower of House of Parliament in London?",
+    "options": [
+      "Amritsar",
+      "Aizawl",
+      "Shimla",
+      "Big Ben"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 289,
+    "question": "Who was the founder of the Kindergarten education system?",
+    "options": [
+      "Winston Churchill",
+      "Friedrich Froebel",
+      "Benjamin Franklin",
+      "Sachin Tendulkar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 290,
+    "question": "Which is the first University established in the world?",
+    "options": [
+      "Andes Mountains",
+      "New York, USA",
+      "London, England",
+      "Nalanda University"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 291,
+    "question": "What is the expansion of CFO?",
+    "options": [
+      "Chief financial Officer",
+      "Bureau of Indian Standards",
+      "Chief Information Officer",
+      "Universal Serial Bus"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 292,
+    "question": "What is the Rank of India in Valuable Nation Brand List 2017?",
+    "options": [
+      "2 hours",
+      "4483 feet",
+      "-40°C",
+      "8th Rank"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 293,
+    "question": "When is the World Standards Day Observed?",
+    "options": [
+      "2nd February",
+      "14th October",
+      "21st February",
+      "10th October"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 294,
+    "question": "When was the first election of the Lok Sabha held?",
+    "options": [
+      "In the Year 1952",
+      "1st January",
+      "21st February",
+      "16th September"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 295,
+    "question": "Which was the first Country to issue Stamps?",
+    "options": [
+      "Britain",
+      "Malaysia",
+      "Austria",
+      "Ireland"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 296,
+    "question": "Who introduced the practice of Sterilization of Surgical Instruments?",
+    "options": [
+      "Indira Gandhi",
+      "Joseph Lister",
+      "Mahatma Gandhi",
+      "Roger Federer"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 297,
+    "question": "When is the International Day for Preservation of Ozone Layer Observed?",
+    "options": [
+      "10th October",
+      "15th September",
+      "16th September",
+      "30th September"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 298,
+    "question": "Where is the famous Painting “Mona Lisa” Displayed?",
+    "options": [
+      "Washington, DC",
+      "Atlanta, USA",
+      "Andes Mountains",
+      "Paris [Louvre Museum]"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 299,
+    "question": "Name the River, which carries Maximum Quantity of Water into the Sea?",
+    "options": [
+      "Ganges Delta",
+      "Atlanta, USA",
+      "River Amazon",
+      "Western Ghats"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 300,
+    "question": "Which country is known as “the Battle Field of Europe”?",
+    "options": [
+      "Belgium",
+      "Uruguay",
+      "Austria",
+      "Germany"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 301,
+    "question": "What is Acrophobia?",
+    "options": [
+      "Study of clouds",
+      "Study of joints",
+      "Fear of Heights",
+      "Study of fossils"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 302,
+    "question": "Which Country stands first in the Generation of Geo-Thermal Energy?",
+    "options": [
+      "Germany",
+      "Finland",
+      "Iceland",
+      "Austria"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 303,
+    "question": "Where is the National Centre of Organic Farming Located?",
+    "options": [
+      "Ghaziabad",
+      "Australia",
+      "Venezuela",
+      "The Hague"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 304,
+    "question": "Who wrote the book, “Memories of II World War”?",
+    "options": [
+      "Sucheta Kripalani",
+      "Winston Churchill",
+      "Friedrich Froebel",
+      "William Shakespeare"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 305,
+    "question": "What is the Rank of India in 2017 Global Business Optimism Ranking?",
+    "options": [
+      "2 hours",
+      "625 meters",
+      "7th Rank",
+      "4483 feet"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 306,
+    "question": "When is the International Day for Eradication of Poverty Observed?",
+    "options": [
+      "5th December",
+      "12th January",
+      "17th October",
+      "29th August"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 307,
+    "question": "Department of Official Languages, comes under Which Ministry?",
+    "options": [
+      "Home Ministry",
+      "Pamir Plateau",
+      "San Francisco",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 308,
+    "question": "Where is the Great Victoria Desert Located?",
+    "options": [
+      "Australia",
+      "Hyderabad",
+      "Bangalore",
+      "Rajasthan"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 309,
+    "question": "Who coined the term “Quiz”?",
+    "options": [
+      "Sucheta Kripalani",
+      "Jim Daly Irishman",
+      "Friedrich Froebel",
+      "Margaret Thatcher"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 310,
+    "question": "How many countries participated in the First Olympic Games held at Athens?",
+    "options": [
+      "8848 meters",
+      "-40°C",
+      "90 minutes",
+      "9 Countries"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 311,
+    "question": "When is the World Soil Day Observed?",
+    "options": [
+      "7th December",
+      "2nd February",
+      "14th October",
+      "5th December"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 312,
+    "question": "Which is India’s first Energy Efficient Railway Station?",
+    "options": [
+      "Kacheguda Railway Station",
+      "London, England",
+      "Western Ghats",
+      "New York, USA"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 313,
+    "question": "Where is the first Demonstration of a Motion Picture held?",
+    "options": [
+      "Kanpur",
+      "Paris",
+      "Assam",
+      "Greece"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 314,
+    "question": "Who is the new Chairman of Petroleum and Natural Gas Regulatory Board (PNGRB)?",
+    "options": [
+      "Mark Zuckerberg",
+      "Anders Celsius",
+      "Lala Lajpat Rai",
+      "Dinesh K Sarraf"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 315,
+    "question": "How many Keys are there in an Ordinary Piano?",
+    "options": [
+      "88 Keys",
+      "2017",
+      "1993",
+      "-40°C"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 316,
+    "question": "Who wrote the book, “Seven Lamps of Architecture”?",
+    "options": [
+      "John Milton",
+      "C. V. Raman",
+      "Leo Tolstoy",
+      "John Ruskin"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 317,
+    "question": "Who was the first Education Minister of Independent India?",
+    "options": [
+      "Rabindranath Tagore",
+      "Sardar Vallabhbhai Patel",
+      "Vijaya Lakshmi Pandit",
+      "Maulana Abul Kalam Azad"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 318,
+    "question": "When was Indian Air Force Celebrated its Golden Jubilee?",
+    "options": [
+      "15th September",
+      "In the Year 1982",
+      "11th November",
+      "27th September"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 319,
+    "question": "Which is the Largest Museum in the world?",
+    "options": [
+      "Western Ghats",
+      "London, England",
+      "American Museum of Natural History",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 320,
+    "question": "What is the name of the Residence of Queen of England?",
+    "options": [
+      "Lake Superior",
+      "Atlanta, USA",
+      "London, England",
+      "Buckingham Palace"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 321,
+    "question": "What is the name of Mountain Range between Indus and Sutlej Rivers?",
+    "options": [
+      "Washington, DC",
+      "Andes Mountains",
+      "Punjab Himalaya",
+      "Western Ghats"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 322,
+    "question": "Where is Global Entrepreneurship Summit 2017 held?",
+    "options": [
+      "Hyderabad",
+      "Australia",
+      "Ahmedabad",
+      "Bengaluru"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 323,
+    "question": "When is Indian Air Force Day Celebrated?",
+    "options": [
+      "29th August",
+      "8th October",
+      "19th August",
+      "12th January"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 324,
+    "question": "Which is the Largest Airport in the world?",
+    "options": [
+      "Sundarbans Delta",
+      "Andes Mountains",
+      "King Khalid International Airport in Saudi Arabia",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 325,
+    "question": "What is the expansion of CIO?",
+    "options": [
+      "Chief Financial Officer",
+      "Chief Information Officer",
+      "Polar Satellite Launch Vehicle",
+      "Bureau of Indian Standards"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 326,
+    "question": "Where is the Angel Falls Located?",
+    "options": [
+      "Venezuela",
+      "Bengaluru",
+      "Dehradun",
+      "Gorakhpur"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 327,
+    "question": "Name the country where the Military Service is Compulsory for",
+    "options": [
+      "The Philippines",
+      "Women. Israel",
+      "Egyptian Pound",
+      "New Zealand"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 328,
+    "question": "What is the Last Letter of Greek Alphabet?",
+    "options": [
+      "Patna",
+      "Kochi",
+      "Bihar",
+      "Omega"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 329,
+    "question": "Which country is known as “the Land of Setting Sun”?",
+    "options": [
+      "Belgium",
+      "Britain",
+      "Austria",
+      "Brazil"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 330,
+    "question": "In Which state of India does the Sun rise first?",
+    "options": [
+      "Arunachal Pradesh",
+      "Sundarbans Delta",
+      "Western Ghats",
+      "Lake Titicaca"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 331,
+    "question": "Which country is known as “the Britain of the East”?",
+    "options": [
+      "Zambia",
+      "France",
+      "Japan",
+      "Egypt"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 332,
+    "question": "Which is the Lowest Point of Earth?",
+    "options": [
+      "A. P. J. Abdul Kalam",
+      "Sardar Vallabhbhai Patel",
+      "Vijaya Lakshmi Pandit",
+      "The Coastal Area of Dead Sea"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 333,
+    "question": "When is World Consumer Day Observed?",
+    "options": [
+      "9th October",
+      "29th August",
+      "15th March",
+      "1st January"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 334,
+    "question": "Which is the Highest Peak in Western Ghats?",
+    "options": [
+      "Srinagar",
+      "Finland",
+      "Anaimudi",
+      "Venezuela"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 335,
+    "question": "Who is known as “Punjab Kesari”?",
+    "options": [
+      "Indira Gandhi",
+      "Sachin Tendulkar",
+      "Nelson Mandela",
+      "Lala Lajpat Rai"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 336,
+    "question": "Who is the present Governor of New Delhi?",
+    "options": [
+      "Anil Baijal",
+      "Ian Fleming",
+      "C. V. Raman",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 337,
+    "question": "Who is the Brand Ambassador of Uttar Pradesh Election Commission?",
+    "options": [
+      "P. V. Sindhu",
+      "Kuldeep Yadav",
+      "Anders Celsius",
+      "James Chadwick"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 338,
+    "question": "Where is the Victoria Falls located?",
+    "options": [
+      "Sundarbans Delta",
+      "Rhodesia, Zambia",
+      "Lake Titicaca",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 339,
+    "question": "Which is the National Emblem of Spain?",
+    "options": [
+      "Cochin",
+      "Eagle",
+      "Greece",
+      "Kanpur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 340,
+    "question": "Which is the Largest City in Africa?",
+    "options": [
+      "Pune",
+      "Patna",
+      "Surat",
+      "Cairo"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 341,
+    "question": "Who won the 2017 Nobel Prize for Economics?",
+    "options": [
+      "Richard. H. Thaler",
+      "William Shakespeare",
+      "Friedrich Froebel",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 342,
+    "question": "What is the normal Value of Blood Sugar in Our Body?",
+    "options": [
+      "625 meters",
+      "8848 meters",
+      "4483 feet",
+      "80 to 120mg/100ml of Blood"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 343,
+    "question": "Which city is known as “the Venice of the North”?",
+    "options": [
+      "Andes Mountains",
+      "Washington, DC",
+      "Stockholm, Sweden",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 344,
+    "question": "Which country is known as “the Emerald Island”?",
+    "options": [
+      "Greece",
+      "Finland",
+      "Ireland",
+      "Uruguay"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 345,
+    "question": "What is the name of the Parliament in Mexico?",
+    "options": [
+      "Universal Serial Bus",
+      "Chief Financial Officer",
+      "Congress of the Union",
+      "Chief Information Officer"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 346,
+    "question": "Who is the present Central Minister of Railways?",
+    "options": [
+      "P. V. Sindhu",
+      "John Milton",
+      "Piyush Goyal",
+      "Alfred Nobel"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 347,
+    "question": "Who wrote the book, “My Truth”?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "Former Prime Minister Smt. Indira Gandhi",
+      "Vijaya Lakshmi Pandit",
+      "Florence Nightingale"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 348,
+    "question": "What is the expansion of SIDBI?",
+    "options": [
+      "Indian Renewable Energy Development Agency",
+      "International Committee of the Red Cross",
+      "National Aeronautics and Space Administration",
+      "Small Industries Development Bank of India"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 349,
+    "question": "Where is National Judicial Academy Located?",
+    "options": [
+      "Chennai",
+      "Bhopal",
+      "Odisha",
+      "China"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 350,
+    "question": "When is United Nations Day Celebrated?",
+    "options": [
+      "2nd February",
+      "October 24",
+      "9th December",
+      "8th October"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 351,
+    "question": "Where is Indian Institute of Mass Communication Located?",
+    "options": [
+      "Hyderabad",
+      "Gorakhpur",
+      "New Delhi",
+      "Argentina"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 352,
+    "question": "Who is the present Central Minister of Agriculture and Farmers Welfare?",
+    "options": [
+      "Sucheta Kripalani",
+      "Radha Mohan Singh",
+      "Margaret Thatcher",
+      "Sachin Tendulkar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 353,
+    "question": "Which country is known as “the Land of Windmills”?",
+    "options": [
+      "Iceland",
+      "Finland",
+      "Malaysia",
+      "Holland"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 354,
+    "question": "Who wrote the book, “Voice of Conscience”?",
+    "options": [
+      "Former President V.V.Giri",
+      "Chandrasekhar Kambar",
+      "Sardar Vallabhbhai Patel",
+      "Florence Nightingale"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 355,
+    "question": "Who was the First Indian to score Triple Century in Test Cricket?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Virendar Sehwag",
+      "Jawaharlal Nehru",
+      "Shakunthala Devi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 356,
+    "question": "What is the expansion of IRS?",
+    "options": [
+      "Council of Scientific and Industrial Research",
+      "Defence Research and Development Laboratory",
+      "Indian Remote-sensing Satellite (or) Indian Revenue Service",
+      "National Aeronautics and Space Administration"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 357,
+    "question": "When is International Translation Day Observed?",
+    "options": [
+      "30th September",
+      "27th September",
+      "17th October",
+      "5th December"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 358,
+    "question": "Who is the present central minister of Statistics & Programme Implementation?",
+    "options": [
+      "Florence Nightingale",
+      "DV Sadananda Gowda",
+      "William Shakespeare",
+      "Napoleon Bonaparte"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 359,
+    "question": "Where is Indian Council of Historical Research located?",
+    "options": [
+      "New Delhi",
+      "Australia",
+      "Ahmedabad",
+      "Bangalore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 360,
+    "question": "Who wrote the book, “Isabella”?",
+    "options": [
+      "John Keats",
+      "C. V. Raman",
+      "Bill Gates",
+      "Usain Bolt"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 361,
+    "question": "Which country is known as “the Land of Lilies”?",
+    "options": [
+      "Norway",
+      "Canada",
+      "Iceland",
+      "Israel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 362,
+    "question": "Who constructed the Jagannath Temple at Puri?",
+    "options": [
+      "Mithali Raj",
+      "Anant Varman",
+      "Leo Tolstoy",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 363,
+    "question": "Which is the first Country to sign nuclear agreement with India?",
+    "options": [
+      "Israel",
+      "Turkey",
+      "France",
+      "Norway"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 364,
+    "question": "Which is the Lightest Metal?",
+    "options": [
+      "Madurai",
+      "Belgium",
+      "Lithium",
+      "Bhopal"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 365,
+    "question": "Which city is known as “the Magic City”?",
+    "options": [
+      "Miami, Florida",
+      "Lake Superior",
+      "Western Ghats",
+      "London, England"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 366,
+    "question": "Which is the National Calendar of India?",
+    "options": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Saka Calendar",
+      "New York, USA"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 367,
+    "question": "Who was the First man to Nobel Prize for Physics?",
+    "options": [
+      "William Shakespeare",
+      "Vijaya Lakshmi Pandit",
+      "Rabindranath Tagore",
+      "W K Roentgen, Germany"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 368,
+    "question": "What is the name of currency of Egypt?",
+    "options": [
+      "Egyptian Pound",
+      "Rhodesia, Zambia",
+      "Mawsynram , India",
+      "Women. Israel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 369,
+    "question": "What is India’s Rank in Global Passport Power Rank 2017?",
+    "options": [
+      "75th Rank",
+      "625 meters",
+      "90 minutes",
+      "2 hours"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 370,
+    "question": "Who is known as the “Human Computer”?",
+    "options": [
+      "Shakunthala Devi",
+      "Dadabhai Naoroji",
+      "Anders Celsius",
+      "Mark Zuckerberg"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 371,
+    "question": "Who wrote the book, “The Conversations with Myself”?",
+    "options": [
+      "Homi J. Bhabha",
+      "Indira Gandhi",
+      "Jawaharlal Nehru",
+      "Nelson Mandela"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 372,
+    "question": "Which is the first Country to win the Football World Cup?",
+    "options": [
+      "United States of America",
+      "Johannesburg, South Africa",
+      "Three Gorges Dam, China",
+      "Uruguay (In the Year 1930)"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 373,
+    "question": "Who wrote the book, “India wins Freedom”?",
+    "options": [
+      "William Shakespeare",
+      "Maulana Abul Kalam Azad",
+      "Sardar Vallabhbhai Patel",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 374,
+    "question": "Which is the Capital of Austria?",
+    "options": [
+      "Jodhpur",
+      "Vienna",
+      "Hampi",
+      "Belgium"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 375,
+    "question": "Where is Army School of Physical Training Located?",
+    "options": [
+      "Goa",
+      "Shimla",
+      "Assam",
+      "Pune"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 376,
+    "question": "Which city in India is known as “the City of Golden Temple”?",
+    "options": [
+      "Srinagar",
+      "Amristar",
+      "Ahmedabad",
+      "Madurai"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 377,
+    "question": "When is World Day for Audio-Visual Heritage Celebrated?",
+    "options": [
+      "27th October",
+      "7th December",
+      "5th December",
+      "17th October"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 378,
+    "question": "Who won the Golden Ball for World Player of the Year 2017?",
+    "options": [
+      "Benjamin Franklin",
+      "Christiano Ronaldo",
+      "Subhas Chandra Bose",
+      "Margaret Thatcher"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 379,
+    "question": "When is International Anti-corruption Day Observed?",
+    "options": [
+      "9th December",
+      "24th October",
+      "12th January",
+      "5th December"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 380,
+    "question": "What is the expansion of FERA?",
+    "options": [
+      "Foreign Exchange Regulation Act",
+      "Bhabha Atomic Research Centre",
+      "World Meteorological Organisation",
+      "Polar Satellite Launch Vehicle"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 381,
+    "question": "Where is Indira Gandhi National Forest Academy Located?",
+    "options": [
+      "Argentina",
+      "Gorakhpur",
+      "Dehra dun",
+      "Vadodara"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 382,
+    "question": "Who was the World’s First woman President?",
+    "options": [
+      "Maria Estela Peron (Argentina)",
+      "William Shakespeare",
+      "Sardar Vallabhbhai Patel",
+      "Subhas Chandra Bose"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 383,
+    "question": "Which is the Highest Dam in India?",
+    "options": [
+      "London, England",
+      "Andes Mountains",
+      "Sundarbans Delta",
+      "Tehri Dam in Uttarkhand"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 384,
+    "question": "Where is Victoria Memorial Located?",
+    "options": [
+      "Guwahati",
+      "Kolkata",
+      "Jodhpur",
+      "Kanpur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 385,
+    "question": "For Which Book, Salman Rushdie won Booker Prize in the year",
+    "options": [
+      "1981. Midnight’s Children",
+      "8848 meters",
+      "625 meters",
+      "90 minutes"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 386,
+    "question": "Where is Rajiv Gandhi National Institute of Youth Development Located?",
+    "options": [
+      "Sundarbans Delta",
+      "Andes Mountains",
+      "Sriperumbudur in Tamilnadu",
+      "New York, USA"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 387,
+    "question": "Which country institutes Pulitzer Prize?",
+    "options": [
+      "Uruguay (In the Year 1930)",
+      "United States of America",
+      "Youth for Digital India",
+      "Bureau of Indian Standards"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 388,
+    "question": "Who was the First man to hit Double Century in One Day International Match?",
+    "options": [
+      "Sachin Tendulkar",
+      "Jawaharlal Nehru",
+      "Benjamin Franklin",
+      "Friedrich Froebel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 389,
+    "question": "When is Indian Armed Force Flag Day Observed?",
+    "options": [
+      "8th October",
+      "14th October",
+      "7th December",
+      "9th October"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 390,
+    "question": "Who won the title of Miss Universe 2017?",
+    "options": [
+      "Sardar Vallabhbhai Patel",
+      "A. P. J. Abdul Kalam",
+      "Demi Leigh Nel-Peters ( South Africa)",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 391,
+    "question": "What is the expansion of NSEFI?",
+    "options": [
+      "National Solar Energy Federation of India",
+      "Defence Research and Development Laboratory",
+      "Indian Renewable Energy Development Agency",
+      "Small Industries Development Bank of India"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 392,
+    "question": "What is the Theme of Sahitya Academy Awards 2017?",
+    "options": [
+      "Washington, DC",
+      "Madhya Pradesh",
+      "Festival of Letters",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 393,
+    "question": "What is the expansion of CBDT?",
+    "options": [
+      "Chief Information Officer",
+      "Central Board of Direct Taxes",
+      "Polar Satellite Launch Vehicle",
+      "Bhabha Atomic Research Centre"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 394,
+    "question": "Who is known as the “King of Spin”?",
+    "options": [
+      "Alfred Nobel",
+      "Shane Warne",
+      "C. V. Raman",
+      "Usain Bolt"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 395,
+    "question": "When is World Photography Day Observed?",
+    "options": [
+      "10th October",
+      "9th October",
+      "29th August",
+      "19th August"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 396,
+    "question": "Name the Country that shares Longest Border with India.",
+    "options": [
+      "South Africa",
+      "Switzerland",
+      "Pakistan",
+      "Bangladesh"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 397,
+    "question": "Name the first research station established by India in the",
+    "options": [
+      "Lake Superior",
+      "Antarctica. Dakshin Gangotri",
+      "Sundarbans Delta",
+      "Andes Mountains"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 398,
+    "question": "Where is the site of Harappa located?",
+    "options": [
+      "Madhya Pradesh",
+      "On the bank of river Ravi",
+      "Western Ghats",
+      "London, England"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 399,
+    "question": "Who discovered Blood Groups?",
+    "options": [
+      "Bill Gates",
+      "John Milton",
+      "Landsteiner",
+      "Ian Fleming"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 400,
+    "question": "Who is the current President of Russia?",
+    "options": [
+      "Nelson Mandela",
+      "Vladimir Putin",
+      "James Chadwick",
+      "Charles Darwin"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 401,
+    "question": "Who was the first Recipient of Param Vir Chakra?",
+    "options": [
+      "William Shakespeare",
+      "A. P. J. Abdul Kalam",
+      "Major Somanath Sharma",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 402,
+    "question": "When is World Book Day Celebrated?",
+    "options": [
+      "19th August",
+      "21st June",
+      "3rd March",
+      "23rd April"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 403,
+    "question": "Which is the Largest Palace in the World?",
+    "options": [
+      "Andes Mountains",
+      "Madhya Pradesh",
+      "Imperial Palace (Beijing, China)",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 404,
+    "question": "What is Achluophobia?",
+    "options": [
+      "Study of insects",
+      "Fear of Darkness",
+      "Study of joints",
+      "Study of clouds"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 405,
+    "question": "Which country institutes Magsaysay Award?",
+    "options": [
+      "New Zealand",
+      "United Kingdom",
+      "South Africa",
+      "The Philippines"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 406,
+    "question": "Which is the capital of Australia?",
+    "options": [
+      "Canberra",
+      "The Hague",
+      "Belgium",
+      "Amritsar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 407,
+    "question": "What is Tachophobia?",
+    "options": [
+      "Study of joints",
+      "Fear of cats",
+      "Fear of speed",
+      "Fear of heights"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 408,
+    "question": "Which is the National Game of Spain?",
+    "options": [
+      "South Andaman",
+      "Lake Superior",
+      "Ganges Delta",
+      "Bull Fighting"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 409,
+    "question": "Where is the Nokrek Biosphere Reserve Located?",
+    "options": [
+      "Meghalaya",
+      "Bangalore",
+      "New Delhi",
+      "Karnataka"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 410,
+    "question": "Who is the first Indian woman to win a medal at the Olympic Games?",
+    "options": [
+      "Winston Churchill",
+      "Margaret Thatcher",
+      "Friedrich Froebel",
+      "Karnam Malleswari"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 411,
+    "question": "Who is the present Emperor of Japan?",
+    "options": [
+      "Tim Cook",
+      "Bill Gates",
+      "Mary Kom",
+      "Akihito"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 412,
+    "question": "Which is the World’s Rainiest Spot?",
+    "options": [
+      "Darjeeling, India",
+      "Mawsynram , India",
+      "The Gulf of Mexico",
+      "Rhodesia, Zambia"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 413,
+    "question": "How many States in India are Coastal?",
+    "options": [
+      "-40°C",
+      "4483 feet",
+      "9 States",
+      "3 hours"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 414,
+    "question": "What is Petrology?",
+    "options": [
+      "Study of insects",
+      "Science of growth",
+      "Study of Rocks",
+      "Study of clouds"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 415,
+    "question": "Which City is known as the “Big Apple”?",
+    "options": [
+      "Ganges Delta",
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Newyork, USA"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 416,
+    "question": "Who is the 45th Chief Justice of India?",
+    "options": [
+      "Friedrich Froebel",
+      "Florence Nightingale",
+      "Justice Deepak Mishra",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 417,
+    "question": "What is the expansion of AIIMS?",
+    "options": [
+      "Securities and Exchange Board of India",
+      "Defence Research and Development Laboratory",
+      "International Development Association",
+      "All India Institute of Medical Sciences"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 418,
+    "question": "Which Year was declared as the International Year of Biodiversity?",
+    "options": [
+      "5th June",
+      "23rd April",
+      "2010",
+      "21st June"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 419,
+    "question": "In Which Year, Dadasaheb Phalke Award Instituted?",
+    "options": [
+      "16th September",
+      "15th September",
+      "In the Year 1969",
+      "12th January"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 420,
+    "question": "Where is the Headquarters of International Olympic Committee Located?",
+    "options": [
+      "Maharashtra",
+      "Rome, Italy",
+      "Lake Baikal",
+      "Switzerland"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 421,
+    "question": "Where is the World’s Largest Roller Coaster named “Ferrari World” located?",
+    "options": [
+      "Rajasthan",
+      "Hyderabad",
+      "The Hague",
+      "Abu Dhabi"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 422,
+    "question": "What is the expansion of BIS?",
+    "options": [
+      "Chief Information Officer",
+      "Central Board of Direct Taxes",
+      "Bureau of Indian Standards",
+      "Chief Financial Officer"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 423,
+    "question": "Where is the National Institute of Nutrition Located?",
+    "options": [
+      "Madhya Pradesh",
+      "Andhra Pradesh",
+      "Uttar Pradesh",
+      "London, England"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 424,
+    "question": "Which is the largest Penguin in the World?",
+    "options": [
+      "Washington, DC",
+      "Pamir Plateau",
+      "San Francisco",
+      "Emperor Penguin"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 425,
+    "question": "Which is the Oldest Tennis Tournament in the World?",
+    "options": [
+      "Lake Titicaca",
+      "Lake Superior",
+      "Wimbledon Championship",
+      "Pamir Plateau"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 426,
+    "question": "Name the State, which has the largest number of Sugar mills in",
+    "options": [
+      "India. Uttar Pradesh",
+      "Trans-Canada Highway",
+      "Darjeeling, India",
+      "Quit India Movement"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 427,
+    "question": "Which is the First country to issue Plastic Currency?",
+    "options": [
+      "Australia",
+      "Germany",
+      "Argentina",
+      "Bangladesh"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 428,
+    "question": "Who appoints the District Judges of a State?",
+    "options": [
+      "Kiran Bedi",
+      "Tim Cook",
+      "Governor",
+      "Usain Bolt"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 429,
+    "question": "What is the Expansion of SEBI?",
+    "options": [
+      "Indira Gandhi National Open University",
+      "Securities and Exchange board of India",
+      "International Committee of the Red Cross",
+      "World Meteorological Organisation"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 430,
+    "question": "Which sanctuary is famous for one-horned Rhinoceros?",
+    "options": [
+      "San Francisco",
+      "Sundarbans Delta",
+      "Uttar Pradesh",
+      "Kaziranga National Park"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 431,
+    "question": "What is dactylography?",
+    "options": [
+      "Study of fingerprints",
+      "Study of Finger prints",
+      "Study of skin diseases",
+      "Study of humidity"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 432,
+    "question": "Who is the present CEO of Face book?",
+    "options": [
+      "Shakunthala Devi",
+      "Lala Lajpat Rai",
+      "Charles Darwin",
+      "Mark Zuckerberg"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 433,
+    "question": "Who wrote the book, “The story of my Life”?",
+    "options": [
+      "Mithali Raj",
+      "Rafael Nadal",
+      "Amartya Sen",
+      "Helen Keller"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 434,
+    "question": "What is Cynophobia?",
+    "options": [
+      "Fear of cats",
+      "Study of lakes",
+      "Study of clouds",
+      "Fear of Dogs"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 435,
+    "question": "Who is the Present CEO of Flip kart?",
+    "options": [
+      "Alfred Nobel",
+      "Sachin Bansal",
+      "Satya Nadella",
+      "Roger Federer"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 436,
+    "question": "What is Ornithophobia?",
+    "options": [
+      "Fear of Birds",
+      "Study of clouds",
+      "Fear of darkness",
+      "Study of lakes"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 437,
+    "question": "Who wrote the Book, “My Country My Life”?",
+    "options": [
+      "Ian Fleming",
+      "L.K.Advani",
+      "John Milton",
+      "Amartya Sen"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 438,
+    "question": "Which is the Smallest Ocean?",
+    "options": [
+      "New York, USA",
+      "Lake Superior",
+      "Bhubaneswar",
+      "Arctic Ocean"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 439,
+    "question": "Who invented Thermometer?",
+    "options": [
+      "Dadabhai Naoroji",
+      "Friedrich Froebel",
+      "Benjamin Franklin",
+      "Galileo Galilei"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 440,
+    "question": "What is Hydrobiology?",
+    "options": [
+      "Study of agricultural soils",
+      "Study of Aquatic Organisms",
+      "Study of ancient inscriptions",
+      "Study of motion of fluids"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 441,
+    "question": "Where is India’s First Underground Metro Railways system established?",
+    "options": [
+      "Cochin",
+      "Kolkata",
+      "Gujarat",
+      "Jodhpur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 442,
+    "question": "Who is the present central Minister of Commerce and Industry?",
+    "options": [
+      "Roger Federer",
+      "Indira Gandhi",
+      "Suresh Prabhu",
+      "Charles Darwin"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 443,
+    "question": "What is Arthrology?",
+    "options": [
+      "Fear of birds",
+      "Study of insects",
+      "Study of clouds",
+      "Study of Joints"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 444,
+    "question": "Who wrote the Book, “Making India Awesome”?",
+    "options": [
+      "Rafael Nadal",
+      "Charles Darwin",
+      "Chetan Bhagat",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 445,
+    "question": "Who won 2017 Rajiv Gandhi khel Ratna Award for Hockey?",
+    "options": [
+      "P. V. Sindhu",
+      "Sardar Singh",
+      "Ian Fleming",
+      "Rafael Nadal"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 446,
+    "question": "Which is the Longest Mountain Range in the World?",
+    "options": [
+      "The Andes, South America",
+      "Andes Mountains",
+      "Lake Superior",
+      "London, England"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 447,
+    "question": "What is the Expansion of BMW?",
+    "options": [
+      "Chief Financial Officer",
+      "Universal Serial Bus",
+      "Optical Mark Reader",
+      "Baverian Motor Works"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 448,
+    "question": "Which is the Smallest State in India?",
+    "options": [
+      "Pune",
+      "Goa",
+      "USA",
+      "Mumbai"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 449,
+    "question": "Who invented Ballpoint Pen?",
+    "options": [
+      "John J. Loud",
+      "Ian Fleming",
+      "P. V. Sindhu",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 450,
+    "question": "What is Aphnology?",
+    "options": [
+      "Fear of heights",
+      "Fear of darkness",
+      "Study of humidity",
+      "Science of Wealth"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 451,
+    "question": "Who is the present CEO of Hindustan Unilever Limited?",
+    "options": [
+      "Marie Curie",
+      "P. V. Sindhu",
+      "Sanjiv Mehta",
+      "John Milton"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 452,
+    "question": "Who wrote the book, “A Shot at History”?",
+    "options": [
+      "Mahatma Gandhi",
+      "Satya Nadella",
+      "Abhinav Bindra",
+      "Nelson Mandela"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 453,
+    "question": "When is National Safety Day Observed?",
+    "options": [
+      "21st June",
+      "23rd April",
+      "4th March",
+      "19th August"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 454,
+    "question": "Which is the Highest Plateau in the World?",
+    "options": [
+      "Madhya Pradesh",
+      "Pamir (Tibetian Plateau)",
+      "Andes Mountains",
+      "New York, USA"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 455,
+    "question": "What is the Expansion of CSIR?",
+    "options": [
+      "International Committee of the Red Cross",
+      "Council of Scientific and Industrial Research",
+      "National Aeronautics and Space Administration",
+      "Defence Research and Development Laboratory"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 456,
+    "question": "Who is the present CEO of Britannia?",
+    "options": [
+      "Bill Gates",
+      "Varun Berry",
+      "Roger Federer",
+      "C. V. Raman"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 457,
+    "question": "What is Characterology?",
+    "options": [
+      "Study of Personal Character",
+      "Study of motion of fluids",
+      "Study of musical acoustics",
+      "Study of agricultural soils"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 458,
+    "question": "Who wrote the book, “The race of My Life”?",
+    "options": [
+      "C. V. Raman",
+      "Mithali Raj",
+      "Milkha Singh",
+      "Alfred Nobel"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 459,
+    "question": "Who discovered penicillin?",
+    "options": [
+      "Sachin Tendulkar",
+      "Margaret Thatcher",
+      "Benjamin Franklin",
+      "Alexander Fleming"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 460,
+    "question": "Which is the First Metro city in India to get Floating Market?",
+    "options": [
+      "Dehradun",
+      "Panipat",
+      "Finland",
+      "Kolkata"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 461,
+    "question": "Who is the newly appointed Director of Vikram Sarabhai Space Centre?",
+    "options": [
+      "Subhas Chandra Bose",
+      "Scientist S Somanath",
+      "Rabindranath Tagore",
+      "Florence Nightingale"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 462,
+    "question": "Where is the Elephanta caves Located?",
+    "options": [
+      "Bhopal",
+      "Mumbai",
+      "Cochin",
+      "Jaipur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 463,
+    "question": "Who is the First woman lawyer to be directly promoted as the Supreme court Judge?",
+    "options": [
+      "C. V. Raman",
+      "Indu malhotra",
+      "Amartya Sen",
+      "Roger Federer"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 464,
+    "question": "Where is the Jandar Mantar Observatory Located?",
+    "options": [
+      "Shimla",
+      "Canada",
+      "Jaipur",
+      "Punjab"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 465,
+    "question": "Who is the present Central Minister of Consumer Affairs, Food & Public Distribution?",
+    "options": [
+      "Galileo Galilei",
+      "Shakunthala Devi",
+      "Ramvilas Paswan",
+      "Mark Zuckerberg"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 466,
+    "question": "What is Auxology?",
+    "options": [
+      "Study of fossils",
+      "Science of Growth",
+      "Study of embryos",
+      "Study of humidity"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 467,
+    "question": "Who wrote the book, “Unforgettable Memories”?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "West Bengal CM Mamata Banerjee",
+      "Napoleon Bonaparte",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 468,
+    "question": "Who is the present CEO of HCL Technologies?",
+    "options": [
+      "Mithali Raj",
+      "Bill Gates",
+      "Anant Gupta",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 469,
+    "question": "Who is the present Chairman of ISRO?",
+    "options": [
+      "Rafael Nadal",
+      "Indira Gandhi",
+      "Dr. K. Sivan",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 470,
+    "question": "Where is the Charminar Located?",
+    "options": [
+      "Hyderabad",
+      "New Delhi",
+      "Darjeeling",
+      "Gorakhpur"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 471,
+    "question": "What is Cryobiology?",
+    "options": [
+      "Study of plant nutrition and soil yield",
+      "Study of Life under cold conditions",
+      "Study of agricultural soils",
+      "Study of aquatic organisms"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 472,
+    "question": "Who wrote the book, “Faster than Lightning: My Autobiography”?",
+    "options": [
+      "Usain Bolt",
+      "Kiran Bedi",
+      "Mithali Raj",
+      "John Napier"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 473,
+    "question": "Who is the present CEO of Microsoft?",
+    "options": [
+      "James Chadwick",
+      "Satya Nadella",
+      "Alfred Nobel",
+      "Roger Federer"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 474,
+    "question": "Who invented Centigrade Scale?",
+    "options": [
+      "Anders Celsius",
+      "James Chadwick",
+      "Alfred Nobel",
+      "Indira Gandhi"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 475,
+    "question": "Which is the largest State in India?",
+    "options": [
+      "Australia",
+      "Karnataka",
+      "Agartala",
+      "Rajasthan"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 476,
+    "question": "What is the Expansion of CISF?",
+    "options": [
+      "Bhabha Atomic Research Centre",
+      "Central Industrial Security Force",
+      "Indian Council of Medical Research",
+      "Foreign Exchange Regulation Act"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 477,
+    "question": "What is Harmonics?",
+    "options": [
+      "Study of Musical Acoustics",
+      "Study of aquatic organisms",
+      "Study of agricultural soils",
+      "Study of ancient inscriptions"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 478,
+    "question": "Where is the Ajanta Caves Located?",
+    "options": [
+      "Rome, Italy",
+      "Jamshedpur",
+      "Maharastra",
+      "Maharashtra"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 479,
+    "question": "Who won the Women’s Singles Title in 2018 Australian Open Tennis Championship?",
+    "options": [
+      "Friedrich Froebel",
+      "Sachin Tendulkar",
+      "Rabindranath Tagore",
+      "Caroline Wozniacki"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 480,
+    "question": "Name the Device used for locating submerged objects under the",
+    "options": [
+      "Lake Baikal",
+      "Sea. SONAR",
+      "West Bengal",
+      "Coimbatore"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 481,
+    "question": "What is the Present name of Pataliputra?",
+    "options": [
+      "Kanpur",
+      "Patna",
+      "Mysore",
+      "Bihar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 482,
+    "question": "Who was the first Indian Woman to win a Medal in Boxing at Olympic games?",
+    "options": [
+      "Mithali Raj",
+      "Tim Cook",
+      "Mary Kom",
+      "Kiran Bedi"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 483,
+    "question": "Who is the present Chief minister of Himachal Pradesh?",
+    "options": [
+      "Jairam Thakur",
+      "Alfred Nobel",
+      "Nelson Mandela",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 484,
+    "question": "When is World Wetlands day Celebrated?",
+    "options": [
+      "February 2",
+      "7th December",
+      "19th August",
+      "15th March"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 485,
+    "question": "What is the Expansion of ADH?",
+    "options": [
+      "Anti Diuretic Hormone",
+      "Chief Information Officer",
+      "Universal Serial Bus",
+      "Chief Financial Officer"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 486,
+    "question": "What is the Present name of Baroda?",
+    "options": [
+      "Bangalore",
+      "Dehradun",
+      "Vadodara",
+      "Guwahati"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 487,
+    "question": "Which is the Largest City in India?",
+    "options": [
+      "Jaipur",
+      "Shimla",
+      "Mumbai",
+      "Gujarat"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 488,
+    "question": "Where is the Gobi Desert Located?",
+    "options": [
+      "Varanasi",
+      "Vadodara",
+      "Guwahati",
+      "Mongolia"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 489,
+    "question": "What is Hydrokinetics?",
+    "options": [
+      "Study of aquatic organisms",
+      "Study of agricultural soils",
+      "Study of life in outer space",
+      "Study of Motion of Fluids"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 490,
+    "question": "Which City in Tamilnadu is known as the “City of Paddy fields”?",
+    "options": [
+      "Jamshedpur",
+      "Rome, Italy",
+      "Atlanta, USA",
+      "Tirunelveli"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 491,
+    "question": "Who discovered Neutron?",
+    "options": [
+      "Roger Federer",
+      "Nelson Mandela",
+      "James Chadwick",
+      "Mahatma Gandhi"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 492,
+    "question": "Which is the Largest Artificial Lake in the World?",
+    "options": [
+      "Lake Kariba",
+      "Darjeeling",
+      "Switzerland",
+      "Maharashtra"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 493,
+    "question": "Expand JIPMER.",
+    "options": [
+      "Council of Scientific and Industrial Research",
+      "National Aeronautics and Space Administration",
+      "Jawaharlal Institute of Post-graduate Medical Education and Research",
+      "Indian Renewable Energy Development Agency"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 494,
+    "question": "What is Nephology?",
+    "options": [
+      "Study of Clouds",
+      "Science of growth",
+      "Study of fossils",
+      "Study of joints"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 495,
+    "question": "Which is the First Newspaper of India?",
+    "options": [
+      "Nilgiri Hills",
+      "Ganges Delta",
+      "Washington, DC",
+      "Bengal Gazette"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 496,
+    "question": "Who is the Youngest Recipient of Bharat Ratna Award?",
+    "options": [
+      "Sachin Tendulkar",
+      "Alexander Fleming",
+      "Jawaharlal Nehru",
+      "Friedrich Froebel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 497,
+    "question": "What is the name of the Space between the Eyebrows?",
+    "options": [
+      "Varanasi",
+      "Finland",
+      "Guwahati",
+      "Glabella"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 498,
+    "question": "Which countryis known as “The land of Fire and Ice”?",
+    "options": [
+      "Iceland",
+      "Uruguay",
+      "Germany",
+      "Israel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 499,
+    "question": "Who is the First Indian to win the Title of Miss World?",
+    "options": [
+      "Reita faria",
+      "Ian Fleming",
+      "Marie Curie",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 500,
+    "question": "What is the chemical name of Vitamin A?",
+    "options": [
+      "Jaipur",
+      "Belgium",
+      "Retinol",
+      "Jodhpur"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 501,
+    "question": "Who was the first Person to address Gandhiji as the “Father of our Nation”?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "Subhas Chandra Bose",
+      "Rabindranath Tagore",
+      "Nethaji subash Chandra Bose"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 502,
+    "question": "What is the Expansion of PSLV?",
+    "options": [
+      "Polar Satellite Launch Vehicle",
+      "Bhabha Atomic Research Centre",
+      "National Human Rights Commission",
+      "Foreign Exchange Regulation Act"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 503,
+    "question": "Which is the Longest River in South India?",
+    "options": [
+      "Madhya Pradesh",
+      "River Godavari",
+      "Lake Titicaca",
+      "South Andaman"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 504,
+    "question": "What is Nyctophobia?",
+    "options": [
+      "Fear of darkness",
+      "Study of insects",
+      "Study of humidity",
+      "Study of embryos"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 505,
+    "question": "Which is the Smallest desert in the World?",
+    "options": [
+      "Madhya Pradesh",
+      "Cancross Desert",
+      "Andes Mountains",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 506,
+    "question": "What is Agrology?",
+    "options": [
+      "Study of life in outer space",
+      "Study of fingerprints",
+      "Study of Agricultural soils",
+      "Study of musical acoustics"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 507,
+    "question": "Who is the first Indian to win an Oscar for Lifetime Achievement?",
+    "options": [
+      "Mithali Raj",
+      "Alfred Nobel",
+      "Satyajit Ray",
+      "Charles Darwin"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 508,
+    "question": "In Which year America got Independence from England?",
+    "options": [
+      "14th October",
+      "29th December",
+      "11th November",
+      "In the Year 1776"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 509,
+    "question": "Which Indian State has the Largest number of Cotton Textile Mills?",
+    "options": [
+      "Maharastra",
+      "Maharashtra",
+      "Bhubaneswar",
+      "Switzerland"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 510,
+    "question": "When is World Wildlife Day Observed?",
+    "options": [
+      "March 3",
+      "5th June",
+      "21st June",
+      "3rd March"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 511,
+    "question": "Which Place is known as the “Workshop of Europe”?",
+    "options": [
+      "Chennai",
+      "Mumbai",
+      "Madurai",
+      "Belgium"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 512,
+    "question": "Who is the newly appointed President of Sahitya Academy?",
+    "options": [
+      "Rabindranath Tagore",
+      "Subhas Chandra Bose",
+      "Napoleon Bonaparte",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 513,
+    "question": "Who wrote the Book, “Golden Girl”?",
+    "options": [
+      "John Napier",
+      "P.T. Usha",
+      "Mithali Raj",
+      "Kiran Bedi"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 514,
+    "question": "Which place in the World is known as “The Golden State”?",
+    "options": [
+      "California",
+      "Bangalore",
+      "Karnataka",
+      "Hyderabad"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 515,
+    "question": "In our Solar System, Which two planets are known as “The Ice Giants”?",
+    "options": [
+      "Lake Superior",
+      "Western Ghats",
+      "Andes Mountains",
+      "Uranus & Neptune"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 516,
+    "question": "Who invented Lightning Conductor?",
+    "options": [
+      "Benjamin Franklin",
+      "Napoleon Bonaparte",
+      "Alexander Fleming",
+      "Shakunthala Devi"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 517,
+    "question": "Name the Tennis Player who won the most Men’s Singles Grand",
+    "options": [
+      "slam Titles. Roger Federer",
+      "Napoleon Bonaparte",
+      "Sardar Vallabhbhai Patel",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 518,
+    "question": "What is Cosmology?",
+    "options": [
+      "Study of Universe",
+      "Science of growth",
+      "Study of insects",
+      "Study of humidity"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 519,
+    "question": "When was Pencillin discovered?",
+    "options": [
+      "16th September",
+      "30th September",
+      "27th September",
+      "In the Year 1928"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 520,
+    "question": "Which is the most abundant metal in the Earth’s Crust?",
+    "options": [
+      "Aluminium",
+      "Karnataka",
+      "Gorakhpur",
+      "Venezuela"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 521,
+    "question": "What is Hygrology?",
+    "options": [
+      "Study of clouds",
+      "Study of Humidity",
+      "Study of fossils",
+      "Fear of darkness"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 522,
+    "question": "Name the Atom Bomb dropped on Nagasaki during II World War.",
+    "options": [
+      "Chennai",
+      "Madurai",
+      "Fat Man",
+      "Belgium"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 523,
+    "question": "Where is Buland darwaza located?",
+    "options": [
+      "Nilgiri Hills",
+      "Uttar Pradesh",
+      "Washington, DC",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 524,
+    "question": "Who created the first Animated Cartoon?",
+    "options": [
+      "Ian Fleming",
+      "Emile Cohl",
+      "Leo Tolstoy",
+      "Amartya Sen"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 525,
+    "question": "Which is the First country to Introduce GST?",
+    "options": [
+      "Norway",
+      "Russia",
+      "Turkey",
+      "France"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 526,
+    "question": "Who invented Safety Pin?",
+    "options": [
+      "Ian Fleming",
+      "Walter Hunt",
+      "John Napier",
+      "Marie Curie"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 527,
+    "question": "Which is the Largest Museum in India?",
+    "options": [
+      "Western Ghats",
+      "National Museum, Kolkata",
+      "Madhya Pradesh",
+      "Sundarbans Delta"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 528,
+    "question": "When is National Doctors day Celebrated?",
+    "options": [
+      "30th March",
+      "9th October",
+      "2nd February",
+      "19th August"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 529,
+    "question": "Which is the Hottest Planet in the Solar System?",
+    "options": [
+      "Assam",
+      "Hampi",
+      "Kochi",
+      "Venus"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 530,
+    "question": "What is the expansion of DSLR?",
+    "options": [
+      "Central Board of Direct Taxes",
+      "Bureau of Indian Standards",
+      "Digital Single-lens Reflex",
+      "Bhabha Atomic Research Centre"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 531,
+    "question": "What is Chronometer?",
+    "options": [
+      "Study of ancient inscriptions",
+      "Study of plant nutrition and soil yield",
+      "Instrument used for Measuring Time",
+      "Study of aquatic organisms"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 532,
+    "question": "Who started Indian Academy of Sciences?",
+    "options": [
+      "James Chadwick",
+      "Sir.C.V. Raman",
+      "Lala Lajpat Rai",
+      "Rafael Nadal"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 533,
+    "question": "What is Photometer?",
+    "options": [
+      "Study of ancient inscriptions",
+      "Study of agricultural soils",
+      "Study of plant nutrition and soil yield",
+      "Instrument for Measuring Light Intensity"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 534,
+    "question": "Who wrote the Book, “My Life”?",
+    "options": [
+      "Bill Clinton",
+      "Annie Besant",
+      "Roger Federer",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 535,
+    "question": "Who invented Raincoat?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Charles Macintosh",
+      "Sachin Tendulkar",
+      "Benjamin Franklin"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 536,
+    "question": "Which River is known as the “Sorrow of Bihar”?",
+    "options": [
+      "Ahmedabad",
+      "West Bengal",
+      "River Kosi",
+      "Argentina"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 537,
+    "question": "When was the First Population Census Taken in India?",
+    "options": [
+      "27th September",
+      "8th September",
+      "In The Year 1872",
+      "15th September"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 538,
+    "question": "Where did Indian Hockey team won its First Gold Medal in Olympic Games?",
+    "options": [
+      "Uttar Pradesh",
+      "Lake Titicaca",
+      "Nilgiri Hills",
+      "Amsterdam [In The Year 1928]"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 539,
+    "question": "What is the name of India’s first Nuclear Reactor?",
+    "options": [
+      "Odisha",
+      "Bhopal",
+      "Apsara",
+      "Jaipur"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 540,
+    "question": "Which is known as the “Queen of Spices”?",
+    "options": [
+      "Amritsar",
+      "Cardamom",
+      "Dead Sea",
+      "Belgium"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 541,
+    "question": "Who invented Crescograph?",
+    "options": [
+      "Jagadish Chandra Bose",
+      "Rabindranath Tagore",
+      "Chandrasekhar Kambar",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 542,
+    "question": "Which city in India is known as the “Athens of South India”?",
+    "options": [
+      "Gujarat",
+      "Madurai",
+      "Mumbai",
+      "Kolkata"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 543,
+    "question": "What is Seismograph?",
+    "options": [
+      "Study of agricultural soils",
+      "Study of plant nutrition and soil yield",
+      "Study of musical acoustics",
+      "Instrument for Recording Earthquakes"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 544,
+    "question": "When was the National Human Rights Commission established?",
+    "options": [
+      "16th September",
+      "In the Year 1993",
+      "30th September",
+      "24th October"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 545,
+    "question": "Who wrote the Book, “Unbreakable”?",
+    "options": [
+      "P. V. Sindhu",
+      "Kiran Bedi",
+      "Mary Kom",
+      "Annie Besant"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 546,
+    "question": "Which Organisation institutes the Kalinga prize?",
+    "options": [
+      "UNESCO",
+      "Aizawl",
+      "Jaipur",
+      "Mumbai"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 547,
+    "question": "Who was the First Indian woman to swim across English Channel?",
+    "options": [
+      "Rafael Nadal",
+      "Aarthi Saha",
+      "Amartya Sen",
+      "C. V. Raman"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 548,
+    "question": "Which is the deepest lake in the World?",
+    "options": [
+      "Darjeeling",
+      "Switzerland",
+      "Baikal Lake",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 549,
+    "question": "Whose achievements are recorded in the Allahabad Pillar inscription?",
+    "options": [
+      "Uttar Pradesh",
+      "Western Ghats",
+      "Samudra Gupta",
+      "Lake Titicaca"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 550,
+    "question": "Which Indian city is known as the “City of Victory”?",
+    "options": [
+      "Fatehpur Sikri",
+      "Lake Titicaca",
+      "New York, USA",
+      "Lake Superior"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 551,
+    "question": "Who invented Logarithmn?",
+    "options": [
+      "Leo Tolstoy",
+      "Ian Fleming",
+      "Mithali Raj",
+      "John Napier"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 552,
+    "question": "What is Epigraphy?",
+    "options": [
+      "Study of musical acoustics",
+      "Study of life in outer space",
+      "Study of aquatic organisms",
+      "Study of Ancient Inscriptions"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 553,
+    "question": "Who is the present CEO of Apple?",
+    "options": [
+      "Marie Curie",
+      "Bill Gates",
+      "Kiran Bedi",
+      "Tim Cook"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 554,
+    "question": "Expand NHRC.",
+    "options": [
+      "Indian Council of Medical Research",
+      "National Human Rights Commission",
+      "Foreign Exchange Regulation Act",
+      "Bhabha Atomic Research Centre"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 555,
+    "question": "Which is the Fastest Swimming Bird?",
+    "options": [
+      "Western Ghats",
+      "Washington, DC",
+      "Andes Mountains",
+      "Gentoo Penguin"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 556,
+    "question": "Who invented Kaleidoscope?",
+    "options": [
+      "Winston Churchill",
+      "Benjamin Franklin",
+      "Sir David Brewster",
+      "Florence Nightingale"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 557,
+    "question": "Who wrote the book, “An American Life”?",
+    "options": [
+      "Chandrasekhar Kambar",
+      "Former American President Ronald Reagon",
+      "Florence Nightingale",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 558,
+    "question": "Where is Umaid Bhavan Palace Located?",
+    "options": [
+      "Madhya Pradesh",
+      "South Andaman",
+      "Andes Mountains",
+      "Jodhpur, Rajasthan"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 559,
+    "question": "Who is the present Governor of Reserve Bank of India?",
+    "options": [
+      "Ian Fleming",
+      "John Napier",
+      "Urjit Patel",
+      "Alfred Nobel"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 560,
+    "question": "Who was the First Player to score 6000 runs in Women’s ODI cricket?",
+    "options": [
+      "Alfred Nobel",
+      "Mithali Raj",
+      "C. V. Raman",
+      "Ian Fleming"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 561,
+    "question": "Where is Victoria Terminus located?",
+    "options": [
+      "Guwahati",
+      "Gujarat",
+      "Bihar",
+      "Mumbai"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 562,
+    "question": "Who is the present Chairman of National Bank for Agriculture & Rural Development?",
+    "options": [
+      "Friedrich Froebel",
+      "Alexander Fleming",
+      "Harsh Kumar Banwala",
+      "Florence Nightingale"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 563,
+    "question": "What is Dermatology?",
+    "options": [
+      "Study of plant nutrition and soil yield",
+      "Study of life in outer space",
+      "Study of agricultural soils",
+      "The study concerned with the diagnosis & treatment of skin diseases"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 564,
+    "question": "Who was the first woman to win the Nobel Prize?",
+    "options": [
+      "John Milton",
+      "Marie Curie",
+      "Ian Fleming",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 565,
+    "question": "Which is the longest Beach in the World?",
+    "options": [
+      "Praia do Cassino Beach, Brazil",
+      "Washington, DC",
+      "South Andaman",
+      "Nilgiri Hills"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 566,
+    "question": "What is ellipsograph?",
+    "options": [
+      "Study of life in outer space",
+      "Instrument for describing Ellipses",
+      "Study of ancient inscriptions",
+      "Study of aquatic organisms"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 567,
+    "question": "Which is the National Tree of USA?",
+    "options": [
+      "Oak Tree",
+      "Varanasi",
+      "Jodhpur",
+      "Amritsar"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 568,
+    "question": "Which country has the Longest Coastline in the World?",
+    "options": [
+      "Israel",
+      "Canada",
+      "Mexico",
+      "Turkey"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 569,
+    "question": "Who wrote the Book, “2 States”?",
+    "options": [
+      "P. V. Sindhu",
+      "Chetan Bhagat",
+      "Lala Lajpat Rai",
+      "Nelson Mandela"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 570,
+    "question": "Where is Sariska Tiger Reserve Located?",
+    "options": [
+      "San Francisco",
+      "Alwar in Rajasthan",
+      "Lake Superior",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 571,
+    "question": "What is Optometer?",
+    "options": [
+      "Instrument for testing Vision",
+      "Study of agricultural soils",
+      "Study of life in outer space",
+      "Study of motion of fluids"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 572,
+    "question": "Who invented Typewriter?",
+    "options": [
+      "Christopher Latham Sholes",
+      "A. P. J. Abdul Kalam",
+      "William Shakespeare",
+      "Sardar Vallabhbhai Patel"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 573,
+    "question": "Which is the national Animal of Spain?",
+    "options": [
+      "Bihar",
+      "Kochi",
+      "Bull",
+      "Paris"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 574,
+    "question": "How many states are there in USA?",
+    "options": [
+      "50 States",
+      "90 minutes",
+      "1969",
+      "625 meters"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 575,
+    "question": "Where is Amar Mahal Palace located?",
+    "options": [
+      "Nilgiri Hills",
+      "Uttar Pradesh",
+      "Jammu & Kashmir",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 576,
+    "question": "Who is the founder of Vaccinology?",
+    "options": [
+      "Edward Jenner",
+      "Roger Federer",
+      "Satya Nadella",
+      "Homi J. Bhabha"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 577,
+    "question": "What is the name of the instrument used to measure atmospheric Pressure?",
+    "options": [
+      "New Delhi",
+      "Rajasthan",
+      "Barometer",
+      "Hyderabad"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 578,
+    "question": "Who is the Youngest Recipient of Nobel Prize?",
+    "options": [
+      "Mark Zuckerberg",
+      "Friedrich Froebel",
+      "Malala Yousafzai",
+      "Margaret Thatcher"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 579,
+    "question": "Which is the Largest dam in the World?",
+    "options": [
+      "Andes Mountains",
+      "New York, USA",
+      "San Francisco",
+      "Three Gorges Dam, China"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 580,
+    "question": "Who wrote the Book, “It is always Possible”?",
+    "options": [
+      "Marie Curie",
+      "Rafael Nadal",
+      "Kiran Bedi",
+      "Usain Bolt"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 581,
+    "question": "How many Grand slam Tournaments are there in Tennis?",
+    "options": [
+      "2018",
+      "Four",
+      "2010",
+      "1911"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 582,
+    "question": "When is International Mother Language Day Celebrated?",
+    "options": [
+      "8th September",
+      "29th December",
+      "5th December",
+      "21st February"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 583,
+    "question": "Who built the first Car Engine?",
+    "options": [
+      "Karl Benz",
+      "Alfred Nobel",
+      "Mary Kom",
+      "Bill Gates"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 584,
+    "question": "What is the theme of National Science day 2018?",
+    "options": [
+      "Council of Scientific and Industrial Research",
+      "International Committee of the Red Cross",
+      "Indian Renewable Energy Development Agency",
+      "Science & Technology for Sustainable Development"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 585,
+    "question": "Where was 21st National Conference on e-Governance held?",
+    "options": [
+      "Ahmedabad",
+      "Gorakhpur",
+      "Karnataka",
+      "Hyderabad"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 586,
+    "question": "Who is the woman pilot of Indian Air Force to complete a solo flight in Fighter Aircraft?",
+    "options": [
+      "Mark Zuckerberg",
+      "Avani Chaturvedi",
+      "Shakunthala Devi",
+      "Friedrich Froebel"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 587,
+    "question": "Which State Government of India has marked as September 22 as Rhino Day?",
+    "options": [
+      "New York, USA",
+      "Madhya Pradesh",
+      "Assam Government",
+      "Washington, DC"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 588,
+    "question": "In Which year, Bangladesh was formed as Separate Country?",
+    "options": [
+      "7th December",
+      "27th September",
+      "In the Year 1971",
+      "24th October"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 589,
+    "question": "Where is 44th Khajuraho dance Festival held?",
+    "options": [
+      "South Andaman",
+      "Western Ghats",
+      "Nilgiri Hills",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 590,
+    "question": "Who is the Present Central Minister of Health and family Welfare?",
+    "options": [
+      "Rabindranath Tagore",
+      "Jagat Prakash Nadda",
+      "Subhas Chandra Bose",
+      "Chandrasekhar Kambar"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 591,
+    "question": "What is Golden Fibre Revolution?",
+    "options": [
+      "Nilgiri Hills",
+      "Lake Titicaca",
+      "London, England",
+      "Production of Jute"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 592,
+    "question": "Where is India’s first Aviation Multi Skill Development centre launched?",
+    "options": [
+      "Chandigarh",
+      "Coimbatore",
+      "Venezuela",
+      "Gorakhpur"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 593,
+    "question": "Who is the first US President to be invited as the Chief Guest of Indian Republic Day?",
+    "options": [
+      "Former American President Barack Obama",
+      "Sardar Vallabhbhai Patel",
+      "A. P. J. Abdul Kalam",
+      "Rabindranath Tagore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 594,
+    "question": "What is the name of the instrument used to measure the distance travelled in Vehicles?",
+    "options": [
+      "Argentina",
+      "Madurai",
+      "Odometer",
+      "Vadodara"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 595,
+    "question": "What is Agrobiology?",
+    "options": [
+      "Study of Plant Nutrition & Soil Yield",
+      "Study of plant nutrition and soil yield",
+      "Study of ancient inscriptions",
+      "Study of life in outer space"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 596,
+    "question": "Where is Amber Fort located?",
+    "options": [
+      "London, England",
+      "Madhya Pradesh",
+      "Nilgiri Hills",
+      "Jaipur, Rajasthan"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 597,
+    "question": "Who established Mauryan Empire in ancient India?",
+    "options": [
+      "Florence Nightingale",
+      "Chandra Gupta Maurya",
+      "Alexander Fleming",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 598,
+    "question": "When is National Education Day Celebrated?",
+    "options": [
+      "29th August",
+      "November 11",
+      "9th October",
+      "17th October"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 599,
+    "question": "Who invented Powerloom?",
+    "options": [
+      "Winston Churchill",
+      "Edmund Cartwright",
+      "Dadabhai Naoroji",
+      "Sucheta Kripalani"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 600,
+    "question": "Which is India’s first Mars Orbiter Mission?",
+    "options": [
+      "Mangalyaan",
+      "Ganges Delta",
+      "Rome, Italy",
+      "Coimbatore"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 601,
+    "question": "Who is the Present Chief Justice of India?",
+    "options": [
+      "Amartya Sen",
+      "C. V. Raman",
+      "Dipak Misra",
+      "John Napier"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 602,
+    "question": "Where is Hirakud Captive Power Plant Located?",
+    "options": [
+      "Bhopal",
+      "Odisha",
+      "Canada",
+      "Jaipur"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 603,
+    "question": "Who was the first Governor of Reserve Bank of India?",
+    "options": [
+      "Benjamin Franklin",
+      "Shakunthala Devi",
+      "Sir Osborne Smith",
+      "Margaret Thatcher"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 604,
+    "question": "What is Phonometer?",
+    "options": [
+      "Study of agricultural soils",
+      "Study of plant nutrition and soil yield",
+      "Instrument for Measuring the intensity of Sound",
+      "Study of aquatic organisms"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 605,
+    "question": "When was Safety matches invented?",
+    "options": [
+      "In the Year 1844",
+      "21st February",
+      "30th September",
+      "29th December"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 606,
+    "question": "Who is the First Chief Election Commissioner of India?",
+    "options": [
+      "Marie Curie",
+      "Sukumar Sen",
+      "John Milton",
+      "P. V. Sindhu"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 607,
+    "question": "Which is the Largest Sea in the World?",
+    "options": [
+      "Philipine Sea",
+      "San Francisco",
+      "Atlanta, USA",
+      "Lake Titicaca"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 608,
+    "question": "Where is International Conference on Sustainable Biofuels 2018 held?",
+    "options": [
+      "Guwahati",
+      "New Delhi",
+      "Rajasthan",
+      "The Hague"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 609,
+    "question": "Who wrote the Book, “A Confession”?",
+    "options": [
+      "Mithali Raj",
+      "P. V. Sindhu",
+      "John Milton",
+      "Leo Tolstoy"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 610,
+    "question": "Who is the first Indian woman to win Gold Medal in Asian Wrestling Championship?",
+    "options": [
+      "John Milton",
+      "Annie Besant",
+      "Marie Curie",
+      "Navjot Kaur"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 611,
+    "question": "Which is the first non-sub urban Railway Station in India to be fully-managed by Women?",
+    "options": [
+      "Sundarbans Delta",
+      "Andes Mountains",
+      "Gandhi Nagar Railway Station, Jaipur",
+      "London, England"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 612,
+    "question": "What is the rank of India in Inclusive Internet Index 2018?",
+    "options": [
+      "47th Rank",
+      "625 meters",
+      "3 hours",
+      "90 minutes"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 613,
+    "question": "Where is the Headquarters of Animal Welfare Board of India located?",
+    "options": [
+      "Ballabhgarh",
+      "Switzerland",
+      "Trivandrum",
+      "Lake Baikal"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 614,
+    "question": "What is Silver Fibre Revolution?",
+    "options": [
+      "Production of Cotton",
+      "Sundarbans Delta",
+      "Uttar Pradesh",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 615,
+    "question": "Who wrote the Book, “The World As I see it”?",
+    "options": [
+      "Galileo Galilei",
+      "Charles Darwin",
+      "Albert Einstein",
+      "Margaret Thatcher"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 616,
+    "question": "Which Indian city is Known as “the City of Weavers”?",
+    "options": [
+      "Punjab",
+      "Jodhpur",
+      "Chennai",
+      "Panipat"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 617,
+    "question": "Who is the first Indian Pilot to fly across English Channel?",
+    "options": [
+      "Usain Bolt",
+      "Mary Kom",
+      "J.R.D.Tata",
+      "Alfred Nobel"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 618,
+    "question": "Which Indian State is Known as “The State of 5 Rivers”?",
+    "options": [
+      "Odisha",
+      "Punjab",
+      "Canada",
+      "Greece"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 619,
+    "question": "Which is the First Union Territory of India to be fully run on Solar Energy?",
+    "options": [
+      "Diu",
+      "Surat",
+      "Pune",
+      "China"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 620,
+    "question": "Where is Bellary Thermal Power Plant Located?",
+    "options": [
+      "Ahmedabad",
+      "Srinagar",
+      "Rajasthan",
+      "Karnataka"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 621,
+    "question": "What is Yellow Revolution?",
+    "options": [
+      "Study of fingerprints",
+      "Study of motion of fluids",
+      "Study of aquatic organisms",
+      "Production of Oil Seeds"
+    ],
+    "correct_index": 3,
+    "is_active": true
+  },
+  {
+    "num": 622,
+    "question": "Who is the first Indian to pass the ICS exam?",
+    "options": [
+      "Surendranath Tagore",
+      "Napoleon Bonaparte",
+      "Subhas Chandra Bose",
+      "Vijaya Lakshmi Pandit"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 623,
+    "question": "What is the expansion of IREDA?",
+    "options": [
+      "Defence Research and Development Laboratory",
+      "Indian Renewable energy Development Agency",
+      "National Aeronautics and Space Administration",
+      "International Committee of the Red Cross"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 624,
+    "question": "Who wrote the Book, “Dare to Do! For the new Generation”?",
+    "options": [
+      "P. V. Sindhu",
+      "Kiran Bedi",
+      "Bill Gates",
+      "Marie Curie"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 625,
+    "question": "Which Indian city is known as “The Temple City”?",
+    "options": [
+      "Bhubaneswar, Odisha",
+      "Pamir Plateau",
+      "Uttar Pradesh",
+      "Andes Mountains"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 626,
+    "question": "What is Black revolution?",
+    "options": [
+      "Sundarbans Delta",
+      "Production of Petroleum",
+      "Nilgiri Hills",
+      "Madhya Pradesh"
+    ],
+    "correct_index": 1,
+    "is_active": true
+  },
+  {
+    "num": 627,
+    "question": "Who invented the Pencil?",
+    "options": [
+      "Conrad Gessner",
+      "Jawaharlal Nehru",
+      "Sachin Tendulkar",
+      "Anders Celsius"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 628,
+    "question": "When is National Post Office Day Celebrated?",
+    "options": [
+      "2nd February",
+      "12th January",
+      "10th October",
+      "5th December"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  },
+  {
+    "num": 629,
+    "question": "What is the Height of Mount Everest?",
+    "options": [
+      "8848 meters",
+      "2 hours",
+      "3 hours",
+      "625 meters"
+    ],
+    "correct_index": 0,
+    "is_active": true
+  },
+  {
+    "num": 630,
+    "question": "Which is the Largest Country in the World?",
+    "options": [
+      "Cochin",
+      "Aizawl",
+      "Russia",
+      "Bihar"
+    ],
+    "correct_index": 2,
+    "is_active": true
+  }
+]

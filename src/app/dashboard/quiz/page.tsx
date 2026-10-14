@@ -10,12 +10,22 @@ interface Question {
   options: string[];
 }
 
+interface QuestionReview {
+  id: string;
+  question: string;
+  options: string[];
+  userAnswerIndex: number | null;
+  correctIndex: number;
+  isCorrect: boolean;
+}
+
 interface QuizResult {
   correctCount: number;
   totalQuestions: number;
   pointsEarned: number;
   isExpired: boolean;
   hasPassed?: boolean;
+  review?: QuestionReview[];
   message: string;
 }
 
@@ -373,6 +383,94 @@ export default function QuizPage() {
             ) : (
               <div className="rounded-2xl bg-amber-50 p-4 border border-amber-200 text-xs text-amber-800 text-left mb-6">
                 <strong>Threshold Not Met:</strong> You scored {result.correctCount} out of 5. You need at least 3 correct answers to earn points (5 points per correct answer). Try another round to qualify!
+              </div>
+            )}
+
+            {/* Question by Question Review */}
+            {result.review && result.review.length > 0 && (
+              <div className="mt-8 mb-6 text-left border-t border-slate-100 pt-6">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-base font-black text-slate-900">
+                    Question Review ({result.review.length} Questions)
+                  </h3>
+                  <span className="text-xs font-bold text-slate-500">
+                    {result.correctCount} Correct • {result.review.length - result.correctCount} Incorrect
+                  </span>
+                </div>
+
+                <div className="space-y-3">
+                  {result.review.map((item, idx) => {
+                    const optLetters = ['A', 'B', 'C', 'D'];
+                    const userOptionText =
+                      typeof item.userAnswerIndex === 'number' && item.options[item.userAnswerIndex]
+                        ? `${optLetters[item.userAnswerIndex]}. ${item.options[item.userAnswerIndex]}`
+                        : 'No answer selected (Timed out)';
+                    const correctOptionText = `${optLetters[item.correctIndex]}. ${item.options[item.correctIndex]}`;
+
+                    return (
+                      <div
+                        key={item.id || idx}
+                        className={`rounded-2xl p-4 border transition-all ${
+                          item.isCorrect
+                            ? 'bg-emerald-50/60 border-emerald-200/80'
+                            : 'bg-rose-50/60 border-rose-200/80'
+                        }`}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="flex-1">
+                            <span className="text-[11px] font-black uppercase tracking-wider text-slate-400">
+                              Question {idx + 1}
+                            </span>
+                            <p className="text-sm font-bold text-slate-900 mt-0.5">
+                              {item.question}
+                            </p>
+                          </div>
+                          <span
+                            className={`shrink-0 inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-black ${
+                              item.isCorrect
+                                ? 'bg-emerald-100 text-emerald-800'
+                                : 'bg-rose-100 text-rose-800'
+                            }`}
+                          >
+                            {item.isCorrect ? (
+                              <>
+                                <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                  <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Correct (+5 pts)</span>
+                              </>
+                            ) : (
+                              <>
+                                <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                  <line x1="18" y1="6" x2="6" y2="18" />
+                                  <line x1="6" y1="6" x2="18" y2="18" />
+                                </svg>
+                                <span>Incorrect</span>
+                              </>
+                            )}
+                          </span>
+                        </div>
+
+                        <div className="mt-3 pt-3 border-t border-slate-200/60 text-xs space-y-1">
+                          <div className="flex items-center gap-2">
+                            <span className="font-semibold text-slate-500">Your choice:</span>
+                            <span className={`font-bold ${item.isCorrect ? 'text-emerald-700' : 'text-rose-700'}`}>
+                              {userOptionText}
+                            </span>
+                          </div>
+                          {!item.isCorrect && (
+                            <div className="flex items-center gap-2">
+                              <span className="font-semibold text-slate-500">Correct answer:</span>
+                              <span className="font-bold text-emerald-700">
+                                {correctOptionText}
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             )}
 

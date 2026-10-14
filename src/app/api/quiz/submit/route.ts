@@ -55,7 +55,7 @@ export async function POST(request: Request) {
     const questionIds = attempt.question_ids as string[];
     const { data: questions, error: qError } = await admin
       .from('quiz_questions')
-      .select('id, correct_index')
+      .select('id, question, options, correct_index')
       .in('id', questionIds);
 
     if (qError || !questions) {
@@ -65,14 +65,36 @@ export async function POST(request: Request) {
       );
     }
 
-    // 4. Calculate score on server
+    const orderedQuestions = questionIds
+      .map((id) => questions.find((q) => q.id === id))
+      .filter((q): q is NonNullable<typeof q> => !!q);
+
+    // 4. Calculate score on server and prepare question-by-question review
     let correctCount = 0;
+    const review: Array<{
+      id: string;
+      question: string;
+      options: string[];
+      userAnswerIndex: number | null;
+      correctIndex: number;
+      isCorrect: boolean;
+    }> = [];
+
     if (!isExpired) {
-      for (const q of questions) {
+      for (const q of orderedQuestions) {
         const userAnswerIndex = answers[q.id];
-        if (typeof userAnswerIndex === 'number' && userAnswerIndex === q.correct_index) {
+        const isCorrect = typeof userAnswerIndex === 'number' && userAnswerIndex === q.correct_index;
+        if (isCorrect) {
           correctCount++;
         }
+        review.push({
+          id: q.id,
+          question: q.question,
+          options: (q.options as string[]) || [],
+          userAnswerIndex: typeof userAnswerIndex === 'number' ? userAnswerIndex : null,
+          correctIndex: q.correct_index,
+          isCorrect,
+        });
       }
     }
 
@@ -118,6 +140,7 @@ export async function POST(request: Request) {
       pointsEarned,
       isExpired,
       hasPassed,
+      review,
       message: isExpired
         ? 'Quiz submission exceeded the allowed time limit. 0 points awarded.'
         : hasPassed
