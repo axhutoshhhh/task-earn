@@ -46,6 +46,10 @@ export default function QuizPage() {
   const [timeLeft, setTimeLeft] = useState<number>(SECONDS_PER_QUESTION);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Guards against duplicate advancement for the same question index
+  const advancedForIndexRef = useRef<number>(-1);
+  const answersRef = useRef<Record<string, number>>({});
+
   const [result, setResult] = useState<QuizResult | null>(null);
 
   const clearTimer = useCallback(() => {
@@ -90,14 +94,19 @@ export default function QuizPage() {
   }, [clearTimer]);
 
   const advanceQuestion = useCallback((chosenOption: number | null) => {
+    // Guard: Prevent advancing more than once for the same question index
+    if (advancedForIndexRef.current === currentIndex) {
+      return;
+    }
+    advancedForIndexRef.current = currentIndex;
+
     clearTimer();
 
     const currentQ = questions[currentIndex];
-    const updatedAnswers = {
-      ...answers,
-      ...(currentQ && chosenOption !== null ? { [currentQ.id]: chosenOption } : {}),
-    };
-    setAnswers(updatedAnswers);
+    if (currentQ && chosenOption !== null) {
+      answersRef.current[currentQ.id] = chosenOption;
+    }
+    setAnswers({ ...answersRef.current });
     setSelectedOption(null);
 
     if (currentIndex + 1 < questions.length) {
@@ -105,30 +114,47 @@ export default function QuizPage() {
       setTimeLeft(SECONDS_PER_QUESTION);
     } else {
       if (attemptId) {
-        submitQuiz(updatedAnswers, attemptId);
+        submitQuiz(answersRef.current, attemptId);
       }
     }
-  }, [clearTimer, questions, currentIndex, answers, attemptId, submitQuiz]);
+  }, [clearTimer, questions, currentIndex, attemptId, submitQuiz]);
 
+  // 1. Countdown timer interval: purely decrements timeLeft without side effects
   useEffect(() => {
     if (gameState !== 'active') return;
+
+    // Reset countdown for this question
+    setTimeLeft(SECONDS_PER_QUESTION);
 
     timerRef.current = setInterval(() => {
       setTimeLeft((prev) => {
         if (prev <= 1) {
-          advanceQuestion(null);
-          return SECONDS_PER_QUESTION;
+          return 0;
         }
         return prev - 1;
       });
     }, 1000);
 
-    return () => clearTimer();
-  }, [gameState, currentIndex, advanceQuestion, clearTimer]);
+    return () => {
+      clearTimer();
+    };
+  }, [gameState, currentIndex, clearTimer]);
+
+  // 2. Timeout watcher: advances question cleanly when timeLeft hits 0
+  useEffect(() => {
+    if (gameState !== 'active') return;
+
+    if (timeLeft === 0) {
+      advanceQuestion(null);
+    }
+  }, [timeLeft, gameState, advanceQuestion]);
 
   const startQuiz = async () => {
+    clearTimer();
     setGameState('loading');
     setErrorMessage(null);
+    advancedForIndexRef.current = -1;
+    answersRef.current = {};
     setAnswers({});
     setCurrentIndex(0);
     setSelectedOption(null);
@@ -160,7 +186,12 @@ export default function QuizPage() {
   };
 
   const handleSelectOption = (optionIndex: number) => {
+    if (selectedOption !== null || advancedForIndexRef.current === currentIndex) return;
     setSelectedOption(optionIndex);
+
+    // Stop timer immediately so timeout cannot fire while waiting to advance
+    clearTimer();
+
     setTimeout(() => {
       advanceQuestion(optionIndex);
     }, 220);
