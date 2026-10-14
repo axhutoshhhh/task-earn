@@ -69,7 +69,7 @@ export default function DashboardActivities() {
                 Speed Quizzes
               </h3>
               <p className="mt-3 text-xs sm:text-sm leading-relaxed text-slate-600 font-medium">
-                5 multiple-choice questions with a strict 7-second countdown. Score 3 or more correct to earn 5 points per question (earn up to 25 points).
+                5 multiple-choice questions with a strict 7-second countdown. Score 3 or more correct to earn 10 points per question (earn up to 50 points).
               </p>
 
               {/* Rule summary chips */}
@@ -80,7 +80,7 @@ export default function DashboardActivities() {
                 </div>
                 <div className="rounded-xl bg-emerald-50/80 border border-emerald-100 p-2.5 text-center shadow-2xs">
                   <span className="block text-[10px] font-bold text-slate-500">Passing Reward</span>
-                  <span className="text-xs font-black text-emerald-700">5 Pts / Question</span>
+                  <span className="text-xs font-black text-emerald-700">10 Pts / Question</span>
                 </div>
               </div>
             </div>

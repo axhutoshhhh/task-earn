@@ -215,7 +215,7 @@ export default function QuizPage() {
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700 text-xs">
                   <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                 </span>
-                <span><strong>5 Points per Correct Answer:</strong> Minimum 3 correct answers out of 5 required to earn points (up to 25 points)</span>
+                <span><strong>10 Points per Correct Answer:</strong> Minimum 3 correct answers out of 5 required to earn points (up to 50 points)</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 text-xs">
@@ -382,7 +382,7 @@ export default function QuizPage() {
               </div>
             ) : (
               <div className="rounded-2xl bg-amber-50 p-4 border border-amber-200 text-xs text-amber-800 text-left mb-6">
-                <strong>Threshold Not Met:</strong> You scored {result.correctCount} out of 5. You need at least 3 correct answers to earn points (5 points per correct answer). Try another round to qualify!
+                <strong>Threshold Not Met:</strong> You scored {result.correctCount} out of 5. You need at least 3 correct answers to earn points (10 points per correct answer). Try another round to qualify!
               </div>
             )}
 
@@ -437,7 +437,7 @@ export default function QuizPage() {
                                 <svg className="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
                                   <polyline points="20 6 9 17 4 12" />
                                 </svg>
-                                <span>Correct (+5 pts)</span>
+                                <span>Correct (+10 pts)</span>
                               </>
                             ) : (
                               <>

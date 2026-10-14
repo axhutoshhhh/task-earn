@@ -99,7 +99,7 @@ export async function POST(request: Request) {
     }
 
     const hasPassed = !isExpired && correctCount >= 3;
-    const pointsEarned = hasPassed ? correctCount * 5 : 0; // 5 points per correct answer, minimum 3 correct required
+    const pointsEarned = hasPassed ? correctCount * 10 : 0; // 10 points per correct answer, minimum 3 correct required
 
     // 5. Mark attempt as claimed and record the final count
     await admin
