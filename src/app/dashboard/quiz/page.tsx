@@ -15,6 +15,7 @@ interface QuizResult {
   totalQuestions: number;
   pointsEarned: number;
   isExpired: boolean;
+  hasPassed?: boolean;
   message: string;
 }
 
@@ -181,7 +182,7 @@ export default function QuizPage() {
               </svg>
             </div>
             <h1 className="mt-6 text-2xl font-black text-slate-950 sm:text-3xl">
-              Speed Knowledge Quiz
+              Speed Quizzes
             </h1>
             <p className="mt-2 text-sm text-slate-600">
               Answer 5 multiple-choice questions under strict 7-second countdown timers.
@@ -204,7 +205,7 @@ export default function QuizPage() {
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 font-bold text-emerald-700 text-xs">
                   <svg className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg>
                 </span>
-                <span><strong>+10 Points:</strong> Credited to your reward wallet per correct answer</span>
+                <span><strong>5 Points per Correct Answer:</strong> Minimum 3 correct answers out of 5 required to earn points (up to 25 points)</span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-700 text-xs">
@@ -328,16 +329,26 @@ export default function QuizPage() {
         {/* 5. RESULT STATE */}
         {gameState === 'result' && result && (
           <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm text-center">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-600">
-              <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
-                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
-                <path d="M4 22h16" />
-                <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1h10v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34" />
-                <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
-              </svg>
+            <div className={`mx-auto flex h-16 w-16 items-center justify-center rounded-2xl ${result.pointsEarned > 0 ? 'bg-emerald-100 text-emerald-600' : 'bg-amber-100 text-amber-600'}`}>
+              {result.pointsEarned > 0 ? (
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                  <path d="M4 22h16" />
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H8c-.55 0-1 .45-1 1v1h10v-1c0-.55-.45-1-1-1h-1c-.55 0-1-.45-1-1v-2.34" />
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2z" />
+                </svg>
+              ) : (
+                <svg className="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              )}
             </div>
-            <h2 className="mt-4 text-2xl font-black text-slate-950">Quiz Finished!</h2>
+            <h2 className="mt-4 text-2xl font-black text-slate-950">
+              {result.pointsEarned > 0 ? 'Quiz Completed & Passed!' : 'Quiz Finished'}
+            </h2>
             <p className="mt-2 text-sm text-slate-600">{result.message}</p>
 
             <div className="my-6 grid grid-cols-2 gap-4">
@@ -347,17 +358,23 @@ export default function QuizPage() {
                   {result.correctCount} / {result.totalQuestions}
                 </p>
               </div>
-              <div className="rounded-2xl bg-[#793FFF]/10 p-5 border border-[#793FFF]/20">
-                <span className="text-xs uppercase font-bold text-[#793FFF]">Points Credited</span>
-                <p className="mt-1 text-3xl font-black text-[#793FFF]">
+              <div className={`rounded-2xl p-5 border ${result.pointsEarned > 0 ? 'bg-[#793FFF]/10 border-[#793FFF]/20' : 'bg-slate-50 border-slate-200'}`}>
+                <span className={`text-xs uppercase font-bold ${result.pointsEarned > 0 ? 'text-[#793FFF]' : 'text-slate-500'}`}>Points Credited</span>
+                <p className={`mt-1 text-3xl font-black ${result.pointsEarned > 0 ? 'text-[#793FFF]' : 'text-slate-500'}`}>
                   +{result.pointsEarned}
                 </p>
               </div>
             </div>
 
-            <div className="rounded-2xl bg-emerald-50 p-4 border border-emerald-200 text-xs text-emerald-800 text-left mb-6">
-              <strong>Transaction Confirmed:</strong> Points have been recorded to your secure wallet and are ready for reward redemption.
-            </div>
+            {result.pointsEarned > 0 ? (
+              <div className="rounded-2xl bg-emerald-50 p-4 border border-emerald-200 text-xs text-emerald-800 text-left mb-6">
+                <strong>Transaction Confirmed:</strong> {result.pointsEarned} points have been credited to your verified wallet and are ready for reward redemption.
+              </div>
+            ) : (
+              <div className="rounded-2xl bg-amber-50 p-4 border border-amber-200 text-xs text-amber-800 text-left mb-6">
+                <strong>Threshold Not Met:</strong> You scored {result.correctCount} out of 5. You need at least 3 correct answers to earn points (5 points per correct answer). Try another round to qualify!
+              </div>
+            )}
 
             <div className="flex flex-col sm:flex-row gap-3">
               <button

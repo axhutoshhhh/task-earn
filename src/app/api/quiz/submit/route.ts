@@ -76,7 +76,8 @@ export async function POST(request: Request) {
       }
     }
 
-    const pointsEarned = correctCount * 10; // 10 points per correct answer
+    const hasPassed = !isExpired && correctCount >= 3;
+    const pointsEarned = hasPassed ? correctCount * 5 : 0; // 5 points per correct answer, minimum 3 correct required
 
     // 5. Mark attempt as claimed and record the final count
     await admin
@@ -94,7 +95,7 @@ export async function POST(request: Request) {
         .insert({
           user_id: user.id,
           amount: pointsEarned,
-          reason: `Completed quiz (${correctCount}/${questionIds.length} correct)`,
+          reason: `Completed quiz (${correctCount}/${questionIds.length} correct - earned ${pointsEarned} points)`,
           reference_id: attemptId,
         });
     }
@@ -116,9 +117,12 @@ export async function POST(request: Request) {
       totalQuestions: questionIds.length,
       pointsEarned,
       isExpired,
+      hasPassed,
       message: isExpired
         ? 'Quiz submission exceeded the allowed time limit. 0 points awarded.'
-        : `Congratulations! You scored ${correctCount}/${questionIds.length} and earned ${pointsEarned} points.`,
+        : hasPassed
+        ? `Congratulations! You scored ${correctCount}/${questionIds.length} and earned ${pointsEarned} points.`
+        : `You scored ${correctCount}/${questionIds.length}. You need at least 3 correct answers out of 5 to earn points (0 points earned).`,
     });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Internal Server Error';
